@@ -10,7 +10,7 @@ of the tutorial, cloud IDE will act as your _local machine_. You'll still be
 running commands in a terminal interface just like your classmates on OS X,
 Ubuntu, or Windows, but your terminal will be connected to a computer running
 somewhere else that cloud IDE sets up for you.
-Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com).
+Here are the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9, Glitch.com).
 You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
@@ -64,7 +64,7 @@ bigger.
 #### Glitch.com Cloud IDE
 
 1. Go to [Glitch.com](https://glitch.com/)
-2. Sign up for an account (https://glitch.com/signin) or use your Github account if you have one (see Github instructions below).
+2. Sign up for an account (https://glitch.com/signin) or use your GitHub account if you have one (see GitHub instructions below).
 3. Click _New Project_ and choose _Hello Webpage_
 4. Click Terminal button (on the left side of the window)
 
