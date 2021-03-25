@@ -65,7 +65,7 @@ bigger.
 
 1. Go to [Glitch.com](https://glitch.com/)
 2. Sign up for an account (https://glitch.com/signin) or use your GitHub account if you have one (see GitHub instructions below).
-3. Click _New Project_ and choose _Hello Webpage_
+3. Click _New Project_ and choose _hello-webpage_
 4. Click Terminal button (on the left side of the window)
 
 When using Glitch.com as your Cloud IDE, we do not create a virtual environment but we create the following files manually :
@@ -102,7 +102,7 @@ python3 manage.py migrate
 python3 manage.py runserver $PORT
 ```
 
-Once these files are created, open a terminal (in the tools menu at the bottom) and execute the command ```refresh```.
+Once these files are created, open a terminal (in the tools menu at the bottom) and execute the command `refresh`.
 
 The initial restarting of the Glitch project should fail (complaining that the ```manage.py``` file is missing), but do not worry about it at this stage, the tutorial will fix this as soon as you create your first Django project.
 
