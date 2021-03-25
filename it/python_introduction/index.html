@@ -1,0 +1,1438 @@
+
+<!DOCTYPE HTML>
+<html lang="it" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Introduzione a Python · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django/" />
+    
+    
+    <link rel="prev" href="../code_editor/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Scrivi per cercare" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduzione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installazione
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Riga di Comando
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    L'editor di codice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Ambiente virtuale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Installazione (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Come funziona Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introduzione alla command line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Installazione di Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    L'editor di codice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduzione a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Che cos'è Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Installazione di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Il tuo primo progetto Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    I modelli di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    L'admin di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Le views di Django – è l'ora di creare!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introduzione all'HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    ORM di Django (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    I dati dinamici nei template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    I template di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - rendilo più carino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Estendere il template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Estendi la tua applicazione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    I Form Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    E dopo?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Pubblicato con HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Introduzione a Python</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduzione-a-python">Introduzione a Python</h1>
+<blockquote>
+<p>Parte di questo capitolo è tratto dal tutorial delle Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p>
+</blockquote>
+<p>Scriviamo un po&apos; di codice!</p>
+<h2 id="la-linea-di-comando-di-python">La linea di comando di Python</h2>
+<blockquote>
+<p>Per chi ci segue da casa: questa parte si trova nel video <a href="https://www.youtube.com/watch?v=MO63L4s-20U" target="_blank">Python Basics: Integers, Strings, Lists, Variables and Errors</a>.</p>
+</blockquote>
+<p>Per iniziare a giocare con Python, devi avviare sul tuo computer una <em>linea di comando</em>. Dovresti già sapere come farlo – l&apos;hai imparato nel capitolo <a href="../intro_to_command_line/">Introduzione alla riga di comando</a>.</p>
+<p>Una volta pronta, segui le istruzioni riportate di seguito.</p>
+<p>Vogliamo aprire una console Python, quindi digita <code>python</code> su Windows o <code>python3</code> su Mac OS/Linux e premi <code>invio</code>.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3
+Python 3.6.1 (...)
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</code></pre><h2 id="il-tuo-primo-comando-python">Il tuo primo comando Python!</h2>
+<p>Dopo aver eseguito il comando Python, il prompt è cambiato in <code>&gt;&gt;&gt;</code>. Questo ci informa che ora dovremo utilizzare comandi propri del linguaggio Python. Non devi digitare <code>&gt;&gt;&gt;</code> - Python lo farà per te.</p>
+<p>Se ad un certo punto vuoi uscire dalla console di Python, digita <code>exit()</code> oppure usa la scorciatoia <code>Ctrl + Z</code> per Windows e <code>Ctrl + D</code> per Mac/Linux. Dopo non vedrai più <code>&gt;&gt;&gt;</code>.</p>
+<p>Per il momento, non vogliamo uscire dalla console di Python. Vogliamo saperne di più. Iniziamo digitando qualche espressione matematica, come <code>2 + 3</code> e premiamo <code>invio</code>.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+<span class="hljs-number">5</span>
+</code></pre>
+<p>Bello! Hai visto come le risposte spuntano fuori? Python conosce la matematica! Prova altri comandi come:</p>
+<ul>
+<li><code>4 * 5</code></li>
+<li><code>5 - 1</code></li>
+<li><code>40 / 2</code></li>
+</ul>
+<p>Per eseguire un calcolo esponenziale, per esempio 2 elevato alla potenza 3, digitiamo: </p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> ** <span class="hljs-number">3</span>
+<span class="hljs-number">8</span>
+</code></pre>
+<p>Giochicchia un po&apos; con Python, e poi torna a leggere qui. :)</p>
+<p>Come puoi vedere, Python è una buona calcolatrice. Ora ti starai sicuramente chiedendo cos&apos;altro è capace di fare…</p>
+<h2 id="stringhe">Stringhe</h2>
+<p>Che ne dici di scrivere il tuo nome? Digitalo tra virgolette così:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&apos;Ola&apos;</span>
+</code></pre>
+<p>Hai appena creato la tua prima stringa! Una stringa è una sequenza di caratteri che possono essere elaborati da un computer. La stringa deve sempre iniziare e finire con lo stesso carattere. Che può essere una virgoletta semplice (<code>&apos;</code>) o doppia (<code>&quot;</code>) (non c&apos;è differenza!) Le virgolette dicono a Python che il contenuto al loro interno è una stringa.</p>
+<p>Le stringhe possono essere legate assieme. Prova questo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot; Ciao &quot;</span> + <span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&apos;Ciao Ola&apos;</span>
+</code></pre>
+<p>Puoi anche moltiplicare le stringhe con un numero:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span> * <span class="hljs-number">3</span>
+<span class="hljs-string">&apos;OlaOlaOla&apos;</span>
+</code></pre>
+<p>Se devi mettere un apostrofo nella tua stringa, hai due modi per farlo.</p>
+<p>Utilizzando le virgolette doppie:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;L&apos;ape Maja va&quot;</span>
+<span class="hljs-string">&quot;L&apos;ape Maja va&quot;</span>
+</code></pre>
+<p>o facendo l&apos;escape dell&apos;apostrofo (cioè evitando che concluda la stringa) con una barra rovesciata (``):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;L\&apos;ape Maja va&apos;</span>
+<span class="hljs-string">&quot;L&apos;ape Maja va&quot;</span>
+</code></pre>
+<p>Bello, eh? Per vedere il tuo nome in maiuscolo, digita:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>.upper()
+<span class="hljs-string">&apos;OLA&apos;</span>
+</code></pre>
+<p>Hai appena applicato il <strong>metodo</strong> <code>upper</code> sulla tua stringa! Un metodo (come <code>upper()</code>) è una sequenza di istruzioni che Python deve compiere su un oggetto dato (la stringa <code>&quot;Ola&quot;</code>) nel momento in cui viene applicato.</p>
+<p>Se vuoi sapere il numero di lettere nel tuo nome, per questo c&apos;è una <strong>funzione</strong>!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-string">&quot;Ola&quot;</span>)
+<span class="hljs-number">3</span>
+</code></pre>
+<p>Ti stai chiedendo la differenza fra il chiamare una funzione con un <code>.</code> alla fine di una stringa (come <code>&quot;Ola&quot;.upper()</code>) ed il chiamare prima la funzione e poi mettere la stringa tra parentesi? Beh, ci sono funzioni che appartengono ad oggetti, come <code>upper()</code>, che può essere eseguita solo su stringhe. In questo caso, chiamiamo la funzione <strong>metodo</strong>. Altre volte, le funzioni non appartengono a niente di specifico e possono essere utilizzate su diversi tipi di oggetti, proprio come <code>len()</code>. Ecco perché stiamo passando <code>&quot;Ola&quot;</code> come parametro alla funzione <code>len</code>.</p>
+<h3 id="indice">Indice</h3>
+<p>OK, basta con le stringhe. Ecco fino ad ora quanto hai imparato:</p>
+<ul>
+<li>Il <strong>prompt</strong> -- Digitare i comandi (codice) nel prompt di Python restituisce risposte in Python</li>
+<li><strong>Numeri e stringhe</strong> -- In Python i numeri vengono utilizzati per la matematica e le stringhe per oggetti testuali</li>
+<li>Gli <strong>operatori</strong> -- come <code>+</code> e <code>*</code>, combinano più valori per produrne uno nuovo</li>
+<li><strong>funzioni</strong> -- come <code>upper()</code> e <code>len()</code>, eseguono azioni su oggetti.</li>
+</ul>
+<p>Fin qui le basi del linguaggio di programmazione che stiamo imparando. Pronta per qualcosa di più complicato? Scommetto di sì!</p>
+<h2 id="errori">Errori</h2>
+<p>Proviamo una cosa diversa. Possiamo ottenere la lunghezza di un numero nella stessa forma in cui abbiamo potuto scoprire la lunghezza del nostro nome? Digita <code>len(304023)</code> e premi <code>Invio</code>:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-number">304023</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-built_in">object</span> of <span class="hljs-built_in">type</span> <span class="hljs-string">&apos;int&apos;</span> has no <span class="hljs-built_in">len</span>()
+</code></pre>
+<p>Abbiamo ottenuto il nostro primo errore! L&apos;icona <span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> è il nostro modo per suggerirti che il codice che stai per eseguire non funzionerà come ti aspetti. Fare errori (anche intenzionali) è un elemento importante dell&apos;apprendimento!</p>
+<p>Il testo dice che gli oggetti di tipo &quot;int&quot; (interi, numeri interi) non hanno lunghezza. Quindi cosa possiamo fare ora? Forse possiamo scrivere il nostro numero come stringa? Le stringhe hanno una lunghezza, giusto?</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-built_in">str</span>(<span class="hljs-number">304023</span>))
+<span class="hljs-number">6</span>
+</code></pre>
+<p>Ha funzionato! Abbiamo utilizzato la funzione <code>str</code> all&apos;interno della funzione <code>len</code>. <code>str()</code> converte tutto in stringhe.</p>
+<ul>
+<li>La funzione <code>str</code> converte le cose in <strong>stringhe</strong></li>
+<li>La funzione <code>int</code> converte le cose in <strong>numeri interi</strong></li>
+</ul>
+<blockquote>
+<p>Importante: possiamo convertire i numeri in testo, ma non possiamo convertire il testo in numeri - cosa potrebbe essere <code>int(&apos;hello&apos;)</code>?</p>
+</blockquote>
+<h2 id="variabili">Variabili</h2>
+<p>Un concetto importante nella programmazione è quello delle variabili. Una variabile non è altro che un nome per qualcosa, così puoi usarla più tardi. I programmatori usano le variabili per memorizzare dati, rendere il loro codice più leggibile in modo da non dover continuare a ricordare le cose.</p>
+<p>Diciamo che vogliamo creare una nuova variabile chiamata <code>nome</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>nome = <span class="hljs-string">&quot;Ola&quot;</span>
+</code></pre>
+<p>Praticamente, poniamo il valore della variabile <tt>nome</tt> uguale alla stringa &quot;Ola&quot;.</p>
+<p>Come hai notato, il tuo programma non ha dato nessun risultato come ha fatto prima. Allora come facciamo a sapere che la variabile esiste veramente? semplicemente digita <code>nome</code> e premi <code>Invio</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>nome
+<span class="hljs-string">&apos;Ola&apos;</span>
+</code></pre>
+<p>Urrà! La tua prima variabile! :) E puoi anche cambiare il valore a cui essa si riferisce:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>nome = <span class="hljs-string">&quot;Sonja&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>nome
+<span class="hljs-string">&apos;Sonja&apos;</span>
+</code></pre>
+<p>La puoi utilizzare anche nelle funzioni:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(nome)
+<span class="hljs-number">5</span>
+</code></pre>
+<p>Fantastico, vero? Naturalmente, le variabili possono essere qualsiasi cosa, così come i numeri! Prova questo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a * b
+<span class="hljs-number">24</span>
+</code></pre>
+<p>Ma cosa succede se utilizziamo il nome sbagliato? Riesci a immaginare cosa succederebbe? Proviamo!</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>city = <span class="hljs-string">&quot;Tokyo&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>ctiy
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;ctiy&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>Un errore! Come puoi vedere, Python ha diversi tipi di errori e questo qui si chiama <strong>NameError</strong>. Python ti darà questo errore se provi ad utilizzare una variabile che non è stata ancora definita. Se incontri questo errore più tardi, controlla il tuo codice per vedere se hai digitato in modo errato i nomi.</p>
+<p>Giocaci per un po&apos; e vedi cosa puoi fare!</p>
+<h2 id="la-funzione-print">La funzione print</h2>
+<p>Prova questo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>nome = <span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>nome
+<span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(name)
+Maria
+</code></pre>
+<p>Quando digiti <code>name</code>, l&apos;interprete di Python risponde con una stringa <em>rappresentazione</em> della variabile &apos;nome&apos;, che contiene le lettere M-a-r-i-a, circondate da singole virgolette, &apos;&apos;. Quando dici <code>print(nome)</code>, Python &quot;stamperà&quot; i contenuti della variabile sullo schermo, senza le virgolette, che è più pulito.</p>
+<p>Come vedremo dopo, <code>print()</code> è anche utile quando vogliamo stampare le cose dall&apos;interno delle funzioni, oppure quando vogliamo stampare le cose in molteplici righe.</p>
+<h2 id="liste">Liste</h2>
+<p>Oltre alle stringhe ed ai numeri interi, Python ha tanti tipi di oggetti. Ora ne introdurremo uno chiamato <strong>lista</strong>. Le liste sono fatte proprio come immagini: sono oggetti che sono liste di altri oggetti. :)</p>
+<p>Vai avanti e crea una lista:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[]
+[]
+</code></pre>
+<p>Sì, questa lista è vuota. Abbastanza inutile, vero? Creiamo una lista di numeri della lotteria. Non vogliamo ripetere la sequenza ogni volta, quindi metteremo anche la lista in una variabile:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lotteria = [<span class="hljs-number">3</span>, <span class="hljs-number">42</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>Bene, abbiamo una lista! Cosa possiamo farne? Vediamo quanti numeri della lotteria contiene. Quale funzione potresti utilizzare per questo compito? Lo hai già imparato!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(lotteria)
+<span class="hljs-number">8</span>
+</code></pre>
+<p>Si! <code>len()</code> può darti il numero di oggetti in una lista. Utile, vero? Forse abbiamo risolto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lotteria.sort()
+</code></pre>
+<p>Questo comando non dà nessun risultato, ha semplicemente cambiato l&apos;ordine in cui i numeri appaiono nella lista. Stampiamo di nuovo la lista per vedere cosa è successo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lotteria)
+[<span class="hljs-number">3</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">42</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>Come puoi vedere, adesso i numeri nella tua lista sono ordinati dal valore più basso a quello più alto. Congratulazioni!</p>
+<p>Vogliamo invertire quell&apos;ordine? Facciamolo!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lotteria.reverse()
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lotteria)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>]
+</code></pre>
+<p>Facile, vero? Se vuoi aggiungere qualcosa alla tua lista, puoi farlo digitando questo comando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lotteria.append(<span class="hljs-number">199</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lotteria)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>Se vuoi mostrare solo il primo numero, puoi farlo usando gli <strong>indici</strong>. L&apos;indice è il numero che dice la posizione esatta dell&apos;elemento all&apos;interno di una lista. I programmatori preferiscono iniziare a contare da 0, quindi il primo oggetto nella lista è all&apos;indice 0, il successivo all&apos;1, e così via. Prova questo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lotteria[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lotteria[<span class="hljs-number">1</span>])
+<span class="hljs-number">42</span>
+</code></pre>
+<p>Come puoi vedere, puoi accedere a diversi oggetti nella tua lista usando il nome della lista e l&apos;indice dell&apos;oggetto all&apos;interno delle parentesi quadre.</p>
+<p>Per eliminare qualcosa dalla lista dovrai usare gli <strong>indici</strong> come abbiamo visto sopra, e il metodo <code>pop()</code>. Proviamo a fare un esercizio per rafforzare quanto abbiamo imparato prima; elimineremo il primo numero della lista.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>lottery.pop(<span class="hljs-number">0</span>)
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>Ha funzionato a meraviglia!</p>
+<p>Prova altri indici: 6, 7, 1000, -1, -6 o -1000. Prova a prevedere il risultato ancora prima di eseguire il comando. Hanno senso i risultati?</p>
+<p>Per saperne di più su i metodi disponibili per le liste puoi consultare questo capitolo della documentazione Python: <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a></p>
+<h2 id="dizionari">Dizionari</h2>
+<blockquote>
+<p>Per chi ci segue da casa: questa parte si trova nel video <a href="https://www.youtube.com/watch?v=ZX1CVvZLE6c" target="_blank">Python Basics: Dictionaries</a>.</p>
+</blockquote>
+<p>Un dizionario (dictionary) è simile a una lista, ma accedi ai valori cercando una chiave invece di un indice. Una chiave può essere qualsiasi stringa o numero. La sintassi per definire un dizionario vuoto è:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>{}
+{}
+</code></pre>
+<p>Questo dimostra che hai appena creato un dizionario vuoto. Evviva!</p>
+<p>Ora, prova a scrivere il seguente comando (prova a sostituirlo con le tue informazioni):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>partecipante = {<span class="hljs-string">&apos;nome&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;paese&apos;</span>: <span class="hljs-string">&apos;Polonia&apos;</span>, <span class="hljs-string">&apos;numeri_preferiti&apos;</span>: [<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]}
+</code></pre>
+<p>Con questo comando hai appena creato una variabile chiamata <code>partecipante</code> con tre coppie di chiavi-valori:</p>
+<ul>
+<li>La chiave <code>nome</code> va a indicare il valore <code>&apos;Ola&apos;</code> (un oggetto <code>stringa</code>),</li>
+<li><code>paese</code> indica <code>&apos;Polonia&apos;</code> (un&apos;altra <code>stringa</code>),</li>
+<li>e <code>numeri_preferiti</code> indica <code>[7, 42, 92]</code> (una <code>lista</code> con tre numeri al suo interno).</li>
+</ul>
+<p>Puoi controllare il contenuto di chiavi individuali con questa sintassi:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(partecipante[<span class="hljs-string">&apos;nome&apos;</span>])
+Ola
+</code></pre>
+<p>Vedi, assomiglia ad una lista. Ma non devi ricordare l&apos;indice - solo il nome.</p>
+<p>Cosa succede se chiediamo a Python il valore di una chiave che non esiste? Riesci a indovinarlo? Proviamo!</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>partecipante[<span class="hljs-string">&apos;età&apos;</span>]
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+KeyError: <span class="hljs-string">&apos;età&apos;</span>
+</code></pre>
+<p>Guarda, un altro errore! Questo qua è un <strong>KeyError</strong>. Python è utile e ti dice che la chiave <code>&apos;età&apos;</code> non esiste in questo dizionario.</p>
+<p>Quando usare un dizionario o una lista? Bella domanda. Prova a formulare una soluzione mentalmente prima di vedere la risposta nella prossima riga.</p>
+<ul>
+<li>Ha bisogno di una sequenza ordinata di elementi? Fai una lista.</li>
+<li>Hai bisogno di associare i valori alle chiavi, così che potrai cercarle agilmente (per chiave) dopo? Usa un dizionario.</li>
+</ul>
+<p>I dizionari, come le liste, sono <em>mutable</em>, significa che possono essere cambiati dopo che sono stati creati. Si possono aggiugere nuove coppie chiave/valore ad un dizionario dopo averlo creato:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>partecipante[<span class="hljs-string">&apos;linguaggio_preferito&apos;</span>] = <span class="hljs-string">&apos;Python&apos;</span>
+</code></pre>
+<p>Così come succede se applicato alle liste, il metodo <code>len()</code> restituisce il numero di coppie chiave/valore anche quando applicato a un dizionario. Vai e digita il comando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(partecipante)
+<span class="hljs-number">4</span>
+</code></pre>
+<p>Spero che abbia senso per te. :) Pronta per divertirti con i dizionari? Vai alla prossima riga per realizzare altre cose fantastiche.</p>
+<p>Puoi usare il comando <code>del</code> per cancellare un elemento nella directory. Se vuoi cancellare la voce che corrisponde al tasto <code>&apos;numeri_preferiti&apos;</code>, digita il seguente comando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant.pop(<span class="hljs-string">&apos;favorite_numbers&apos;</span>)
+[<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>participant
+{<span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Poland&apos;</span>, <span class="hljs-string">&apos;favorite_language&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}
+</code></pre>
+<p>Come puoi vedere dall&apos;output, la coppia chiave-valore corrispondente alla chiave &apos;numeri_preferiti&apos; è stato cancellata.</p>
+<p>Puoi anche cambiare un valore associato ad una chiave già creata nel dizionario. Digita:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>partecipante[<span class="hljs-string">&apos;paese&apos;</span>] = <span class="hljs-string">&apos;Germania&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>partecipante
+{<span class="hljs-string">&apos;paese&apos;</span>: <span class="hljs-string">&apos;Germania&apos;</span>, <span class="hljs-string">&apos;linguaggio_preferito&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;nome&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}
+</code></pre>
+<p>Come puoi vedere, il valore della chiave <code>&apos;paese&apos;</code> è stato cambiato da <code>&apos;Polonia&apos;</code> a <code>&apos;Germania&apos;</code>. :) Eccitante, vero? Evviva! Hai già imparato un&apos;altra cosa fantastica.</p>
+<h3 id="indice">Indice</h3>
+<p>Fantastico! ora sai molto sulla programmazione. In questa ultima parte hai imparato:</p>
+<ul>
+<li><strong>errori</strong> - ora sai come leggere e capire gli errori che appaiono se Python non comprende un comando che gli hai dato</li>
+<li><strong>variabili</strong> - nomi per oggetti. Ti permettono di scrivere codice più semplice e di renderlo più leggibile</li>
+<li><strong>liste</strong> - liste di oggetti archiviati in un ordine particolare</li>
+<li><strong>dizionari</strong> - oggetti archiviati come coppie di chiave-valore</li>
+</ul>
+<p>Sei emozionato/a per la prossima parte? :)</p>
+<h2 id="confrontare-le-cose">Confrontare le cose</h2>
+<blockquote>
+<p>Per i lettori da casa: questa parte si trova nel video <a href="https://www.youtube.com/watch?v=7bzxqIKYgf4" target="_blank">Python Basics: Comparisons</a>.</p>
+</blockquote>
+<p>Larga parte della programmazione include il confrontare le cose. Qual è la cosa più semplice da confrontare? I numeri, senza dubbio. Vediamo come funziona:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span> * <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> == <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> != <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Abbiamo dato a Python alcuni numeri da mettere a confronto. Come puoi vedere, Python può mettere a confronto non solo numeri, ma anche i risultati dei metodi. Forte, eh?</p>
+<p>Ti sei chiesta perché abbiamo messo due simboli di uguale <code>==</code> uno vicino all&apos;altro per confrontare i numeri? Usiamo un singolo <code>=</code> per assegnare valori alle variabili. Sempre, <strong>sempre</strong> devi mettere due <code>==</code> se vuoi controllare se le cose sono uguali. Possiamo affermare anche che le cose sono diverse tra di loro. Per dirlo, usiamo il simbolo <code>!=</code>, come mostrato nell&apos;esempio sopra.</p>
+<p>Dai a Python altri due compiti:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt;= <span class="hljs-number">12</span> / <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt;= <span class="hljs-number">2</span>
+<span class="hljs-literal">False</span>
+</code></pre>
+<p><code>&gt;</code> e <code>&lt;</code> sono facili, ma cosa significano <code>&gt;=</code> e <code>&lt;=</code>? Leggili così:</p>
+<ul>
+<li>x <code>&gt;</code> y significa: x è maggiore di y</li>
+<li>x <code>&lt;</code> y significa: x è minore di y</li>
+<li>x <code>&lt;=</code> y significa: x è minore o uguale a y</li>
+<li>x <code>&gt;=</code> y significa: x è maggiore o uguale a y</li>
+</ul>
+<p>Fantastico! Vuoi farne due o tre? prova questo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">3</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Puoi dare a Python tutti i numeri da confrontare che vuoi, ti darà sempre una risposta! Molto intelligente, vero?</p>
+<ul>
+<li><strong>and</strong> - se usi l&apos;operatore <code>e</code>, entrambe le cose confrontate devono essere True in modo tale che l&apos;intero comando sia True</li>
+<li><strong>or</strong> - se usi l&apos;operatore <code>o</code>, solo una delle cose messe a confronto deve essere True in modo tale che l&apos;intero comando sia True</li>
+</ul>
+<p>Hai sentito parlare dell&apos;espressione &quot;comparare mele e arance&quot;? Proviamo l&apos;equivalente in Python:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> &gt; <span class="hljs-string">&apos;django&apos;</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-string">&apos;&gt;&apos;</span> <span class="hljs-keyword">not</span> supported between instances of <span class="hljs-string">&apos;int&apos;</span> <span class="hljs-keyword">and</span> <span class="hljs-string">&apos;str&apos;</span>
+</code></pre>
+<p>Dall&apos;espressione puoi capire che Python non è in grado di mettere a confronto un numero (<code>int</code>) e una stringa (<code>str</code>). Ci mostra invece un <strong>TypeError</strong> e ci dice che i due tipi non possono essere messi a confronto.</p>
+<h2 id="booleano">Booleano</h2>
+<p>Tra parentesi, hai appena appreso di un nuovo tipo di oggetto in Python. Si chiama <strong>Boolean</strong>.</p>
+<p>Ci sono solo due oggetti Boolean:-True-False</p>
+<ul>
+<li>Vero</li>
+<li>Falso</li>
+</ul>
+<p>Ma perché Python possa capirlo, bisogna sempre scrivere True (prima lettera maiuscola, le altre minuscole). <strong>true, TRUE, tRUE non funzionano -- solo True è corretto.</strong> (Lo stesso vale per False, ovviamente.)</p>
+<p>I Boolean possono anche essere variabili! Guarda qui:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Lo puoi fare anche in questa forma:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">False</span>
+</code></pre>
+<p>Esercitati e divertiti con i valori booleani provando a eseguire i seguenti comandi:</p>
+<ul>
+<li><code>True and True</code></li>
+<li><code>False and True</code></li>
+<li><code>True or 1 == 1</code></li>
+<li><code>1 != 2</code></li>
+</ul>
+<p>Congratulazioni! I valori Booleani sono tra le cose più interessanti della programmazione e tu hai appena imparato ad utilizzarli!</p>
+<h1 id="salvalo">Salvalo!</h1>
+<blockquote>
+<p>Per i lettori da casa: questa parte si trova nel video <a href="https://www.youtube.com/watch?v=dOAg6QVAxyk" target="_blank">Python Basics: Saving files and &quot;If&quot; statement</a>.</p>
+</blockquote>
+<p>Fino ad ora abbiamo scritto tutto il nostro codice Python nell&apos;interprete, il ché ci limita ad una riga di codice alla volta. I programmi vengono salvati in file ed eseguiti dall&apos;<strong>interpreter</strong> del nostro linguaggio di programmazione o dal <strong>compiler</strong>. Fino ad ora abbiamo eseguito i nostri programmi una riga per volta nell&apos; <strong>interprete</strong> di Python. Avremo bisogno di più di una riga di codice per i prossimi compiti, quindi dovremo fare queste cose velocemente:</p>
+<ul>
+<li>Uscire dall&apos;interprete di Python</li>
+<li>Aprire l&apos;editor di codice che abbiamo scelto</li>
+<li>Salvare un po&apos; di codice in un file python</li>
+<li>Eseguirlo!</li>
+</ul>
+<p>Per uscire dall&apos;interprete di Python che abbiamo utilizzato, digita la funzione <code>exit()</code></p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$
+</code></pre>
+<p>Questo ti immetterà nel prompt dei comandi.</p>
+<p>Prima abbiamo scelto un editor di codice dalla sezione <a href="../code_editor/">editor di codice</a> . Dobbiamo aprire l&apos;editor ora e scrivere un codice in un nuovo file (o se stai usando un Chromebook, creare un nuovo file nell&apos;IDE cloud e aprire il file, che sarà incluso nell&apos;editor di codice):</p>
+<p></p><p class="code-label">editor</p><p></p>
+<pre><code class="lang-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ciao, Django girls!&apos;</span>)
+</code></pre>
+<p>Ovviamente a questo punto sei una programmatrice Python senior, quindi sentiti libera di scrivere un po&apos; del codice che hai imparato oggi.</p>
+<p>Ora dobbiamo salvare il file e dargli un nome descrittivo. Chiama il file <strong>python_intro.py</strong> e salvalo sulla tua scrivania. Puoi chiamare il file come vuoi, ma è importante assicurarsi che finisca con <strong>.py</strong>. L&apos;estensione <strong>.py</strong> dice al Sistema Operativo che questo è un <strong>file eseguibile python</strong> e che Python può eseguirlo.</p>
+<blockquote>
+<p><strong>Nota</strong> Dovresti notare una delle cose più belle degli editori di codice: i colori! Nella console Python ogni cosa era dello stesso colore, mentre ora dovresti visualizzare la funzione <code>print</code> di un colore differente rispetto alla stringa che la segue. Questa viene chiamata &quot;sintassi evidenziata&quot;, ed è veramente utile quando si scrive codice. Il colore serve come suggerimento, ad esempio per una stringa che non è chiusa, o un errore di digitazione di una keyword (come la <code>def</code> per le funzioni, che vedremo più avanti). Questo è uno dei motivi per cui usiamo un editor di codice. :)</p>
+</blockquote>
+<p>E&apos; ora di eseguire il file! Usando le nozioni che hai imparato nella sezione command line, usa il terminal per <strong>cambiare cartella</strong> alla scrivania.</p>
+<sec data-title="Change directory: OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+<p>Su un Mac, il comando sarà più o meno così:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+<p>Su Linux, sarà così:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre><p>(Ricorda che la parola &quot;Desktop&quot; potrebbe essere tradotta nella tua lingua.)</p>
+</div></div></div></sec>
+<sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+<p>Nel prompt dei comandi di Windows, sarà così:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd %HomePath%\Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Powershell<a class="pull-right section atTitle btn btn-default" target="python_windowsPSH"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windowsPSH"><div class="panel-body">
+<p>E su windows, sara come questo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd $Home\Desktop
+</code></pre></div></div></div></sec>
+<p>Se sei bloccato, chiedi aiuto. Ecco esattamente per che cosa sono qui gli autobus!</p>
+<p>Ora usa Python per eseguire il codice nel file:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ciao, Django girls!
+</code></pre><p>Nota: su Windows &apos;python3&apos; non è riconosciuto come comando. Al contrario, usa &apos;python&apos; per eseguire il file:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">&gt; python python_intro.py
+</code></pre>
+<p>Perfetto! Hai appena eseguito il tuo primo programma Python salvato su un file. Grande, no?</p>
+<p>Ora puoi continuare con uno strumento essenziale nella programmazione:</p>
+<h2 id="if--elif--else">If … elif … else</h2>
+<p>Molte cose dovrebbero essere eseguite soltanto quando si incontrano certe condizioni. E&apos; per questo che Python ha gli <strong>if statements</strong>.</p>
+<p>Sostituisci il codice nel file <strong>python_intro.py</strong> con questo:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+</code></pre>
+<p>Se salviamo questo codice e lo eseguiamo, incontriamo un errore come questo:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+File &quot;python_intro.py&quot;, line 2
+         ^
+SyntaxError: unexpected EOF while parsing
+</code></pre><p>Python si aspetta che gli vengano fornite ulteriori istruzioni che saranno eseguite se la condizione <code>3 &gt; 2</code> risulterà vera (o <code>True</code> se vogliamo). Proviamo a fare in modo che Python stampi &quot;Funziona!&quot;. Modifica il tuo codice nel tuo file <strong>python_intro.py</strong> con questo:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;It works!&apos;</span>)
+</code></pre>
+<p>Vedi come abbiamo indentato la riga successiva usando 4 spazi? Si deve fare così in modo tale che Python sappia quale codice eseguire se il risultato è True. Puoi mettere uno spazio, ma la maggior parte dei programmatori di Python ne mettono 4 per rendere le cose più ordinate. Una singola scheda conterrà anche 4 spazi finché l&apos;editor di testo è impostato per farlo. Quando hai fatto la tua scelta, non cambiarla! Se hai già indicizzato con 4 spazi, crea qualsiasi rientro futuro con 4 spazi - altrimenti potresti incorrere in problemi.</p>
+<p>Salvalo ed eseguilo di nuovo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">$ python3 python_intro.py
+Funziona!
+</code></pre>
+<p>Nota: Ricorda che su Windows, &apos;python3&apos; non è riconosciuto come comando. Da ora in poi, sostituisci &apos;python3&apos; con &apos;python&apos; per eseguire il file.</p>
+<h3 id="e-se-una-condizione-non-è-vera">E se una condizione non è Vera?</h3>
+<p>In esempi precedenti, il codice è stato eseguito solo quando le condizioni erano True. Ma Python ha anche gli <code>elif</code> e <code>else</code> statements:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;5 è infatti maggiore di 2&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;5 non è maggiore di 2&apos;</span>)
+</code></pre>
+<p>Quando viene lanciato, mostrerà:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+5 è infatti maggiore di 2
+</code></pre><p>Se 2 fosse più grande di 5, allora andrebbe in esecuzione il secondo comando. Facile, vero? Andiamo a vedere come funziona <code>elif</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">nome = <span class="hljs-string">&apos;Sonja&apos;</span>
+<span class="hljs-keyword">if</span> nome == <span class="hljs-string">&apos;Ola&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hey Ola!&apos;</span>)
+<span class="hljs-keyword">elif</span> nome == <span class="hljs-string">&apos;Sonja&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hey Sonja!&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hey anonimo!&apos;</span>)
+</code></pre>
+<p>ed eseguito:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hey Sonja!
+</code></pre><p>Hai visto cosa è successo? <code>elif</code> ti consente di aggiungere condizioni supplementari che verranno eseguite se nessuna delle condizioni precedenti viene soddisfatta.</p>
+<p>Allo statement iniziale <code>if</code> puoi far seguire tutti gli statement <code>elif</code> che vuoi. Per esempio:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">volume = <span class="hljs-number">57</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;It&apos;s kinda quiet.&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">20</span> &lt;= volume &lt; <span class="hljs-number">40</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;It&apos;s nice for background music&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">40</span> &lt;= volume &lt; <span class="hljs-number">60</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Perfect, I can hear all the details&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">60</span> &lt;= volume &lt; <span class="hljs-number">80</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Nice for parties&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">80</span> &lt;= volume &lt; <span class="hljs-number">100</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;A bit loud!&quot;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;My ears are hurting! :(&quot;</span>)
+</code></pre>
+<p>Python esegue ogni singolo test in sequenza e scrive:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Perfetto, posso apprezzare ogni dettaglio
+</code></pre><h2 id="commenti">Commenti</h2>
+<p>I commenti sono linee che iniziano con <code>#</code>. Puoi scrivere tutto ciò che vuoi dopo <code>#</code> e Python lo ignorerà. I commenti possono rendere il tuo codice più facile da capire per gli altri.</p>
+<p>Vediamo come funziona</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-comment"># Change the volume if it&apos;s too loud or too quiet</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span> <span class="hljs-keyword">or</span> volume &gt; <span class="hljs-number">80</span>:
+    volume = <span class="hljs-number">50</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;That&apos;s better!&quot;</span>)
+</code></pre>
+<p>Non devi scrivere un commento per ogni riga di codice, ma sono utili per spiegare perché il tuo codice sta facendo qualcosa, o fornire un riepilogo quando sta facendo qualcosa di complesso.</p>
+<h3 id="indice">Indice</h3>
+<p>Nei tre esercizi precedenti hai imparato:</p>
+<ul>
+<li>come <strong>confrontare le cose</strong> - in Python puoi mettere a confronto le cose usando <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>&lt;=</code>, <code>&lt;</code> e gli operatori <code>e</code>, <code>o</code></li>
+<li>i <strong>Boolean</strong> - una tipologia di oggetto che può avere solo uno di questi due valori: <code>True</code> o <code>False</code></li>
+<li>come <strong>Salvare file</strong> - archiviare codice nei file in modo da poter eseguire programmi più lunghi.</li>
+<li><strong>if...elif...else</strong> - affermazioni che ti permettono di eseguire codice solo quando vengono incontrate certe condizioni.</li>
+<li><strong>commenti</strong> - linee che Python non verrà eseguito che ti permettono di documentare il tuo codice</li>
+</ul>
+<p>E&apos; ora dell&apos;ultima parte del capitolo!</p>
+<h2 id="le-funzioni-personalizzate">Le funzioni personalizzate!</h2>
+<blockquote>
+<p>Per i lettori da casa: questa parte si trova nel video <a href="https://www.youtube.com/watch?v=5owr-6suOl0" target="_blank">Python Basics: Functions</a>.</p>
+</blockquote>
+<p>Ti ricordi quelle funzioni che puoi eseguire in Python come <code>len()</code>? Beh, buone notizie, ora imparerai a scrivere delle funzioni tutte tue!</p>
+<p>Una funzione è una sequenza di istruzioni che Python dovrebbe eseguire. Ogni funzione in Python inizia con la parola chiave <code>def</code>, viene assegnato un nome e può avere alcuni parametri. Diamo un colpo. Sostituisci il codice nel file <strong>python_intro.py</strong> con il seguente:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">ciao</span>():</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ciao!&apos;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Come stai?&apos;</span>)
+
+ciao()
+</code></pre>
+<p>Okay, la nostra prima funzione è pronta!</p>
+<p>Ti starai chiedendo perché abbiamo scritto il nome della funzione alla fine del file. Quando scriviamo <code>def hi():</code> e le seguenti linee indentate, questi siamo noi che scriviamo le istruzioni per cosa dovrebbe fare la funzione <code>hi()</code>. Python leggerà e ricorderà queste istruzioni, ma ancora non eseguirà la funzione. Per dire a Python che vogliamo eseguire la funzione, dobbiamo chiamare la funzione con <code>hi()</code>. Python legge il file e lo esegue dall&apos;alto verso il basso, così che dobbiamo definire la funzione nel file prima di chiamarla.</p>
+<p>Eseguiamolo e vediamo cosa succede:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ciao!
+Come stai?
+</code></pre><p>Nota: se non ha funzionato, non panicare! L&apos;output ti aiuterà a capire perché:</p>
+<ul>
+<li>Se ottieni un <code>NameError</code>, questo probabilmente significa che hai digitato qualcosa di sbagliato, quindi dovresti controllare che tu abbia usato lo stesso nome quando crei la funzione con <code>def hi():</code> e quando lo chiamate con <code>hi()</code>.</li>
+<li>Se ottieni un <code>IndentaionError</code>, controlla che entrambe le linee <code>print</code> abbiano lo stesso spazio bianco all&apos;inizio di una linea: python vuole che tutto il codice all&apos;interno della funzione sia allineato in modo adeguato.</li>
+<li>Se non c&apos;è nessun output, controlla che l&apos;ultima <code>hi()</code> <em>non sia indentato</em> se è così, questa linea diventerà parte della funzione, e non verrà mai eseguita.</li>
+</ul>
+<p>E&apos; stato facile! Costruiamo la nostra prima funzione con parametri. Useremo l&apos;esempio precedente - una funzione che dice &apos;ciao&apos; alla persona che lo esegue - aggiungendo il nome:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">ciao</span>(<span class="hljs-params">nome</span>):</span>
+</code></pre>
+<p>Come puoi vedere, abbiamo dato alla nostra funzione un parametro chiamato <code>nome</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">ciao</span>(<span class="hljs-params">nome</span>):</span>
+    <span class="hljs-keyword">if</span> nome == <span class="hljs-string">&apos;Ola&apos;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ciao Ola!&apos;</span>)
+    <span class="hljs-keyword">elif</span> nome == <span class="hljs-string">&apos;Sonja&apos;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ciao Sonja!&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ciao anonimo!&apos;</span>)
+
+ciao()
+</code></pre>
+<p>Ricorda: La funzione <code>print</code> è rientrata di 4 spazi rispetto allo statement <code>if</code>. Infatti, la funzione viene eseguita quando la condizione viene soddisfatta. Vediamo ora come funziona:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Traceback (most recent call last):
+File &quot;python_intro.py&quot;, line 10, in &lt;module&gt;
+  hi()
+TypeError: ciao() missing 1 required positional argument: &apos;nome&apos;
+</code></pre><p>Ops, un errore. Fortunatamente, Python ci fornisce un messaggio di errore che ci può servire. Ci dice che la funzione <code>ciao()</code> (quella che abbiamo definito) ha un argomento richiesto (chiamato <code>nome</code>) e che ci siamo dimenticati di metterlo quando abbiamo chiamato la funzione. Sistemiamolo alla fine del file:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">ciao(<span class="hljs-string">&quot;Ola&quot;</span>)
+</code></pre>
+<p>Ed eseguiamo di nuovo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ciao Ola!
+</code></pre><p>E se cambiamo il nome?</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">ciao(<span class="hljs-string">&quot;Sonja&quot;</span>)
+</code></pre>
+<p>Ed eseguilo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ciao Sonja!
+</code></pre><p>Ora, cosa pensi che succederà se scrivi un altro nome? (non Ola o Sonja) Provaci e vedi se la tua ipotesi è giusta. Dovrebbe stampare questo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>Ciao anonimo!
+</code></pre><p>Fantastico, vero? In questo modo non devi ripetere tutto ogni volta che vuoi modificare il nome della persona che la funzione dovrebbe salutare. Ed è esattamente per questo che abbiamo bisogno delle funzioni - non vuoi ripetere il tuo codice!</p>
+<p>Facciamo qualcosa di più intelligente – ci sono più nomi di due, e scrivere una condizione per ciascuno sarebbe difficile, giusto? Sostituisci il contenuto del tuo file con i seguenti:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">ciao</span>(<span class="hljs-params">nome</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ciao &apos;</span> + nome + <span class="hljs-string">&apos;!&apos;</span>)
+
+ciao(<span class="hljs-string">&quot;Rachel&quot;</span>)
+</code></pre>
+<p>Ora chiamiamo il codice:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ciao Rachel!
+</code></pre><p>Complimenti! Hai appena imparato a scrivere le funzioni! :)</p>
+<h2 id="loop">Loop</h2>
+<blockquote>
+<p>Per i lettori da casa: questa parte si trova nel video <a href="https://www.youtube.com/watch?v=aEA6Rc86HF0" target="_blank">Python Basics: For Loop</a>.</p>
+</blockquote>
+<p>È l&apos;ultima parte. Abbiamo fatto in fretta, vero? :)</p>
+<p>I programmatori non amano ripetere ciò che scrivono. La programmazione mira a automatizzare le cose, non vorremo mica salutare ognuno col suo nome manualmente? Ecco un caso in cui i loop ci tornano comodi.</p>
+<p>Ti ricordi ancora delle liste? Facciamo una lista di ragazze:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">ragazze = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;Tu&apos;</span>]
+</code></pre>
+<p>Vogliamo salutare tutte loro per nome. Abbiamo la funzione <code>ciao</code> per farlo, quindi usiamola in loop:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+</code></pre>
+<p>Lo statement <del>~ for</del>~ si comporta in modo simile allo statement <del>~ if</del>~; il codice sottostante deve essere rientrato di quattro spazi.</p>
+<p>Qua c&apos;è l&apos;intero codice che sarà nel file:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">ciao</span>(<span class="hljs-params">nome</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ciao &apos;</span> + nome + <span class="hljs-string">&apos;!&apos;</span>)
+
+girls = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;Tu&apos;</span>]
+<span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+    ciao(name)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Prossima ragazza&apos;</span>)
+</code></pre>
+<p>E quando lo eseguiamo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ciao Rachel!
+Prossima ragazza
+Ciao Monica!
+Prossima ragazza
+Ciao Phoebe!
+Prossima ragazza
+Ciao Ola!
+Prossima ragazza
+Ciao You!
+Prossima ragazza
+</code></pre><p>Come puoi vedere, tutto quello che metti all&apos;interno di un <code>for</code> statement con una spaziatura si ripeterà per ogni elemento della lista <code>girls</code>.</p>
+<p>Puoi anche utilizzare <code>for</code> su numeri usando la funzione <code>range</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
+    <span class="hljs-built_in">print</span>(i)
+</code></pre>
+<p>Che stamperà:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>1
+2
+3
+4
+5
+</code></pre><p><code>range</code> è una funzione che crea una lista di numeri che si seguono uno dopo l&apos;altro (questi numeri vengono forniti da te come parametri).</p>
+<p>Nota che il secondo di questi due numeri non è incluso nella lista prodotta da Python ( ciò significa che <code>range(1, 6)</code> conta da 1 a 5, ma non include il numero 6). Questo perché &quot;range&quot; è mezzo-aperto e con ciò intendiamo che include il primo valore, man non l&apos;ultimo.</p>
+<h2 id="indice">Indice</h2>
+<p>È tutto. <strong>Sei grande!</strong> Questo capitolo non era affatto facile, puoi essere orgogliosa di te stessa. Noi siamo fierissimi di te per avercela fatta fino a qui!</p>
+<p>Per il tutorial ufficiale e completo di python visita <a href="https://docs.python.org/3/tutorial/" target="_blank">https://docs.python.org/3/tutorial/</a>. Questo ti darà uno studio più completo e completo della lingua. Cheers :)</p>
+<p>Potresti desiderare di fare brevemente qualcos&apos;altro - stiracchiati, fai due passi, riposa gli occhi - prima di continuare con il prossimo capitolo. :)</p>
+<p><img src="images/cupcake.png" alt="Cupcake"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../code_editor/" class="navigation navigation-prev " aria-label="Previous page: L'editor di codice">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django/" class="navigation navigation-next " aria-label="Next page: Che cos'è Django?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduzione a Python","level":"1.8","depth":1,"next":{"title":"Che cos'è Django?","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"previous":{"title":"L'editor di codice","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"it","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_introduction/README.md","mtime":"2021-03-25T14:00:00.335Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"it"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

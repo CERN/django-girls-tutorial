@@ -1,0 +1,803 @@
+
+<!DOCTYPE HTML>
+<html lang="el" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Μοντέλα (models) του Django · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_admin/" />
+    
+    
+    <link rel="prev" href="../django_start_project/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Αναζήτηση για ..." />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Εισαγωγή
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Εγκατάσταση
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Εγκατάσταση (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Πως λειτουργεί το διαδίκτυο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Εισαγωγή στην γραμμή εντολών
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Εγκατάσταση Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Επεξεργαστής Κώδικα
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Εισαγωγή στην Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Τι είναι το Django;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Εγκατάσταση του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Το πρώτο σου Django project!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.12" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Μοντέλα (models) του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Διαχείριση μέσω Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Ανεβάστε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - ώρα να δημιουργήσετε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Εισαγωγή στην HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Δυναμικά δεδομένα στα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - κάντε το όμορφο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Επεκτείνοντας τα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Επεκτείνοντας την εφαρμογή σας
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Φόρμες Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Τι υπάρχει μετά;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Δημοσιεύτηκε με το HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Μοντέλα (models) του Django</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-μοντέλα-models">Django μοντέλα (models)</h1>
+<p>Αυτό που θέλουμε να δημιουργήσουμε τώρα είναι κάτι που θα αποθηκεύει όλες τις αναρτήσεις του blog μας. Αλλά για να είμαστε σε θέση να το κάνουμε, πρέπει να μιλήσουμε λίγο για το τι ονομάζουμε <code>&quot;αντικείμενα&quot; (objects)</code>.</p>
+<h2 id="objects">Objects</h2>
+<p>Υπάρχει μια έννοια στον προγραμματισμό που ονομάζεται <code>&quot;Αντικειμενοστραφής προγραμματισμός</code>. Η ιδέα είναι ότι αντί να γράφετε τα πάντα ως μια βαρετή ακολουθία από προγραμματιστικές εντολές, μπορούμε να μοντελοποιήσουμε τα πράγματα και να καθορίσουμε πως αλληλεπιδρούν μεταξύ τους.</p>
+<p>Άρα, τι είναι ένα αντικείμενο; Είναι μια συλλογή από ιδιότητες και συμπεριφορές. Ακούγεται παράξενο, αλλά θα σας δώσουμε ένα παράδειγμα.</p>
+<p>Εάν θέλουμε να μοντελοποιήσουμε μια γάτα, θα δημιουργήσουμε ένα αντικείμενο <code>Γάτα</code> το οποίο έχει κάποιες ιδιότητες όπως <code>χρώμα</code>, <code>ηλικία</code>, <code>διάθεση</code> (όπως καλή, κακή, νυσταγμένη :)), και <code>ιδιοκτήτης</code>(που θα μπορεί να ανατεθεί σε ένα αντικείμενο <code>άτομο</code> ή ίσως, στην περίπτωση μιας αδέσποτης γάτας, αυτή η ιδιότητα θα μπορούσε να είναι άδεια).</p>
+<p>Έπειτα η <code>γάτα</code> έχει κάποιες δράσεις <code>γουργούρισμα</code>, <code>ξύσιμο</code> ή <code>τάισμα</code>( σε αυτή την περίπτωση, θα δώσουμε στην γάτα λίγη <code>γατοτροφή</code>, που θα μπορούσε να είναι ένα ξεχωριστό αντικείμενο με ιδιότητες, όπως <code>γεύση</code>).</p>
+<pre><code>Cat
+--------
+color
+age
+mood
+owner
+purr()
+scratch()
+feed(cat_food)
+
+
+CatFood
+--------
+taste
+</code></pre><p>Βασικά η ιδέα είναι να περιγράψουμε τα αληθινά πράγματα στον κώδικα με ιδιότητες (που ονομάζονται <code>object properties</code>) και συμπεριφορές (που ονομάζονται <code>methods</code>).</p>
+<p>Πώς θα μοντελοποιήσουμε τότε τις αναρτήσεις του blog; Θέλουμε να κατασκευάσουμε ένα blog, σωστά;</p>
+<p>Πρέπει να δώσουμε απάντηση στο ερώτημα: τι είναι μία ανάρτηση στο blog; Τι ιδιότητες πρέπει να έχει;</p>
+<p>Λοιπόν, σίγουρα μία ανάρτηση στο blog μας χρειάζεται κάποιο κείμενο με το περιεχόμενό του και έναν τίτλο, σωστά; Θα ήταν επίσης ωραίο να ξέρουμε ποιος το έγραψε αυτό. Έτσι χρειαζόμαστε έναν συγγραφέα. Τέλος, θέλουμε να γνωρίζουμε πότε δημιουργήθηκε και δημοσιεύτηκε η συγκεκριμένη ανάρτηση.</p>
+<pre><code>Post
+--------
+title
+text
+author
+created_date
+published_date
+</code></pre><p>Τι είδους πράγματα θα μπορούσαν να γίνουν με μια ανάρτηση στο blog; Θα ήταν ωραίο να έχουμε κάποια <code>method</code> που δημοσιεύει την ανάρτηση, σωστά;</p>
+<p>Έτσι, θα χρειαστούμε μια μέθοδο <code>publish</code>.</p>
+<p>Δεδομένου ότι γνωρίζουμε ήδη τι θέλουμε να επιτύχουμε, ας ξεκινήσουμε τη μοντελοποίηση στο Django!</p>
+<h2 id="django-model">Django model</h2>
+<p>Γνωρίζοντας τι είναι ένα αντικείμενο, μπορούμε να δημιουργήσουμε ένα μοντέλο Django για την ανάρτηση στο blog μας.</p>
+<p>Ένα μοντέλο στο Django είναι ένα ιδιαίτερο είδος αντικειμένου το οποίο αποθηκεύεται στη βάση δεδομένων <code>database</code>. Η βάση δεδομένων είναι μια συλλογή δεδομένων. Είναι εκεί όπου θα αποθηκευτούν όλες οι πληροφορίες για τους χρήστες, τις αναρτήσεις στο blog, κλπ. Θα χρησιμοποιήσουμε την βάση δεδομένων SQLite για την αποθήκευση των δεδομένων μας. Αυτός είναι η προεπιλεγμένη βάση δεδομένων του Django. Είναι αρκετό για εμάς για την ώρα.</p>
+<p>Μπορείτε να σκεφτείτε ένα μοντέλο της βάσης δεδομένων ως ένα υπολογιστικό φύλλο με στήλες (πεδία) και γραμμές (δεδομένα).</p>
+<h3 id="δημιουργία-μιας-εφαρμογής">Δημιουργία μιας εφαρμογής</h3>
+<p>Για να κρατήσουμε τα πάντα τακτοποιημένα, θα δημιουργήσουμε μια ξεχωριστή εφαρμογή μέσα στο project μας. Είναι πολύ ωραίο να έχουμε τα πάντα οργανωμένα από την αρχή. Για την δημιουργία μιας εφαρμογής θα χρειαστεί να τρέξουμε την ακόλουθη εντολή στην κονσόλα (από τον φάκελο <code>djangogirls</code> όπου βρίσκεται το αρχείο <code>manage.py</code>):</p>
+<p></p><p class="code-label">Mac OS X and Linux:</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py startapp blog
+</code></pre><p></p><p class="code-label">Windows:</p><p></p>
+<pre><code>(myvenv) C:\Users\Name\djangogirls&gt; python manage.py startapp blog
+</code></pre><p>Θα παρατηρήσετε ότι ένας νέος φάκελος με το όνομα <code>blog</code> δημιουργήθηκε και περιέχει έναν αριθμό αρχείων. Οι φάκελοι και τα αρχεία στο project μας πρέπει να μοιάζουν κάπως έτσι:</p>
+<pre><code>djangogirls
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── db.sqlite3
+├── manage.py
+├── mysite
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── requirements.txt
+</code></pre><p>Μετά την δημιουργία μίας εφαρμογής, πρέπει επίσης να πούμε στο Django ότι πρέπει να τη χρησιμοποιήσει. Το κάνουμε αυτό μέσα στο αρχείο <code>mysite/settings.py</code>. Ανοίξτε το. Πρέπει να βρούμε την λίστα <code>INSTALLED_APPS</code> και να προσθέσουμε εκεί το εξής: <code>&apos;blog&apos;,</code> πάνω από το <code>]</code>. Έτσι το τελικό προϊόν πρέπει να μοιάζει κάπως έτσι:</p>
+<p></p><p class="code-label">mysite/settings.py</p><p></p>
+<pre><code class="lang-python">INSTALLED_APPS = [
+    <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
+    <span class="hljs-string">&apos;blog&apos;</span>,
+]
+</code></pre>
+<h3 id="δημιουργία-ενός-post-model">Δημιουργία ενός post model</h3>
+<p>Μέσα στο αρχείο <code>blog/models.py</code> ορίζουμε όλα τα objects με το όνομα <code>Models</code>. Αυτό είναι ένα μέρος όπου θα ορίσουμε το post μοντέλο μας.</p>
+<p>Ας ανοίξουμε το αρχείο <code>blog/models.py</code>, διαγράψτε τα περιεχόμενα του και γράψτε τα εξής:</p>
+<p></p><p class="code-label">blog/models.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf <span class="hljs-keyword">import</span> settings
+<span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+<span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Post</span>(<span class="hljs-params">models.Model</span>):</span>
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    title = models.CharField(max_length=<span class="hljs-number">200</span>)
+    text = models.TextField()
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=<span class="hljs-literal">True</span>, null=<span class="hljs-literal">True</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">publish</span>(<span class="hljs-params">self</span>):</span>
+        self.published_date = timezone.now()
+        self.save()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-keyword">return</span> self.title
+</code></pre>
+<blockquote>
+<p>Σιγουρευτείτε ότι χρησιμοποιείτε δύο φορές την κάτω παύλα (<code>_</code>) σε κάθε πλευρά του <code>str</code>. Αυτό είναι απαραίτητο και συχνά θα το συναντάτε στην Python. Συνηθίζεται να ονομάζεται &quot;dunder&quot; (σύντμηση για &quot;double-underscore&quot;).</p>
+</blockquote>
+<p>Μη φοβάστε. Θα εξηγήσουμε τι συμβαίνει!</p>
+<p>Όλες οι γραμμές που ξεκινούν με τις λέξεις <code>from</code> ή <code>import</code> είναι γραμμές που εισάγουν λειτουργίες από άλλα Python αρχεία (αυτά με την κατάληξη .py). Έτσι αντί να κάνουμε αντιγραφή-επικόλληση κώδικα, πολύ απλά συμπεριλαμβάνουμε κώδικα από άλλα αρχεία με τη χρήση του <code>from ... import ...</code>.</p>
+<p><code>class Post(models.Model):</code> – αυτή η γραμμή ορίζει το μοντέλο μας (είναι μια κλάση που με τη σειρά της είναι και αυτή ένα <code>object</code>).</p>
+<ul>
+<li>Η λέξη <code>class</code> είναι μια ιδιαίτερη λέξη-κλειδί που καθορίζει τον ορισμό μιας κλάσης.</li>
+<li>Η λέξη <code>Post</code> είναι το όνομα του μοντέλου μας. Μπορούμε να του δώσουμε όποιο όνομα θέλουμε (αλλά πρέπει να αποφεύγουμε ιδιαίτερους χαρακτήρες και κενά). Πάντα το όνομα μιας κλάσης να ξεκινάει με ένα κεφαλαίο γράμμα.</li>
+<li>Η γραμμή <code>models.Model</code> σημαίνει ότι το Post είναι ένα Django Model. Με αυτό τον τρόπο το Django θα ξέρει ότι θα πρέπει να αποθηκεύεται σε μια βάση δεδομένων.</li>
+</ul>
+<p>Τώρα ορίζουμε τα properties που λέγαμε: <code>title</code>, <code>text</code>, <code>created_date</code>, <code>published_date</code> και <code>author</code>. Για να το κάνουμε αυτό θα πρέπει να ορίσουμε τον τύπο τιμών που θα δέχεται το κάθε πεδίο (είναι κείμενο; αριθμός; ημερομηνία; κάποια συσχέτιση με ένα άλλο object, όπως ένας χρήστης;)</p>
+<ul>
+<li><code>models.CharField</code> – έτσι δηλώνετε ότι θέλετε να ορίσετε ένα κείμενο με συγκεκριμένο αριθμό χαρακτήρων.</li>
+<li><code>models.TextField</code>- αυτό είναι για μεγάλα κείμενα χωρίς όριο. Ακούγεται ιδανικό για περιεχόμενο δημοσιεύσεων blog, έτσι δεν είναι;</li>
+<li><code>models.DateTimeField</code>- αυτό είναι για ημερομηνία και ώρα.</li>
+<li><code>models.ForeignKey</code>- αυτό είναι ένας σύνδεσμος για ένα άλλο μοντέλο.</li>
+</ul>
+<p>Δεν θα εξηγήσουμε κάθε κομμάτι του κώδικα διότι θα πάρει αρκετό χρόνο. Θα πρέπει να ρίξετε μια ματιά στo documentation του Django αν θέλετε να μάθετε περισσότερα σχετικά με τα πεδία των μοντέλων και πως να ορίζετε πράγματα εκτός από αυτά που αναφέρθηκαν παραπάνω (<a href="https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types" target="_blank">https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types</a>).</p>
+<p>Τι γίνεται με την μέθοδο <code>def publish(self):</code>; Αυτή είναι ακριβώς η μέθοδος <code>publish</code> για την οποία μιλούσαμε πριν. <code>def</code> σημαίνει ορίζουμε μια συνάρτηση/μέθοδο (ανάλογα αν είναι μέρος τηε κλάσης ή όχι) και <code>publish</code> είναι το όνομα της. Μπορείτε να αλλάξετε το όνομα της μεθόδου αν θέλετε. Ο κανόνας ονομασίας είναι ότι χρησιμοποιούμε πεζά γράμματα και κάτω παύλες αντί για κενά. Αν χρησιμοποιήσετε κενά τότε λάβετε σφάλμα. Για παράδειγμα, μια μέθοδος που υπολογίζει την μέση τιμή θα λεγόταν <code>calculate_average_price</code>.</p>
+<p>Οι μέθοδοι συχνά κάνουν <code>return</code> κάτι, δηλαδή επιστρέφουν μια τιμή ή οτιδήποτε άλλο. Μπορεί όμως και όχι. Υπάρχει ένα παράδειγμα αυτού στη μέθοδο <code>__str__</code>. Σε αυτό το σενάριο, όταν καλούμε την <code>__str__()</code> θα λάβουμε ένα κείμενο (<strong>string</strong>) με τον τίτλο του post.</p>
+<p>Επίσης προσέξτε ότι και το <code>def publish(self):</code> και το <code>def __str__(self):</code> είναι δηλωμένα μέσα στην κλάση μας (με κενά ή με tab). Επειδή η Python είναι ευαίσθητη στα κενά (στους κενούς χαρακτήρες), θα πρέπει να &quot;βάλουμε&quot; τις μεθόδους μας μέσα στην κλάση. Αλλιώς, οι μέθοδοι δεν θα ανήκουν στην κλάση και μπορεί να συναντήσετε απρόοπτη συμπεριφορά.</p>
+<p>Εάν κάτι ακόμα δεν είναι ξεκάθαρο σχετικά με τα μοντέλα, μη διστάσετε να ρωτήσετε τον επιτηρητή σας! Ξέρουμε ότι είναι περίπλοκο, ειδικά όταν μαθαίνετε τι είναι τα αντικείμενα και συναρτήσεις ταυτόχρονα. Αλλά ελπίζουμε να μοιάζει λιγότερο μαγικό για εσάς τώρα!</p>
+<h3 id="δημιουργία-πινάκων-για-μοντέλα-στην-βάση-δεδομένων-σας">Δημιουργία πινάκων για μοντέλα στην βάση δεδομένων σας</h3>
+<p>Το τελευταίο βήμα εδώ είναι να προσθέσουμε το νέο μοντέλο μας στην βάση δεδομένων μας. Πρώτα πρέπει να ενημερώσουμε το Django ότι έχουμε κάποιες αλλαγές στο μοντέλο μας. (Μόλις το δημιουργήσαμε!) Πηγαίνετε στο παράθυρο της κονσόλας σας και πληκτρολογήστε <code>python manage.py makemigrations blog</code>. Θα μοιάζει κάπως έτσι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py makemigrations blog
+Migrations for &apos;blog&apos;:
+  blog/migrations/0001_initial.py:
+
+  - Create model Post
+</code></pre><p><strong>Σημείωση:</strong> Θυμηθείτε να αποθηκεύετε τα αρχεία που επεξεργάζεστε. Αλλιώς, ο υπολογιστής σας θα εκτελέσει τις προηγούμενες εκδόσεις που μπορεί να σας δώσει μηνύματα απρόοπτων σφαλμάτων.</p>
+<p>Το Django προετοίμασε ένα αρχείο migration για εμάς που πρέπει τώρα να εφαρμόσουμε στην βάση δεδομένων μας. Πληκτρολογήστε <code>python manage.py migrate blog</code> και τo αποτελέσματα πρέπει να είναι όπως παρακάτω:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py migrate blog
+Operations to perform:
+  Apply all migrations: blog
+Running migrations:
+  Applying blog.0001_initial... OK
+</code></pre><p>Ζήτω! Το Post μοντέλο μας είναι στην βάση δεδομένων! Θα ήταν ωραίο να το δούμε, σωστά; Πηγαίνετε στο επόμενο κεφάλαιο για να δείτε πως μοιάζει η ανάρτηση σας!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_start_project/" class="navigation navigation-prev " aria-label="Previous page: Το πρώτο σου Django project!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_admin/" class="navigation navigation-next " aria-label="Next page: Διαχείριση μέσω Django admin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Μοντέλα (models) του Django","level":"1.12","depth":1,"next":{"title":"Διαχείριση μέσω Django admin","level":"1.13","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"previous":{"title":"Το πρώτο σου Django project!","level":"1.11","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"el","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_models/README.md","mtime":"2021-03-25T14:00:00.143Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"el"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,880 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Command Line 시작하기 · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python_installation/" />
+    
+    
+    <link rel="prev" href="../how_the_internet_works/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Command Line 시작하기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="커맨드-라인-시작하기">커맨드 라인 시작하기</h1>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
+<p> 집에서 학습하시는 분들은 <a href="https://www.youtube.com/watch?v=jvZLWhkzX-8" target="_blank">&apos;내 친구 커맨드 라인를 소개합니다&apos;</a> 영상을 보세요.</p>
+</blockquote>
+<p>벌써부터 기대되지 않나요? 바로 일 분안에 여러분도 코딩 할 수 있어요!</p>
+<p><strong>여러분에게 첫 번째 친구를 소개합니다. 바로, 커맨드 라인(command line) 입니다!</strong></p>
+<p>해커들이 사용하는 까만 윈도우 창을 어떻게 사용하는지 보여드릴 거에요. 처음에는 이 검은색 창이 무서워 보일 수도 있지만, 명령어를 기다리는 아이일 뿐이에요.</p>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
+<p> 이 설명서에서 &apos;디렉토리(directory)&apos;와 &apos;폴더(folder)&apos; 모두 같은 뜻입니다.</p>
+</blockquote>
+<h2 id="커맨드-라인은-무엇일까요">커맨드 라인은 무엇일까요?</h2>
+<p><strong>커맨드 라인(command line)</strong>은 <strong>커맨드-라인 인터페이스(command-line interface)</strong>,  <em>cmd</em>, <em>CLI</em>, <em>프롬프트(prompt)</em>, <em>콘솔(console)</em>, <em>터미널(terminal)</em> 라고도 불리는 텍스트 기반 응용 프로그램으로 파일 보기, 처리, 조작이 가능합니다. 윈도우 익스플로러나 맥OS의 파인더와 비슷합니다. 하지만 그래픽 인터페이스는 없어요.</p>
+<h2 id="커맨드-라인-열기">커맨드 라인 열기</h2>
+<p>커맨드 라인을 열어 몇 가지 실습해봅시다.</p>
+<h3 id="윈도우">윈도우</h3>
+<p>시작메뉴로 가서 → 모든 프로그램 → 보조프로그램 → 명령 프롬프트.</p>
+<h3 id="mac-os-x">Mac OS X</h3>
+<p>응용 프로그램 → 유틸리티 → 터미널.</p>
+<h3 id="리눅스">리눅스</h3>
+<p>프로그램 → 보조 프로그램 → 터미널을 실행하면 될 거에요. 하지만 시스템에 따라 다를 수도 있으니 구글에서 찾아보세요.</p>
+<h2 id="프롬프트prompt">프롬프트(prompt)</h2>
+<p>이제 까만 배경이나 하얀 배경의 윈도우가 뭔가를 지시해주길 기다리고 있을 거에요.</p>
+<p>맥이나 리눅스의 경우, 이런 <code>$</code> 기호가 보일 거예요 :</p>
+<pre><code>$
+</code></pre><p>윈도우의 경우, 이런 <code>&gt;</code> 기호가 보일 거에요 :</p>
+<pre><code>&gt;
+</code></pre><p>각 명령어는 접두어로 위와 같은 기호와 공백 한 칸이 붙습니다. 하지만 여러분이 입력할 필요는 없어요. 컴퓨터가 대신 해줄 거예요 :)</p>
+<blockquote>
+<p>잠깐만요 : 상황에 따라 프롬트 기호 앞에 <code>C:\Users\ola&gt;</code> 혹은 <code>Olas-MacBook-Air:~ ola$</code> 같은 것이 보일 수 있는데, 문제가 있는 것이 아니라 아주 잘 동작하는 거랍니다. 이 튜토리얼에서는 간략히 작성한 거에요.</p>
+</blockquote>
+<h2 id="나의-첫-번째-명령-야호">나의 첫 번째 명령 (야호!)</h2>
+<p>쉬운 것 부터 시작할게요. 아래 명령어를 입력해 보세요 :</p>
+<pre><code>$ whoami
+</code></pre><p>또는</p>
+<pre><code>&gt; whoami
+</code></pre><p>그리고 <code>enter</code>를 누르세요. 다음과 같이 보일 거에요 :</p>
+<pre><code>$ whoami
+olasitarska
+</code></pre><p>컴퓨터는 사용자 이름을 스크린에 보여줍니다. 이거 좀 괜찮죠? :)</p>
+<blockquote>
+<p>복사 붙여넣기 하지 말고, 직접 입력해 보세요. 더 잘 외워질 거예요!</p>
+</blockquote>
+<h2 id="기본-명령어">기본 명령어</h2>
+<p>각각의 운영체제에 따라, 명령어들이 조금씩 다를 수도 있으니까, 여러분의 운영체제에 해당하는 설명을 따라주세요. 그럼 같이 해볼까요?</p>
+<h3 id="현재-디렉터리">현재 디렉터리</h3>
+<p>현재 어느 디렉터리에 있는지 확인하려면 아래 명령어를 입력하고 <code>enter</code>를 눌러보세요.</p>
+<p>맥 :</p>
+<pre><code>$ pwd
+/Users/olasitarska
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; cd
+C:\Users\olasitarska
+</code></pre><p>위와 비슷한 결과가 출력되었을 거예요. 커맨드라인을 열면, 항상 <code>Home</code> 디렉터리에서 시작합니다.</p>
+<blockquote>
+<p>Note: &apos;pwd&apos; 는 &apos;print working directory&apos;의 줄임말이에요.</p>
+</blockquote>
+<hr>
+<h3 id="파일과-디렉터리-목록-보기">파일과 디렉터리 목록 보기</h3>
+<p>디렉토리에 어떤 것이 있는지 확인하려면 이렇게 입력하세요.</p>
+<p>맥 :</p>
+<pre><code>$ ls
+Applications
+Desktop
+Downloads
+Music
+...
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; dir  
+Directory of C:\Users\olasitarska
+05/08/2014 07:28 PM &lt;DIR&gt; Applications
+05/08/2014 07:28 PM &lt;DIR&gt; Desktop
+05/08/2014 07:28 PM &lt;DIR&gt; Downloads
+05/08/2014 07:28 PM &lt;DIR&gt; Music
+...
+</code></pre><hr>
+<h3 id="현재-디렉터리-변경">현재 디렉터리 변경</h3>
+<p>자, 바탕화면 디렉터리로 가볼까요 :</p>
+<p>맥 :</p>
+<pre><code>$ cd Desktop
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; cd Desktop
+</code></pre><p>변경되었는지 확인합시다.</p>
+<p>맥 :</p>
+<pre><code>$ pwd
+/Users/olasitarska/Desktop
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; cd
+C:\Users\olasitarska\Desktop
+</code></pre><p>맞군요!</p>
+<blockquote>
+<p>전문가 팁 : <code>cd D</code>까지 입력하고 <code>tab</code>(탭) 키를 누르면, 커맨드 라인이 자동으로 나머지 부분을 완성해주어, 입력하는 시간을 절약할 수 있어요. &quot;D&quot;로 시작하는 폴더가 2개 이상일 경우, <code>tab</code>(탭) 키를 두 번 누르면, 해당하는 폴더들을 모두 보여줍니다.</p>
+</blockquote>
+<hr>
+<h3 id="새-디렉터리-생성하기">새 디렉터리 생성하기</h3>
+<p>바탕 화면에 <code>practice</code> 디렉터리를 만들어 볼까요? 이렇게 하면 됩니다.
+(되도록 폴더명은 한국어 대신 영어로 작성하는 것이 좋아요 - 장고걸스서울)</p>
+<p>맥 :</p>
+<pre><code>$ mkdir practice
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; mkdir practice
+</code></pre><p>이 간단한 명령어로, 바탕화면에 <code>practice</code>폴더를 만듭니다. 바탕화면에서 직접 보거나, 명령어 <code>ls</code> 혹은 <code>dir</code>을 실행해서 확인할 수 있어요! 한 번 해보세요.</p>
+<blockquote>
+<p>전문가 팁 : 같은 명령어를 여러 번 반복해 입력하고 싶지 않다면, 키보드 <code>위 화살표</code>와 <code>아래 화살표</code>를 누르세요. 최근 사용한 명령어들을 볼 수 있어요.</p>
+</blockquote>
+<hr>
+<h3 id="연습문제">연습문제!</h3>
+<p>연습 과제를 드릴게요. 새로 만든 <code>practice</code>디렉터리 안에 <code>test</code> 라는 이름의 디렉터리를 만들어 보세요. 명령어 <code>cd</code>와 <code>mkdir</code>을 사용하세요.</p>
+<h4 id="답-">답 :</h4>
+<p>맥 :</p>
+<pre><code>$ cd practice
+$ mkdir test
+$ ls
+test
+</code></pre><p>윈도우:</p>
+<pre><code>&gt; cd practice
+&gt; mkdir test
+&gt; dir
+05/08/2014 07:28 PM &lt;DIR&gt;      test
+</code></pre><p>축하합니다 :)</p>
+<hr>
+<h3 id="정리">정리</h3>
+<p>지금까지 연습한 내용을 모두 지워봅시다!</p>
+<p>우선, 바탕화면으로 돌아가야해요.</p>
+<p>맥 :</p>
+<pre><code>$ cd ..
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; cd ..
+</code></pre><p><code>..</code>과 <code>cd</code> 명령은 현재 디렉터리에서 부모 디렉터리(현재 디렉터리 레벨보다 상위인)로 보내줄겁니다.</p>
+<p>현재 위치를 확인해 보세요.</p>
+<p>맥 :</p>
+<pre><code>$ pwd
+/Users/olasitarska/Desktop
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; cd
+C:\Users\olasitarska\Desktop
+</code></pre><p>이제 <code>practice</code> 디렉터리를 삭제해봐요.</p>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
+<p>: <code>del</code>, <code>rmdir</code>, <code>rm</code>을 사용하여 파일을 지우면, 재복구가 불가능합니다. <em>지워진 파일들을 영원히 사라지게 됩니다!</em> 그러니, 이 명령어들은 꼭 주의해서 사용하세요.</p>
+</blockquote>
+<p>맥 :</p>
+<pre><code>$ rm -r practice
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; rmdir /S practice
+practice, Are you sure &lt;Y/N&gt;? Y
+</code></pre><p>완료되었습니다! 완전히 삭제되었는지 확인해 보세요.</p>
+<p>맥 :</p>
+<pre><code>$ ls
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; dir
+</code></pre><h3 id="종료">종료</h3>
+<p>여기까지 입니다! 이제 커맨드 라인을 닫으세요. 해커 스타일로 해볼까요, 괜찮죠?:)</p>
+<p>맥 :</p>
+<pre><code>$ exit
+</code></pre><p>윈도우 :</p>
+<pre><code>&gt; exit
+</code></pre><p>멋지지 않나요? :)</p>
+<h2 id="요약">요약</h2>
+<p>아래 유용한 명령어를 모았습니다.</p>
+<table>
+<thead>
+<tr>
+<th>명령어(윈도우)</th>
+<th>명령어(맥 OS/리눅스)</th>
+<th>설명</th>
+<th>예시</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exit</td>
+<td>exit</td>
+<td>창을 닫는다</td>
+<td><strong>exit</strong></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>cd</td>
+<td>디렉터리를 변경한다</td>
+<td><strong>cd test</strong></td>
+</tr>
+<tr>
+<td>dir</td>
+<td>ls</td>
+<td>디렉터리 혹은 파일 목록을 보여준다</td>
+<td><strong>dir</strong></td>
+</tr>
+<tr>
+<td>copy</td>
+<td>cp</td>
+<td>파일을 복사한다</td>
+<td><strong>copy c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>move</td>
+<td>mv</td>
+<td>파일을 이동한다</td>
+<td><strong>move c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>mkdir</td>
+<td>새 디렉터리를 만든다</td>
+<td><strong>mkdir testdirectory</strong></td>
+</tr>
+<tr>
+<td>del</td>
+<td>rm</td>
+<td>디렉터리 혹은 파일을 지운다</td>
+<td><strong>del c:\test\test.txt</strong></td>
+</tr>
+</tbody>
+</table>
+<p>지금까지 커맨드 라인 명령어 일부를 알아보았어요. 이 정도만 알고 있어도 코딩하는데 문제가 없습니다.</p>
+<p>더 알고 싶다면, <a href="http://ss64.com" target="_blank">ss64.com</a>에서 각 운영체제별로 정리된 명령어 모음을 볼 수 있어요.</p>
+<h2 id="준비되셨나요">준비되셨나요?</h2>
+<p>이제 파이썬의 세계로 빠져봅시다!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: 인터넷은 어떻게 작동할까요">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python_installation/" class="navigation navigation-next " aria-label="Next page: Python 설치하기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Command Line 시작하기","level":"1.5","depth":1,"next":{"title":"Python 설치하기","level":"1.6","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"인터넷은 어떻게 작동할까요","level":"1.4","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"intro_to_command_line/README.md","mtime":"2021-03-25T14:00:00.399Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

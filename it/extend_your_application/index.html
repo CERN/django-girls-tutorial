@@ -1,0 +1,902 @@
+
+<!DOCTYPE HTML>
+<html lang="it" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Estendi la tua applicazione · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_forms/" />
+    
+    
+    <link rel="prev" href="../template_extending/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Scrivi per cercare" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduzione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installazione
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Riga di Comando
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    L'editor di codice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Ambiente virtuale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Installazione (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Come funziona Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introduzione alla command line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Installazione di Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    L'editor di codice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introduzione a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Che cos'è Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Installazione di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Il tuo primo progetto Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    I modelli di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    L'admin di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Le views di Django – è l'ora di creare!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introduzione all'HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    ORM di Django (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    I dati dinamici nei template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    I template di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - rendilo più carino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Estendere il template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Estendi la tua applicazione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    I Form Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    E dopo?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Pubblicato con HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Estendi la tua applicazione</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="estendi-la-tua-applicazione">Estendi la tua applicazione</h1>
+<p>Abbiamo già completato tutti i passaggi differenti necessari per la creazione del nostro sito web: sappiamo come scrivere un modello, un URL, una vista ed un modello. Sappiamo anche come rendere carino il nostro sito web.</p>
+<p>Ora di far pratica!</p>
+<p>La prima cosa di cui abbiamo bisogno nel nostro blog è, ovviamente, una pagina per rendere visibile un post, vero?</p>
+<p>Abbiamo già un modello dei <code>Post</code>, quindi non abbiamo bisogno di aggiungere niente in <code>models.py</code>.</p>
+<h2 id="creare-un-link-di-template-verso-la-pagina-di-dettaglio-di-un-post">Creare un link di template verso la pagina di dettaglio di un post</h2>
+<p>Cominceremo aggiungendo un link all&apos;interno del file <code>blog/templates/blog/post_list.html</code>. Per ora dovrebbe avere questo aspetto: Aprilo nell&apos;editor di codice, e finora dovrebbe sembrare così: </p><p class="code-label">blog/template/blog/post_list.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+     {% for post in posts %}
+         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                 {{ post.published_date }}
+             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+             <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+     {% endfor %}
+ {% endblock %}
+</code></pre>
+<p>Vogliamo creare un link che dal titolo di un post facente parte dell&apos;elenco di articoli porti alla pagina di dettaglio. Cambiamo <code>&lt;h2&gt;&lt;a href=&quot;&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;</code> così che linki alla pagina di dettaglio del post:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!"></span> blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_detail&apos; pk=post.pk %}&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+<p>È arrivata l&apos;ora di spiegare il misterioso <code>{% url &apos;post_detail&apos; pk=post.pk %}</code>. Come avrai capito, il simbolo <code>{% %}</code> significa che stiamo usando i tag del template di Django. Questa volta ne useremo uno che creerà una URL per noi!</p>
+<p>La parte <code>post_detail</code> significa che Django si aspetta un URL in <code>blog/urls.py</code> con nome=post_detail</p>
+<p>E come si può parlare di <code>pk=post.pk</code>? <code>pk</code> è breve per il tasto principale, che è un identificatore unico per ogni registro in un database. Ogni modello di Django ha un campo che serve come tasto principale, e qualsiasi altro nome ha, è anche referenziabile come &quot;pk&quot;. Poiché non abbiamo specificato un tasto principale nel nostro modello <code>Post</code>, Django ne crea uno per noi (di default, un campo nominato &quot;id&quot; che mantiene un numero che aumenta per ogni registro, es. 1, 2, 3) e lo aggiunge come un campo per ognuno dei nostri post. Accediamo al tasto principale scrivendo <code>post.pk</code>, allo stesso modo in cui accediamo agli altri campi (<code>titolo</code>, <code>autore</code>, etc.) nel nostro oggetto del <code>Post</code>!</p>
+<p>Adesso quando andremo all&apos;indirizzo: <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a> avremo un errore (come sapevamo, dal momento che non abbiamo una URL oppure una <em>view</em> per <code>post_detail</code>). Avrà questo aspetto:</p>
+<p><img src="images/no_reverse_match2.png" alt="Errore: nessuna corrispondenza inversa"></p>
+<h2 id="crea-una-url-per-i-dettagli-di-un-post">Crea una URL per i dettagli di un post</h2>
+<p>Creiamo una URL in <code>urls.py</code> per il nostro <code>post_detail</code> <em>view</em>!</p>
+<p>Vogliamo che il nostro primo post venga visualizzato a questo <strong>URL </strong>: <a href="http://127.0.0.1:8000/post/1/" target="_blank">http://127.0.0.1:8000/post/1/</a></p>
+<p>Facciamo sì che l&apos;URL nel file <code>blog/urls.py</code> punti Django ad una <em>view</em> chiamata <code>post_detail</code>, che mostrerà un intero post. Apri il file <code>blog/urls.py</code> nell&apos;editor del codice e aggiungi la riga <code>path(&apos;post/&lt;int:pk&gt;/&apos;, view.post_detail, name=&apos;post_detail&apos;),</code> così che il file assomiglia a questo:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!"></span> blog/urls.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/&apos;</span>, views.post_detail, name=<span class="hljs-string">&apos;post_detail&apos;</span>),
+]
+</code></pre>
+<p>Questa parte <code>post/&lt;int:pk&gt;/</code> specifica un modello URL – lo spiegheremo per te:</p>
+<ul>
+<li><code>post/</code> significa che l&apos;URL deve iniziare con la parola <strong>post</strong> seguita da <strong>/</strong>. Fin qui tutto bene.</li>
+<li><code>&lt;int:pk&gt;</code> – questa parte è più difficile. Significa che Django si aspetta un valore intero e lo trasferirà in una vista come variabile chiamata <code>pk</code>.</li>
+<li><code>/</code> – abbiamo bisogno di un <strong>/</strong> di nuovo prima di completare l&apos;URL.</li>
+</ul>
+<p>Ciò significa che se digiti <code>http://127.0.0.1:8000/post/5/</code> nel tuo browser, Django capirà che stai cercando una <em>view</em> chiamata <code>post_detail</code> e trasferirà l&apos;informazione che <code>pk</code> è uguale a <code>5</code> a quella <em>view</em>.</p>
+<p>Ok, abbiamo aggiunto un nuovo pattern URL in <code>blog/urls.py</code>! Prova ad aggiornare la pagina: <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a> Boom! Il server ha smesso di funzionare di nuovo. Diamo un occhiata alla console - come previsto, c&apos;è una altro errore!</p>
+<p><img src="images/attribute_error2.png" alt="Errore Attributo"></p>
+<p>Ti ricordi di quale è il prossimo passo? Ma certo: aggiungere una view!</p>
+<h2 id="aggiungi-una-view-del-post">Aggiungi una view del post</h2>
+<p>Questa volta alla nostra <em>view</em> viene data un altro parametro <code>pk</code>. La nostra <em>view</em> deve prenderlo, vero? Quindi definiremo la nostra funzione come <code>def post_detail(request, pk):</code>. Nota che questo parametro deve avere lo stesso esatto nome di quello specificato in <code>urls</code> (<code>pk</code>). Nota anche che omettere questa variabile è scorretto e risulterà in un errore!</p>
+<p>Ora, noi vogliamo ottenere un&apos; unico post. Per farlo possiamo utilizzare le queryset così:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!"></span> blog/views.py</p><p></p>
+<pre><code class="lang-python">Post.objects.get(pk=pk)
+</code></pre>
+<p>Ma questo codice presenta un problema. Se non c&apos;è <code>Post</code> con <code>primary key</code> (<code>pk</code>) otterremo un errore bruttissimo!</p>
+<p><img src="images/does_not_exist2.png" alt="Errore: non esiste"></p>
+<p>Noi non lo vogliamo! Ma, senza dubbio, Django ha qualcosa che si occuperà del problema per noi: <code>get_object_or_404</code>. Nel caso in cui non ci sia <code>Post</code> con la data <code>pk</code> mostrerà una pagina molto più carina (chiamata <code>Page Not Found 404</code>.</p>
+<p><img src="images/404_2.png" alt="Pagina non trovata"></p>
+<p>La buona notizia è che in realtà puoi creare la tua pagina <code>Page not found</code> modificarla come vuoi e darle un bell&apos;aspetto. Ma non è importantissimo in questo momento, quindi salteremo questa parte.</p>
+<p>Ok, è arrivata l&apos;ora di aggiungere una <em>view</em> al nostro file <code>views.py</code>!</p>
+<p>In <code>blog/urls.py</code> abbiamo creato una regola URL chiamata <code>post_detail</code> che si riferisce a una vista chiamata <code>views.post_detail</code>. Ciò significa che Django si aspetta una funzione di visualizzazione chiamata <code>post_detail</code> all&apos;interno di <code>blog/views.py</code>.</p>
+<p>Apri il file <code>blog/views.py</code> e aggiungi quanto segue con il resto delle importazioni <code>from</code>:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render, get_object_or_404
+</code></pre>
+<p>E alla fine del file aggiungeremo la nostra <em>vista</em>:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_detail</span>(<span class="hljs-params">request, pk</span>):</span>
+    post = get_object_or_404(Post, pk=pk)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_detail.html&apos;</span>, {<span class="hljs-string">&apos;post&apos;</span>: post})
+</code></pre>
+<p>Sì. È ora di aggiornare la pagina: <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a></p>
+<p><img src="images/post_list2.png" alt="Visualizzazione elenco post"></p>
+<p>Ha funzionato! Ma cosa succede se clicchi su un link nel titolo del post?</p>
+<p><img src="images/template_does_not_exist2.png" alt="Errore: il template non esiste"></p>
+<p>Oh no! Un altro errore! Ma sappiamo già come occuparcene, giusto? Dobbiamo aggiungere un template!</p>
+<h2 id="crea-un-template-per-il-post-detail">Crea un template per il post detail</h2>
+<p>Creeremo un file in <code>blog/templates/blog</code> chiamato <code>post_detail.html</code>.</p>
+<p>Inserisci il codice seguente:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        {% if post.published_date %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {% endif %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p>Stiamo estendendo ancora una volta il template di base. <code>base.html</code>. Nel blocco <code>content</code> vogliamo mostrare una published_date del post (se esiste), un titolo ed il testo. Ma dovremmo discutere di alcune cose importanti, vero?</p>
+<p><code>{% if ... %}... {% endif %}</code> è un tag di template che possiamo utilizzare quando vogliamo controllare qualcosa (ricordi if. (Ricorda <code>se... altro ...</code> da <strong>Introduzione al capitolo Python</strong> ?) In questo scenario vogliamo controllare se il post <code>published_date</code> non è vuoto.</p>
+<p>Ok, possiamo aggiornare la nostra pagina e vedere se <code>TemplateDoesNotExist</code> non c&apos;è più.</p>
+<p><img src="images/post_detail2.png" alt="Pagina di dettaglio del post"></p>
+<p>Si! Ha funzionato!</p>
+<h1 id="tempo-di-deploy">Tempo di Deploy!</h1>
+<p>Sarebbe bello vedere se il tuo sito web funziona ancora su PythonAnywhere, giusto? Proviamo a fare nuovamente il deploy.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+$ git add --all .
+$ git status
+$ git commit -m &quot;Added view and template for detailed blog post as well as CSS for the site.&quot;
+$ git push
+</code></pre><p>Poi, in una <a href="https://www.pythonanywhere.com/consoles/" target="_blank">console PythonAnywhere Bash</a>:</p>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>$ cd ~/&lt;your-pythonanywhere-domain&gt;.pythonanywhere.com
+$ git pull
+[...]
+</code></pre><p>(Ricordati di sostituire <code>&lt;your-pythonanywhere-domain&gt;</code> con il sottodominio di PythonAnywhere, senza le parentesi angolo.)</p>
+<h2 id="aggiornamento-file-statici-sul-server">Aggiornamento file statici sul server</h2>
+<p>Server come PythonAnywhere amano trattare &quot;file statici&quot; (come file CSS) in modo diverso dai file Python, perché possono ottimizzare per essere caricati più velocemente. Di conseguenza, ogni volta che modifichiamo i nostri file CSS, dobbiamo eseguire un comando extra sul server per dirlo per aggiornarli. Il comando è chiamato <code>colleziona</code>.</p>
+<p>Inizia attivando il tuo virtualenv se non è ancora attivo da prima (PythonAnywhere utilizza un comando chiamato <code>workon</code> per farlo, è proprio come il comando <code>sorgente myenv/bin/activate</code> che usi sul tuo computer):</p>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>$ workon &lt;your-pythonanywhere-domain&gt;.pythonanywhere.com
+(ola.pythonanywhere.com)$ python manage.py collectstatic
+[...]
+</code></pre><p>Il comando <code>manage.py collectstatic</code> è un po&apos; come <code>manage.py migrate</code>. Facciamo alcune modifiche al nostro codice, e poi diciamo a Django a <em>applica</em> queste modifiche, sia alla collezione di file statici del server, sia al database.</p>
+<p>In ogni caso, siamo pronti a salire sulla pagina <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank"> &quot;Web&quot;</a> (dal pulsante menu in alto a destra della console) e colpire <strong>Ricarica</strong>, e poi guarda la pagina <a href="https://subdomain.pythonanywhere.com" target="_blank">https://subdomain.pythonanywhere.com</a> per vedere il risultato.</p>
+<p>Fatto! Congratulazioni :)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../template_extending/" class="navigation navigation-prev " aria-label="Previous page: Estendere il template">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_forms/" class="navigation navigation-next " aria-label="Next page: I Form Django">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Estendi la tua applicazione","level":"1.23","depth":1,"next":{"title":"I Form Django","level":"1.24","depth":1,"path":"django_forms/README.md","ref":"django_forms/README.md","articles":[]},"previous":{"title":"Estendere il template","level":"1.22","depth":1,"path":"template_extending/README.md","ref":"template_extending/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"it","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"extend_your_application/README.md","mtime":"2021-03-25T14:00:00.315Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"it"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

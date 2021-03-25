@@ -1,0 +1,951 @@
+
+<!DOCTYPE HTML>
+<html lang="tr" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django Formları · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../whats_next/" />
+    
+    
+    <link rel="prev" href="../extend_your_application/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Aramak istediğiniz" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Kurulum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Kurulum (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    İnternet nasıl çalışır
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Komut satırına giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kod editörü
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python'a giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django nedir?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    İlk Django projen!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modelleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Yayına alın!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url'leri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - yaratma zamanı geldi!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML'ye giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM ve QuerySets (Sorgu Setleri)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Template içinde dinamik veri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templateleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Güzelleştirin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template genişletmek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Uygulamanı genişlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django Formları
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Sırada ne var?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit ile yayınla
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django Formları</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-forms">Django Forms</h1>
+<p>Blogumuzda yapmak istediğimiz son şey blog yazılarını eklemek ve düzenlemek için güzel bir yapı oluşturmak. Django&apos;nun <code>admin</code> arayüzü çok havalı, ama özelleştirilmesi ve güzel hale getirilmesi oldukça zor. <code>forms</code> (formlar) ile kendi arayüzümüz üstünde mutlak bir güce sahip olacağız - neredeyse hayal ettiğimiz her şeyi yapabiliriz!</p>
+<p>Django formlarının güzel yanı, hem sıfırdan bir form tanımlayabilmemiz hem de sonuçları modele kaydedecek bir <code>ModelForm</code> oluşturabilmemizdir.</p>
+<p>Tam olarak yapmak istediğimiz şey: <code>Post</code> modelimiz için bir form oluşturmak.</p>
+<p>Django&apos;nun diğer önemli parçaları gibi, formların da kendi dosyası var: <code>forms.py</code>.</p>
+<p><code>blog</code> dizinimizde bu isimde bir dosya oluşturmalıyız.</p>
+<pre><code>blog
+   └── forms.py
+</code></pre><p>Tamam, hadi dosyayı açalım ve aşağıdaki kodu yazalım:</p>
+<p></p><p class="code-label">blog/forms.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django <span class="hljs-keyword">import</span> forms
+
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostForm</span>(<span class="hljs-params">forms.ModelForm</span>):</span>
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        model = Post
+        fields = (<span class="hljs-string">&apos;title&apos;</span>, <span class="hljs-string">&apos;text&apos;</span>,)
+</code></pre>
+<p>Önce Django formları (<code>from django import forms</code>) ve tabii ki <code>Post</code> modelimizi (<code>from .models import Post</code>) import komutu ile dahil etmeliyiz.</p>
+<p>Tahmin etmiş olabileceğiniz gibi, formumuzun ismi <code>PostForm</code>. Django&apos;ya bu formun bir <code>ModelForm</code> olduğunu belirtmeliyiz. Bunu <code>forms.ModelForm</code> sayesinde Django bizim için yapacaktır.</p>
+<p>Sırada Django&apos;ya bu formu oluşturmak için hangi modelin kullanılması gerektiğini (<code>model = Post</code>) anlattığımız <code>class Meta</code> var.</p>
+<p>Son olarak, formumuzda hangi alan(lar)ın bulunması gerektiğini söyleyebiliriz. Bu senaryoda sadece <code>title</code> ve <code>text</code> alanlarının gösterilmesini istiyoruz - <code>author</code> şu anda giriş yapmış olması gereken kişidir (yani siz!) ve biz ne zaman yeni bir yazı oluşturursak <code>created_date</code> otomatik olarak (örn. kod içinde) ayarlanmalıdır, değil mi?</p>
+<p>Ve hepsi bu kadar! Şimdi tek yapmamız gereken formu bir <em>view</em> içinde kullanıp, template (şablon) içinde göstermek.</p>
+<p>Bir kere daha sayfaya bir bağlantı, bir url, bir view ve bir template oluşturacağız.</p>
+<h2 id="formun-bulunduğu-sayfaya-bağlantı-oluşturma">Formun bulunduğu sayfaya bağlantı oluşturma</h2>
+<p>Şimdi <code>blog/templates/blog/base.html</code> isimli template&apos;i açma zamanı. Öncelikle <code>page-header</code> adlı <code>div</code> öğesinin içine bir bağlantı ekleyeceğiz:</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Yeni view&apos;in (görünümün) adını <code>post_new</code> koymak istiyoruz. <code>&quot;glyphicon glyphicon-plus&quot;</code> class&apos;ı kullandığımız bootstrap teması tarafından sağlanıyor ve bizim için bir artı işareti gösterecek.</p>
+<p>Satırı ekledikten sonra, HTML dosyanız bu şekilde görünmelidir:</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html">{% load staticfiles %}
+&lt; html&gt;
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&apos;//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext&apos;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&apos;stylesheet&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;text/css&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-header&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-8&quot;</span>&gt;</span>
+                    {% block content %}
+                    {% endblock %}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Dosyayı kaydedip <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a> sayfasını yeniledikten sonra, siz de bilindik <code>NoReverseMatch</code> hatasını görüyor olmalısınız, görüyorsunuz değil mi? Güzel!</p>
+<h2 id="url">URL</h2>
+<p><code>blog/urls.py</code> dosyasını açıp şu satırı ekleyelim:</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python">path(<span class="hljs-string">&apos;post/new&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),
+</code></pre>
+<p>Ve kodun son hali şu şekilde görünecektir:</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path 
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/&apos;</span>, views.post_detail, name=<span class="hljs-string">&apos;post_detail&apos;</span>),
+    path(<span class="hljs-string">&apos;post/new/&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),
+]
+</code></pre>
+<p>Sayfayı yeniledikten sonra <code>post_new</code> view&apos;ını oluşturmadığımız için <code>AttributeError</code> hatası alacağız. Şimdi onu ekleyelim.</p>
+<h2 id="postnew-view">post_new view</h2>
+<p>Şimdi <code>blog/views.py</code> dosyasını açıp aşağıdaki satırları diğer <code>from</code> satırlarının olduğu yere ekleyelim:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> .forms <span class="hljs-keyword">import</span> PostForm
+</code></pre>
+<p>Ve sonra bizim <em>view</em>&apos;ımız:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>Yeni bir <code>Post</code> formu oluşturmak için <code>PostForm()</code> fonksiyonunu çağırmak ve template&apos;e iletmek gerekir. <em>view</em> kısmına geri döneceğiz, ancak şimdilik form için bir template oluşturalım.</p>
+<h2 id="template">Template</h2>
+<p>Öncelikle <code>blog/templates/blog</code> dizininde <code>post_edit.html</code> isimli bir dosya oluşturmalıyız. Bir formu çalışır hale getirmek için birkaç şeye ihtiyacımız var:</p>
+<ul>
+<li>Formu göstermek zorundayız. Örneğin bunu şu şekilde yapabiliriz <code>{{ form.as_p }}</code>.</li>
+<li>Yukarıdaki örnek satır HTML form etiketi içine alınmalı: <code>&lt;form method=&quot;POST&quot;&gt;...&lt;/form&gt;</code>.</li>
+<li>Bir <code>Kaydet</code> butonuna ihtiyacımız var. Bunu Bir HTML butonu ile yapıyoruz: <code>&lt;button type=&quot;submit&quot;&gt;Kaydet&lt;/button&gt;</code>.</li>
+<li>Ve son olarak, açılıştan hemen sonra <code>&lt;form ...&gt;</code> etiketini eklememiz gerekiyor <code>{% csrf_token %}</code>. Formlarımızın güvenliğini sağladığı için bu çok önemlidir! Eğer bu kısmı unutursak, formu kaydetmeye çalıştığımızda Django şikayet edecektir:</li>
+</ul>
+<p><img src="images/csrf2.png" alt="CSFR Korumalı sayfa"></p>
+<p>Tamam, hadi <code>post_edit.html</code> deki HTML&apos;e bakalım:</p>
+<p></p><p class="code-label">blog/templates/blog/post_edit.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Yeni post<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;POST&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post-form&quot;</span>&gt;</span>{% csrf_token %}
+        {{ form.as_p }}
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;save btn btn-default&quot;</span>&gt;</span>Kaydet<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p>Yenileme zamanı! Hey! Formun görüntülendi!</p>
+<p><img src="images/new_form2.png" alt="Yeni form"></p>
+<p>Ama, bekle bir dakika! <code>title</code> ve <code>text</code> alanlarına bir şey yazdığımızda ve kaydetmeye çalıştığımızda, ne olacak?</p>
+<p>Hiçbir şey! Bir kere daha aynı sayfadayız, metnimiz gitmiş ve yeni gönderi de eklenmemiş. Peki neyi yanlış yaptık?</p>
+<p>Yanıt: hiçbir şeyi. Sadece <em>view</em>&apos;ımızda biraz daha iş yapmamız gerekiyor.</p>
+<h2 id="formu-kaydetme">Formu kaydetme</h2>
+<p>Bir kez daha <code>blog/views.py</code>&apos;yi açalım. Hali hazırda <code>post_new</code> view&apos;ının tamamı aşağıdaki gibi olmalı:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>Formu gönderdiğimizde, aynı view&apos;a yönlendirileceğiz, bu sefer <code>request</code> içinde daha fazla bilgi olacak, özellikle <code>request.POST</code> içinde (isimlendirmenin blog gönderisiyle bir bağlantısı yoktur; daha fazla veri göndermemizle ilgilidir). HTML dosyasında <code>&lt;form&gt;</code> tanımımızdaki <code>method=&quot;POST&quot;</code> değişkenini hatırlıyor musunuz ? Formdan gelen tüm alanlar şimdi <code>request.POST</code>&apos;un içerisinde. <code>POST</code>&apos;un ismini değiştirmememiz lazım (<code>method</code> için geçerli diğer değer sadece <code>GET</code>&apos;dir, ama şimdi ikisi arasındaki farkın ne olduğunu anlatacak kadar vaktimiz yok).</p>
+<p><em>view</em> içinde ele almamız gereken iki farklı durum var: ilki, sayfaya ilk kez eriştiğimizde boş bir form döndürmek isteğimiz durum, ikincisi ise <em>view</em>&apos;e forma girdiğimiz form verisiyle geri döndüğümüz durum. Yani bir koşul eklememiz gerekiyor (bunun için <code>if</code> kullanacağız):</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+    [...]
+<span class="hljs-keyword">else</span>:
+    form = PostForm()
+</code></pre>
+<p>Boşlukları doldurma zamanı <code>[...]</code>. Eğer <code>method</code> <code>POST</code> ise <code>PostForm</code>&apos;u forma girilen veri ile oluşturmalıyız, değil mi? Bunu şu şekilde yapacağız:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(request.POST)
+</code></pre>
+<p>Bir sonraki işimiz formun doğru olup olmadığını kontrol etmek (tüm gerekli alanlar ayarlanmış ve yanlış değer verilmediyse). Bunu şu şekilde yaparız <code>form.is_valid()</code>.</p>
+<p>Formun doğruluğunu kontrol ediyoruz ve doğru ise kaydedebiliriz!</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> form.is_valid():
+    post = form.save(commit=<span class="hljs-literal">False</span>)
+    post.author = request.user
+    post.published_date = timezone.now()
+    post.save()
+</code></pre>
+<p>Temel olarak, burada iki şey yaptık: formu <code>form.save</code> ile kaydettik ve bir author (yazar) ekledik (<code>PostForm</code>&apos;da bir <code>author</code> tanımlı olmadığı ve bu zorunlu bir alan olduğu için). <code>commit=False</code> <code>Post</code> modelini henüzkaydetmek istemiyoruz demektir - öncelikle yazarı eklemeliyiz. Çoğu zaman <code>form.save()</code>&apos;i <code>commit=False</code> olmadan kullanacağız, fakat bu durumda bu parametre ile kullanmalıyız. <code>post.save()</code> değişiklikleri saklar (author ekleyerek) ve yeni blog yazısı oluşturulur!</p>
+<p>Son olarak hızlı bir şekilde yeni oluşturulmuş blog gönderimiz için <code>post_detail</code> sayfasına gidebilirsek harika olurdu değil mi? Bunu yapmak için bir tane daha import yapmamız gerekli:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> redirect
+</code></pre>
+<p>Bunu dosyanın en başına ekleyelim. Şimdi yeni yarattığımız blog postu için &quot;<code>post_detail</code> sayfasına git&quot; diyebiliriz:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+</code></pre>
+<p><code>post_detail</code>, gitmek istediğimiz view&apos;ın adı. Unutmayalım ki bu <em>view</em> için bir <code>pk</code> değişkeni lazım. Bu değeri viewlere aktarmak için <code>pk=post.pk</code> yazarız. Burada <code>post</code> yeni yarattığımız blog postudur!</p>
+<p>Çok şey söyledik ama artık <em>view</em>&apos;ı tümüyle bir görmek isteriz, değil mi?</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>Bakalım çalışacak mı? <a href="http://127.0.0.1:8000/post/new/" target="_blank">http://127.0.0.1:8000/post/new/</a> sayfasına gidelim, bir <code>title</code> ve <code>text</code> ekleyelim, kaydedelim... ve işte oldu! Yeni blog postu eklendi ve <code>post_detail</code> sayfasına yönlendirildik!</p>
+<p>Postu kaydetmeden önce publish date&apos;e değer atandığını fark etmiş olabilirsin. Daha sonra <em>publish button</em>&apos;nı <strong>Django Girls Tutorial: Ek konular</strong>&apos;da anlatacağız.</p>
+<p>Süper!</p>
+<blockquote>
+<p>Yakın zamanda Django&apos;nun admin arayüzünü kullandığımız için, sistem hala giriş yaptığımızı düşünüyor. Bazı durumlar bizim oturumdan çıkmamıza neden olabilir (web tarayıcısını kapatmak, veritabanını tekrar başlatmak, vb). Eğer oturum açık olmadığı için post yaratmada hata alırsak admin sayfası olan <a href="http://127.0.0.1:8000/admin" target="_blank">http://127.0.0.1:8000/admin</a> adresine gidip tekrar oturum açmalıyız. Bu sorunu geçici olarak düzeltecektir. Kalıcı çözüm, ana tutorialdan sonra <strong>Ödev: Web sitene güvenlik ekleme!</strong> bölümünde anlatılacak.</p>
+</blockquote>
+<p><img src="images/post_create_error.png" alt="Oturum hatası"></p>
+<h2 id="form-doğrulama">Form doğrulama</h2>
+<p>Şimdi de Django formlarının ne kadar havalı olduğunu görelim. Bir blog postunun <code>title</code> ve <code>text</code> alanları olmalı. <code>Post</code> modelimizde bu alanların gerekli olmadığını söylemedik (<code>published_date</code>&apos;te yaptığımızın tersine), bu yüzden Django varsayılan olarak bu alanın dolu olmasını bekliyor.</p>
+<p>Formu <code>title</code> ve <code>text</code> olmadan kaydetmeye çalışalım. Ne olacak, tahmin edin!</p>
+<p><img src="images/form_validation2.png" alt="Form doğrulama"></p>
+<p>Django tüm alanların doğruluğunu bizim için kontrol ediyor. Ne güzel, değil mi?</p>
+<h2 id="form-düzenleme">Form düzenleme</h2>
+<p>Artık yeni bir form oluşturmayı biliyoruz. Peki, mevcut bir formu güncellemek için ne yapmalı? Bu az önce yaptığımız şeyle çok benzer. Hızlıca bazı önemli şeyleri oluşturalım. (Eğer birşeyi anlamazsan, mentörüne sormalısın veya önceki bölümlere bakmalısın, çünkü bütün bu adımları daha önce bitirdik.)</p>
+<p><code>blog/templates/blog/post_detail.html</code> dosyasını açalım ve şu satırı ekleyelim</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>böylece şablon şöyle görünecektir:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        {% if post.published_date %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {% endif %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p><code>blog/urls.py</code> dosyasını açıp şu satırı ekleyelim:</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python">    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/edit/&apos;</span>, views.post_edit, name=<span class="hljs-string">&apos;post_edit&apos;</span>),
+</code></pre>
+<p>Daha önce kullandığımız <code>blog/templates/blog/post_edit.html</code> template&apos;ini tekrar kullanacağız, geriye bir tek <em>view</em> kalıyor.</p>
+<p>Şimdi <code>blog/views.py</code> dosyasını açıp en sonuna şu satırı ekleyelim:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_edit</span>(<span class="hljs-params">request, pk</span>):</span>
+    post = get_object_or_404(Post, pk=pk)
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST, instance=post)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm(instance=post)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>Bu nerdeyse bizim <code>post_new</code> view&apos;inin aynısı, değil mi? Ama, tam da değil. Özellikle url&apos;lerden ekstra bir <code>pk</code> parametresi geçiriyoruz. Sonra,<code>get_object_or_404(Post, pk=pk)</code> ile düzenlemek istediğimiz <code>Post</code> modelini alıyoruz ve daha sonra bir form oluşturduğumuzda bu yazı objesini <code>instance</code> olarak geçiriyoruz, aynı şekilde formu kaydettiğimizde de…</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(request.POST, instance=post)
+</code></pre>
+<p>…ve düzenlemek için bu post ile ilgili bir form açtığımızda:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(instance=post)
+</code></pre>
+<p>Tamam, çalışıp çalışmadığını test edelim! <code>post_detail</code> sayfasına gidelim. Sağ üst köşede bir düzenleme butonu olmalı:</p>
+<p><img src="images/edit_button2.png" alt="Düzenle butonu"></p>
+<p>Butona tıklarsak blog postunu görmemiz lazım:</p>
+<p><img src="images/edit_form2.png" alt="Form düzenleme"></p>
+<p>İstediğimiz gibi title ve text&apos;i değiştirebilir ve sonra da kaydedebiliriz!</p>
+<p>Tebrikler! Uygulamamız gittikçe tamamlanıyor!</p>
+<p>Eğer Django formlarıyla ilgili daha çok bilgiye ihtiyacın varsa, dökümanı okumalısın: <a href="https://docs.djangoproject.com/en/2.0/topics/forms/" target="_blank">https://docs.djangoproject.com/en/2.0/topics/forms/</a></p>
+<h2 id="güvenlik">Güvenlik</h2>
+<p>Bir linke tıklayarak yeni bir blog oluşturabilmek harika! Ama şu anda sizin sitenizi ziyaret eden herkes yeni bir blog post yapabilecek ve bu muhtemelen isteyeceğiniz bir şey değil. Butonun sadece bize görünmesini sağlayalım.</p>
+<p><code>blog/templates/blog/base.html</code> dosyasında yarattığımız <code>page-header</code> <code>div</code> ve anchor etiketlerini (tags) bulalım. Şuna benziyor olmalı:</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Linkin sadece admin olarak giriş yapmış kullanıcılara gözükmesi için başka bir <code>{% if %}</code> etiketi ekleyeceğiz. Şu anda bu kişi sensin! <code>&lt;a&gt;</code> etiketini şöyle değiştirelim:</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html">{% if user.is_authenticated %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}
+</code></pre>
+<p>Bu <code>{% if %}</code> linkin sadece sayfayı görüntüleyen kullanıcı oturum açtıysa görüntülenmesini sağlayacak. Bu yeni post yaratılmasını kesin olarak engellemese de iyi bir başlangıç. Güvenlik konusu ek derslerde daha çok ele alınacak.</p>
+<p>Az evvel detay sayfamıza eklediğimiz düzenle ikonunu hatırladınız mı? Aynı değişikliği oraya da eklemek istiyoruz. Böylelikle başka insanlar var olan gönderileri düzenleyemeyecekler.</p>
+<p><code>blog/templates/blog/post_detail.html</code> dosyasını açalım ve şu satırı ekleyelim:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Bu şekilde değiştirelim:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% if user.is_authenticated %}
+     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}
+</code></pre>
+<p>Yüksek olasılıkla login yapmış olduğunuz için sayfayı yenilediğinizde farklı bir şey göremeyeceksiniz. Sayfayı farklı bir tarayıcı veya görünmez pencere ile yükleyelim (Windows Edge üzerinde &quot;InPrivate&quot; olarak adlandırılan), göreceksiniz ki bağlantı ve ikon artık görüntülenmiyor!</p>
+<h2 id="son-bir-şey-daha-deployment-yayına-alma-zamanı">Son bir şey daha: deployment (yayına alma) zamanı!</h2>
+<p>Bakalım PythonAnywhere&apos;de de çalışacak mı? Tekrar yayına alalım!</p>
+<ul>
+<li>İlk önce kodumuzu commit edelim, sonra Github&apos;a push edelim:</li>
+</ul>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ git status
+$ git add --all .
+$ git status
+$ git commit -m &quot;Sitede gönderi oluşturmak ve düzenlemek için view&apos;ler eklendi.&quot;
+$ git push
+</code></pre><ul>
+<li>Sonra bir <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere Bash konsol</a> una gidip:</li>
+</ul>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ cd ~/&lt;your-pythonanywhere-username&gt;.pythonanywhere.com
+$ git pull
+[...]
+</code></pre><p>(Açı parantezleri olmadan <code>&lt;your-pythonanywhere-username&gt;</code>&apos;i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).</p>
+<ul>
+<li>Son olarak, <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">&quot;Web&quot; page</a> bölümüne geçin (konsolun sağ üst tarafındaki menü düğmesini kullanın) ve <strong>Yeniden yükle</strong> tuşuna basın. Değişiklikleri görmek için <a href="https://yourname.pythonanywhere.com" target="_blank">https://yourname.pythonanywhere.com</a> blogunuzu yenileyin.</li>
+</ul>
+<p>İşte bu kadar! Tebrikler :)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../extend_your_application/" class="navigation navigation-prev " aria-label="Previous page: Uygulamanı genişlet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../whats_next/" class="navigation navigation-next " aria-label="Next page: Sırada ne var?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django Formları","level":"1.24","depth":1,"next":{"title":"Sırada ne var?","level":"1.25","depth":1,"path":"whats_next/README.md","ref":"whats_next/README.md","articles":[]},"previous":{"title":"Uygulamanı genişlet","level":"1.23","depth":1,"path":"extend_your_application/README.md","ref":"extend_your_application/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"tr","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_forms/README.md","mtime":"2021-03-25T14:00:00.515Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"tr"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

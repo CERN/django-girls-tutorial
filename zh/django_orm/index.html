@@ -1,0 +1,734 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django ORM (查询集) · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../dynamic_data_in_templates/" />
+    
+    
+    <link rel="prev" href="../html/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    互联网是如何工作的？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    命令行介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    代码编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    你的第一个Django 项目 ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    部署！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django视图 - 抓紧时间去创建！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django ORM (查询集)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    模板中的动态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 让其更漂亮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    模板扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    扩展您的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    接下来呢？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django ORM (查询集)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-orm-和-querysets（查询集）">Django ORM 和 QuerySets（查询集）</h1>
+<p>在这一章中，你将学习 Django 如何连接到数据库，并将数据存储在里面。一探究竟吧！</p>
+<h2 id="queryset-是什么呢？">QuerySet 是什么呢？</h2>
+<p>从本质上说，QuerySet 是给定模型的对象列表（list）。QuerySet 允许您从数据库中读取数据，对其进行筛选以及排序。</p>
+<p>用例子来学习最容易的了。让我们试试这个，好吗？</p>
+<h2 id="django-shell">Django shell</h2>
+<p>打开你本地的终端(不是在Python解析器里面) 然后输入这个命令:</p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py shell
+</code></pre><p>效果应该像这样：</p>
+<pre><code>(InteractiveConsole)
+&gt;&gt;&gt;
+</code></pre><p>你现在在 Django 的交互式控制台中。它是就像 Python 提示符，但有一些额外神奇的 Django 特性：）。你当然也可以在这里使用所有的 Python 命令。</p>
+<h3 id="所有对象">所有对象</h3>
+<p>首先让我们尝试显示所有我们的文章。你可以用下面的命令：</p>
+<pre><code>&gt;&gt;&gt; Post.objects.all()
+Traceback (most recent call last):
+      File &quot;&lt;console&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name &apos;Post&apos; is not defined
+</code></pre><p>哎呀 ！出现了一个错误。它告诉我们没有文章。这是正确的 — — 我们忘了首先导入它 ！</p>
+<pre><code>&gt;&gt;&gt; from blog.models import Post
+</code></pre><p>这很简单： 我们从 <code>blog.models</code> 导入 <code>Post</code> 的模型。让我们试着再一次显示所有的帖子：</p>
+<pre><code>&gt;&gt;&gt; Post.objects.all()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;]&gt;
+</code></pre><p>这是我们之前创建的文章的 list 列表！我们通过使用Django admin界面创建了这些文章。但是我们现在想通过Python来创建新的文章，那么我们应该如何做呢？</p>
+<h3 id="创建对象">创建对象</h3>
+<p>这就是你如何在数据库创建一个新的Post对象的方法:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.create(author=me, title=&apos;Sample title&apos;, text=&apos;Test&apos;)
+</code></pre><p>但是我们这里有一个遗漏的要素： <code>me</code>。我们需要传递 <code>User</code> 模型的实例作为作者。如何做到这一点？</p>
+<p>让我们首先导入用户模型：</p>
+<pre><code>&gt;&gt;&gt; from django.contrib.auth.models import User
+</code></pre><p>我们在数据库中有哪些用户？试试这个：</p>
+<pre><code>&gt;&gt;&gt; User.objects.all()
+&lt;QuerySet [&lt;User: ola&gt;]&gt;
+</code></pre><p>这是一个我们之前创建的超级用户！让我们现在获取一个用户实例：</p>
+<pre><code>me = User.objects.get(username=&apos;ola&apos;)
+</code></pre><p>正如你所看到的，我们现在 <code>get</code> 一个 <code>username</code> 等于 &apos;ola&apos; 的<code>User</code> 。简单吧！当然，你必须将其改为你所使用的用户名。</p>
+<p>现在我们终于可以创建我们的文章了:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.create(author=me, title=&apos;Sample title&apos;, text=&apos;Test&apos;)
+</code></pre><p>哈哈！要检查是否有效吗？</p>
+<pre><code>&gt;&gt;&gt; Post.objects.all()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;, &lt;Post: Sample title&gt;]&gt;
+</code></pre><p>就是这样，又一个文章在列表里面！</p>
+<h3 id="添加更多文章">添加更多文章</h3>
+<p>你现在可以找点乐子，并添加更多的帖子，看它是如何工作。添加 2-3 个并前进到下一个部分。</p>
+<h3 id="筛选对象">筛选对象</h3>
+<p>QuerySets的很大一部分功能是对它们进行筛选。 譬如，我们想要发现所有都由用户ola编写的文章。 我们将使用 <code>filter</code>，而不是 <code>all</code> 在 <code>Post.objects.all()</code>。 我们需要在括号中申明哪些条件，以在我们的 queryset 结果集中包含一篇博客文章。 在我们的情况是 <code>author</code>，它等于 <code>me</code>。 把它写在 Django 的方式是： <code>author = me</code>。 现在我们的代码段如下所示：</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(author=me)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: Post number 2&gt;, &lt;Post: My 3rd post!&gt;, &lt;Post: 4th title of post&gt;]&gt;
+</code></pre><p>或者，也许我们想看到包含在 <code>title</code> 字段标题的所有帖子吗？</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(title__contains=&apos;title&apos;)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: 4th title of post&gt;]&gt;
+</code></pre><blockquote>
+<p><strong>注</strong>在<code>title</code> 与 <code>contains</code> 之间有两个下划线字符 (<code>_</code>)。 Django 的 ORM 使用此语法来分隔字段名称 （&quot;title&quot;） 和操作或筛选器 （&quot;contains&quot;）。 如果您只使用一个下划线，您将收到类似&quot;FieldError： 无法解析关键字 title_contains&quot;的错误。</p>
+</blockquote>
+<p>你也可以获取一个所有已发布文章的列表。我们通过筛选所有含<code>published_date</code>为过去时间的文章来实现这个目的：</p>
+<blockquote>
+<blockquote>
+<blockquote>
+<p>from django.utils import timezone Post.objects.filter(published_date__lte=timezone.now())[]</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>不幸的是，通过Python终端添加的文章还没发布。我们可以改变它！首先获取一个我们想要发布的文章实例：</p>
+<pre><code>&gt;&gt;&gt; post = Post.objects.get(title=&quot;Sample title&quot;)
+</code></pre><p>然后将它与我们 <code>publish</code> 的方法一起发布 ！</p>
+<pre><code>&gt;&gt;&gt; post.publish()
+</code></pre><p>现在再一次尝试获取已发布的文章（按向上箭头按钮三次，然后按回车）:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(published_date__lte=timezone.now())
+&lt;QuerySet [&lt;Post: Sample title&gt;]&gt;
+</code></pre><h3 id="对象排序">对象排序</h3>
+<p>Queryset 还允许您排序结果集对象的列表。让我们试着让它们按 <code>created_date</code> 字段排序：</p>
+<pre><code>&gt;&gt;&gt; Post.objects.order_by(&apos;created_date&apos;)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: Post number 2&gt;, &lt;Post: My 3rd post!&gt;, &lt;Post: 4th title of post&gt;]&gt;
+</code></pre><p>我们也可以在开头添加 <code>-</code> 来反向排序：</p>
+<pre><code>&gt;&gt;&gt; Post.objects.order_by(&apos;-created_date&apos;)
+&lt;QuerySet [&lt;Post: 4th title of post&gt;,  &lt;Post: My 3rd post!&gt;, &lt;Post: Post number 2&gt;, &lt;Post: Sample title&gt;]&gt;
+</code></pre><h3 id="链式-querysets">链式 QuerySets</h3>
+<p>你可以通过<strong>链式调用</strong>连续组合QuerySets</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(published_date__lte=timezone.now()).order_by(&apos;published_date&apos;)
+</code></pre><p>这真是强而有力，而且可以让你写较复杂的的查询</p>
+<p>酷 ！现在，你准备下一个部分 ！若要关闭shell程序，请键入这：</p>
+<pre><code>&gt;&gt;&gt; exit()
+$
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../html/" class="navigation navigation-prev " aria-label="Previous page: HTML简介">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../dynamic_data_in_templates/" class="navigation navigation-next " aria-label="Next page: 模板中的动态数据">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django ORM (查询集)","level":"1.17","depth":1,"next":{"title":"模板中的动态数据","level":"1.18","depth":1,"path":"dynamic_data_in_templates/README.md","ref":"dynamic_data_in_templates/README.md","articles":[]},"previous":{"title":"HTML简介","level":"1.16","depth":1,"path":"html/README.md","ref":"html/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"zh","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_orm/README.md","mtime":"2021-03-25T14:00:00.571Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

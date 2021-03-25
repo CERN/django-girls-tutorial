@@ -1,0 +1,783 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django ORM(Querysets) · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../dynamic_data_in_templates/" />
+    
+    
+    <link rel="prev" href="../html/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django ORM(Querysets)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="장고-orm과-쿼리셋querysets">장고 ORM과 쿼리셋(QuerySets)</h1>
+<p>이번 장에서는 장고를 데이터베이스에 연결, 데이터를 저장하는 방법에 대해서 알아볼 거에요. 함께 시작해봅시다!</p>
+<h2 id="쿼리셋이란-무엇인가요">쿼리셋이란 무엇인가요?</h2>
+<p>핵심만 말하자면, 쿼리셋(QuerySet)은 전달받은 모델의 객체 목록입니다. 쿼리셋은 데이터베이스로부터 데이터를 읽고, 필터를 걸거나 정렬을 할 수 있습니다.</p>
+<p>가장 쉽게 배우는 방법은 예제로 배우는 것이죠. 함께 해볼까요?</p>
+<h2 id="장고-쉘shell">장고 쉘(shell)</h2>
+<p>PythonAnywhere가 아닌 로컬 콘솔에서 아래 명령을 입력하세요.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py shell
+</code></pre><p>실행하면 아래처럼 나올 거에요.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">(InteractiveConsole)
+&gt;&gt;&gt;
+</code></pre>
+<p>여러분은 이제 장고 인터랙티브 콘솔(interactive console)로 들어왔습니다. 파이썬 프롬프트와 비슷하지만, 장고만의 마법을 부릴 수 있는 곳이기도 하지요. 물론 파이썬의 모든 명령어를 여기서 사용할 수 있습니다.</p>
+<h3 id="모든-객체-조회하기">모든 객체 조회하기</h3>
+<p>자, 이제 먼저 입력했던 모든 글들을 출력하겠습니다. 아래와 같이 입력하세요. :</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">all</span>()
+Traceback (most recent call last):
+      File <span class="hljs-string">&quot;&lt;console&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;Post&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>이런! 에러가 나타났어요. 글이 없다고 하네요. 이럴수가... 그런데 이렇게 나오는 것이 맞는 거랍니다. 이 글을 먼저 불러오는 것(import)을 잊었네요!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> blog.models <span class="hljs-keyword">import</span> Post
+</code></pre>
+<p>간단합니다. 우리는 <code>Post</code>모델을 <code>blog.models</code>에서 불러왔어요. 이제 모든 글을 출력해봅시다.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">all</span>()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;]&gt;
+</code></pre>
+<p>게시된 글 목록이 나타났네요! 장고 관리자 인터페이스로 만들었던 것들이에요. 그런데 파이썬으로 새 글을 포스팅하려면, 어떻게 해야 할까요?</p>
+<h3 id="객체-생성하기">객체 생성하기</h3>
+<p>데이터베이스에 새 글 객체를 저장하는 방법에 대해 알아봅시다.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.create(author=me, title=<span class="hljs-string">&apos;Sample title&apos;</span>, text=<span class="hljs-string">&apos;Test&apos;</span>)
+</code></pre>
+<p>하지만 여기에 뭔가 빼먹은 것이 하나 있어요. <code>me</code>(나)를 빼먹었네요. 작성자로서 <code>User</code>(사용자) 모델의 인스턴스를 가져와 전달해줘야 합니다. 어떻게 해야 할까요?</p>
+<p>먼저 User 모델을 불러옵니다. :</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> django.contrib.auth.models <span class="hljs-keyword">import</span> User
+</code></pre>
+<p>데이터베이스에서 user는 어떤 일을 할까요? 함께 알아봅시다. :</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>User.objects.<span class="hljs-built_in">all</span>()
+&lt;QuerySet [&lt;User: ola&gt;]&gt;
+</code></pre>
+<p>슈퍼유저로 등록했었던 그 사용자군요! 이제 이 사용자의 인스턴스(instance)를 가져와 봅시다. :</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>me = User.objects.get(username=<span class="hljs-string">&apos;ola&apos;</span>)
+</code></pre>
+<p>보았듯이 <code>사용자이름(username)</code>이 &apos;ola&apos;인 <code>User</code> 인스턴스를 받아왔어요. 사용자 이름을 바꿨다면, 바뀐 이름을 넣어줘야겠죠.</p>
+<p>드디어 우리 게시물을 만들었네요 :</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.create(author=me, title=<span class="hljs-string">&apos;Sample title&apos;</span>, text=<span class="hljs-string">&apos;Test&apos;</span>)
+</code></pre>
+<p>만세! 그런데 제대로 작동했는지 확인해봐야죠?</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">all</span>()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;, &lt;Post: Sample title&gt;]&gt;
+</code></pre>
+<p>보세요, 목록에 게시글 하나가 더 늘었네요!</p>
+<h3 id="글-더-추가하기">글 더 추가하기</h3>
+<p>점점 재밌어질 거에요. 몇 개 글을 더 추가해서 잘 작동하는지 확인하세요. 2-3개 정도만 더 추가해보고 다음 내용으로 넘어갈게요.</p>
+<h3 id="필터링하기">필터링하기</h3>
+<p>쿼리셋의 중요한 기능은 데이터를 필터링하는 거예요. 예를 들어, 우리는 ola라는 사용자가 작성한 모든 글을 찾고 싶다고 해볼게요. 이런 경우 <code>Post.objects.all()</code>에서 <code>all</code>대신, <code>filter</code>를 사용합니다. 쿼리셋 안에 있는 괄호 안에 원하는 조건을 넣어줄 거예요. 지금 이 경우에는 <code>작성자(author)</code>가 <code>나(me)</code>인 조건을 넣어야겠죠. 이걸 장고로 표현한다면 <code>author=me</code>가 됩니다. 이제 이 조건이 반영된 코드를 볼까요.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(author=me)
+[&lt;Post: Sample title&gt;, &lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: My 3rd post!&gt;, &lt;Post: 4th title of post&gt;]
+</code></pre>
+<p>모든 글들 중, <code>제목(title)</code>에 &apos;title&apos;이라는 글자가 들어간 글들만을 뽑아내서 보고 싶다면요?</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(title__contains=<span class="hljs-string">&apos;title&apos;</span>)
+[&lt;Post: Sample title&gt;, &lt;Post: 4th title of post&gt;]
+</code></pre>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
+<p>  <code>title</code>와 <code>contains</code> 사이에 있는 밑줄(<code>_</code>)이 2개(<code>__</code>)입니다. 장고 ORM은 필드 이름(&quot;title&quot;)과 연산자과 필터(&quot;contains&quot;)를 밑줄 2개를 사용해 구분합니다. 밑줄 1개만 입력한다면, <code>FieldError: Cannot resolve keyword title_contains</code>라는 오류가 뜰 거예요.</p>
+</blockquote>
+<p>게시글 목록을 볼 수 있어요. <code>게시일(published_date)</code>로 과거에 작성한 글을 필터링하면 목록을 불러올 수 있어요.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+<span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(published_date__lte=timezone.now())
+[]
+</code></pre>
+<p>안타깝게도, 파이썬 콘솔에서 추가한 게시물은 아직 보이지 않네요. 하지만 바꿀 수 있어요! 먼저 게시하려는 게시물의 인스턴스를 얻어야 해요.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>post = Post.objects.get(title=<span class="hljs-string">&quot;Sample title&quot;</span>)
+</code></pre>
+<p>그리고 <code>publish</code>메서드를 사용해서 게시합시다!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>post.publish()
+</code></pre>
+<p>이제 (위쪽 화살표 버튼 3번을 누르고 <code>enter</code>를 눌러) 다시 게시된 글의 목록을 가져와 봅시다.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(published_date__lte=timezone.now())
+[&lt;Post: Sample title&gt;]
+</code></pre>
+<h3 id="정렬하기">정렬하기</h3>
+<p>퀘리셋은 객체 목록을 정렬할 수 있어요. 이제 <code>created_date</code>필드를 정렬해봅시다.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.order_by(<span class="hljs-string">&apos;created_date&apos;</span>)
+[&lt;Post: Sample title&gt;, &lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: My 3rd post!&gt;, &lt;Post: 4th title of post&gt;]
+</code></pre>
+<p><code>-</code>을 맨 앞에 붙여주면 내림차순 정렬도 가능해요.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.order_by(<span class="hljs-string">&apos;-created_date&apos;</span>)
+[&lt;Post: 4th title of post&gt;,  &lt;Post: My 3rd post!&gt;, &lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: Sample title&gt;]
+</code></pre>
+<h3 id="쿼리셋-연결하기">쿼리셋 연결하기</h3>
+<p>쿼리셋들을 함께 <strong>연결(chaining)</strong>할 수 있어요.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(published_date__lte=timezone.now()).order_by(&apos;published_date&apos;)
+</code></pre><p>이 방법은 정말 강력해 복잡한 쿼리도 작성할 수 있게 해준답니다.</p>
+<p>좋아요! 이제 다음 내용으로 넘어갈 때로군요! 다음 명령을 입력해, 쉘을 종료하세요. :</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../html/" class="navigation navigation-prev " aria-label="Previous page: HTML 시작하기">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../dynamic_data_in_templates/" class="navigation navigation-next " aria-label="Next page: 템플릿 동적 데이터">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django ORM(Querysets)","level":"1.18","depth":1,"next":{"title":"템플릿 동적 데이터","level":"1.19","depth":1,"path":"dynamic_data_in_templates/README.md","ref":"dynamic_data_in_templates/README.md","articles":[]},"previous":{"title":"HTML 시작하기","level":"1.17","depth":1,"path":"html/README.md","ref":"html/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_orm/README.md","mtime":"2021-03-25T14:00:00.375Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

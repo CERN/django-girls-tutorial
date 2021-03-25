@@ -1,0 +1,898 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Instalación de Django · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_start_project/" />
+    
+    
+    <link rel="prev" href="../django/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalación
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#brief-intro-to-the-command-line">
+            
+                    
+                    Línea de Comandos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#install-python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#install-a-code-editor">
+            
+                    
+                    Editor de texto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtual-environment">
+            
+                    
+                    Entorno Virtual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#installing-django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#install-git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#create-a-github-account">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#create-a-pythonanywhere-account">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Instalación (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Cómo funciona Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introducción a la línea de comandos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalación de Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introducción a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    ¿Qué es Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Instalación de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    ¡Tu primer proyecto en Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Modelos en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Administrador de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    ¡Despliega!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    URLs en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Vistas en Django - ¡Hora de crear!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introducción a HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    ORM de Django (QuerySets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Datos dinámicos en las plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Plantillas de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - ¡Que quede bonito!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Extendiendo plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Amplía tu aplicación
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formularios de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    ¿Y ahora qué?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publicado con HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Instalación de Django</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="instalacion-de-django">Instalacion de Django</h1>
+<blockquote>
+<p><strong>Nota</strong> Si usas un Chromebook, omite este capítulo y asegúrate de seguir las instrucciones de <a href="../chromebook_setup/">Chromebook Setup</a>.</p>
+<p><strong>Nota</strong> Si ya has realizado los pasos de instalación, esto ya lo has hecho. ¡Puedes avanzar directamente al siguiente capítulo!</p>
+<p>Parte de esta sección está basada en tutoriales por Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p>
+<p>Parte de este capítulo está basada en el <a href="http://django-marcador.keimlink.de/" target="_blank">django-marcador tutorial</a> bajo la licencia Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.</p>
+</blockquote>
+<h2 id="entorno-virtual">Entorno virtual</h2>
+<p>Antes de instalar Django, instalaremos una herramienta extremadamente útil que ayudará a mantener tu entorno de desarrollo ordenado en tu computadora. Es posible saltarse este paso, pero es altamente recomendable. ¡Empezar con la mejor configuración posible te ahorrará muchos problemas en el futuro!</p>
+<p>Así que, vamos a crear un <strong>entorno virtual</strong> (también llamado un <em>virtualenv</em>). Virtualenv aísla tu configuración de Python/Django para cada proyecto. Esto quiere decir que cualquier cambio que hagas en un sitio web no afectará a ningún otro que estés desarrollando. Genial, ¿no?</p>
+<p>Todo lo que necesitas hacer es encontrar un directorio en el que quieras crear el <code>virtualenv</code>; tu directorio home, por ejemplo. En Windows, puede verse como <code>C:\Users\Name</code> (donde <code>Name</code> es el nombre de tu usuario).</p>
+<blockquote>
+<p><strong>NOTA:</strong> En Windows, asegúrate de que este directorio no contiene caracteres especiales o acentuados; si tu nombre de usuario contiene caracteres acentuados, usa un directorio distinto, por ejemplo <code>C:\djangogirls</code>.</p>
+</blockquote>
+<p>Para este tutorial usaremos un nuevo directorio <code>djangogirls</code> en tu directorio home:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ mkdir djangogirls
+$ cd djangogirls
+</code></pre><p>Haremos un virtualenv llamado <code>myvenv</code>. El comando general estará en el formato:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 -m venv myvenv
+</code></pre><sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Virtual environment: Windows<a class="pull-right section atTitle btn btn-default" target="virtualenv_installation_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_installation_windows"><div class="panel-body">
+<p>Para crear un nuevo <code>virtualenv</code>, necesitas abrir una terminal &quot;command prompt&quot; y ejecutar <code>python -m venv myvenv</code>. Se verá así:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>C:\Users\Name\djangogirls&gt; python -m venv myvenv
+</code></pre><p>Donde <code>myvenv</code> es el nombre de tu <code>virtualenv</code>. Puedes utilizar cualquier otro nombre, pero asegúrate de usar minúsculas y no usar espacios, acentos o caracteres especiales. También es una buena idea mantener el nombre corto. ¡Vas utilizarlo muchas vecesl!</p>
+</div></div></div></sec>
+<sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Virtual environment: Linux and OS X<a class="pull-right section atTitle btn btn-default" target="virtualenv_installation_linuxosx"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_installation_linuxosx"><div class="panel-body">
+<p>Podemos crear un <code>virtualenv</code> en Linux y OS X, es tan sencillo como ejecutar <code>python3 -m venv myvenv</code>. Se verá así:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 -m venv myvenv
+</code></pre><p><code>myvenv</code> es el nombre de tu <code>virtualenv</code>. Puedes usar cualquier otro nombre, pero sólo utiliza minúsculas y no incluyas espacios. También es una buena idea mantener el nombre corto. ¡Vas a referirte muchas veces a él!</p>
+<blockquote>
+<p><strong>NOTA:</strong> En algunas versiones de Debian/Ubuntu, puede que obtengas el siguiente error:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>The virtual environment was not created successfully because ensurepip is not available.  En sistemas Debian/Ubuntu, tendrás que instalar el paquete python3-venv usando el siguiente comando.
+   apt-get install python3-venv
+Puede que tengas que usar sudo con este comando.  Después de instalar el paquete python3-venv, vuelve a crear tu entorno virtual.
+</code></pre><p>En este caso, sigue las instrucciones anteriores e instala el paquete <code>python3-venv</code>: </p><p class="code-label">command-line</p><p></p>
+<pre><code>$ sudo apt install python3-venv
+</code></pre><p><strong>NOTA:</strong> En algunas versiones de Debian/Ubuntu inicializar el entorno virtual de esta manera da el siguiente error:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>Error: Command &apos;[&apos;/home/eddie/Slask/tmp/venv/bin/python3&apos;, &apos;-Im&apos;, &apos;ensurepip&apos;, &apos;--upgrade&apos;, &apos;--default-pip&apos;]&apos; returned non-zero exit status 1
+</code></pre><p>Para evitar esto, utiliza directamente el comando <code>virtualenv</code>.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ sudo apt-get install python-virtualenv
+$ virtualenv --python=python3.6 myvenv
+</code></pre><p><strong>NOTA:</strong> Si obtienes un error como</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>E: Unable to locate package python3-venv
+</code></pre><p>entonces ejecuta:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>sudo apt install python3.6-venv
+</code></pre></blockquote>
+</div></div></div></sec>
+<h2 id="trabajar-con-virtualenv">Trabajar con virtualenv</h2>
+<p>El comando anterior creará un directorio llamado <code>myvenv</code> (o cualquier nombre que hayas elegido) que contiene nuestro entorno virtual (básicamente un montón de archivos y carpetas).</p>
+<sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Working with virtualenv: Windows<a class="pull-right section atTitle btn btn-default" target="virtualenv_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_windows"><div class="panel-body">
+<p>Inicia el entorno virtual ejecutando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>C:\Users\Name\djangogirls&gt; myvenv\Scripts\activate
+</code></pre><blockquote>
+<p><strong>Nota:</strong> en 10 de Windows puedes obtener un error en Windows PowerShell que dice <code>execution of scripts is disabled on this system</code>. En este caso, abre otro Windows PowerShell con la opción &quot;Ejecutar como administrador&quot;. Luego intenta escribir el siguiente comando antes de inicializar tu entorno virtual:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>C:\WINDOWS\system32 &gt; Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+   Execution Policy Change
+   The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is &quot;N&quot;): A
+</code></pre><p><strong>NOTA:</strong> Para usuarios del popular editor VS Code, el cual viene con una terminal integrada basada en el poweshell de windows; si deseas añadir la terminal integrada, puedes arrancar el siguiente comando para activar tu entorno virtual:</p>
+<pre><code>$ . myvenv\Scripts\activate.ps1
+</code></pre><p>La ventaja es que no tienes que cambiar las ventanas entre el editor de código y la línea de comandos.</p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Working with virtualenv: Linux and OS X<a class="pull-right section atTitle btn btn-default" target="virtualenv_linuxosx"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_linuxosx"><div class="panel-body">
+<p>Inicia el entorno virtual ejecutando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ source myvenv/bin/activate
+</code></pre><p>¡Recuerda reemplazar <code>myvenv</code> con tu nombre de <code>virtualenv</code> que hayas elegido!</p>
+<blockquote>
+<p><strong>NOTA:</strong> a veces <code>source</code> podría no estar disponible. En ese caso trata hacerlo de esta forma:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ . myvenv/bin/activate
+</code></pre></blockquote>
+</div></div></div></sec>
+<p>Sabrás que tienes <code>virtualenv</code> iniciado cuando veas que la línea de comando en tu consola tiene el prefijo <code>(myvenv)</code>.</p>
+<p>Cuando trabajes en un entorno virtual, <code>python</code> automáticamente se referirá a la versión correcta, de modo que puedes utilizar <code>python</code> en vez de <code>python3</code>.</p>
+<p>Ok, tenemos todas las dependencias importantes en su lugar. ¡Finalmente podemos instalar Django!</p>
+<h2 id="instalar-django">Instalar Django</h2>
+<p>Ahora que tienes tu <code>virtualenv</code> iniciado, puedes instalar Django.</p>
+<p>Antes de hacer eso, debemos asegurarnos que tenemos la última versión de <code>pip</code>, el software que utilizamos para instalar Django:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~$ python -m pip install --upgrade pip
+</code></pre><h3 id="instalar-paquetes-con-un-fichero-de-requisitos-requirements">Instalar paquetes con un fichero de requisitos (requirements)</h3>
+<p>Un fichero de requisitos (requirements) tiene una lista de dependencias que se deben instalar mediante <code>pip install</code>:</p>
+<p>Primero crea un archivo <code>requirements.txt</code> dentro de tu directorio <code>djangogirls</code>, usando el editor de código que instalaste previamente. Lo puedes hacer mediante abriendo un nuevo archivo en el editor de código y guardándolo como <code>requirements.txt</code> en el directorio <code>djangogirls</code>. Tu directorio se verá así:</p>
+<pre><code>djangogirls
+└───requirements.txt
+</code></pre><p>Dentro del fichero <code>djangogirls/requirements.txt</code> deberías tener el siguiente texto:</p>
+<p></p><p class="code-label">djangogirls/requirements.txt</p><p></p>
+<pre><code>Django~=2.2.4
+</code></pre><p>Ahora, ejecuta <code>pip install -r requirements.txt</code> para instalar Django.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~$ pip install -r requirements.txt
+Collecting Django~=2.2.4 (from -r requirements.txt (line 1))
+  Downloading Django-2.2.4-py3-none-any.whl (7.1MB)
+Installing collected packages: Django
+Successfully installed Django-2.2.4
+</code></pre><sec data-title="Installing Django: Windows" data-id="django_err_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Windows<a class="pull-right section atTitle btn btn-default" target="django_err_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_windows"><div class="panel-body">
+<blockquote>
+<p>Si obtienes un error cuando llamas al pip en la plataforma de Windows, por favor verifica si el nombre de ruta de tu proyecto contiene espacios, acentos o caracteres especiales (por ejemplo, <code>C:\Usuarios\NombreUsuario\djangogirls</code>). Si los tiene, utiliza otro en su lugar sin espacios, acentos o caracteres especiales (sugerencia: <code>C:\djangogirls</code>). Crea un nuevo virtualenv en el nuevo directorio, luego borra el viejo y trata de escribir el comando anterior otra vez. (Moviendo el directorio virtualenv no funcionará debido a que usa rutas absolutas.)</p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Windows 8 and Windows 10<a class="pull-right section atTitle btn btn-default" target="django_err_windows8and10"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_windows8and10"><div class="panel-body">
+<blockquote>
+<p>Tu línea de comando puede congelarse luego de intentar instalar Django. Si esto sucede, usa el siguiente comando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>C:\Users\Name\djangogirls&gt; python -m pip install -r requirements.txt
+</code></pre></blockquote>
+</div></div></div></sec>
+<sec data-title="Installing Django: Linux" data-id="django_err_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Linux<a class="pull-right section atTitle btn btn-default" target="django_err_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_linux"><div class="panel-body">
+<blockquote>
+<p>Si obtienes un error cuando llamas pip en Ubuntu 12.04, por favor corre <code>python -m pip install -U --force-reinstall pip</code> para reparar la instalación de pip en el virtualenv.</p>
+</blockquote>
+</div></div></div></sec>
+<p>¡Eso es todo! Ahora estás lista (por fin) para crear una aplicación Django!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django/" class="navigation navigation-prev " aria-label="Previous page: ¿Qué es Django?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_start_project/" class="navigation navigation-next " aria-label="Next page: ¡Tu primer proyecto en Django!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Instalación de Django","level":"1.10","depth":1,"next":{"title":"¡Tu primer proyecto en Django!","level":"1.11","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"previous":{"title":"¿Qué es Django?","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"es","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_installation/README.md","mtime":"2021-03-25T14:00:00.203Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

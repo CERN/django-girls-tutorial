@@ -1,0 +1,776 @@
+
+<!DOCTYPE HTML>
+<html lang="hu" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django modellek · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_admin/" />
+    
+    
+    <link rel="prev" href="../django_start_project/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Bevezetés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installáció
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Hogy működik az Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Bevezetés a parancssor használatába
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    A Python telepítése
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kódszerkesztő (editor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Bevezetés a Pythonba
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Mi a Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django telepítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Az első Django projekted!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django modellek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - itt az ideje alkotni!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Bevezetés a HTML-be
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM és QuerySet-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dinamikus adatok a template-ben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django sablonok (template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Tegyük széppé!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template-kiegészítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Egészítsd ki az applikációdat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django űrlapok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Következő lépések
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django modellek</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-modellek">Django modellek</h1>
+<p>Most valami olyasmire van szükségünk, ami eltárolja az összes blogbejegyzést. De ahhoz, hogy létre tudjunk hozni ilyesmit, előbb egy kicsit beszélnünk kell az <code>objektumokról</code>.</p>
+<h2 id="objektumok">Objektumok</h2>
+<p>Létezik egy <code>objektumorientált programozás</code> nevű fogalom a programozáson belül. Ennek az az alapötlete, hogy ahelyett, hogy mindent utasítások unalmas sorozataként írnánk le, modellezhetjük is a dolgokat, és definiálhatjuk, hogyan lépnek kapcsolatba egymással.</p>
+<p>Tehát mi az az objektum? Tulajdonságok és tevékenységek gyűjteménye. Furán hangozhat, de mindjárt mutatunk egy példát.</p>
+<p>Ha egy macskát szeretnék modellezni, létrehozunk egy <code>Cat</code> (macska) objektumot, aminek van néhány tulajdonsága: <code>color</code> (szín), <code>age</code> (életkor), <code>mood</code> (kedv -például jó, rossz, álmos ;)), és <code>owner</code> (tulajdonos - aki egy <code>Person</code> (személy) objektum, és talán, ha kóbor macskáról van szó, ez a tulajdonság üres).</p>
+<p>Aztán a <code>Cat</code>-hez tartozik néhány tevékenység: <code>purr</code> (dorombolás), <code>scratch</code> (karmolás), vagy <code>feed</code> (evés - ahol a macskának adunk egy kis macskaeledelt, vagyis <code>CatFood</code>-ot, ami egy külön objektum, saját tulajdonságokkal, mint például <code>taste</code> (íz)).</p>
+<pre><code>Cat
+--------
+color
+age
+mood
+owner
+purr()
+scratch()
+feed(cat_food)
+</code></pre><p>Tehát az egésznek az az alapötlete, hogy a valós dolgokat kódban tulajdonságokkal (vagyis <code>object property</code>-kkel) és tevékenységekkel (vagyis <code>method</code>-okkal) írjuk le.</p>
+<p>Hogyan modellezzük a blogposztokat? Egy blogot szeretnénk fejleszteni, ugye?</p>
+<p>Erre a kérdésre keressük a választ: Mi egy blogposzt? Milyen tulajdonságai vannak?</p>
+<p>Nos, a bejegyzésünknek biztos van szövege, és címe, igaz? Azt is jó lenne tudni, hogy ki írta - vagyis szükségünk van egy szerzőre is. Végül tudni szeretnénk, mikor lett megírva és közzétéve a poszt.</p>
+<pre><code>Post
+--------
+title
+text
+author
+created_date
+published_date
+</code></pre><p>Milyen dolgokat lehet csinálni egy blogbejegyzéssel? Jó lenne, ha lenne valamiféle <code>method</code>, ami közzéteszi a posztot, nem?</p>
+<p>Tehát szükségünk van egy <code>publish</code> methodra.</p>
+<p>Most, hogy tudjuk, mit szeretnénk elérni, kezdjük el modellezni Django-ban!</p>
+<h2 id="django-modell">Django modell</h2>
+<p>Most, hogy tudjuk, mik az objektumok, már el tudjuk készíteni a blogposzt Django modelljét.</p>
+<p>A Django-ban a modellek speciális objektumok - az <code>adatbázisban</code> vannak elmentve. Az adatbázis tulajdonképpen adatok gyűjteménye. Ez az a hely, ahol adatokat tárolhatsz a felhasználókról, a blogposztokról, stb. Mi egy SQLite adatbázist fogunk használni az adataink tárolásához. Ez az alapértelmezett Django adatbázis adapter -- ez egyelőre elég is lesz nekünk.</p>
+<p>Az adatbázisban lévő modellt úgy képzeld el, mint egy táblázatot (pl. az Excelben), ahol oszlopok (mezők) és sorok (adatok) vannak.</p>
+<h3 id="készítsünk-egy-alkalmazást">Készítsünk egy alkalmazást!</h3>
+<p>Hogy minden szép rendben maradjon, most a projekten belül egy külön alkalmazást hozunk létre. Jó, ha már az elejétől fogva rendezetten tartjuk a dolgokat. Ahhoz, hogy létrehozzuk az alkalmazást, ezt a parancsot kell futtatnunk a parancssorban (a <code>djangogirls</code> könyvtárban, ahol a <code>manage.py</code> fájl van):</p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py startapp blog
+</code></pre><p>Azt fogod látni, hogy egy új <code>blog</code> könyvtár keletkezett, és már most van benne néhány fájl. Így kell kinézniük a könyvtáraknak és fájloknak a projekten belül:</p>
+<pre><code>djangogirls
+├── mysite
+|       __init__.py
+|       settings.py
+|       urls.py
+|       wsgi.py
+├── manage.py
+└── blog
+    ├── migrations
+    |       __init__.py
+    ├── __init__.py
+    ├── admin.py
+    ├── models.py
+    ├── tests.py
+    └── views.py
+</code></pre><p>Miután létrejött az alkalmazás, meg kell mondanunk a Django-nak, hogy használja is azt. A <code>mysite/settings.py</code> tehetjük meg. Keresd meg az <code>INSTALLED_APPS</code> részt, és adj hozzá egy sort a <code>]</code> fölött, amiben ez áll: <code>&apos;blog&apos;</code>. Így kell kinéznie ennek a résznek:</p>
+<pre><code class="lang-python">INSTALLED_APPS = [
+    <span class="hljs-string">&apos;django.contrib.admin&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.auth&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.contenttypes&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.sessions&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.messages&apos;</span>,
+    <span class="hljs-string">&apos;django.contrib.staticfiles&apos;</span>,
+    <span class="hljs-string">&apos;blog&apos;</span>,
+]
+</code></pre>
+<h3 id="hozzuk-létre-a-blogposzt-modelljét">Hozzuk létre a blogposzt modelljét</h3>
+<p>A <code>Model</code> nevű objektumokat a <code>blog/models.py</code> fájlban definiáljuk - tehát itt fogjuk definiálni a blogposztunkat is.</p>
+<p>Nyisd meg a <code>blog/models.py</code>-t, törölj ki mindent, és ezt a kódot írd bele:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.db <span class="hljs-keyword">import</span> models
+<span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Post</span>(<span class="hljs-params">models.Model</span>):</span>
+    author = models.ForeignKey(<span class="hljs-string">&apos;auth.User&apos;</span>, on_delete=models.CASCADE)
+    title = models.CharField(max_length=<span class="hljs-number">200</span>)
+    text = models.TextField()
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=<span class="hljs-literal">True</span>, null=<span class="hljs-literal">True</span>)
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">publish</span>(<span class="hljs-params">self</span>):</span>
+        self.published_date = timezone.now()
+        self.save()
+
+    <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__str__</span>(<span class="hljs-params">self</span>):</span>
+        <span class="hljs-keyword">return</span> self.title
+</code></pre>
+<blockquote>
+<p>Jól figyelj, hogy mindenképp két underscore (alulvonás) karaktert (<code>_</code>) használj a <code>str</code> mindkét oldalán. Ez a jelölés gyakran előfordul a Pythonban, és néha &quot;dunder&quot;-nek hívjuk (a &quot;double underscore&quot; - dupla alulvonás rövidítése).</p>
+</blockquote>
+<p>Ijesztőnek tűnik? Ne aggódj, mindjárt elmagyarázzuk, hogy mit jelentenek ezek a sorok.</p>
+<p>Azok a sorok, amik úgy kezdődnek, hogy <code>from</code> vagy <code>import</code>, más fájlokban lévő dolgokat adnak hozzá a fájlunkhoz. Ahelyett, hogy minden fájlba átmásolnánk ugyanazokat a dolgokat, beemelhetünk néhány dolgot a <code>from ... import ...</code> segítségével..</p>
+<p><code>class Post(models.Model):</code> - ez a sor definiálja a modellünket (ami egy <code>objektum</code>).</p>
+<ul>
+<li>a <code>class</code> egy speciális kulcsszó, ami azt mutatja meg, hogy éppen egy objektumot definiálunk.</li>
+<li>a <code>Post</code> a modellünk neve. Más nevet is adhatnál neki (de kerüld el a speciális karaktereket - pl ékezetes karakterek - és a szóközt). Az osztályok (classok) nevét mindig nagybetűvel kezdjük.</li>
+<li>a <code>models.Model</code> azt jelenti, hogy a Post egy Django Model, így a Django tudni fogja, hogy el kell menteni az adatbázisba.</li>
+</ul>
+<p>Most pedig azokat a tulajdonságokat definiáljuk, amikről korábban beszéltünk:<code>title</code> (cím), <code>text</code> (szöveg), <code>created_date</code> (létrehozás dátuma), <code>published_date</code> (közzététel dátuma) és <code>author</code> (szerző). Ahhoz, hogy ezt megtehessük, mindegyik mezőnek meg kell határoznunk a típusát (Szöveg lesz benne? Egy szám? Dátum? Egy másik objektumhoz fog kapcsolni, például egy User-hez (felhasználó)?).</p>
+<ul>
+<li><code>models.CharField</code> - így definiálsz olyan szövegmezőt, ami meghatározott számú karaktert tartalmazhat.</li>
+<li><code>models.TextField</code> - ez hosszú szövegekhez van, korlátozás nélkül. Pont jó egy blogbejegyzéshez, igaz?</li>
+<li><code>models.DateTimeField</code> - ez dátumot és időt tartalmaz.</li>
+<li><code>models.ForeignKey</code> - ez egy másik modellel való kapcsolatot jelent.</li>
+</ul>
+<p>Most nem magyarázzuk el nagyon részletesen a kódot, mert túl sok idő lenne. Ha szeretnél többet tudni a Model mezőkről, és hogy milyen más dolgokat lehet definiálni bennünk, olvashatsz róla a Django dokumentációban (<a href="https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types" target="_blank">https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types</a>).</p>
+<p>És mi a helyzet a <code>def publish(self):</code> résszel? Ez pontosan az a <code>publish</code> (közzététel) method, amiről korábban beszéltünk. A <code>def</code> azt jelenti, hogy ez egy függvény (function) / method, és a <code>publish</code> ennek a methodnak a neve. Ha szeretnéd, megváltoztathatod a metódus nevét. Az a szabály, hogy csak kisbetűket használunk, és szóköz helyett underscore-t (alulvonás). Például egy olyan method neve, ami az átlagárat számolja ki, ez lehetne: <code>calculate_average_price</code>.</p>
+<p>A methodok gyakran <code>return</code>-ölnek (visszaadnak) valamit. Erre van is egy példa a <code>__str__</code> methodban. Ebben az esetben amikor meghívjuk a <code>__str__()</code>-t, egy szöveget kapunk vissza (<strong>string</strong>), ami a Post címe.</p>
+<p>Vedd észre azt is, hogy mind <code>def publish(self):</code> mind <code>def __str__(self):</code> indentálva van a class-on bellül. Python számára fontosak a szóközök, ezért a method-okat indentálni kell az osztályokon bellül. Ha ez elmarad, akkor a method nem az adott osztályhoz fog tartozni, és furcsán fog viselkedni a program.</p>
+<p>Ha valami még nem teljesen világos a modellekkel kapcsolatban, nyugodtan kérdezd meg a coachodat! Tudjuk, hogy bonyolult, főleg, ha egyszerre tanulsz az objektumokról és a függvényekről. De reméljük, már sokkal kevésbé tűnik varázslatnak az egész!</p>
+<h3 id="készíts-táblákat-a-modelleknek-az-adatbázisodban">Készíts táblákat a modelleknek az adatbázisodban</h3>
+<p>Az utolsó lépés, hogy hozzáadjuk az új modellünket az adatbázishoz. Először valahogy tudatnunk kell a Django-val, hogy változtattunk a modellünkön (vagyis most alkottuk meg!). Gépeld be, hogy <code>python manage.py makemigrations blog</code>. Ez fog történni:</p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py makemigrations blog
+Migrations for &apos;blog&apos;:
+  0001_initial.py:
+  - Create model Post
+</code></pre><p><strong>Megjegyzés</strong> Ne felejtsd el elmenteni a módosított file-okat. Különben a számítógéped az előző változatot futtatja le, amely váratlan hibaüzeneteket eredményezhet.</p>
+<p>A Django létrehozott nekünk egy migrációs fájlt, amit most futtatni fogunk az adatbázison. Írd be, hogy <code>python manage.py migrate blog</code>, és ezt az outputot kell kapnod:</p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py migrate blog
+Operations to perform:
+  Apply all migrations: blog
+Running migrations:
+  Rendering model states... DONE
+  Applying blog.0001_initial... OK
+</code></pre><p>Hurrá! Bekerült az adatbázisba a Post modellünk! Jó lenne látni is, nem igaz? A következő fejezetben kiderül, hogy néz ki!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_start_project/" class="navigation navigation-prev " aria-label="Previous page: Az első Django projekted!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_admin/" class="navigation navigation-next " aria-label="Next page: Django admin">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django modellek","level":"1.11","depth":1,"next":{"title":"Django admin","level":"1.12","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"previous":{"title":"Az első Django projekted!","level":"1.10","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"hu","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_models/README.md","mtime":"2021-03-25T14:00:00.283Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"hu"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

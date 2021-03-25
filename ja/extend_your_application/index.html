@@ -1,0 +1,902 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>アプリケーションを拡張しよう · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_forms/" />
+    
+    
+    <link rel="prev" href="../template_extending/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    コマンドライン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    仮想環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Chromebookのセットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    インターネットのしくみ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    コマンドラインを使ってみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Pythonのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Djangoってなに？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Djangoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    プロジェクトを作成しよう！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Djangoモデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    ログインページを作ろう（Django admin）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    デプロイ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Djangoビュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM（クエリセット）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    テンプレート内の動的データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Djangoテンプレート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSSでカワイくしよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    テンプレートを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    アプリケーションを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Djangoフォーム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    次のステップは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >アプリケーションを拡張しよう</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="アプリケーションを拡張しよう">アプリケーションを拡張しよう</h1>
+<p>もうウェブサイトを作るのに必要な全ての章は終わりました。モデル、URL、ビュー、テンプレートの書き方はわかっていますし、またウェブサイトを素敵にするやり方もわかります。</p>
+<p>さあ練習しましょう！</p>
+<p>ブログに最初に必要なものはおそらく、記事を表示するページですよね。</p>
+<p>もう<code>Post</code>モデルが入っていますから、<code>models.py</code>は追加する必要はありません</p>
+<h2 id="投稿の詳細へのテンプレートリンクを作成する">投稿の詳細へのテンプレートリンクを作成する</h2>
+<p><code>blog/templates/blog/post_list.html</code>ファイルにリンクを追加していきましょう。 コードエディタで開いたら、次のようになっていますよね： </p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    {% for post in posts %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    {% endfor %}
+{% endblock %}
+</code></pre>
+<p>投稿リストの投稿のタイトルから投稿の詳細ページへのリンクを作りたいです。 投稿の詳細ページにリンクするように<code>&lt;h2&gt;&lt;a href=&quot;&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;</code>を変更しましょう。</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!"></span> blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_detail&apos; pk=post.pk %}&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+</code></pre>
+<p>不思議な<code>{％ url &apos;post_detail&apos; pk = post.pk ％}</code>を説明します。 気づいたかもしれませんが、<code>{% %}</code>という表記はDjangoのテンプレートタグを使用していることを意味しています。 今私たちはこれをURLを作るために使います！</p>
+<p><code>post_detail</code>の部分は、Djangoが<code>blog/urls.py</code>に書かれた name=post_detail のURLを待ち受けることを表しています。</p>
+<p>そして<code>pk=post.pk</code>についてはどうでしょうか？ <code>pk</code>はプライマリキーの略で、データベースの各レコードのユニークな名前です。 <code>Post</code>モデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成し（デフォルトでは、各レコードごとに1ずつ増える数字で、たとえば1、2、3です）、各投稿に<code>pk</code>というフィールド名で追加します。 <code>Post</code>オブジェクトの他のフィールド（<code>title</code>、<code>author</code>など）にアクセスするのと同じ方法で、<code>post.pk</code>と書くことによってプライマリキーにアクセスします！</p>
+<p>さて、私たちが <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a> に行くとエラーが出ます（知っての通り、URLも<code>post_detail</code>の<em>ビュー</em>もまだ作っていないので）。 このようになります：</p>
+<p><img src="images/no_reverse_match2.png" alt="NoReverseMatch error"></p>
+<h2 id="投稿の詳細へのurlを作成する">投稿の詳細へのURLを作成する</h2>
+<p><code>post_detail</code> <em>ビュー</em>用に<code>urls.py</code>にURLを作成しましょう！</p>
+<p>最初の投稿の詳細がこの<strong>URL</strong>で表示されるようにします：<a href="http://127.0.0.1:8000/post/1/" target="_blank">http://127.0.0.1:8000/post/1/</a></p>
+<p>投稿の内容を表示する<code>post_detail</code>という<em>ビュー</em>をDjangoに示すように、<code>blog/urls.py</code>ファイルでURLを作りましょう。 <code>blog/urls.py</code>をエディタで開いて、<code>path(&apos;post/&lt;int:pk&gt;/&apos;, views.post_detail, name=&apos;post_detail&apos;),</code>という行を追加しましょう。ファイルは次のようになるでしょう。</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!"></span> blog/urls.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/&apos;</span>, views.post_detail, name=<span class="hljs-string">&apos;post_detail&apos;</span>),
+]
+</code></pre>
+<p><code>post/&lt;int:pk&gt;/</code> の部分はURLパターンを指定しています。それについて説明しましょう:</p>
+<ul>
+<li><code>post/</code> はURLが <strong>post</strong> に続けて <strong>/</strong> で始まることを意味します。ここまでは順調ですね。</li>
+<li><code>&lt;int:pk&gt;</code> – この部分はトリッキーです。これはDjangoは整数の値を期待し、その値が<code>pk</code>という名前の変数でビューに渡されることを意味しています。</li>
+<li><code>/</code> – それからURLの最後に再び <strong>/</strong> が必要です。</li>
+</ul>
+<p>つまり、ブラウザに<code>http://127.0.0.1:8000/post/5/</code>を入力すると、Djangoは<code>post_detail</code>という<em>ビュー</em>を探していると理解します。そして<code>pk</code>が<code>5</code>という情報をその<em>ビュー</em>に転送します。</p>
+<p>よし、私たちは <code>blog/urls.py</code> に新しい URL パターンを追加しました！ ページを更新しましょう：<a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a> ドーン！ サーバーが再び実行を停止しました。 コンソールを見てください - 予想通り、もう一つのエラーがあります！</p>
+<p><img src="images/attribute_error2.png" alt="AttributeError"></p>
+<p>あなたは次のステップが何であるか覚えていますか？ ビューを追加する！ですね。</p>
+<h2 id="投稿の詳細ビューを追加する">投稿の詳細ビューを追加する</h2>
+<p>今回は<em>ビュー</em>に追加のパラメータ<code>pk</code>が与えられます。 私たちの<em>ビュー</em>はそれを受け取る必要がありますね？ そこで関数を<code>def post_detail(request, pk):</code>として定義します。 <code>urls</code>で指定した名前（<code>pk</code>）とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略するのは正しくないのでエラーになってしまいます！</p>
+<p>今、私たちは1つだけブログ投稿を取得したいと考えています。 これを行うには、次のようなクエリセットが使用できます。</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!"></span> blog/views.py</p><p></p>
+<pre><code class="lang-python">Post.objects.get(pk=pk)
+</code></pre>
+<p>しかし、このコードには問題があります。 与えられた<code>プライマリキー</code>（<code>pk</code>）を持つ<code>Post</code>が存在しない場合、とてもダサいエラーが発生します。</p>
+<p><img src="images/does_not_exist2.png" alt="DoesNotExist error"></p>
+<p>私たちはそれを望んでいません！ しかし幸運にもDjangoにはそれを処理するものがあります：<code>get_object_or_404</code> です。 与えられた<code>pk</code>の<code>Post</code>がない場合、前よりもっとよい <code>Page Not Found 404</code> ページが表示されます。</p>
+<p><img src="images/404_2.png" alt="Page not found"></p>
+<p>いい知らせとして実際には自分の<code>Page not found</code>ページを作って自分の好きなようにきれいにすることができます。しかしそれは今すごく重要ではないので、私たちはそれをスキップします。</p>
+<p>よし、今こそ<em>ビュー</em>を<code>views.py</code>ファイルに追加するときです！</p>
+<p><code>blog/urls.py</code>では<code>views.post_detail</code>というビューを参照する<code>post_detail</code>という名前のURLルールを作成しました。 これは、Djangoが<code>blog/views.py</code>内の<code>post_detail</code>というビュー関数を待っていることを意味します。</p>
+<p><code>blog/views.py</code>をコードエディタで開き、他の<code>from</code>行の近くに次のコードを追加する必要があります。</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render, get_object_or_404
+</code></pre>
+<p>ファイルの最後に<em>ビュー</em>を追加します：</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_detail</span>(<span class="hljs-params">request, pk</span>):</span>
+    post = get_object_or_404(Post, pk=pk)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_detail.html&apos;</span>, {<span class="hljs-string">&apos;post&apos;</span>: post})
+</code></pre>
+<p>ページを更新してみましょう：<a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a></p>
+<p><img src="images/post_list2.png" alt="Post list view"></p>
+<p>出来ましたね！ しかし、ブログ投稿のタイトルのリンクをクリックするとどうなりますか？</p>
+<p><img src="images/template_does_not_exist2.png" alt="TemplateDoesNotExist error"></p>
+<p>あらいやだ！ 別のエラー！ しかし、私たちはすでにそれに対処する方法をすでに知っていますね。 そう！テンプレートを追加する必要があります！</p>
+<h2 id="投稿の詳細へのテンプレートリンクを作成する">投稿の詳細へのテンプレートリンクを作成する</h2>
+<p><code>blog/templates/blog</code>に<code>post_detail.html</code>というファイルを作成し、コードエディタで開きます。</p>
+<p>こんな感じですね。</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        {% if post.published_date %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {% endif %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p>もう一度<code>base.html</code>を拡張します。 <code>content</code>ブロックでは、投稿の公開日（存在する場合）、タイトル、およびテキストを表示します。 ここで重要なポイントについて見てみます。</p>
+<p><code>{% if ... %} ...  {％endif％}</code>は、何かをチェックしたいときに使用できるテンプレートタグです。 (<code>if ... else...</code>を<strong>Python入門</strong>のチャプターでやったのを覚えていますか？) この場合、投稿の<code>published_date</code>（公開日）が空でないかを確認します。</p>
+<p>これで、ページを更新して<code>TemplateDoesNotExist</code>がもうなくなったかどうか確認できます。</p>
+<p><img src="images/post_detail2.png" alt="Post detail page"></p>
+<p>イェーイ！うまくできていますね！</p>
+<h1 id="デプロイの時間です！">デプロイの時間です！</h1>
+<p>あなたのウェブサイトがまだPythonAnywhere上で動くとしたらいいでしょう？またデプロイしてみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+$ git add --all .
+$ git status
+$ git commit -m &quot;Added view and template for detailed blog post as well as CSS for the site.&quot;
+$ git push
+</code></pre><p>それから、<a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere Bash コンソール</a>で：</p>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>$ cd ~/&lt;your-pythonanywhere-domain&gt;.pythonanywhere.com
+$ git pull
+[...]
+</code></pre><p>（<code>&lt;your-pythonanywhere-domain&gt;</code>の部分を、自分の実際のPythonAnywhereのサブドメイン名に山カッコをはずして置き換えることを忘れずに。）</p>
+<h2 id="サーバー上の静的ファイルの更新">サーバー上の静的ファイルの更新</h2>
+<p>PythonAnywhereのようなサーバは、（CSSファイルのような）「静的ファイル」をPythonファイルとは違って扱うのが好きです。なぜなら、それらが高速に読み込まれるように最適化できるからです。 その結果、CSSファイルを変更するたびに、サーバー上で追加のコマンドを実行して、更新するように指示する必要があります。 コマンドは<code>collectstatic</code>です。</p>
+<p>もし仮想環境（virtualenv）が有効になっていなければ有効化するところから始めましょう (PythonAnywhereではこれを行うために<code>workon</code>というコマンドを使用します。これはあなたが自身のコンピュータで使用している<code>source myenv/bin/activate</code>コマンドと同じようなものです) 。</p>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>$ workon &lt;your-pythonanywhere-domain&gt;.pythonanywhere.com
+(ola.pythonanywhere.com)$ python manage.py collectstatic
+[...]
+</code></pre><p><code>manage.py collectstatic</code>コマンドは、<code>manage.py migrate</code>のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を<em>適用</em>するよう指示します。</p>
+<p>いずれにしても、<a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">「Web」ページ</a>を（コンソールの右上のメニューボタンから）開き、<strong>Reload</strong>をクリックする準備ができました。そうしたら<a href="https://subdomain.pythonanywhere.comを見て結果を確認しましょう。" target="_blank">https://subdomain.pythonanywhere.comを見て結果を確認しましょう。</a></p>
+<p>うまくいってるはずです！おめでとう :)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../template_extending/" class="navigation navigation-prev " aria-label="Previous page: テンプレートを拡張しよう">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_forms/" class="navigation navigation-next " aria-label="Next page: Djangoフォーム">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"アプリケーションを拡張しよう","level":"1.23","depth":1,"next":{"title":"Djangoフォーム","level":"1.24","depth":1,"path":"django_forms/README.md","ref":"django_forms/README.md","articles":[]},"previous":{"title":"テンプレートを拡張しよう","level":"1.22","depth":1,"path":"template_extending/README.md","ref":"template_extending/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"ja","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"extend_your_application/README.md","mtime":"2021-03-25T14:00:00.343Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

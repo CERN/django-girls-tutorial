@@ -1,0 +1,1060 @@
+
+<!DOCTYPE HTML>
+<html lang="de" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django-Formulare · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../whats_next/" />
+    
+    
+    <link rel="prev" href="../extend_your_application/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Suchbegriff eingeben" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Einleitung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Kommandozeile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    Code-Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Virtuelle Umgebung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Installation (Chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Wie das Internet funktioniert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Einführung in die Kommandozeile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python-Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Der Code-Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Einführung in Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django - Was ist das?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django-Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Dein erstes Django-Projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django-Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django-Administration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Veröffentlichen!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django-URLs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django-Views - leg los!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Einführung in HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django-ORM und QuerySets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamische Daten in Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django-Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - mach es hübsch!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Erweiterung der Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Erweitere deine Anwendung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django-Formulare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Wie geht es weiter?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Veröffentlicht mit HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django-Formulare</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-formulare">Django-Formulare</h1>
+<p>Als Letztes möchten wir auf unserer Website noch die Möglichkeit haben, Blogposts hinzuzufügen und zu editieren. Die Django <code>admin</code>-Oberfläche ist cool, aber eher schwierig anzupassen und hübsch zu machen. Mit Formularen, <code>forms</code>, haben wir die absolute Kontrolle über unser Interface - wir können fast alles machen, was man sich vorstellen kann!</p>
+<p>Das Gute an Django-Forms ist, dass man sie entweder vollständig selbst definieren oder eine <code>ModelForm</code> erstellen kann, welche den Inhalt des Formulars in das Model speichert.</p>
+<p>Genau das wollen wir jetzt machen: Wir erstellen ein Formular für unser <code>Post</code>-Model.</p>
+<p>So wie die anderen wichtigen Django-Komponenten haben auch die Forms ihre eigene Datei: <code>forms.py</code>.</p>
+<p>Wir erstellen nun eine Datei mit diesem Namen im <code>blog</code>-Verzeichnis.</p>
+<pre><code>blog
+   └── forms.py
+</code></pre><p>So, jetzt lass uns diese im Code-Editor öffnen und folgenden Code hinzufügen:</p>
+<p></p><p class="code-label">blog/forms.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django <span class="hljs-keyword">import</span> forms
+
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostForm</span>(<span class="hljs-params">forms.ModelForm</span>):</span>
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+         model = Post
+         fields = (<span class="hljs-string">&apos;title&apos;</span>, <span class="hljs-string">&apos;text&apos;</span>,)
+</code></pre>
+<p>Zuerst müssen wir die Django-Forms importieren (<code>from django import forms</code>) und auch unser <code>Post</code>-Model (<code>from .models import Post</code>).</p>
+<p>Wie du wahrscheinlich schon vermutet hast, <code>PostForm</code> ist der Name unseres Formulars. Wir müssen Django mitteilen, dass unser Formular ein <code>ModelForm</code> ist (so kann Django ein bisschen für uns zaubern) - <code>forms.ModelForm</code> ist dafür verantwortlich.</p>
+<p>Als Nächstes sehen wir uns <code>class Meta</code> an, damit sagen wir Django, welches Model benutzt werden soll, um das Formular zu erstellen (<code>model = Post</code>).</p>
+<p>Nun können wir bestimmen, welche(s) Feld(er) unser Formular besitzen soll. Wir wollen hier nur den <code>title</code> und <code>text</code> sichtbar machen - der <code>author</code> sollte die Person sein, die gerade eingeloggt ist (Du!) und <code>created_date</code> sollte automatisch generiert werden, wenn der Post erstellt wird (also im Code). Stimmt&apos;s?</p>
+<p>Und das war&apos;s schon! Jetzt müssen wir das Formular nur noch in einem <em>view</em> benutzen und im Template darstellen.</p>
+<p>Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, eine View und ein Template.</p>
+<h2 id="link-auf-eine-seite-mit-dem-formular">Link auf eine Seite mit dem Formular</h2>
+<p>Jetzt ist es an der Zeit, <code>blog/templates/blog/base.html</code> im Code-Editor zu öffnen. Im <code>div</code> mit dem Namen <code>page-header</code> fügen wir einen Link hinzu:</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Beachte, dass wir unsere neue View <code>post_new</code> nennen wollen. Die Klasse <code>&quot;glyphicon glyphicon-plus&quot;</code> wird durch das verwendete Bootstrap-Theme zur Verfügung gestellt und wird ein Pluszeichen anzeigen.</p>
+<p>Nach dem Hinzufügen der Zeile sieht deine HTML-Datei so aus:</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html">{% load static %}
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&apos;//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext&apos;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&apos;stylesheet&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;text/css&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-header&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-8&quot;</span>&gt;</span>
+                    {% block content %}
+                    {% endblock %}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Nach dem Speichern und Neuladen von <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a> solltest du den bereits bekannten <code>NoReverseMatch</code>-Fehler sehen. Ist dem so? Gut!</p>
+<h2 id="url">URL</h2>
+<p>Wir öffnen <code>blog/urls.py</code> im Code-Editor und fügen eine Zeile hinzu:</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python">path(<span class="hljs-string">&apos;post/new/&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),
+</code></pre>
+<p>Der finale Code sieht dann so aus:</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path 
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views 
+urlpatterns = [     
+    path(<span class="hljs-string">&apos;&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),     
+    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/&apos;</span>, views.post_detail, name=<span class="hljs-string">&apos;post_detail&apos;</span>),     
+    path(<span class="hljs-string">&apos;post/new/&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>), 
+]
+</code></pre>
+<p>Nach dem Neuladen der Site sehen wir einen <code>AttributeError</code>, weil wir noch keine <code>post_new</code>-View eingefügt haben. Fügen wir sie gleich hinzu!</p>
+<h2 id="die-postnew-view">Die post_new-View</h2>
+<p>Jetzt wird es Zeit, die Datei <code>blog/views.py</code> im Code-Editor zu öffnen und die folgenden Zeilen zu den anderen <code>from</code> Zeilen hinzuzufügen:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> .forms <span class="hljs-keyword">import</span> PostForm
+</code></pre>
+<p>Und dann unsere <em>View</em>:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>Um ein neues <code>PostForm</code> zu erstellen, rufen wir <code>PostForm()</code> auf und übergeben es an das Template. Wir kommen gleich nochmal zu dem <em>View</em> zurück, aber jetzt erstellen wir schnell ein Template für das Form.</p>
+<h2 id="template">Template</h2>
+<p>Wir müssen eine Datei <code>post_edit.html</code> im Verzeichnis <code>blog/templates/blog</code> erstellen und im Code-Editor öffnen. Damit ein Formular funktioniert, benötigen wir einige Dinge:</p>
+<ul>
+<li>Wir müssen das Formular anzeigen. Wir können das zum Beispiel mit einem einfachen `` tun.</li>
+<li>Die Zeile oben muss von einem HTML-Formular-Tag eingeschlossen werden <code>&lt;form method=&quot;POST&quot;&gt;...&lt;/form&gt;</code>.</li>
+<li>Wir benötigen einen <code>Save</code>-Button. Wir erstellen diesen mit einem HTML-Button: <code>&lt;button type=&quot;submit&quot;&gt;Save&lt;/button&gt;</code>.</li>
+<li>Und schließlich fügen wir nach dem öffnenden <code>&lt;form ...&gt;</code> Tag <code>{% csrf_token %}</code> hinzu. Das ist sehr wichtig, da es deine Formulare sicher macht! Wenn du diesen Teil vergisst, wird sich Django beim Speichern des Formulars beschweren.</li>
+</ul>
+<p><img src="images/csrf2.png" alt="CSFR Forbidden page"></p>
+<p>Ok, also schauen wir mal, wie der HTML-Code in <code>post_edit.html</code> aussehen sollte:</p>
+<p></p><p class="code-label">blog/templates/blog/post_edit.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>New post<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;POST&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post-form&quot;</span>&gt;</span>{% csrf_token %}
+        {{ form.as_p }}
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;save btn btn-default&quot;</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p>So, jetzt aktualisieren wir die Seite! Yay! Das Formular wird angezeigt!</p>
+<p><img src="images/new_form2.png" alt="Neues Formular"></p>
+<p>Aber Moment! Wenn du in das <code>title</code>- oder <code>text</code>-Feld etwas eintippst und versuchst es zu speichern - was wird wohl passieren?</p>
+<p>Nichts! Wir landen wieder auf der selben Seite und unser Text ist verschwunden... und kein neuer Post wurde hinzugefügt. Was lief denn hier schief?</p>
+<p>Die Antwort ist: nichts. Wir müssen einfach noch etwas mehr Arbeit in unsere <em>View</em> stecken.</p>
+<h2 id="speichern-des-formulars">Speichern des Formulars</h2>
+<p>Öffne <code>blog/views.py</code> erneut im Code-Editor. Derzeit ist alles, was wir in der View <code>post_new</code> haben, das hier:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>Wenn wir das Formular übermitteln, werden wir zur selben Ansicht weitergeleitet, aber dieses Mal haben wir mehr Daten in <code>request</code>, genauer in <code>request.POST</code> (der Name hat nichts zu tun mit einem &quot;Blogpost&quot;, sondern damit, dass wir Daten &quot;posten&quot;). Erinnerst du dich daran, dass in der HTML-Datei unsere <code>&lt;form&gt;</code> Definition die Variable <code>method=&quot;POST&quot;</code> hatte? Alle Felder aus dem Formular sind jetzt in <code>request.POST</code>. Du solltest <code>POST</code> nicht umbenennen (der einzige andere gültige Wert für <code>method</code> ist <code>GET</code>, wir wollen hier jetzt aber nicht auf den Unterschied eingehen).</p>
+<p>Somit müssen wir uns in unserer <em>View</em> mit zwei verschiedenen Situationen befassen: erstens, wenn wir das erste Mal auf die Seite zugreifen und ein leeres Formular wollen und zweitens, wenn wir zur <em>View</em> mit allen soeben ausgefüllten Formular-Daten zurück wollen. Wir müssen also eine Bedingung hinzufügen (dafür verwenden wir <code>if</code>):</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+    [...]
+<span class="hljs-keyword">else</span>:
+    form = PostForm()
+</code></pre>
+<p>Es wird Zeit, die Lücken zu füllen <code>[...]</code>. Falls die <code>Methode</code> <code>POST</code> ist, wollen wir das <code>PostForm</code> mit Daten vom Formular erstellen. Oder? Das machen wir folgendermaßen:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(request.POST)
+</code></pre>
+<p>Als Nächstes müssen wir testen, ob das Formular korrekt ist (alle benötigten Felder sind ausgefüllt und keine ungültigen Werte werden gespeichert). Wir tun das mit <code>form.is_valid()</code>.</p>
+<p>Wir überprüfen also, ob das Formular gültig ist und wenn ja, können wir es speichern!</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> form.is_valid():
+    post = form.save(commit=<span class="hljs-literal">False</span>)
+    post.author = request.user
+    post.published_date = timezone.now()
+    post.save()
+</code></pre>
+<p>Im Grunde passieren hier zwei Dinge: Wir speichern das Formular mit <code>form.save</code> und wir fügen einen Autor hinzu (da es bislang kein <code>author</code> Feld in der <code>PostForm</code> gab und dieses Feld notwendig ist). <code>commit=False</code> bedeutet, dass wir das <code>Post</code> Model noch nicht speichern wollen - wir wollen erst noch den Autor hinzufügen. Meistens wirst du <code>form.save()</code> ohne <code>commit=False</code> benutzen, aber in diesem Fall müssen wir es so tun. <code>post.save()</code> wird die Änderungen sichern (den Autor hinzufügen) und ein neuer Blogpost wurde erstellt!</p>
+<p>Wäre es nicht grossartig, wenn wir direkt zu der <code>post_detail</code> Seite des neu erzeugten Blogposts gehen könnten? Um dies zu tun, benötigen wir noch einen zusätzlichen Import:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> redirect
+</code></pre>
+<p>Füge dies direkt am Anfang der Datei hinzu. Jetzt können wir endlich sagen: &quot;Gehe zu der <code>post_detail</code> Seite unseres neu erstellten Posts&quot;:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+</code></pre>
+<p><code>post_detail</code> ist der Name unserer View, zu der wir springen wollen. Erinnerst du dich, dass diese <em>View</em> einen <code>pk</code> benötigt? Um diesen an die View weiterzugeben, benutzen wir <code>pk=post.pk</code>, wobei <code>post</code> unser neu erstellter Blogpost ist!</p>
+<p>Ok, wir haben jetzt eine ganze Menge geredet, aber du willst bestimmt sehen, wie die gesamte <em>View</em> aussieht, richtig?</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>Schauen wir mal, ob es funktioniert. Gehe zur Seite <a href="http://127.0.0.1:8000/post/new/" target="_blank">http://127.0.0.1:8000/post/new/</a>, füge einen <code>title</code> und <code>text</code> hinzu und speichere es...voilà! Der neue Blogpost wird hinzugefügt und wir werden auf die <code>post_detail</code> Seite umgeleitet!</p>
+<p>Du hast vielleicht bemerkt, dass wir das Veröffentlichungsdatum festlegen, bevor wir den Post veröffentlichen. Später werden wir einen <em>publish button</em> in <strong>Django Girls Tutorial: Extensions</strong> einführen.</p>
+<p>Das ist genial!</p>
+<blockquote>
+<p>Da wir vor Kurzem das Django-Admin-Interface benutzt haben, denkt das System, dass wir noch angemeldet sind. Es gibt einige Situationen, welche dazu führen können, dass wir ausgeloggt werden (Schließen des Browsers, Neustarten der Datenbank etc). Wenn du feststellst, dass du bei dem Erstellen von Posts Fehlermeldungen bekommst, die auf nicht angemeldete Nutzer zurückzuführen sind, dann gehe zur Admin Seite <a href="http://127.0.0.1:8000/admin" target="_blank">http://127.0.0.1:8000/admin</a> und logge dich erneut ein. Dies wird das Problem vorübergehend lösen. Es gibt eine permanente Lösung dafür, die im Kapitel <strong>Homework: add security to your website!</strong> nach dem Haupttutorial auf dich wartet.</p>
+</blockquote>
+<p><img src="images/post_create_error.png" alt="Logged in error"></p>
+<h2 id="formularvalidierung">Formularvalidierung</h2>
+<p>Jetzt zeigen wir dir, wie cool Django-Formulare sind. Ein Blogpost muss <code>title</code>- und <code>text</code>-Felder besitzen. In unserem <code>Post</code>-Model haben wir (im Gegensatz zu dem <code>published_date</code>) nicht festgelegt, dass diese Felder nicht benötigt werden, also nimmt Django standardmäßig an, dass sie definiert werden.</p>
+<p>Versuch, das Formular ohne <code>title</code> und <code>text</code> zu speichern. Rate, was passieren wird!</p>
+<p><img src="images/form_validation2.png" alt="Formularvalidierung"></p>
+<p>Django kümmert sich darum sicherzustellen, dass alle Felder in unserem Formular richtig sind. Ist das nicht großartig?</p>
+<h2 id="formular-bearbeiten">Formular bearbeiten</h2>
+<p>Jetzt wissen wir, wie ein neuer Blogpost hinzugefügt wird. Aber was ist, wenn wir einen bereits bestehenden bearbeiten wollen? Das funktioniert so ähnlich wie das, was wir gerade getan haben. Lass uns schnell ein paar wichtige Dinge kreieren. (Falls du etwas nicht verstehst, solltest du deinen Coach fragen oder in den vorherigen Kapiteln nachschlagen, da wir all die Schritte bereits behandelt haben.)</p>
+<p>Öffne <code>blog/templates/blog/post_detail.html</code> im Code-Editor und füge folgende Zeile hinzu:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>damit die Vorlage so aussieht:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        {% if post.published_date %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {% endif %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p>Öffne <code>blog/urls.py</code> im Code-Editor und fügen diese Zeile hinzu:</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python">    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/edit/&apos;</span>, views.post_edit, name=<span class="hljs-string">&apos;post_edit&apos;</span>),
+</code></pre>
+<p>Wir werden die Vorlage <code>blog/templates/blog/post_edit.html</code> wiederverwenden, daher ist das einzig Fehlende eine neue <em>View</em>.</p>
+<p>Öffne <code>blog/views.py</code> im Code-Editor und füge ganz am Ende der Datei Folgendes hinzu:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_edit</span>(<span class="hljs-params">request, pk</span>):</span>
+    post = get_object_or_404(Post, pk=pk)
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST, instance=post)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm(instance=post)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>Sieht genauso aus wie unsere <code>post_new</code>-View, oder? Aber nicht ganz. Zum einen übergeben wir zusätzliche <code>pk</code> Parameter aus <code>urls</code>. Und: Wir bekommen das <code>Post</code>-Model, welches wir bearbeiten wollen, mit <code>get_object_or_404(Post, pk=pk)</code> und wenn wir dann ein Formular erstellen, übergeben wir post als <code>instance</code>, wenn wir das Formular speichern…</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(request.POST, instance=post)
+</code></pre>
+<p>als auch, wenn wir ein Formular mit post zum Editieren öffnen:</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(instance=post)
+</code></pre>
+<p>Ok, lass uns mal schauen, ob das funktioniert! Geh auf die <code>post_detail</code>-Seite. Dort sollte sich ein Editier-Button in der oberen rechten Ecke befinden:</p>
+<p><img src="images/edit_button2.png" alt="Schaltfläche &quot;Bearbeiten&quot;"></p>
+<p>Wenn du darauf klickst, siehst du das Formular mit unserem Blogpost:</p>
+<p><img src="images/edit_form2.png" alt="Formular bearbeiten"></p>
+<p>Probier doch einmal, den Titel oder den Text zu ändern und die Änderungen zu speichern!</p>
+<p>Herzlichen Glückwunsch! Deine Anwendung nimmt immer mehr Gestalt an!</p>
+<p>Falls du mehr Informationen über Django-Formulare benötigst, solltest du die offizielle Dokumentation lesen: <a href="https://docs.djangoproject.com/en/2.2/topics/forms/" target="_blank">https://docs.djangoproject.com/en/2.2/topics/forms/</a></p>
+<h2 id="sicherheit">Sicherheit</h2>
+<p>Neue Posts mit einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, was du garantiert nicht willst. Lass es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.</p>
+<p>Öffne die Datei <code>blog/templates/blog/base.html</code> im Code-Editor, finde darin unseren <code>page-header</code> <code>div</code> und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Wir fügen ein weiteres <code>{% if %}</code>-Tag ein, was dafür sorgt, dass der Link nur für angemeldete Nutzer angezeigt wird. Im Moment bist das also nur du! Ändere den <code>&lt;a&gt;</code>-Tag zu Folgendem:</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html">{% if user.is_authenticated %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}
+</code></pre>
+<p>Dieses <code>{% if %}</code> sorgt dafür, dass der Link nur zu dem Browser geschickt wird, wenn der anfragende Nutzer auch angemeldet ist. Das verhindert das Erzeugen neuer Posts nicht komplett, ist aber ein sehr guter erster Schritt. In der Erweiterungslektion kümmern wir uns ausgiebiger um Sicherheit.</p>
+<p>Erinnerst du dich an den Editier-Button, den wir gerade zu unserer Seite hinzugefügt haben? Wir wollen dort dieselbe Anpassung machen, damit andere Leute keine existierenden Posts verändern können.</p>
+<p>Öffne <code>blog/templates/blog/post_detail.html</code> im Code-Editor und finde folgende Zeile:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>Ändere es wie folgt:</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% if user.is_authenticated %}
+     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}
+</code></pre>
+<p>Da du wahrscheinlich angemeldet bist, wirst du beim Refresh der Seite keinen Veränderung feststellen. Lade jedoch die Seite in einem anderen Browser oder einem Inkognito-Fenster (&quot;In Private&quot; im Windows Edge) und du wirst sehen, dass dieser Link nicht auftaucht und das Icon ebenfalls nicht angezeigt wird!</p>
+<h2 id="eins-noch-zeit-für-das-deployment">Eins noch: Zeit für das Deployment!</h2>
+<p>Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weiteres Deployment!</p>
+<ul>
+<li>Commite als Erstes deinen neuen Code und schiebe ihn auf GitHub:</li>
+</ul>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+$ git add --all .
+$ git status
+$ git commit -m &quot;Added views to create/edit blog post inside the site.&quot;
+$ git push
+</code></pre><ul>
+<li>Dann führe Folgendes in der <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere Bash-Konsole</a> aus:</li>
+</ul>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>$ cd ~/&lt;deine-pythonanywhere-domain&gt;.pythonanywhere.com
+$ git pull
+[...]
+</code></pre><p>(Denk daran, <code>&lt;deine-pythonanywhere-domain&gt;</code> durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)</p>
+<ul>
+<li>Gehe schließlich noch rüber <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">auf die Seite &quot;Web&quot;</a> (benutze den Menü-Knopf in der rechten oberen Ecke der Konsole) und klicke <strong>Reload</strong>. Lade deinen Blog <a href="https://subdomain.pythonanywhere.com" target="_blank">https://subdomain.pythonanywhere.com</a> neu, um die Änderungen zu sehen.</li>
+</ul>
+<p>Und das war&apos;s! Glückwunsch :)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../extend_your_application/" class="navigation navigation-prev " aria-label="Previous page: Erweitere deine Anwendung">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../whats_next/" class="navigation navigation-next " aria-label="Next page: Wie geht es weiter?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django-Formulare","level":"1.24","depth":1,"next":{"title":"Wie geht es weiter?","level":"1.25","depth":1,"path":"whats_next/README.md","ref":"whats_next/README.md","articles":[]},"previous":{"title":"Erweitere deine Anwendung","level":"1.23","depth":1,"path":"extend_your_application/README.md","ref":"extend_your_application/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"de","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_forms/README.md","mtime":"2021-03-25T14:00:00.115Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"de"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

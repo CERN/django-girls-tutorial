@@ -1,0 +1,1094 @@
+
+<!DOCTYPE HTML>
+<html lang="it" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Introduzione alla command line · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python_installation/" />
+    
+    
+    <link rel="prev" href="../how_the_internet_works/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Scrivi per cercare" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduzione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installazione
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Riga di Comando
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    L'editor di codice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Ambiente virtuale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Installazione (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Come funziona Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduzione alla command line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Installazione di Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    L'editor di codice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introduzione a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Che cos'è Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Installazione di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Il tuo primo progetto Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    I modelli di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    L'admin di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Le views di Django – è l'ora di creare!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introduzione all'HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    ORM di Django (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    I dati dinamici nei template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    I template di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - rendilo più carino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Estendere il template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Estendi la tua applicazione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    I Form Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    E dopo?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Pubblicato con HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Introduzione alla command line</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="introduzione-allinterfaccia-a-riga-di-comando">Introduzione all&apos;interfaccia a riga di comando</h1>
+<blockquote>
+<p>Messaggio per i lettori: questo capitolo si trova nel video <a href="https://www.youtube.com/watch?v=jvZLWhkzX-8" target="_blank">Your new friend: Command Line</a>.</p>
+</blockquote>
+<p>Non è grandioso? avete appena scritto la vostra prima linea di codice in pochi minuti! :)</p>
+<p><strong>Ti presentiamo il tuo primo nuovo amico: la riga di comando!</strong></p>
+<p>I prossimi passaggi ti mostreranno come utilizzare quella &apos;finestra nera&apos; che tutti gli hacker utilizzano. Ti potrà sembrare un po&apos; allarmante all&apos;inizio, ma è solamente un prompt in attesa dei tuoi comandi.</p>
+<blockquote>
+<p><strong>Nota</strong>: si prega di notare che in questo libro useremo il termine &quot;directory&quot; e &quot;cartella&quot; in maniera intercambiabile, ma sono la medesima cosa.</p>
+</blockquote>
+<h2 id="cosè-la-riga-di-comando">Cos&apos;è la riga di comando?</h2>
+<p>La finestra solitamente chiamata <strong>riga di comando</strong> o <strong>interfaccia della riga di comando</strong>, è un&apos;applicazione basata su testo che ti permette di visualizzare, gestire e modificare i file sul tuo computer. È simile a Windows Explorer o Finder su Mac, ma senza interfaccia grafica. Altri nomi della riga di comando sono: <em>cmd</em>, <em>CLI</em>, <em>prompt</em>, <em>console</em> o <em>terminal</em>.</p>
+<h2 id="aprire-linterfaccia-della-riga-di-comando">Aprire l&apos;interfaccia della riga di comando</h2>
+<p>Per cominciare a sperimentare, dobbiamo prima aprire la nostra interfaccia della riga di comando.</p>
+<sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt"><div class="panel-body">
+<p>A seconda della versione di Windows utilizzata e della propria tastiera, una delle azioni seguenti dovrebbe aprire una finestra di comando (probabilmente sarà necessario fare più prove, ma non è necessario provare tutti i suggerimenti proposti):</p>
+<ul>
+<li>Andare al menù Start o alla schermata Start e digitare &quot;Prompt dei comandi&quot; nella barra di ricerca.</li>
+<li>Andare al menù Start--&gt;Sistema Windows--&gt;Prompt dei Comandi.</li>
+<li>Andare a menù Start--&gt;Tutti i Programmi--&gt;Accessori--&gt;Prompt dei Comandi.</li>
+<li>Andare alla schermata Start, spostare il mouse nell&apos;angolo in basso a sinistra dello schermo e cliccare sulla freccia in basso che comparirà (per i dispositivi touch screen, scorrere verso l&apos;alto dal fondo dello schermo). La pagina App dovrebbe aprirsi. Cliccare su Prompt dei Comandi nella sezione Sistema Windows.</li>
+<li>Tenere premuto il tasto Windows e cliccare &quot;X&quot;. Scegliere &quot;Prompt dei Comandi&quot; dal menù popup.</li>
+<li>Tenere premuto il tasto Windows e premere &quot;R&quot; per aprire la finestra &quot;Esegui&quot;. Digitare &quot;cmd&quot; nella casella di testo e premere OK.</li>
+</ul>
+<p><img src="../python_installation/images/windows-plus-r.png" alt="Type &quot;cmd&quot; in the &quot;Run&quot; window"></p>
+<p>Più avanti in questo tutorial, dovrete avere due finestre di comando aperte contemporaneamente. In ogni caso, in alcune versioni di Windows, se già si ha una finestra di comando aperta e si cerca di aprirne un&apos;altra con lo stesso metodo, vi mostrerà la finestra di comando già aperta. Provate adesso sul vostro computer e vedete cosa accade! Se si riesce ad aprire solo una finestra di comando, provare un altro dei metodi sopra indicati. Almeno uno permetterà l&apos;apertura di una nuova finestra di comando.</p>
+</div></div></div></sec>
+<sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: OS X<a class="pull-right section atTitle btn btn-default" target="OSX_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_prompt"><div class="panel-body">
+<p>Andare ad Applicazioni--&gt;Funzionalità--&gt;Terminal.</p>
+</div></div></div></sec>
+<sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Linux<a class="pull-right section atTitle btn btn-default" target="linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="linux_prompt"><div class="panel-body">
+<p>Probabilmente si troverà in Applicazioni--&gt; Funzionalità--&gt; Terminal, ma dipende dal sistema operativo. Nel caso in cui non si trovasse, provare a fare una ricerca Google. :)</p>
+</div></div></div></sec>
+<h2 id="prompt">Prompt</h2>
+<p>Dovreste vedere ora una finestra nera o bianca in attesa dei vostri comandi.</p>
+<sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_prompt"><div class="panel-body">
+<p>Se state utilizzando un Mac o Linux, vedrete probabilmente un<code>$</code> come questo:</p>
+<p></p><p class="code-label">riga di comando</p><p></p>
+<pre><code>$
+</code></pre></div></div></div></sec>
+<sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt2"><div class="panel-body">
+<p>Su Windows, probebilmente vedrete un<code>&gt;</code> come questo:</p>
+<p></p><p class="code-label">riga di comando</p><p></p>
+<pre><code>&gt;
+</code></pre><p>Dai un&apos;occhiata alla sezione Linux appena sopra -- vedrai qualcosa di più come quando arriverai a PythonAnywhere più tardi nel tutorial.</p>
+</div></div></div></sec>
+<p>Ogni comando sarà prepesso da un <code>$</code> o <code>&gt;</code> e uno spazio, ma non dovresti digitarlo. Il tuo computer lo farà per te. :)</p>
+<blockquote>
+<p>Solo una piccola nota: nel tuo caso ci dovrebbe essere qualcosa come <code>C:\Users\ola&gt;</code> oppure <code>Olas-MacBook-Air:~ ola$</code> prima del segno di prompt. È corretto al 100%.</p>
+</blockquote>
+<p>La parte fino al <code>$</code> o al <code>&gt;</code> inclusi, si chiama <em>prompt della linea di comando</em> o semplicemente <em>prompt</em>. Ti richiede di inserire qualcosa.</p>
+<p>Nel tutorial quando vorremo che tu scriva un comando, includeremo <code>$</code> o <code>&gt;</code> e occasionalmente qualcosa in più a sinistra. Puoi ignorare la parte a sinistra e inserire solo il comando dopo il prompt.</p>
+<h2 id="il-tuo-primo-comando-yay">Il tuo primo comando (YAY!)</h2>
+<p>Iniziamo digitando questo comando:</p>
+<sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Your first command: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_whoami"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ whoami
+</code></pre></div></div></div></sec>
+<sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Your first command: Windows<a class="pull-right section atTitle btn btn-default" target="windows_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_whoami"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; whoami
+</code></pre></div></div></div></sec>
+<p>Premi <code>invio</code>. Questo è il nostro risultato:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ whoami olasitarska
+</code></pre><p>Come puoi vedere, il computer ha appena stampato il tuo nome utente. Bello, eh? :)</p>
+<blockquote>
+<p>Prova a digitare ogni comando, non copiare ed incollare. Ti ricorderai di più in questo modo!</p>
+</blockquote>
+<h2 id="nozioni-di-base">Nozioni di base</h2>
+<p>Ogni sistema operativo ha un insieme di comandi leggermente diverso per la command line, per cui assicurati di seguire le istruzioni per il tuo sistema operativo. Proviamo questo, ti va?</p>
+<h3 id="cartella-corrente">Cartella corrente</h3>
+<p>Sarebbe bello sapere dove ci troviamo ora, giusto?Vediamo. Digita questo comando e premi Invio:</p>
+<sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ pwd/utenti/olasitarska
+</code></pre><blockquote>
+<p>Nota: &apos;pwd&apos; sta per &apos;stampa directory di lavoro&apos;.</p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd C:\Users\olasitarska
+</code></pre><blockquote>
+<p>Nota: &apos;cd&apos; è per &apos;modifica cartella&apos;. Con la shell può usare pwd come su Linux o Mac OS X.</p>
+</blockquote>
+</div></div></div></sec>
+<p>Probabilmente vedrai qualcosa di simile sul tuo computer. Quando apri la command-line normalmente inizi sulla tua directory home.</p>
+<hr>
+<h3 id="guida-utente">Guida Utente</h3>
+<p>Molti comandi che puoi digitare al comando richiesto hanno un aiuto integrato che puoi visualizzare e leggere! Per esempio, per saperne di più sul comando della directory corrente:</p>
+<sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Command help: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_man"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_man"><div class="panel-body">
+<p>OS X e Linux hanno un comando <code>man</code> che ti dà aiuto sui comandi. Prova <code>man pwd</code> e vedi cosa dice, o mette <code>man</code> prima di altri comandi per vedere il loro aiuto. L&apos;output di <code>man</code> è normalmente paginato. Usa la barra di spazio per passare alla pagina successiva, e <code>q</code> per smettere di guardare l&apos;aiuto.</p>
+</div></div></div></sec>
+<sec data-title="Command Help: Windows" data-id="windows_help" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Command Help: Windows<a class="pull-right section atTitle btn btn-default" target="windows_help"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_help"><div class="panel-body">
+<p>Aggiungere un suffisso <code>/?</code> alla maggior parte dei comandi stamparà la pagina di aiuto. Potresti dover scorrere la finestra di comando per vederlo tutto. Prova <code>cd /?</code>.</p>
+</div></div></div></sec>
+<h3 id="elenco-di-file-e-cartelle">Elenco di file e cartelle</h3>
+<p>Cosa c&apos;è dentro? Sarebbe bello scoprirlo. Vediamo come:</p>
+<sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>List files and directories: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ ls
+Applications
+Desktop
+Downloads
+Music
+...
+</code></pre></div></div></div></sec>
+<sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>List files and directories: Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; dir
+ Directory of C:\Users\olasitarska
+05/08/2014 07:28 PM &lt;DIR&gt;      Applications
+05/08/2014 07:28 PM &lt;DIR&gt;      Desktop
+05/08/2014 07:28 PM &lt;DIR&gt;      Downloads
+05/08/2014 07:28 PM &lt;DIR&gt;      Music
+...
+</code></pre><blockquote>
+<p>Nota: Nella shell vocale puoi anche utilizzare &apos;ls&apos; come su Linux e Mac OS X. </p></blockquote></div></div></div></sec><p></p>
+
+<hr>
+<h3 id="cambiare-cartella-corrente">Cambiare cartella corrente</h3>
+<p>Ora, andiamo nella nostra directory Desktop:</p>
+<sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: OS X<a class="pull-right section atTitle btn btn-default" target="OSX_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_move_to"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: Linux<a class="pull-right section atTitle btn btn-default" target="Linux_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="Linux_move_to"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd Desktop
+</code></pre><p>Nota che il nome della directory &quot;Desktop&quot; potrebbe essere tradotto nella lingua del tuo account Linux. Se così è, dovrai sostituire <code>Desktop</code> con il nome tradotto; per esempio, <code>Schreibtisch</code> per il tedesco.</p>
+</div></div></div></sec>
+<sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_move_to"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd Desktop
+</code></pre></div></div></div></sec>
+<p>Controlla ora se ti sei veramente spostato/a:</p>
+<sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check if changed: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd2"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ pwd
+/Users/olasitarska/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check if changed: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd2"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd
+C:\Users\olasitarska\Desktop
+</code></pre></div></div></div></sec>
+<p>Ecco fatto!</p>
+<blockquote>
+<p>Suggerimento PRO:se digiti <code>cd D</code> e poi premi <code>tab</code> sulla tastiera, la command-line completerà automaticamente il resto del nome per cui puoi navigare più velocemente. Se c&apos;è più di una cartella che comincia con &quot;D&quot;, premi <code>tab</code> due volte per ottenere la lista con tutte le opzioni.</p>
+</blockquote>
+<hr>
+<h3 id="creare-una-directory">Creare una directory</h3>
+<p>Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in questo modo:</p>
+<sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_mkdir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ mkdir practice
+</code></pre></div></div></div></sec>
+<sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_mkdir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; mkdir practice
+</code></pre></div></div></div></sec>
+<p>Questo breve comando creerà una cartella con il nome <code>practice</code> sul tuo desktop. Puoi controllare se è lì semplicemente guardando sul tuo desktop oppure eseguendo un commando <code>ls</code> oppure <code>dir</code>! Provalo. :)</p>
+<blockquote>
+<p>Suggerimento PRO: se non vuoi digitare lo stesso comando tutte le volte, prova a premere <code>freccia in su</code> e <code>freccia in giù</code> sulla tua tastiera per scorrere tutti i comandi che hai usato fin ora.</p>
+</blockquote>
+<hr>
+<h3 id="esercizio">Esercizio!</h3>
+<p>Piccola sfida per te: nella tua directory appena creata <code>practice</code> crea una directory chiamata <code>test</code>. usa i comandi <code>cd</code> e <code>mkdir</code>.)</p>
+<h4 id="soluzione">Soluzione:</h4>
+<sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exercise solution: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_test_dir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd practice
+$ mkdir test
+$ ls
+test
+</code></pre></div></div></div></sec>
+<sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exercise solution: Windows<a class="pull-right section atTitle btn btn-default" target="windows_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_test_dir"><div class="panel-body">
+<p></p><p class="code-label">riga di comando</p><p></p>
+<pre><code>&gt; cd practice
+&gt; mkdir test
+&gt; dir
+05/08/2014 07:28 PM &lt;DIR&gt;      test
+</code></pre></div></div></div></sec>
+<p>Congratulazioni!</p>
+<hr>
+<h3 id="facciamo-ordine">Facciamo ordine</h3>
+<p>Non vogliamo lasciare un pasticcio, per cui rimuoviamo tutto quello che abbiamo fatto fino a questo punto.</p>
+<p>Per prima cosa dobbiamo tornare al Desktop:</p>
+<sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Clean up: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_back"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ..
+</code></pre></div></div></div></sec>
+<sec data-title="Clean up: Windows" data-id="windows_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Clean up: Windows<a class="pull-right section atTitle btn btn-default" target="windows_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_back"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd ..
+</code></pre></div></div></div></sec>
+<p>Usando <code>..</code> con il comando <code>cd</code> cambierai la tua directory attuale alla directory padre (si tratta della cartella che contiene la tua directory attuale).</p>
+<p>Controlla dove ti trovi ora:</p>
+<sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check location: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd3"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ pwd
+/Users/olasitarska/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check location: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd3"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd
+C:\Users\olasitarska\Desktop
+</code></pre></div></div></div></sec>
+<p>Adesso è l&apos;ora di cancellare la directory <code>practice</code>:</p>
+<blockquote>
+<p><strong>Attenzione</strong>: cancellare un file usando <code>del</code>, <code>rmdir</code> o <code>rm</code> è irreversibile, <em>i file cancellati andranno perduti per sempre</em>! Per cui sii molto prudente nell&apos;utilizzare questi comandi.</p>
+</blockquote>
+<sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Powershell, OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_rm"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_rm"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ rm -r practice
+</code></pre></div></div></div></sec>
+<sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="windows_rmdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_rmdir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; rmdir /S practice
+practice, Are you sure &lt;Y/N&gt;? Y
+</code></pre></div></div></div></sec>
+<p>Fatto! Per essere sicuri che sia stato effettivamente cancellato, controlliamo:</p>
+<sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check deletion: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls2"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ ls
+</code></pre></div></div></div></sec>
+<sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check deletion: Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir2"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; dir
+</code></pre></div></div></div></sec>
+<h3 id="uscire-dalla-command-line">Uscire dalla command line</h3>
+<p>Questo è tutto per ora! puoi tranquillamente chiudere la tua command line. facciamolo alla maniera degli hacker, va bene? :)</p>
+<sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exit: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_exit"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ exit
+</code></pre></div></div></div></sec>
+<sec data-title="Exit: Windows" data-id="windows_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exit: Windows<a class="pull-right section atTitle btn btn-default" target="windows_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_exit"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; exit
+</code></pre></div></div></div></sec>
+<p>Figo, eh? :)</p>
+<h2 id="indice">Indice</h2>
+<p>Questo è un riepilogo di alcuni comandi utili:</p>
+<table>
+<thead>
+<tr>
+<th>Comandi(Windows)</th>
+<th>Comandi (Mac OS / Linux)</th>
+<th>Descrizione</th>
+<th>Esempio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>esci</td>
+<td>uscire dalla command line</td>
+<td>chiudi la finestra</td>
+<td><strong>uscire dalla command line</strong></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>cd</td>
+<td>cambiare directory</td>
+<td><strong>cd test</strong></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>pwd</td>
+<td>Cambiare cartella corrente</td>
+<td><strong>cd</strong> (Windows) o <strong>pwd</strong> (Mac OS / Linux)</td>
+</tr>
+<tr>
+<td>dir</td>
+<td>ls</td>
+<td>elenco directory/file</td>
+<td><strong>dir</strong></td>
+</tr>
+<tr>
+<td>copia</td>
+<td>cp</td>
+<td>copia un file</td>
+<td><strong>copy c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>sposta</td>
+<td>mv</td>
+<td>spostare un file</td>
+<td><strong>move c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>mkdir</td>
+<td>creare una nuova directory</td>
+<td><strong>mkdir testdirectory</strong></td>
+</tr>
+<tr>
+<td>rmdir (or del)</td>
+<td>rm</td>
+<td>Eliminare un file</td>
+<td><strong>del c:\test\test.txt</strong></td>
+</tr>
+<tr>
+<td>rmdir /S</td>
+<td>rm -r</td>
+<td>Seleziona una cartella</td>
+<td><strong>mkdir testdirectory</strong></td>
+</tr>
+<tr>
+<td>[CMD]/?</td>
+<td>man [CMD]</td>
+<td>Ottieni un aiuto per un comando</td>
+<td><strong>cd</strong> (Windows) o <strong>pwd</strong> (Mac OS / Linux)</td>
+</tr>
+</tbody>
+</table>
+<p>Questi sono solo alcuni dei comandi che puoi eseguire sulla tua command line, ma non ne userai altri oltre a quelli spiegati oggi.</p>
+<p>Se sei curioso/a, <a href="http://ss64.com" target="_blank">ss64.com</a> contiene una guida completa ai comandi per tutti i sistemi operativi.</p>
+<h2 id="fatto">Fatto?</h2>
+<p>Tuffiamoci in Python!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: Come funziona Internet">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python_installation/" class="navigation navigation-next " aria-label="Next page: Installazione di Python">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Introduzione alla command line","level":"1.5","depth":1,"next":{"title":"Installazione di Python","level":"1.6","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"Come funziona Internet","level":"1.4","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"it","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"intro_to_command_line/README.md","mtime":"2021-03-25T14:00:00.331Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"it"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

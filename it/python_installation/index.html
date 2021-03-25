@@ -1,0 +1,850 @@
+
+<!DOCTYPE HTML>
+<html lang="it" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Installazione di Python · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../code_editor/" />
+    
+    
+    <link rel="prev" href="../intro_to_command_line/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Scrivi per cercare" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduzione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installazione
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Riga di Comando
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    L'editor di codice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Ambiente virtuale
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Installazione (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Come funziona Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introduzione alla command line
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Installazione di Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    L'editor di codice
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introduzione a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Che cos'è Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Installazione di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Il tuo primo progetto Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    I modelli di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    L'admin di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Le views di Django – è l'ora di creare!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introduzione all'HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    ORM di Django (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    I dati dinamici nei template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    I template di Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - rendilo più carino
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Estendere il template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Estendi la tua applicazione
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    I Form Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    E dopo?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Pubblicato con HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Installazione di Python</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="iniziamo-con-python">Iniziamo con Python</h1>
+<p>Finalmente siamo qui!</p>
+<p>Ma prima, permettici di introdurre brevemente cos&apos;è Python. Python è un linguaggio di programmazione molto popolare che può essere utilizzato per creare siti web, giochi, sofware scientifici, graffici e molto, molto altro.</p>
+<p>Python è stato creato alla fine degli anni &apos;80 ed il suo obiettivo principale è quello di essere leggibile dalle persone (e non solo dalle macchine!). Per questo motivo sembra più semplice di altri linguaggi di programmazione, ma non preoccuparti -- Python è anche molto potente!</p>
+<h1 id="installazione-di-python">Installazione di Python</h1>
+<blockquote>
+<p><strong>Nota</strong> Se utilizzi un Chromebook, salta questo capitolo e segui le istruzioni in <a href="../chromebook_setup/">Configurazione di Chromebook</a>.</p>
+<p><strong>Nota</strong> Se hai già eseguito i passaggi per l&apos;Installazione, non è necessario rifare tutto da capo - puoi andare direttamente al prossimo capitolo!</p>
+<p>Per le lettrici a casa: questo capitolo è trattato nel video <a href="https://www.youtube.com/watch?v=pVTaqzKZCdA" target="_blank">Installazione di Python &amp; Editor di codice</a>.</p>
+<p>Questa sezione è basata sul tutorial delle Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>)</p>
+</blockquote>
+<p>Django è scritto in Python. Python ci serve per fare qualunque cosa in Django. Iniziamo con l&apos;installazione! Dovresti installare la versione più recente di Python 3, quindi se hai una versione precendente dovrai aggiornarla. Se hai già la versione 3.4 o una versione successiva non servono aggiornamenti.</p>
+<p>Installa Python normale come segue, anche quando hai Anaconda installato sul tuo computer.</p>
+<sec data-title="Install Python: Windows" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: Windows<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+<p>Prima verifica se il computer sta eseguendo una versione a 32 bit o una versione a 64 bit di Windows, sulla linea &quot;Tipo di sistema&quot; della pagina Info di sistema. Per raggiungere questa pagina, prova uno di questi metodi:</p>
+<ul>
+<li>Premi il tasto Windows e Pausa/Break contemporaneamente</li>
+<li>Apri il tuo Pannello di Controllo dal menu Windows, quindi naviga nel sistema &amp; Sicurezza, quindi sistema</li>
+<li>Premi il pulsante Windows, quindi vai su Impostazioni &gt; Sistema &gt; Informazioni</li>
+</ul>
+<p>Puoi scaricare Python per Windows dal sito web <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/</a>. Clicca sul link &quot;Ultimo Python 3 - Python x.x.x&quot;. Se il tuo computer sta eseguendo una versione <strong>64-bit</strong> di Windows, scarica il file <strong>Windows x86-64 di installer eseguibile</strong>. Altrimenti, scarica il file <strong>Windows x86 eseguibile installer</strong>. Dopo aver scaricato il file *.msi, lo dovresti eseguire (cliccaci sopra due volte) e segui le istruzioni.</p>
+<p>Una cosa per cui guardare: durante l&apos;installazione, si noti una finestra contrassegnata &quot;Setup&quot;. Assicurati di spuntare la casella di controllo &quot;Aggiungi Python 3.6 a PATH&quot; o &apos;Aggiungi Python alle variabili ambientali&quot; e clicca su &quot;Installa Ora&quot;, come mostrato qui (potrebbe sembrare un po&apos; diverso se stai installando una versione diversa):</p>
+<p><img src="images/python-installation-options.png" alt="Non dimenticare di aggiungere Python al Path"></p>
+<p>Quando l&apos;installazione è completata, potresti vedere una finestra di dialogo con un link che puoi seguire per saperne di più su Python o sulla versione installata. Chiudi o annulla questa finestra -- imparerai molto di più in questo tutorial!</p>
+<p>Nota: se stai usando una versione precedente di Windows (7, Vista o qualsiasi versione precedente) e l&apos;installazione Python 3.6.x fallisce e restituisce un errore, puoi provare a:</p>
+<ol>
+<li>installare tutti gli aggiornamenti di Windows e provare a installare di nuovo Python; oppure</li>
+<li>installare una <a href="https://www.python.org/downloads/windows/" target="_blank">versione precedente di Python</a>, ad esempio la <a href="https://www.python.org/downloads/release/python-346/" target="_blank">3.4.6</a>.</li>
+</ol>
+<p>Se installi una versione precedente di Python, la schermata di installazione potrebbe apparire un po&apos; diversa da quella mostrata sopra. Assicurati di scorrere verso il basso per vedere &quot;Aggiungi python.exe al Path&quot;, quindi clicca sul pulsante a sinistra e scegli &quot;Verrà installato sul disco rigido locale&quot;:</p>
+<p><img src="images/add_python_to_windows_path.png" alt="Aggiungi Python al percorso, versioni precedenti"></p>
+</div></div></div></sec>
+<sec data-title="Install Python: OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+<blockquote>
+<p><strong>Nota</strong> Prima di installare Python su OS X, devi garantire che le impostazioni Mac consentano l&apos;installazione di pacchetti che non sono presenti nell&apos;App Store. Vai alle Preferenze di sistema (è nella cartella Applicazioni), clicca &quot;Sicurezza &amp; Privacy,&quot; e poi la scheda &quot;Generale&quot;. Se le tue &quot;Consenti app scaricate da:&quot; sono impostate su &quot;Mac App Store,&quot; cambiale in &quot;Mac App Store e sviluppatori identificati.&quot;</p>
+</blockquote>
+<p>Devi andare sul sito <a href="https://www.python.org/downloads/release/python-361/" target="_blank">https://www.python.org/downloads/release/python-361/</a> e scaricare il programma di installazione di Python:</p>
+<ul>
+<li>Scarica il file <em>Mac OS X 64-bit/32-bit installer</em></li>
+<li>Fai doppio click su <em>python-3.4.3-macosx10.6.pkg</em> per eseguire il programma d&apos;installazione.</li>
+</ul>
+</div></div></div></sec>
+<sec data-title="Install Python: Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+<p>È molto probabile che tu abbia Python già installato di default. Per controllare se ce l&apos;hai già installato (e quale versione è), apri una console e digita il seguente comando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 --version
+Python 3.6.1
+</code></pre><p>Se hai una differente &apos;micro versione&apos; di Python installata, ad esempio la 3.4.0, non hai bisogno di aggiornarla. Se non hai Python installato, o se vuoi una versione diversa, controlla prima quale distribuzione Linux stai usando con il seguente comando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ grep &apos;^NAME=&apos; /etc/os-release
+</code></pre><p>In seguito, a seconda del risultato, segui una delle seguenti guide di installazione sotto questa sezione.</p>
+</div></div></div></sec>
+<sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: Debian or Ubuntu<a class="pull-right section atTitle btn btn-default" target="python_debian"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_debian"><div class="panel-body">
+<p>Digita questo comando nella tua console:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ sudo apt install python3
+</code></pre></div></div></div></sec>
+<sec data-title="Install Python: Fedora" data-id="python_fedora" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: Fedora<a class="pull-right section atTitle btn btn-default" target="python_fedora"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_fedora"><div class="panel-body">
+<p>Digita questo comando nella tua console:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ sudo dnf install python3
+</code></pre><p>Se sei nelle vecchie versioni Fedora potresti ottenere un errore che il comando <code>dnf</code> non è stato trovato. In questo caso, devi utilizzare <code>yum</code> invece.</p>
+</div></div></div></sec>
+<sec data-title="Install Python: openSUSE" data-id="python_openSUSE" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: openSUSE<a class="pull-right section atTitle btn btn-default" target="python_openSUSE"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_openSUSE"><div class="panel-body">
+<p>Digita questo comando nella tua console:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ sudo zypper install python3
+</code></pre></div></div></div></sec>
+<p>Verifica che l&apos;installazione si sia conclusa correttamente aprendo l&apos;applicazione <em>Terminal</em> ed eseguendo il comando <code>python3</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 --version
+Python 3.6.1
+</code></pre><p>La versione mostrata può essere diversa da 3.6.1 -- dovrebbe corrispondere alla versione installata.</p>
+<p><strong>NOTA:</strong> Se sei su Windows e ricevi un messaggio di errore che dice che <code>python3</code> non è stato trovato, prova ad utilizzare <code>python</code> (senza <code>3</code>), controlla sia la versione di Python 3.4.0 o superiore. Se anche questo non funziona, puoi aprire un nuovo prompt dei comandi e riprovare; questo accade se usi un prompt dei comandi aperto da prima dell&apos;installazione di Python.</p>
+<hr>
+<p>Se hai dubbi o se qualcosa è andato storto e non hai idea di cosa fare dopo - chiedi al tuo coach! A volte le cose non vanno come dovrebbero ed è meglio chiedere aiuto a qualcuno con più esperienza.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../intro_to_command_line/" class="navigation navigation-prev " aria-label="Previous page: Introduzione alla command line">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../code_editor/" class="navigation navigation-next " aria-label="Next page: L'editor di codice">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Installazione di Python","level":"1.6","depth":1,"next":{"title":"L'editor di codice","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"previous":{"title":"Introduzione alla command line","level":"1.5","depth":1,"path":"intro_to_command_line/README.md","ref":"intro_to_command_line/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"it","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_installation/README.md","mtime":"2021-03-25T14:00:00.331Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"it"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

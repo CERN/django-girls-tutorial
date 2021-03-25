@@ -1,0 +1,1327 @@
+
+<!DOCTYPE HTML>
+<html lang="el" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Εισαγωγή στην Python · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django/" />
+    
+    
+    <link rel="prev" href="../code_editor/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Αναζήτηση για ..." />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Εισαγωγή
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Εγκατάσταση
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Εγκατάσταση (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Πως λειτουργεί το διαδίκτυο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Εισαγωγή στην γραμμή εντολών
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Εγκατάσταση Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Επεξεργαστής Κώδικα
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Εισαγωγή στην Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Τι είναι το Django;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Εγκατάσταση του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Το πρώτο σου Django project!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Μοντέλα (models) του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Διαχείριση μέσω Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Ανεβάστε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - ώρα να δημιουργήσετε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Εισαγωγή στην HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Δυναμικά δεδομένα στα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - κάντε το όμορφο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Επεκτείνοντας τα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Επεκτείνοντας την εφαρμογή σας
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Φόρμες Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Τι υπάρχει μετά;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Δημοσιεύτηκε με το HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Εισαγωγή στην Python</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="εισαγωγή-στην-python">Εισαγωγή στην Python</h1>
+<blockquote>
+<p>Μέρος αυτού του κεφαλαίου είναι βασισμένο στους οδηγούς από την κοινότητα Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p>
+</blockquote>
+<p>Ας γράψουμε λίγο κώδικα!</p>
+<h2 id="παράθυρο-εντολών-python">Παράθυρο εντολών Python</h2>
+<blockquote>
+<p>Για τους αναγνώστες στο σπίτι: αυτό το μέρος που καλύπτεται από το βίντεο <a href="https://www.youtube.com/watch?v=MO63L4s-20U" target="_blank">Python Basics: Integers, Strings, Lists, Variables and Errors</a>.</p>
+</blockquote>
+<p>Για να αρχίσετε να παίζετε με την Python, πρέπει να ανοίξετε μια <em>γραμμή εντολών</em> στον υπολογιστή σας. Πρέπει ήδη να ξέρετε πως το κάνουμε αυτό. Το μάθαμε στο κεφάλαιο <a href="../intro_to_command_line/">Εισαγωγή στη γραμμή εντολών</a>.</p>
+<p>Μόλις είστε έτοιμοι, ακολουθήστε τις παρακάτω οδηγίες.</p>
+<p>Θέλουμε να ανοίξουμε μια κονσόλα Python. Πληκτρολογήστε <code>python</code> αν είστε σε Windows ή <code>python3</code> αν είστε σε Mac OS/Linux και πατήστε <code>enter</code>.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3
+Python 3.6.1 (...)
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</code></pre><h2 id="η-πρώτη-σας-python-εντολή">Η πρώτη σας Python εντολή!</h2>
+<p>Αφού εκτελέσετε την εντολή Python, το prompt θα αλλάξει σε <code>&gt;&gt;&gt;</code>. Για εμάς αυτό σημαίνει ότι τώρα μπορεί να χρησιμοποιούμε μόνο εντολές για τη γλώσσα Python. Δεν χρειάζεται να πληκτρολογήσετε <code>&gt;&gt;&gt;</code>. Θα το κάνει η Python για σας.</p>
+<p>Εάν θέλετε να τερματίσετε την κονσόλα Python σε οποιοδήποτε σημείο, απλά πληκτρολόγηστε <code>exit()</code> ή <code>Ctrl + Z</code> για Windows και <code>Ctrl + D</code> για Mac/Linux. Τότε δεν θα μπορείτε να δείτε το <code>&gt;&gt;&gt;</code> πια.</p>
+<p>Για τώρα δεν θέλουμε να φύγουμε από αυτό το περιβάλλον. Θέλουμε να μάθουμε περισσότερα γι&apos;αυτό. Ας ξεκινήσουμε να γράφουμε μερικές μαθηματικές πράξεις, όπως <code>2 + 3</code> και μετά πατάμε <code>enter</code>.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+<span class="hljs-number">5</span>
+</code></pre>
+<p>Ωραία! Είδατε την απάντηση από κάτω; Η Python ξέρει μαθηματικά! Μπορείτε να δοκιμάσετε και άλλες εντολές, όπως:</p>
+<ul>
+<li><code>4 * 5</code></li>
+<li><code>5 - 1</code></li>
+<li><code>40 / 2</code></li>
+</ul>
+<p>Για να εκτελέσετε εκθετικούς υπολογισμούς, πχ 2 στη δύναμη του 3, γράφουμε: </p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> ** <span class="hljs-number">3</span>
+<span class="hljs-number">8</span>
+</code></pre>
+<p>Διασκέδασε με αυτό για λίγο και στη συνέχεια συνεχίστε πίσω εδώ. :)</p>
+<p>Όπως μπορείτε να δείτε, η Python είναι μια πολύ καλή αριθμομηχανή. Αν αναρωτιέστε τι άλλο μπορείτε να κάνετε…</p>
+<h2 id="strings">Strings</h2>
+<p>Τι θα λέγατε για το όνομα σας; Πληκτρολογήστε το μικρό σας όνομα μέσα σε &quot;αυτάκια&quot;, όπως παρακάτω:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&quot;Ola&quot;</span>
+</code></pre>
+<p>Μόλις δημιουργήσατε το πρώτο σας string! Είναι μια ακολουθία χαρακτήρων η οποία επεξεργάζεται από τον υπολογιστή. Ένα string πρέπει πάντα να ξεκινά και να τελειώνει με τον ίδιο χαρακτήρα. Αυτό μπορεί να είναι είτε μονά &quot;αυτάκια&quot; (<code>&apos;</code>) ή διπλά (<code>&quot;</code>) (καμία διαφορά!). Τα &quot;αυτάκια&quot; λένε στην Python το εξής: ότι υπάρχει ανάμεσα θεώρησε το ως ένα string.</p>
+<p>Τα strings μπορούν να ενωθούν. Δοκιμάστε το ακόλουθο:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Hi there &quot;</span> + <span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&quot;Hi there Ola&quot;</span>
+</code></pre>
+<p>Μπορείτε επίσης να πολλαπλασιάσετε strings με αριθμό:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span> * <span class="hljs-number">3</span>
+<span class="hljs-string">&apos;OlaOlaOla&apos;</span>
+</code></pre>
+<p>Αν χρειαστεί να βάλετε κάποια απόστροφο μέσα στο string, υπάρχουν δύο τρόποι να το κάνετε.</p>
+<p>Χρησιμοποιώντας διπλά &quot;αυτάκια&quot;:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+</code></pre>
+<p>ή κάνοντας escape την απόστροφο με ένα backslash (``):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;Runnin\&apos; down the hill&apos;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+</code></pre>
+<p>Ωραίο εε; Για να δείτε το όνομα σας σε κεφαλαία, γράψτε:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>.upper()
+<span class="hljs-string">&apos;OLA&apos;</span>
+</code></pre>
+<p>Μόλις χρησιμοποιήσατε την <code>upper</code> <strong>method</strong> πάνω στο string σας! Η μέθοδος (όπως η <code>upper()</code>) είναι μια ακολουθία από οδηγίες/εντολές που η Python πρέπει να εκτελέσει πάνω σε ένα συγκεκριμένο object (<code>&quot;Ola&quot;</code>) μόλις την καλέσετε.</p>
+<p>Αν θέλετε να μάθετε τον αριθμό των γραμμάτων που περιέχονται στο όνομα σας, υπάρχει συνάρτηση <strong>function</strong> και γι&apos;αυτό!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-string">&quot;Ola&quot;</span>)
+<span class="hljs-number">3</span>
+</code></pre>
+<p>Αναρρωτιέστε γιατί μερικές φορές καλείτε συναρτήσεις με την τελεία <code>.</code> στο τέλος ενός string (όπως <code>&quot;Ola&quot;.upper()</code>) και άλλες καλείτε μια συνάρτηση και τοποθετείτε μέσα στις παρενθέσεις το string; Λοιπόν, σε κάποια σημεία οι συναρτήσεις ανήκουν σε objects, όπως η <code>upper()</code> η οποία επιδρά μόνο πάνω σε strings. Σε αυτή την περίπτωση, ονομάζουμε τις συναρτήσεις αυτές μεθόδους (<strong>method</strong>). Άλλες, πάλι, φορές οι συναρτήσεις δεν ανήκουν σε κάτι συγκεκριμένο και μπορούν να χρησιμοποιηθούν σε οποιουδήποτε τύπου object, όπως η <code>len()</code>. Γι&apos;αυτό δίνουμε το string <code>&quot;Ola&quot;</code> ως παράμετρο στη συνάρτηση <code>len</code>.</p>
+<h3 id="περίληψη">Περίληψη</h3>
+<p>Αρκετά με τα strings. Μέχρι τώρα μάθατε:</p>
+<ul>
+<li><strong>το prompt</strong> – γράφοντας εντολές (κώδικα) μέσα σε περειβάλλον της Python έχει ως αποτέλεσμα να παίρνετε απαντήσεις από την Python</li>
+<li><strong>αριθμούς και strings</strong> – στην Python οι αριθμοί χρησιμοποιούνται για μαθηματικά και τα strings για χαρακτήρες</li>
+<li><strong>operators</strong> – όπως <code>+</code> και <code>*</code>, συνδυάζουν τιμές και παράγουν μια νέα τιμή</li>
+<li><strong>functions</strong> – όπως η <code>upper()</code> και η <code>len()</code>, εκτελούν κάποιες ενέργειες στα objects.</li>
+</ul>
+<p>Αυτά είναι τα βασικά για κάθε γλώσσα προγραμματισμού. Είστε έτοιμοι για κάτι πιο δύσκολο; Είμαστε σίγουροι ότι είστε!</p>
+<h2 id="σφάλματα">Σφάλματα</h2>
+<p>Ας δοκιμάσουμε κάτι καινούργιο. Μπορούμε να βρούμε το μήκος ενός αριθμού ακριβώς όπως κάναμε με το όνομα σας νωρίτερα; Πληκτρολογήστε <code>len(304023)</code> και πατήστε <code>enter</code>:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-number">304023</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-built_in">object</span> of <span class="hljs-built_in">type</span> <span class="hljs-string">&apos;int&apos;</span> has no <span class="hljs-built_in">len</span>()
+</code></pre>
+<p>Μόλις λάβατε το πρώτο σας σφάλμα! Το εικονίδιο <span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> είναι ο δικός μας τρόπος να σας πούμε ότι ο κώδικάς που πρόκειται να τρέξετε δεν θα έχει τα αναμενόμενα αποτελέσματα. Κάνοντας λάθη (ακόμα και εσκεμμένα) είναι σημαντικό κομμάτι κατά τη διάρκεια της εκμάθησης!</p>
+<p>Το συγκεκριμένο σφάλμα λέει ότι τα objects τύπου &quot;int&quot; (από τη λέξη integers, που σημαίνει ακέραιοι αριθμοί) δεν έχουν μήκος. Οπότε τι κάνουμε τώρα; Μήπως να γράψουμε τον αριθμό ως ένα string; Τα strings έχουν μήκος, έτσι;</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-built_in">str</span>(<span class="hljs-number">304023</span>))
+<span class="hljs-number">6</span>
+</code></pre>
+<p>Δούλεψε! Χρησιμοποιήσαμε τη συνάρτηση <code>str</code> μέσα στην <code>len</code>. Η <code>str()</code> μετατρέπει τα πάντα σε strings.</p>
+<ul>
+<li>Η συνάρτηση <code>str</code> μετατρέπει πράγματα σε <strong>strings</strong></li>
+<li>Η συνάρτηση <code>int</code> μετατρέπει πράγματα σε <strong>integers</strong></li>
+</ul>
+<blockquote>
+<p>Σημαντικό: μπορούμε να μετατρέψουμε αριθμούς σε κείμενο (strings) αλλά όχι απαραίτητα το αντίστροφο. Τι θα συνέβαινε αν τρέχατε <code>int(&apos;hello&apos;)</code>;</p>
+</blockquote>
+<h2 id="μεταβλητές">Μεταβλητές</h2>
+<p>Ένα σημαντικό έννοια στον προγραμματισμό είναι οι μεταβλητές. Μια μεταβλητή δεν είναι τίποτε άλλο από ένα όνομα που μπορεί να επαναχρησιμοποιηθεί αργότερα. Οι προγραμματιστές χρησιμοποιούν τις μεταβλητές για την αποθήκευση δεδομένων, κάνοντας τον κώδικα πιο ευανάγνωστο χωρίς να χρειάζεται να θυμούνται τι ήταν τι.</p>
+<p>Ας υποθέσουμε ότι θέλετε να δημιουργήσετε μια μεταβλητή με το όνομα <code>name</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&quot;Ola&quot;</span>
+</code></pre>
+<p>Γράφουμε name ίσον με Ola.</p>
+<p>Όπως θα παρατηρήσατε, το πρόγραμμα δεν επέστρεψε τίποτα όπως πριν. Πως ξέρουμε, λοιπόν, ότι η μεταβλητή υπάρχει; Πληκτρολογήστε<code>name</code> και μετά πιέστε <code>enter</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Ola&apos;</span>
+</code></pre>
+<p>Ναιιι! Η πρώτη σας μεταβλητή! :) Μπορείτε πάντα να αλλάξετε την τιμή αυτής της μεταβλητής:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&quot;Sonja&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Sonja&apos;</span>
+</code></pre>
+<p>Μπορείτε να χρησιμοποιήσετε μεταβλητές σε συναρτήσεις:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(name)
+<span class="hljs-number">5</span>
+</code></pre>
+<p>Φοβερό, έτσι; Οι μεταβλητές μπορεί να είναι οτιδήποτε (ακόμα και αριθμοί). Δοκιμάστε το εξής:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a * b
+<span class="hljs-number">24</span>
+</code></pre>
+<p>Αλλά τι θα γινόταν αν χρησιμοποιούσαμε λάθος όνομα; Τι θα συμβεί; Ας το δοκιμάσουμε!</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>city = <span class="hljs-string">&quot;Tokyo&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>ctiy
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;ctiy&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>Ένα σφάλμα! Όπως μπορείτε να δείτε, η Python έχει διαφορετικού τύπου σφάλματα (τα έχει κατατάξει σε κατηγορίες). Αυτό εδώ ονομάζεται <strong>NameError</strong>. Η Python θα σας εμφανίσει αυτό το σφάλμα αν προσπαθήσετε να χρησιμοποιήσετε κάποια μεταβλητή της οποίας το όνομα δεν έχει δηλωθεί. Αν εμφανίστηκε αυτό το σφάλμα νωρίτερα σε εσάς, δείτε τον κώδικά σας μήπως και έχετε κάνει λάθος σε κάποιο όνομα μεταβλητής.</p>
+<p>Παίξτε για λίγο με αυτό και δείτε τι μπορείτε να κάνετε!</p>
+<h2 id="η-συνάρτηση-print">Η συνάρτηση print</h2>
+<p>Δοκιμάστε αυτό:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(name)
+Maria
+</code></pre>
+<p>Όταν απλώς πληκτρολογείτε <code>name</code>, η Python ανταποκρίνεται με το λεγόμενο string <em>representation</em> της τιμής της μεταβλητής &apos;name&apos;, η οποία είναι τα γράμματα M-a-r-i-a, περικυκλωμένα με τα μονά &quot;αυτάκια&quot;, &apos;&apos;. Όταν λέτε <code>print(name)</code>, η Python θα &quot;εκτυπώσει στην οθόνη&quot; τα περιεχόμενα της μεταβλητής, χωρίς τα &quot;αυτάκια&quot;, κάτι το οποίο είναι πιο ωραίο.</p>
+<p>Όπως θα δούμε και αργότερα, η συνάρτηση <code>print()</code> είναι χρήσιμη όταν θέλουμε να εκτυπώσουμε πράγματα μέσα σε συναρτήσεις ή όταν θέλουμε να εκτυπώσουμε πράγματα σε πολλαπλές γραμμές αντί μιας.</p>
+<h2 id="λίστες">Λίστες</h2>
+<p>Πέρα από τα strings και τους αριθμούς, η Python προσφέρει αρκετά ακόμα διαφορετικούς τύπους objects. Παρακάωτ θα περιγράψουμε αυτό που αποκαλούμε λίστα (<strong>list</strong>). Οι λίστες είναι αυτό που φαντάζεστε: objects τα οποία είναι λίστες άλλων objects. :)</p>
+<p>Πηγαίνετε και δημιουργήστε μια λίστα:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[]
+[]
+</code></pre>
+<p>Ναι, αυτή είναι μια κενή λίστα. Όχι πολύ χρήσιμη έτσι; Ας δημιουργήσουμε μια λίστα με αριθμούς. Δεν θέλουμε να επαναλαμβανόμαστε όλη την ώρα, οπότε θα βάλουμε τη λίστα μέσα σε μια μεταβλητή:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery = [<span class="hljs-number">3</span>, <span class="hljs-number">42</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>Τέλεια, έχουμε μια λίστα! Τι μπορούμε να κάνουμε με αυτή; Ας δούμε πόσοι αριθμοί υπάρχουν μέσα στη λίστα. Ξέρετε, μήπως, ποια συνάρτηση μπορούμε να χρησιμοποιήσουμε γι&apos;αυτό; Το ξέρετε ήδη!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(lottery)
+<span class="hljs-number">6</span>
+</code></pre>
+<p>Ναι! Η συνάρτηση <code>len()</code> σας δίνει τον αριθμό των objects μέσα σε μια λίστα. Ωραίο, έτσι; Ίσως να μπορούμε να ταξινομήσουμε τους αριθμούς:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.sort()
+</code></pre>
+<p>Αυτό δεν επιστρέφει τίποτα, απλώς άλλαξε τη σειρά με την οποία εμφανίζονται οι αριθμοί στη λίστα. Ας εκτυπώσουμε τη λίστα να δούμε πως άλλαξαν τα δεδομένα της:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">3</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">42</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>Όπως βλέπετε, οι αριθμοί μέσα στη λίστα είναι πλέον ταξινομημένοι κατά αύξοντα αριθμό. Συγχαρητήρια!</p>
+<p>Ίσως να θέλουμε να αντιστρέψουμε αυτή τη σειρά. Ας το κάνουμε!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.reverse()
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>]
+</code></pre>
+<p>Αν θέλετε να προσθέσετε κάτι στη λίστα σας, μπορείτε να το κάνετε με την ακόλουθη εντολή:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.append(<span class="hljs-number">199</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>Αν θέλετε να εμφανίσετε μόνο το πρώτο στοιχείο της λίστας, μπορείτε να το κάνετε χρησιμοποιώντας τα λεγόμενα <strong>indexes</strong>. Ένα index είναι ένας αριθμός ο οποίος δηλώνει σε ποιο σημείο ένα στοιχείο υπάρχει σε μια λίστα. Οι προγραμματιστές προτιμούν να ξεκινούν από το 0, οπότε το πρώτο στοιχείο θα βρίσκεται στη θέση (index) 0, το επόμενο στη θέση 1 κοκ. Δοκιμάστε αυτό:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">1</span>])
+<span class="hljs-number">42</span>
+</code></pre>
+<p>Όπως μπορείτε να δείτε, μπορείτε να έχετε πρόσβαση στα διαφορετικά στοιχεία μια λίστας γνωρίζοντας το όνομα της λίστας και τη θέση (index) του κάθε στοιχείου, δηλώνοντας το μέσα σε αγκύλες ([]).</p>
+<p>Για να διαγράψετε κάτι από τη λίστα, θα χρειαστεί να χρησιμοποιήσετε τα <strong>indexes</strong> καθώς και την μέθοδο <code>pop()</code>. Δηλαδή, θα πρέπει να ξέρετε ποιο στοιχείο να διαγράψετε. Ας δοκιμάσουμε ένα παράδειγμα. Θα διαγράψουμε το πρώτο στοιχείο της λίστας.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>lottery.pop(<span class="hljs-number">0</span>)
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>Δούλεψε μια χαρά!</p>
+<p>Παίξτε λίγο παραπάνω: δοκιμάστε μερικές άλλες θέσεις (αριθμός μέσα στην αγκύλη) όπως 6, 7, 1000, -1, -6 ή -1000. Δείτε αν μπορείτε να προβλέψετε το αποτέλεσμα πριν πατήσετε enter. Συμφωνούν τα αποτελέσματα με την πρόβλεψη σας;</p>
+<p>Μπορείτε να βρείτε την λίστα με όλες διαθέσιμες μεθόδους για μια λίστα στο Python documentation: <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a></p>
+<h2 id="λεξικά">Λεξικά</h2>
+<blockquote>
+<p>Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο <a href="https://www.youtube.com/watch?v=ZX1CVvZLE6c" target="_blank">Python Basics: Dictionaries</a>.</p>
+</blockquote>
+<p>Ένα λεξικό (dictionary ή όπως έχει επικρατήσει, dict εν συντομία) είναι όμοιο με μια λίστα αλλά έχετε πρόσβαση στις τιμές όχι κατά θέση (index) αλλά κατά ένα κλειδί (key). Ένα κλειδί μπορεί να είναι ένα string ή ένας αριθμός. Η σύνταξη για ένα κενό λεξικό είναι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>{}
+{}
+</code></pre>
+<p>Αυτό σηλώνει ότι μόλις δημιουργήσατε ένα κενό dict. Συγχαρητήρια!</p>
+<p>Τώρα, προσπαθήστε να εκτελέσετε την ακόλουθη εντολή (αντικαθιστώντας με δικά σας στοιχεία):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant = {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Poland&apos;</span>, <span class="hljs-string">&apos;favorite_numbers&apos;</span>: [<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]}
+</code></pre>
+<p>Με αυτή την εντολή μόλις δημιουργήσατε μια μεταβλητή με το όνομα <code>participant</code> με τρια ζευγάρια κλειδι-τιμή (key value pairs):</p>
+<ul>
+<li>Το πρώτο κλειδί είναι το <code>name</code> το οποίο αντιστοιχεί την τιμή <code>&apos;Ola&apos;</code> (είναι ένα <code>string</code> object),</li>
+<li>Το δεύτερο κλειδί με το όνομα <code>country</code> αντιστοιχεί στην τιμή <code>&apos;Poland&apos;</code> (άλλο ένα <code>string</code>),</li>
+<li>και το τρίτο κλειδί <code>favorite_numbers</code> αντιστοιχεί στην τιμή <code>[7, 42, 92]</code> (μια λίστα <code>list</code> με τρεις αριθμούς μέσα της).</li>
+</ul>
+<p>Μπορείτε να δείτε τις τιμές κάθε κλειδιού με την ακόλουθη σύνταξη:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(participant[<span class="hljs-string">&apos;name&apos;</span>])
+Ola
+</code></pre>
+<p>Βλέπετε ότι είναι όμοια με μια λίστα. Απλώς δεν χριάζεται να θυμάστε τη θέση - μόνο το όνομα.</p>
+<p>Τι θα συμβεί αν ζητήσουμε μια τιμή ενός κλειδιού η οποία δεν υπάρχει; Μπορείτε να μαντέψετε; Ας δοκιμάσουμε να δούμε!</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;age&apos;</span>]
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+KeyError: <span class="hljs-string">&apos;age&apos;</span>
+</code></pre>
+<p>Είδατε, άλλο ένα σφάλμα το οποίο λέγεται <strong>KeyError</strong>. Η Python είναι αρκετά καλή σε αυτό. Δηλαδή στην περιγραφικότητα των σφαλμάτων της. Σας λέει ότι το κλειδί <code>&apos;age&apos;</code> δεν υπάρχει στο λεξικό.</p>
+<p>Πότε πρέπει να χρησιμοποιείτε λεξικό έναντι μιας λίστας; Αυτό είναι ένα καλό ερώτημα. Σκεφτείτε λίγο την απάντηση πριν προχωρήσετε.</p>
+<ul>
+<li>Χρειάζεστε μια ταξινομημένη ακολουθία από στοιχεία; Η απάντηση είναι λίστα.</li>
+<li>Χρειάζεστε να συσχετίζετε κλειδιά ούτως ώστε να τα αναζητείτε αργότερα μόνο με το όνομα τους και όχι με τη θέση τους; Η απάντηση είναι dict.</li>
+</ul>
+<p>Τα dicts όπως και οι λίστες είναι <em>mutable</em>, που σημαίνει ότι μπορούν να αλλάξουν μετά τη δημιουργία τους. Μπορείτε να προσθέσετε ένα νέο κλειδί-τιμή στο λεξικό αφού δημιουργηθεί, όπως παρακάτω:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;favorite_language&apos;</span>] = <span class="hljs-string">&apos;Python&apos;</span>
+</code></pre>
+<p>Όπως στις λίστες, χρησιμοποιώντας τη μέθοδο <code>len()</code> σε λεξικά, θα πάρετε τον αριθμό των ζευγαριών κλειδί-τιμή μέσα σε ένα λεξικό. Γράφτε το παρακάτω:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(participant)
+<span class="hljs-number">4</span>
+</code></pre>
+<p>Ελπίζουμε να βγάζουν νόημα όλα αυτά μέχρι τώρα. :) Είστε έτοιμοι για περισσότερη διασκέδαση με τα λεξικά; Συνεχίστε να διαβάζετε για περισσότερα πράγματα που μπορείτε να κάνετε.</p>
+<p>Μπορείτε να χρησιμοποιήσετε την μέθοδο <code>pop()</code> για να διαγράψετε ένα στοιχείο (ζευγάρι από κλειδί-τιμή) από ένα dict. Για παράδειγμα, αν θέλετε να διαγράψετε το ζευγάρι με το κλειδί <code>&apos;favorite_numbers&apos;</code>, γράψτε την ακόλουθη εντολή:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant.pop(<span class="hljs-string">&apos;favorite_numbers&apos;</span>)
+[<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>participant
+{<span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Poland&apos;</span>, <span class="hljs-string">&apos;favorite_language&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}
+</code></pre>
+<p>Όπως μπορείτε να δείτε από την έξοδο, το ζευγάρι του κλειδιού &apos;favorite_numbers&apos; διαγράφηκε επιτυχώς.</p>
+<p>Επίσης, μπορείτε να αλλάξετε την τιμή σε μια τιμή μέσα σε ένα λεξικό (αλλά όχι το ίδιο το κλειδί). Δοκιμάστε το εξής:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;country&apos;</span>] = <span class="hljs-string">&apos;Germany&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>participant
+{<span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Germany&apos;</span>, <span class="hljs-string">&apos;favorite_language&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}
+</code></pre>
+<p>Όπως βλέπετε, η τιμή του κλειδιού <code>&apos;country&apos;</code> αλλάξε από <code>&apos;Poland&apos;</code> σε <code>&apos;Germany&apos;</code>. :) Φοβερό έτσι; Μπράβο! Μόλις μάθατε άλλο ένα απίθανο πράγμα.</p>
+<h3 id="περίληψη">Περίληψη</h3>
+<p>Τέλεια! Ξέρετε πολλά σχετικά με τον προγραμματισμό τώρα. Στην τελευταία ενότητα μάθατε τα εξής:</p>
+<ul>
+<li><strong>errors</strong> – μάθατε πως να διαβάζετε και να καταλαβαινέτε τα σφάλματα τα οποία εμφανίζονται αν η Python δεν καταλαβαίνει κάποια εντολή που της δώσατε</li>
+<li><strong>variables</strong> – ονόματα για objects τα οποία σας επιτρέπουν να γράφετε κώδικα πιο εύκολα αλλά και να είναι ο κώδικας σας πιο ευανάγνωστος</li>
+<li><strong>lists</strong> – λίστες από objects που αποθηκεύονται σε μια συγκεκριμένη σειρά</li>
+<li><strong>dictionaries</strong> – αντικείμενα τα οποία αποθηκεύονται υπό τη μορφή ζευγαριού κλειδί-τιμή</li>
+</ul>
+<p>Ενθουσιασμένοι για το επόμενο μέρος; :)</p>
+<h2 id="σύγκριση-πραγμάτων">Σύγκριση πραγμάτων</h2>
+<blockquote>
+<p>Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο <a href="https://www.youtube.com/watch?v=7bzxqIKYgf4" target="_blank">Python Basics: Comparisons</a>.</p>
+</blockquote>
+<p>Ένα μεγάλος μέρος του προγραμματισμού περιλαμβάνει τη σύγκριση πραγμάτων. Ποιο είναι το πιο εύκολο πράγμα να συγκρίνουμε; Οι αριθμοί! Ας δούμε πως:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span> * <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> == <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> != <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Δώσαμε στην Python μερικούς αριθμούς προς σύγκριση. Όπως βλέπετε, όχι μόνο μπορεί να συγκρίνει αριθμούς αλλά και αποτελέσματα από μεθόδους. Καλό εε;</p>
+<p>Αναρρωτιέστε γιατί βάλαμε <code>==</code> (δύο ίσον σύμβολα) για να εξακριβώσουμε αν οι αριθμοί είναι ίσοι; Χρησιμοποιούμε το μονό ίσον <code>=</code> για να αναθέσουμε μια τιμή σε μια μεταβλητή. Πάντα, <strong>πάντα</strong> θα χρειάζεται να βάζετε διπλό ίσον – <code>==</code> – αν θέλετε να δείτε αν δύο πράγματα είναι ίσα μεταξύ τους. Αν οι τιμές τους, δηλαδή, είναι ίδιες. Μπορούμε επίσης να εξακριβώσουμε αν οι τιμές τους δεν είναι ίσες. Γι&apos;αυτό χρησιμοποιούμε το σύμβολο <code>!=</code>, όπως φαίνεται παραπάνω.</p>
+<p>Ας δώσουμε στην Python δύο ακόμα εντολές:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt;= <span class="hljs-number">12</span> / <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt;= <span class="hljs-number">2</span>
+<span class="hljs-literal">False</span>
+</code></pre>
+<p>Είδαμε ότι τα σύμβολα <code>&gt;</code> και <code>&lt;</code>, αλλά τα ακόλουθα σύμβολα τι σημαίνουν: <code>&gt;=</code>, <code>&lt;=</code>; Διαβάστε τα κάπως έτσι:</p>
+<ul>
+<li>x <code>&gt;</code> y σημαίνει: το x είναι μεγαλύτερο το y</li>
+<li>x <code>&lt;</code> y σημαίνει: το x είναι μικρότερο του y</li>
+<li>x <code>&lt;=</code> y σημαίνει: το x είναι μικρότερο ή ίσο του y</li>
+<li>x <code>&gt;=</code> y σημαίνει: το x είναι μεγαλύτερο ή ίσο του y</li>
+</ul>
+<p>Τέλεια! Θέλετε να δοκιμάσετε άλλο ένα; Δοκιμάστε αυτό:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">3</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Μπορείτε να δώσετε στην Python όσα νούμερα θέλετε προς σύγκριση και θα σας δώσει την απάντηση! Πολύ καλό, έτσι;</p>
+<ul>
+<li><strong>and</strong> – αν χρησιμοποιήσετε τον operator <code>and</code>, τότε και οι δύο συγκρίσεις θα πρέπει να είναι αληθείς (True) για να είναι όλη η εντολή True</li>
+<li><strong>and</strong> – αν χρησιμοποιήσετε τον operator <code>or</code>, τότε αρκεί μόνο μια από τις συγκρίσεις να είναι αληθής (True) για να είναι όλη η εντολή True</li>
+</ul>
+<p>Έχετε ακούσει την έκφραση &quot;συγκρίνω μήλα με πορτοκάλια&quot;; Ας το δοκιμάσουμε με την Python:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> &gt; <span class="hljs-string">&apos;django&apos;</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-string">&apos;&gt;&apos;</span> <span class="hljs-keyword">not</span> supported between instances of <span class="hljs-string">&apos;int&apos;</span> <span class="hljs-keyword">and</span> <span class="hljs-string">&apos;str&apos;</span>
+</code></pre>
+<p>Όπως ισχύει με την παραπάνω έκφραση στην καθομιλουμένη, έτσι και στην Python δεν είναι δυνατόν να συγκριθεί ένας αριθμός (<code>int</code>) με ένα string (<code>str</code>). Αντ&apos; αυτού, εμφανίζεται ένα σφάλμα τύπου <strong>TypeError</strong> το οποίο μας λέει ότι οι δύο τύποι objects δεν μπορούν να συγκριθούν μεταξύ τους.</p>
+<h2 id="λογικές-τιμές">Λογικές τιμές</h2>
+<p>Χωρίς να το θέλετε, μόλις μάθατε έναν νέο τύπο object στην Python. Ονομάζεται <strong>Boolean</strong>.</p>
+<p>Υπάρχουν μόνο δύο ειδών Boolean objects:</p>
+<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+<p>Αλλά για να το καταλάβει η Python θα πρέπει πάντα να το γράφετε ως &apos;True&apos; (το πρώτο γράμμα κεφαλαίο με τα υπόλοιπα πεζά). Τα <strong>true, TRUE, και tRUE δεν θα δουλέψουν – μόνο το True είναι σωστό.</strong> (Το ίδιο ισχύει και για το &apos;False&apos;.)</p>
+<p>Τα booleans μπορούν να είναι και μεταβλητές! Δείτε εδώ:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Μπορείτε να το κάνετε και έτσι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">False</span>
+</code></pre>
+<p>Εξασκηθείτε και διασκεδάστε με τα Booleans δοκιμάζοντας τις ακόλουθες εντολές:</p>
+<ul>
+<li><code>True and True</code></li>
+<li><code>False and True</code></li>
+<li><code>True or 1 == 1</code></li>
+<li><code>1 != 2</code></li>
+</ul>
+<p>Συγχαρητήρια! Τα Booleans είναι ένα από τα πιο διασκεδαστικά πράγματα στον προγραμματισμό και μόλις μάθατε πως να τα χρησιμοποιείτε!</p>
+<h1 id="αποθήκευση">Αποθήκευση!</h1>
+<blockquote>
+<p>Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο <a href="https://www.youtube.com/watch?v=dOAg6QVAxyk" target="_blank">Python Basics: Saving files and &quot;If&quot; statement</a>.</p>
+</blockquote>
+<p>Τόση ώρα γράφαμε τον κώδικα στην κονσόλα η οποία μας περιορίζει στο να εισάγουμε μια γραμμή κάθε φορά. Τα περισσότερα προγράμματα αποθηκεύονται σε αρχεία και τρέχουν όταν τους ζητηθεί από τον <strong>interpreter</strong> ή τον <strong>compiler</strong> της αντίστοιχης γλώσσας προγραμματισμού. Τόση ώρα τρέχαμε τα προγράμματα μας σε μια γραμμή κάθε φορά μέσα στον Python <strong>interpreter</strong>. Θα χρειαστούμς περισσότερες από μια γραμμές κώδικα για τα επόμενα στάδια. Οπότε θα χρειαστεί εν συντομία να κάνουμε τα εξής:</p>
+<ul>
+<li>Να φύγουμε από τον Python interpreter</li>
+<li>Να ανοίξουμε τον επεξεργαστή κώδικα της αρέσκειας μας</li>
+<li>Να αποθηκεύσουμε κάποιο κομμάτι κώδικα σε ένα python αρχείο (με την κατάληξη .py)</li>
+<li>Να το τρέξουμε!</li>
+</ul>
+<p>Για να φύγουμε από τον Python interpreter θα γράψουμε <code>exit()</code></p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$
+</code></pre>
+<p>Αυτό θα σας επαναφέρει στη γραμμή εντολών.</p>
+<p>Νωρίτερα, επιλέξαμε έναν επεξεργαστή κώδικα από την ενότητα <a href="../code_editor/">επεξεργαστής κώδικα</a>. Θα χρειαστεί να ανοίξουμε τον επεξεργαστή κώδικα και να γράψουμε κώδικα σε ένα νέο αρχείο (ή αν χρησιμοποιείτε Chromebook, δημιουργήστε ένα νέο αρχείο μέσω του Cloud IDE και ανοίξτε το αρχείο):</p>
+<p></p><p class="code-label">editor</p><p></p>
+<pre><code class="lang-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hello, Django girls!&apos;</span>)
+</code></pre>
+<p>Προφανώς, είστε ένας αρκετά έμπειρος Python developer τώρα, οπότε γράφτε κάποιον κώδικα μέσα στο αρχείο.</p>
+<p>Τώρα θέλουμε να αποθηκεύσουμε το αρχείο και να του δώσουμε ένα περιγραφικό όνομα. Ας το ονομάσουμς <strong>python_intro.py</strong> και ας το αποθηκεύσουμε στην επιφάνεια εργασίας. Μπορούμε να ονομάσουμε το αρχείο όπως θέλουμε αλλά το σημαντικό εδώ είναι η κατάληξηξ <strong>.py</strong> που πρέπει να έχει. Η κατάληξη <strong>.py</strong> λέει στο λειτουργικό μας σύστημα ότι αυτό το αρχείο αποτελεί ένα <strong>εκτελέσιμο Python αρχείο</strong> και έτσι η Python μπορεί να το τρέξει.</p>
+<blockquote>
+<p><strong>Σημείωση</strong> Θα πρέπει να είδατε ήδη ένα από τα πιο ωραία πράγματα στους επεξεργαστές κώδικα: τα χρώματα! Στην Python κονσόλα, όλα ήταν το ίδιο χρώμα. Τώρα βλέπετε ότι η συνάρτηση <code>print</code> έχει διαφορετικό χρώμα από ένα string. Αυτό ονομάζεται &quot;syntax highlighting&quot; και είναι ένα πολύ χρήσιμο χαρακτηριστικό καθώς προγραμματίζετε. Τα χρώματα θα σας δίνουν βοήθεια, όπως ένα string που του λείπει ένα &quot;αυτάκι&quot; ή ένα τυπογραφικό λάθος (typo) σε κάποια λέξε κλειδί της Python όπως <code>def</code> κλπ). Αυτός είναι ένας λόγος που χρησιμοποιούμε έναν επεξεργαστή κώδικα. :) :)</p>
+</blockquote>
+<p>Με αποθηκευμένο το αρχείο, είναι ώρα να το τρέξουμε! Χρησιμοποιώντας τις δεξιότητες που μάθατε στη γραμμή εντολών, χρησιμοποιήστε την κονσόλα για να <strong>αλλάξετε φάκελο</strong> και να μεταβείτε στην επιφάνεια εργασίας.</p>
+<sec data-title="Change directory: OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+<p>Σε Mac, η εντολή θα μοιάζει κάπως έτσι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+<p>Σε Linux, θα μοιάζει κάπως έτσι (η λέξη &quot;Desktop&quot; ίσως να είναι μεταφρασμένη στη γλώσσα σας ως &quot;Επιφάνεια Εργασίας&quot;):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+<p>Στα Windows θα μοιάζει κάπως έτσι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd %HomePath%\Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Powershell<a class="pull-right section atTitle btn btn-default" target="python_windowsPSH"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windowsPSH"><div class="panel-body">
+<p>Και στα Windows Powershell, θα μοιάζει κάπως έτσι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd $Home\Desktop
+</code></pre></div></div></div></sec>
+<p>Αν κολλήσετε, ζητήστε βοήθεια. Για αυτόν ακριβώς το λόγο βρίσκονται οι βοηθοί!</p>
+<p>Τώρα χρησιμοποιήστε την Python για να τρέξετε τον κώδικα στο αρχείο όπως κατώθι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hello, Django girls!
+</code></pre><p>Σημείωση: στα Windows η εντολή &apos;python3&apos; δεν αναγνωρίζεται. Αντ&apos;αυτού χρησιμοποιήστε την εντολή &apos;python&apos;:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">&gt; python python_intro.py
+</code></pre>
+<p>Τέλεια! Μόλις τρέξατε το πρώτο σας Python πρόγραμμα το οποίο είναι αποθηκευμένο σε αρχείο. Αισθάνεστε ωραία;</p>
+<p>Μπορείτε, τώρα, να μεταβείτε σε ένα σημαντικό εργαλείο στον προγραμματισμό:</p>
+<h2 id="if--elif--else">If … elif … else</h2>
+<p>Μερικές φορές, πολλά πράγματα στον κώδικα θα πρέπει να εκτελούνται αν ισχύουν συγκεκριμένες συνθήκες. Γι&apos;αυτό το λόγο η Python (και κάθε άλλη γλώσσα προγραμματισμού) έχει κάτι που ονομάζει <strong>if statements</strong>.</p>
+<p>Αντικαταστήστε τον κώδικα στο αρχείο <strong>python_intro.py</strong> με αυτό:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+</code></pre>
+<p>Αν το αποθηκεύσουμε και το τρέξουμε, θα δούμε το ακόλουθο σφάλμα:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+File &quot;python_intro.py&quot;, line 2
+         ^
+SyntaxError: unexpected EOF while parsing
+</code></pre><p>Η Python περιμένει από εμάς να της δώσουμε περαιτέρω οδηγίες για το τι θα γίνει (τι θα εκτελεστεί) αν η συνθήκε <code>3 &gt; 2</code> είναι αληθής (ή αλλιώς <code>True</code>). Ας προσπαθήσουμε να εκτυπώσουμε τη λέξη &quot;It works!&quot;. Αλλάξτε τον κώδικα στο αρχείο <strong>python_intro.py</strong> ως εξής:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;It works!&apos;</span>)
+</code></pre>
+<p>Παρατηρήστε ότι προσθέσαμε τέσσερα κενά (4 spaces) για να κάνουμε indent την τελευταία γραμμη. Πρέπει να το κάνουμε αυτό ούτως ώστε να πούμε στην Python τι να κάνει αν η συνθήκη είναι αληθής. Μπορείτε να βάλετε ένα διάστημα (έναν κενό χαρακτήρα) αλλά όλοι οι προγραμματιστές Python χρησιμοποιούν τέσσερα για να φαίνεται πιο όμορφο και ευανάγνωστο. Η χρήση του Tab λαμβάνεται ως 4 κενά αρκεί ο επεξεργαστής κώδικα να είναι ρυθμισμένος γι&apos;αυτό. Όταν κάνετε την επιλογή σας (Tab ή κενοί χαρακτήρες), μην την αλλάξετε! Αν χρησιμοποιείτε τα 4 κενά τότε να χρησιμοποιείτε τα 4 κενά για πάντα. Αλλιώς θα προκύψουν προβλήματα (mixed Tabs and spaces).</p>
+<p>Αποθηκεύστε το και δοκιμάστε να το ξανατρέξετε:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">$ python3 python_intro.py
+It works!
+</code></pre>
+<p>Σημείωση: θυμηθείτε ότι στα Windows η εντολή &apos;python3&apos; δεν αναγνωρίζεται. Χρησιμοποιείτε την &apos;python&apos; για να τρέχετε αρχεία.</p>
+<h3 id="αν-όμως-η-συνθήκη-δεν-είναι-true">Αν όμως η συνθήκη δεν είναι True;</h3>
+<p>Στα προηγούμενα παραδείγματα, ο κώδικας έτρεχε μόνο όταν η σνυθήκη ήταν αληθής. Αλλά η Python έχει και άλλα statements όπως το <code>elif</code> και το <code>else</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;5 is indeed greater than 2&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;5 is not greater than 2&apos;</span>)
+</code></pre>
+<p>Όταν αυτό τρέχει θα εκτυπώσει:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+5 is indeed greater than 2
+</code></pre><p>Αν το 2 ήταν μεγαλύτερο του 5 τότε η δεύτερη εντολή θα έτρεχε. Ας δούμε πως λειτουργεί η <code>elif</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">name = <span class="hljs-string">&apos;Sonja&apos;</span>
+<span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hey Ola!&apos;</span>)
+<span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hey Sonja!&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hey anonymous!&apos;</span>)
+</code></pre>
+<p>και τρέξτε το:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hey Sonja!
+</code></pre><p>Είδατε τι έγινε εδώ; Το <code>elif</code> σας επέτρεψε να προσθέσετε έξτρα συνθήκες σε περίπτωση που οι προηγούμενες αποτύχουν.</p>
+<p>Μπορείτε να προσθέσετε όσα <code>elif</code> θέλετε μετά το αρχικό <code>if</code>. Για παράδειγμα:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">volume = <span class="hljs-number">57</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;It&apos;s kinda quiet.&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">20</span> &lt;= volume &lt; <span class="hljs-number">40</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;It&apos;s nice for background music&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">40</span> &lt;= volume &lt; <span class="hljs-number">60</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Perfect, I can hear all the details&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">60</span> &lt;= volume &lt; <span class="hljs-number">80</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Nice for parties&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">80</span> &lt;= volume &lt; <span class="hljs-number">100</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;A bit loud!&quot;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;My ears are hurting! :(&quot;</span>)
+</code></pre>
+<p>Η Python τρέχει κάθε τεστ με τη σειρά και εκτυπώνει:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Perfect, I can hear all the details
+</code></pre><h2 id="σχόλια">Σχόλια</h2>
+<p>Τα χόλια είναι γραμμές οι οποίοες ξεκινούν με την δίεση <code>#</code>. Μπορείτε να γράψετε ότι θέλετε μετά την δίεση <code>#</code> και πολύ απλά η Python θα το αγνοήσει. Τα σχόλια μπορούνα να κάνουν τον κώδικα σας πιο ευανάγνωστο σε άλλους προγραμματιστές και όχι μόνο.</p>
+<p>Ας δούμε πως φαίνεται:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-comment"># Change the volume if it&apos;s too loud or too quiet</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span> <span class="hljs-keyword">or</span> volume &gt; <span class="hljs-number">80</span>:
+    volume = <span class="hljs-number">50</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;That&apos;s better!&quot;</span>)
+</code></pre>
+<p>Δεν χρειάζεται να γράφεται σχόλιο για κάθε γραμμή κώδικα (άλλωστε δεν είναι καλή πρακτική ούτως ή άλλως) αλλά τα σχόλια είναι χρήσιμα ως προς το να εξηγήσουν το τι κάνει ο κώδικας ή να δώσουν κάποιου είδους περίληψη όταν κάνετε κάτι περίπλοκο.</p>
+<h3 id="περίληψη">Περίληψη</h3>
+<p>Στις τελευταίες ασκήσεις μάθατε τα εξής:</p>
+<ul>
+<li><strong>να συγκρίνετε πράγματα</strong> – στην Python μπορείτε να συγκρίνετε πράγματα χρησιμοποιώντας <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>&lt;=</code>, <code>&lt;</code> και <code>and</code>, <code>or</code></li>
+<li><strong>Boolean</strong> – ένας τύπος object το οποίο μπορεί να πάρει μόνο δύο τιμές: <code>True</code> ή <code>False</code></li>
+<li><strong>Αποθήκευση αρχείων</strong> – αποθήκευση κώδικα σε αρχεία ούτως ώστε να τρέχετε μεγαλύτερου όγκου προγράμματα.</li>
+<li><strong>if … elif … else</strong> – αυτά τα statements σας επιτρέπουν να εκτελείτε κώδικα υπό συγκεκριμένες συνθήκες.</li>
+<li><strong>σχόλια</strong> - γραμμές στην Python οι οποίες δεν εκτελούνται και σας επιτρέπουν να κάνετε τον κώδικα σας πιο περιγραφικό και ευανάγνωστο</li>
+</ul>
+<p>Ώρα για το τελευταίο μέρος του κεφαλαίου!</p>
+<h2 id="οι-δικές-σας-συναρτήσεις">Οι δικές σας συναρτήσεις!</h2>
+<blockquote>
+<p>Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο <a href="https://www.youtube.com/watch?v=5owr-6suOl0" target="_blank">Python Basics: Functions</a>.</p>
+</blockquote>
+<p>Θυμάστε τις συναρτήσεις όπως τη <code>len()</code> που εκτελούσατε; Λοιπόν, σας έχουμε καλά νέα! Θα μάθετε πως να δημιουργείτε τις δικές σας!</p>
+<p>Μια συνάρτηση είναι μια σειρά από οδηγίες που η Python πρέπει να εκτελέσει. Κάθε συνάρτηση ξεκινά με τη λέξη κλειδί της Python <code>def</code>, μετά ακολουθεί το όνομα αυτής και μετά δίνονται τυχόν παράμετροι. Ας το προσπαθήσουμε. Αντικαταστήστε τον κώδικα στο αρχείο <strong>python_intro.py</strong> με το ακόλουθο:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>():</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi there!&apos;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;How are you?&apos;</span>)
+
+hi()
+</code></pre>
+<p>Ωραία. Η πρώτη μας συνάρτηση είναι έτοιμη!</p>
+<p>Θα αναρρωτιέστε γιατί γράψαμε το όνομα της συνάρτησης στο τέλος του αρχείου. Αυτό γίνεται επειδή η Python διαβάζει το αρχείο και το τρέχει από την κορυφή έως το τέλος. Για να χρησιμοποιήσουμε, λοιπόν, την συνάρτηση μας θα πρέπει να την ξαναγράψουμε στο τέλος.</p>
+<p>Ας το τρέξουμε για να δούμε το αποτέλεσμα:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi there!
+How are you?
+</code></pre><p>Σημείωση: αν δεν δούλεψε, μην πανικοβάλεστε! Η έξοδος θα σας βοηθήσει να καταλάβετε το γιατί:</p>
+<ul>
+<li>Αν λέβετε ένα σφάλμα τύπου <code>NameError</code>, τότε ίσως γράψατε κάτι λάθος όπως το όνομα της συνάρτηση στο τέλος του αρχείου. Επιβεβαιώστε ότι το όνομα στη δήλωση της συνάρτηση <code>def hi():</code> είναι το ίδιο με το όνομα όταν την καλείτε <code>hi()</code>.</li>
+<li>Αν λάβατε ένα σφάλμα τύπου <code>IndentationError</code>, ελέγξτε ότι και οι γραμμές που καλούνται οι δύο συναρτήσεις <code>print</code> έχουν τον ίδιο αριθμό κενών στην αρχή: η Python απαιτεί όλος ο κώδικας μέσα στις συναρτήσεις να είναι στοιχισμένος το ίδιο.</li>
+<li>Αν δεν βλέπετε κάποια έξοδο τότε είτε έχετε παραλείψει να καλέσετε την συνάρτηση χρησιμοποιώντας τις παρενθέσεις <code>hi()</code> είτε το έχετε κάνει αλλά η κλήση της συνάρτησης (hi()) έχει <em>κενό</em> στην αρχή και αποτελεί μέρος του κυρίου σώματος της συνάρτησης (def hi():).</li>
+</ul>
+<p>Ας φτιάξουμε την πρώτη μας συνάρτηση με παραμέτρους. Θα αλλάξουμε το προηγούμενο παράδειγμα συμπεριλαμβάνοντας ένα όνομα. Θα φτιάξουμε μια συνάρτηση που να λέει &apos;hi&apos; στο πρόσωπο που την καλεί:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+</code></pre>
+<p>Όπως βλέπετε, δώσαμε μια παράμετρο στην συνάρτηση με το όνομα <code>name</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+    <span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi Ola!&apos;</span>)
+    <span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi Sonja!&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi anonymous!&apos;</span>)
+
+hi()
+</code></pre>
+<p>Θυμηθείτε: Η συνάρτηση <code>print</code> είναι στοιχισμένη με 4 κενά μέσα στο statement <code>if</code>. Αυτό το κάνουμε διότι θέλουμε να εκτελεστεί η συνάρτηση όταν η συνθήκη στο if είναι αληθής. Ας δούμε πως δουλεύει τώρα:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Traceback (most recent call last):
+File &quot;python_intro.py&quot;, line 10, in &lt;module&gt;
+  hi()
+TypeError: hi() missing 1 required positional argument: &apos;name&apos;
+</code></pre><p>Ώπα, ένα σφάλμα. Ευτυχώς, η Python μας δίνει ένα αρκετά χρήσιμο σφάλμα. Μας λέει ότι η συνάρτηση <code>hi()</code> (αυτή που ορίσαμε) δέχεται μια απαραίτητη παράμετρο (με το όνομα <code>name</code>) και ότι ξεχάσαμε να την ορίσουμε καθώς την καλούσαμε. Ας το φτιάξουμε αυτό στο τέλος του αρχείου:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">hi(<span class="hljs-string">&quot;Ola&quot;</span>)
+</code></pre>
+<p>Και ας το τρέξουμε ξανά:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi Ola!
+</code></pre><p>Και αν μπορούμε να αλλάξουμε το όνομα;</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">hi(<span class="hljs-string">&quot;Sonja&quot;</span>)
+</code></pre>
+<p>Και το τρέξουμε:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi Sonja!
+</code></pre><p>Τώρα τι νομίζετε ότι θα γίνει αν γράψετε άλλο όνομα εκεί μέσα; (Όχι το Ola ή το Sonja). Δοκιμάστε το και προβλέψτε την έξοδο. Θα εκτυπώσει το εξής:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>Hi anonymous!
+</code></pre><p>Αυτό είναι φοβερό, έτσι; Με αυτό τον τρόπο δεν χρειάζεται να επαναλαμβάνεστε κάθε φορά που θέλετε να αλλάξετε το όνομα του προσώπου που η συνάρτηση υποτίθεται ότι χαιρετά. Και γι&apos;αυτό το λόγο χρησιμοποιούμε τις συναρτήσεις. Δεν θέλετε ποτέ να επαναλάβετε τον κώδικα σας!</p>
+<p>Ας κάνουμε κάτι πιο έξυπνο. Υπάρχουν περισσότερα ονόματα από δύο και το να γράφουμε συνθήκες για καθένα χωριστά καταντά κουραστικό και ευάλωτο σε λάθη. Αντικαταστήστε το περιεχόμενο του αρχείου σας με τα κατώθι:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+hi(<span class="hljs-string">&quot;Rachel&quot;</span>)
+</code></pre>
+<p>Ας τρέξουμε τον κώδικα τώρα:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi Rachel!
+</code></pre><p>Συγχαρητήρια! Μόλις μάθατε πως να γράφετε συναρτήσεις! :)</p>
+<h2 id="επαναλήψεις">Επαναλήψεις</h2>
+<blockquote>
+<p>Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο <a href="https://www.youtube.com/watch?v=aEA6Rc86HF0" target="_blank">Python Basics: For Loop</a>.</p>
+</blockquote>
+<p>Αυτό είναι το τελευταίο κομμάτι. Ήταν σύντομο, έτσι; :)</p>
+<p>Οι προγραμματιστές δεν θέλουν να επαναλαμβάνουν τα ίδια και τα ίδια. Ο προγραμματισμός έχει να κάνει με την αυτοματοποίηση των πραγμάτων. Οπότε δεν θέλουμε να χαιρετάμε κάθε πρόσωπο με το όνομα τους χειροκίνητα, έτσι; Εδώ, λοιπόν, έρχονται οι επαναλήψεις (ή loops ή βρόγχοι).</p>
+<p>Θυμάστε τις λίστες; Ας φτιάξουμε μια λίστα με ονόματε κοριτσιών:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">girls = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;You&apos;</span>]
+</code></pre>
+<p>Θέλουμε να τις χαιρετίσουμε όλες με το όνομα τους. Έχουμε, ήδη, μια συνάρτηση με το όνομα <code>hi</code>, οπότε θα χρησιμοποιήσουμε αυτή:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+</code></pre>
+<p>Η λέξη κλειδί της Python <code>for</code> συμπεριφέρεται περίπου όπως το <code>if</code>. Το κυρίως σώμα του κώδικα που ακολουθεί θα πρέπει να είναι στοιχισμένο με 4 κενά.</p>
+<p>Αυτός θα είναι ο κώδικας που θα υπάρχει στο αρχείο:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+girls = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;You&apos;</span>]
+<span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+    hi(name)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Next girl&apos;</span>)
+</code></pre>
+<p>Και όταν το τρέχουμε:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi Rachel!
+Next girl
+Hi Monica!
+Next girl
+Hi Phoebe!
+Next girl
+Hi Ola!
+Next girl
+Hi You!
+Next girl
+</code></pre><p>Όπως βλέπετε οτιδήποτε βάλτε μέσα σε ένα statement <code>for</code> με την ανάλογη στοίχιση θα επαναληφθεί για κάθε στοιχείο της λίστας <code>girls</code>.</p>
+<p>Μπορείτε να χρησιμοποιήσετε το <code>for</code> και για αριθμούς χρησιμοποιώντας της συνάρτηση <code>range</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
+    <span class="hljs-built_in">print</span>(i)
+</code></pre>
+<p>Το οποίο θα εκτυπώσει:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>1
+2
+3
+4
+5
+</code></pre><p>Η συνάρτηση <code>range</code> δημιουργεί μια λίστα από αριθμούς (αυτοί οι αριθμοί εισάγονται από εσάς ως παράμετροι).</p>
+<p>Σημειώστε ότι η δεύτερη παράμετρος δεν περιλαμβάνεται στην λίστα που επιστρέφει (δηλαδή το <code>range(1, 6)</code> θα μετρήσει από το 1 έως το 5, αλλά δεν θα συμπεριλάβει το 6). Αυτό γίνεται διότι η συνάρτηση &quot;range&quot; είναι τύπου κλειστό-ανοιχτό, δηλαδή συμπεριλαμβάνει την πρώτη τιμή αλλά όχι την τελευταία.</p>
+<h2 id="περίληψη">Περίληψη</h2>
+<p>Αυτό ήταν. <strong>Τα σπάτε!</strong> Αυτό ήταν ένα δύσκολο κεφάλαιο, οπότε θα πρέπει να νιώθετε περίφανοι με τον εαυτό σας. Είμαστε πολύ περήφανοι που τα καταφέρατε μέχρι εδώ!</p>
+<p>Για τον επίσημο και πλήρης Python οδηγό επισκεφτείτε την σελίδα <a href="https://docs.python.org/3/tutorial/" target="_blank">https://docs.python.org/3/tutorial/</a>. Αυτό θα σας δώσει μια πιο ολοκληρωμένη και εις βάθος γνώση αυτής της γλώσσας προγραμματισμού. Γεια σας :)</p>
+<p>Ίσως θα θέλατε να κάνετε κάτι κάτι άλλο, πχ τεντωθείτε, να περπατήσετε λίγο, να ξεκουράσετε τα μάτια σας, πριν συνεχίσετε στο επόμενο κεφάλαιο. :)</p>
+<p><img src="images/cupcake.png" alt="Κεκάκι"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../code_editor/" class="navigation navigation-prev " aria-label="Previous page: Επεξεργαστής Κώδικα">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django/" class="navigation navigation-next " aria-label="Next page: Τι είναι το Django;">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Εισαγωγή στην Python","level":"1.8","depth":1,"next":{"title":"Τι είναι το Django;","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"previous":{"title":"Επεξεργαστής Κώδικα","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"el","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_introduction/README.md","mtime":"2021-03-25T14:00:00.167Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"el"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

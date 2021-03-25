@@ -1,0 +1,730 @@
+
+<!DOCTYPE HTML>
+<html lang="hu" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django ORM és QuerySet-ek · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../dynamic_data_in_templates/" />
+    
+    
+    <link rel="prev" href="../html/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Bevezetés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installáció
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Hogy működik az Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Bevezetés a parancssor használatába
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    A Python telepítése
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kódszerkesztő (editor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Bevezetés a Pythonba
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Mi a Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django telepítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Az első Django projekted!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modellek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - itt az ideje alkotni!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Bevezetés a HTML-be
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django ORM és QuerySet-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dinamikus adatok a template-ben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django sablonok (template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Tegyük széppé!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template-kiegészítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Egészítsd ki az applikációdat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django űrlapok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Következő lépések
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django ORM és QuerySet-ek</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-orm-és-queryset-ek">Django ORM és QuerySet-ek</h1>
+<p>Ebben a fejezetben megtanulod, hogy hogyan kapcsolódik az adatbázishoz a Django, és hogyan tárol benne adatokat. Ugorjunk fejest!</p>
+<h2 id="mi-a-queryset">Mi a QuerySet?</h2>
+<p>A QuerySet lényegében egy lista, amely egy bizonyos Model objektumait tartalmazza. A QuerySetek segítségével tudsz adatot kinyerni az adatbázisból, szűrheted és sorba rendezheted.</p>
+<p>A legkönnyebb, ha példákon keresztül tanulod meg. Próbáljuk csak ki!</p>
+<h2 id="django-shell">Django shell</h2>
+<p>Nyisd meg a lokális konzolodat (nem a PythonAnywhere-ét), és gépeld be ezt a parancsot:</p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py shell
+</code></pre><p>Ezt fogod látni:</p>
+<pre><code>(InteractiveConsole)
+&gt;&gt;&gt;
+</code></pre><p>Most a Django interaktív konzoljában vagy. Olyasmi, mint a Python prompt, csak egy kis extra Django varázslattal :) Természetesen itt is használhatod az összes Python parancsot.</p>
+<h3 id="az-összes-objektum">Az összes objektum</h3>
+<p>Először is próbáljuk meg az összes posztot megjeleníteni. A következő paranccsal tudod megtenni:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.all()
+Traceback (most recent call last):
+      File &quot;&lt;console&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name &apos;Post&apos; is not defined
+</code></pre><p>Hoppá, egy hiba! Azt mondja, hogy nincs olyan, hogy Post. Igaza van -- elfelejtettük importálni!</p>
+<pre><code>&gt;&gt;&gt; from blog.models import Post
+</code></pre><p>Ez egyszerű: importáljuk a <code>Post</code> modellt a <code>blog.models</code>-ből. Próbáljuk meg újra megjeleníteni a Post-okat:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.all()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;]&gt;
+</code></pre><p>Egy lista a posztokból, amiket korábban megírtál! Ezeket még a Django admin felületén hoztad létre. Viszont ugyanezt meg tudod tenni a Python segítségével is. De vajon hogyan?</p>
+<h3 id="objektum-létrehozása">Objektum létrehozása</h3>
+<p>Így hozhatsz létre egy új Post objektumot az adatbázisodban:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.create(author=me, title=&apos;Sample title&apos;, text=&apos;Test&apos;)
+</code></pre><p>De az egyik összetevő hiányzik: a <code>me</code>. Az <code>User</code> (felhasználó) modell egy instance-át kell megadnunk author-ként (szerző). Hogy tudjuk ezt megcsinálni?</p>
+<p>Először importáljuk az User modellt:</p>
+<pre><code>&gt;&gt;&gt; from django.contrib.auth.models import User
+</code></pre><p>Milyen felhasználók vannak az adatbázisban? Próbáld meg ezt:</p>
+<pre><code>&gt;&gt;&gt; User.objects.all()
+&lt;QuerySet [&lt;User: ola&gt;]&gt;
+</code></pre><p>Ez a superuser, amit korábban hoztál létre! Most vegyük ennek a felhasználónak egy instance-ét:</p>
+<pre><code>me = User.objects.get(username=&apos;ola&apos;)
+</code></pre><p>Ahogy láthatod, most hozzájutottunk (<code>get</code>) egy <code>User</code>-hez, <code>username</code>-mel (felhasználónév), ami &apos;ola&apos;-val egyenlő. Szuper! Természetesen itt a saját felhasználónevedet kell beírnod.</p>
+<p>Most pedig végre létrehozhatjuk a posztot:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.create(author=me, title=&apos;Sample title&apos;, text=&apos;Test&apos;)
+</code></pre><p>Hurrá! Meg akarod nézni, hogy működött-e?</p>
+<pre><code>&gt;&gt;&gt; Post.objects.all()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;, &lt;Post: Sample title&gt;]&gt;
+</code></pre><p>Ott is van, egy újabb poszt a listában!</p>
+<h3 id="hozz-létre-még-néhány-posztot">Hozz létre még néhány posztot</h3>
+<p>A móka kedvéért hozz létre még 2-3 posztot, hogy lásd, hogyan működik. Ha ez megvan, továbbléphetsz a következő részre.</p>
+<h3 id="objektumok-filterezése">Objektumok filterezése</h3>
+<p>A QuerySet-ek egyik nagy előnye, hogy filterezhetjük (szűrhetjük) őket. Mondjuk le szeretnénk kérdezni az összes posztot, amit az ola User írt. Itt a <code>filter</code>-t fogjuk használni az <code>all</code> helyett a <code>Post.objects.all()</code>-ban. A zárójelek között megadhatjuk, hogy milyen feltétel(ek)nek kell teljesülnie ahhoz, hogy egy blogposzt bekerülhessen a querysetünkbe. Ebben az esetben az <code>author</code> (szerző) egyenlő <code>me</code>-vel (én). Ezt a Django-ban így írjuk le: <code>author=me</code>. Most így néz ki a kódunk:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(author=me)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: Post number 2&gt;, &lt;Post: My 3rd post!&gt;, &lt;Post: 4th title of post&gt;]&gt;
+</code></pre><p>És ha össze szeretnénk gyűjteni minden olyan posztot, aminek a <code>title</code> (cím) mezőjében szerepel a &apos;title&apos; szó?</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(title__contains=&apos;title&apos;)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: 4th title of post&gt;]&gt;
+</code></pre><blockquote class="clearfix alert alert-info"><strong class="fa fa-2x fa-edit"></strong>
+<p> A <code>title</code> és a <code>contains</code> (vagyis &apos;tartalmaz&apos;) között két underscore karakter (<code>_</code>) van. A Django ORM ezt a szintaxist használja arra, hogy elkülönítse a mezők neveit (&quot;title&quot;) a műveletektől vagy filterektől (&quot;contains&quot;). Ha csak egy underscore-t használt, egy ilyen hibát fogsz kapni: &quot;FieldError: Cannot resolve keyword title_contains&quot; (kb &quot;Mezőhiba: a title_contains kulcsszó nem található&quot;).</p>
+</blockquote>
+<p>Megkaphatod az összes közzétett poszt listáját is. Ezt úgy tudod megtenni, hogy az összes poszt között szűrsz azokra, amiknél be van állítva múltbéli <code>published_date</code> (vagyis közzététel dátuma):</p>
+<pre><code>&gt;&gt;&gt; from django.utils import timezone
+&gt;&gt;&gt; Post.objects.filter(published_date__lte=timezone.now())
+[]
+</code></pre><p>Sajnos az a poszt, amit a Python konzolban hoztunk létre, még nem lett közzétéve. De ezen könnyen változtathatunk! Először is, hozzá kell férnünk a poszt instance-éhez, amit közzé szeretnénk tenni:</p>
+<pre><code>&gt;&gt;&gt; post = Post.objects.get(title=&quot;Sample title&quot;)
+</code></pre><p>Aztán közzétesszük a <code>publish</code> methoddal!</p>
+<pre><code>&gt;&gt;&gt; post.publish()
+</code></pre><p>Most próbáld meg újra lekérdezni a közzétett posztok listáját (nyomd meg háromszor a felfelé nyilat, és nyomj <code>enter</code>t):</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(published_date__lte=timezone.now())
+&lt;QuerySet [&lt;Post: Sample title&gt;]&gt;
+</code></pre><h3 id="objektumok-sorbarendezése">Objektumok sorbarendezése</h3>
+<p>A QuerySetek segítségével sorba is rendezheted az objektumok listáját. Először próbáljuk meg a létrehozás dátuma (<code>created_date</code> mező) alapján rendezni őket:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.order_by(&apos;created_date&apos;)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: Post number 2&gt;, &lt;Post: My 3rd post!&gt;, &lt;Post: 4th title of post&gt;]&gt;
+</code></pre><p>Meg is fordíthatjuk a sorrendet, ha az elejére egy <code>-</code> jelet teszünk:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.order_by(&apos;-created_date&apos;)
+&lt;QuerySet [&lt;Post: 4th title of post&gt;,  &lt;Post: My 3rd post!&gt;, &lt;Post: Post number 2&gt;, &lt;Post: Sample title&gt;]&gt;
+</code></pre><h3 id="querysetek-összefűzése">QuerySetek összefűzése</h3>
+<p>A QuerySeteket kombinálhatod is, ha összefűződ őket (<strong>chaining</strong>):</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(published_date__lte=timezone.now()).order_by(&apos;published_date&apos;)
+</code></pre><p>Ez egy nagyon hatékony módszer, és a segítségével bonyolult query-ket írhatsz.</p>
+<p>Remek! Most már készen állsz a következő részre! Hogy kilépj a shellből, gépeld be ezt:</p>
+<pre><code>&gt;&gt;&gt; exit()
+$
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../html/" class="navigation navigation-prev " aria-label="Previous page: Bevezetés a HTML-be">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../dynamic_data_in_templates/" class="navigation navigation-next " aria-label="Next page: Dinamikus adatok a template-ben">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django ORM és QuerySet-ek","level":"1.17","depth":1,"next":{"title":"Dinamikus adatok a template-ben","level":"1.18","depth":1,"path":"dynamic_data_in_templates/README.md","ref":"dynamic_data_in_templates/README.md","articles":[]},"previous":{"title":"Bevezetés a HTML-be","level":"1.16","depth":1,"path":"html/README.md","ref":"html/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"hu","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_orm/README.md","mtime":"2021-03-25T14:00:00.287Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"hu"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

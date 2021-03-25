@@ -1,0 +1,886 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <title>部署！ · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_urls/" />
+    
+    
+    <link rel="prev" href="../django_admin/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    互联网是如何工作的？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    命令行介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    代码编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    你的第一个Django 项目 ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    部署！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django视图 - 抓紧时间去创建！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (查询集)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    模板中的动态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 让其更漂亮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    模板扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    扩展您的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    接下来呢？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >部署！</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="部署！">部署！</h1>
+<blockquote>
+<p><strong>注</strong> 这一章可以有时有点难打通。 坚持并完成它 ；部署是在网站开发过程的重要组成部分。 这一章放在本教程的中部，因此你的指导者可以帮助你在使网站上线中的一些小困难。 这意味着如果您花大量的时间，你仍然能独立完成这个教程。</p>
+</blockquote>
+<p>到目前为止您的网站只是在您的计算机上可用，现在您将了解如何部署它 ！ 部署是在互联网上发布你的应用程序的一系列过程，因此人们最终可以一起去看看你的应用程序。</p>
+<p>正如你所学习的，一个网站必须要放到一个服务器上。 在互联网上你可以找到很多的服务器供应商。 我们将使用一个相对简单的部署过程: <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere</a>。 PythonAnywhere 对于一些没有太多访问者的小应用是免费的，所以它对你来说绝对是足够使用的。</p>
+<p>其它我们将使用到的外部服务是<a href="https://www.github.com" target="_blank">GitHub</a>，它是一个代码托管服务。 还有其它的一些服务，但当今几乎所有的程序员都有 GitHub 帐户，并且现在你也会有的！</p>
+<p>我们将使用 GitHub 作为基石，以和 PythonAnywhere 互相传输我们的代码。</p>
+<h1 id="git">Git</h1>
+<p>Git是一个被大量程序员使用的&quot;版本控制系统&quot;。 此软件可以跟踪任何时间文件的改变，这样你以后可以随时召回某个特定版本。 有点像Microsoft Word 的&quot;跟踪更改&quot;功能 ，但更强大。</p>
+<h2 id="安装git">安装Git</h2>
+<blockquote>
+<p><strong>注意</strong> 如果你已经做过安装步骤了，你可以直接跳过这个步骤开始创建你自己的Git版本库。</p>
+</blockquote>
+<h3 id="windows系统">Windows系统</h3>
+<p>你可以从 <a href="https://git-scm.com/" target="_blank">git-scm.com</a> 下载Git。 你可以在所有的安装步骤中点击&quot;next next next&quot;，除了第5步&quot;Adjusting your PATH environment&quot;，需要选择&quot;Run Git and associated Unix tools from the Windows command-line&quot;(底部的选项)。 除此之外，默认值都没有问题。 签出时使用 Windows 风格的换行符，提交时使用 Unix 风格的换行符，这样比较好。</p>
+<h3 id="macos系统">MacOS系统</h3>
+<p>从<a href="https://git-scm.com/" target="_blank">git-scm.com</a>下载Git,根据说明操作。</p>
+<h3 id="linux系统">Linux系统</h3>
+<p>如果git还没有被安装的话，你可以从你的软件包管理器中下载git, 请试试下面命令:</p>
+<pre><code>sudo apt install git
+# or
+sudo yum install git
+# or
+sudo zypper install git
+</code></pre><h2 id="开始我们自己的git版本库">开始我们自己的Git版本库</h2>
+<p>Git跟踪一组特定的在代码仓库（或简称“仓库”）中文件的更改。 我们开始用git管理自己的项目吧。 打开你的终端，进入 <code>djangogirls</code> 文件夹运行以下的命令：</p>
+<blockquote>
+<p><strong>注意</strong> 在初始化仓库之前，请使用 <code>pwd</code>命令 (OSX/Linux) 或者 <code>cd</code> (Windows) 命令检查你当前的工作目录。 你应该是在 <code>djangogirls</code> 文件夹下运行命令。</p>
+</blockquote>
+<pre><code>$ git init
+Initialized empty Git repository in ~/djangogirls/.git/
+$ git config --global user.name &quot;Your Name&quot;
+$ git config --global user.email you@example.com
+</code></pre><p>每个项目我们只需要初始化一次Git仓库（而且你从此不需要重新输入用户名和邮箱）。</p>
+<p>Git会追踪这个目录下所有文件和文件夹的更改，但是有一些文件我们希望Git忽略它。 为此，我们可以在系统根目录下创建一个命名为 <code>.gitignore</code> 的文件。 打开编辑器，创建新文件并写入以下内容：</p>
+<pre><code>*.pyc
+__pycache__
+myvenv
+db.sqlite3
+.DS_Store
+</code></pre><p>然后在djangogirls项目根目录下保存为 <code>.gitignore</code>文件。</p>
+<blockquote>
+<p><strong>注意</strong> 在文件名最前面的&quot;.&quot;很重要。 如果你在创建文件的时候有困难(例如，Macs不能通过Finder创建开头为&quot;.&quot;的文件), 可以在编辑器里点击&quot;另存为&quot;, 这个没问题的。</p>
+</blockquote>
+<p>在执行git操作之前，最好使用 <code>git status</code> 命令查看一下当前的状态，尤其是在执行 <code>git add</code>或者在你不确定哪些文件被改动的情况下。 这有助于阻止各种意外发生，例如错误的文件被添加或提交。 <code>git status</code> 命令会返回所有未追踪/修改/暂存的文件，还有分支状态等信息。 输出会是这样：</p>
+<pre><code>$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+        .gitignore
+        blog/
+        manage.py
+        mysite/
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre><p>最后保存我们的更改。转到你的控制台并运行这些命令：</p>
+<pre><code>$ git add --all .
+$ git commit -m &quot;My Django Girls app, first commit&quot;
+[...]
+13 files changed, 200 insertions(+)
+create mode 100644 .gitignore
+[...]
+create mode 100644 mysite/wsgi.py
+</code></pre><h2 id="推送我们的代码到-github-上">推送我们的代码到 GitHub 上</h2>
+<p>跳转到<a href="https://www.github.com" target="_blank">GitHub.com</a>网站，注册一个新的免费账号。（如果你在看线下活动之前就已经有账号的话，那就太好了！）</p>
+<p>现在，创建一个新的仓库，命名为“my-first-blog”。 保持 &quot;initialise with a README&quot; 复选框未选中状态，.gitignore 选项为无 (我们已经手动创建了) ，让License设置为无。</p>
+<p><img src="images/new_github_repo.png" alt></p>
+<blockquote>
+<p><strong>注意</strong> <code>my-first-blog</code>这个名字很重要 — 你可以用其它的，但是这个名字会在教程中出现多次，你需要确保每次都替换掉它。 保持用 <code>my-first-blog</code> 这个名字可能更为简单.</p>
+</blockquote>
+<p>在下一屏中，你将看到你的仓库克隆 URL。选择“HTTPS”版本，拷贝地址，我们马上要把它粘贴到终端：</p>
+<p><img src="images/github_get_repo_url_screenshot.png" alt></p>
+<p>现在我们需要把你电脑上的Git仓库和GitHub上的挂接。</p>
+<p>在控制台输入以下内容（替换 <code>&lt;your-github-username&gt;</code> 为你的 github 用户名 ，不包含尖括号）：</p>
+<pre><code>$ git remote add origin https://github.com/&lt;your-github-username&gt;/my-first-blog.git
+$ git push -u origin master
+</code></pre><p>输入你的GitHub账号名和密码，然后你会看到这样：</p>
+<pre><code>Username for &apos;https://github.com&apos;: hjwp
+Password for &apos;https://hjwp@github.com&apos;:
+Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hjwp/my-first-blog.git
+ * [new branch]      master -&gt; master
+Branch master set up to track remote branch master from origin.
+</code></pre><!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
+<p>你的代码已经在GitHub上了。 快去确认一下吧！ 你会发现这些好家伙们 — <a href="https://github.com/django/django" target="_blank">Django</a>, <a href="https://github.com/DjangoGirls/tutorial" target="_blank">Django Girls Tutorial</a>，还有很多其它优秀的开放源代码软件项目同样也在GitHub上 :)</p>
+<h1 id="在-pythonanywhere-设置我们的博客">在 PythonAnywhere 设置我们的博客</h1>
+<blockquote>
+<p><strong>注意</strong> 你可能在之前的安装步骤中已经创建 PythonAnywhere 账户 — 如果是的话，那么无需再来一次。</p>
+</blockquote>
+<p>下一步，在PythonAnywhere注册一个“Beginner”账户。</p>
+<ul>
+<li><a href="https://www.pythonanywhere.com/" target="_blank">www.pythonanywhere.com</a></li>
+</ul>
+<blockquote>
+<p><strong>注意</strong> 在这里选择的用户名会出现在博客链接的地址当中<code>yourusername.pythonanywhere.com</code> ，因此最好选择你自己的绰号或者是与博客内容相关的名字。</p>
+</blockquote>
+<h2 id="在-pythonanywhere-上拉取我们的代码">在 PythonAnywhere 上拉取我们的代码</h2>
+<p>当然注册完 PythonAnywhere，你讲会转到仪表盘或“控制台”页面。 选择启动“Bash”控制台这一选项 — 这是 PythonAnywhere 版的控制台，就像你本地电脑上的一样。</p>
+<blockquote>
+<p><strong>注意</strong> PythonAnywhere 基于 Linux，因此如果你使用 Windows，控制台将会和你本地电脑上的略有不同。</p>
+</blockquote>
+<p>让我们通过创建一个我们仓库的 “Clone” 以便从 GitHub 拉取代码到 PythonAnywhere。 在 PythonAnywhere 控制台输入以下 (不要忘记使用 GitHub 用户名替换 <code>&lt;your-github-username&gt;</code>)：</p>
+<pre><code>$ git clone https://github.com/&lt;your-github-username&gt;/my-first-blog.git
+</code></pre><p>这将会拉取一份你的代码副本到 PythonAnywhere 上。通过键入<code>tree my-first-blog</code> 查阅：</p>
+<pre><code>$ tree my-first-blog
+my-first-blog/
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+</code></pre><h3 id="在-pythonanywhere-上创建-virtualenv">在 PythonAnywhere 上创建 virtualenv</h3>
+<p>如同你在自己电脑上做的，你可以在 PythonAnywhere 上创建 virtualenv 虚拟环境。在 Bash 控制台下，键入：</p>
+<pre><code>$ cd my-first-blog
+
+$ virtualenv --python=python3.4 myvenv
+Running virtualenv with interpreter /usr/bin/python3.4
+[...]
+Installing setuptools, pip...done.
+
+$ source myvenv/bin/activate
+
+(mvenv) $  pip install django whitenoise
+Collecting django
+[...]
+Successfully installed django-1.8.2 whitenoise-2.0
+</code></pre><blockquote>
+<p><strong>注意</strong> <code>pip 安装</code> 步骤可能需要几分钟。 耐心，耐心！但是如果超过 5 分钟，就不对劲了。 问问你的教练。</p>
+</blockquote>
+<!--TODO: think about using requirements.txt instead of pip install.-->
+<h3 id="收集静态文件。">收集静态文件。</h3>
+<p>你可曾好奇，什么是&quot;whitenoise&quot;白噪音？ 它是用来服务所谓的“static files”静态文件的工具。 静态文件是很少改动或者并非可运行的程序代码的那些文件，比如 HTML 或 CSS 文件。 在我们的计算机上，它们以不同的方式工作，我们需要比如“whitenoise”这样的工具来为其服务。</p>
+<p>在教程后续编辑网站 CSS 章节会介绍更多有关静态文件的内容。</p>
+<p>暂且我们只需要在服务器上运行一个额外的命令，就是 <code>collectstatic</code>。 它告诉 Django 去收集服务器上所有需要的静态文件。 就眼下来说主要是使admin管理界面看起来更漂亮的文件。</p>
+<pre><code>(mvenv) $ python manage.py collectstatic
+
+You have requested to collect static files at the destination
+location as specified in your settings:
+
+/home/edith/my-first-blog/static
+
+This will overwrite existing files!
+Are you sure you want to do this?
+
+Type &apos;yes&apos; to continue, or &apos;no&apos; to cancel: yes
+</code></pre><p>键入 &quot;yes&quot;, 然后它会自行运转！你可喜欢让计算机打印一页一页令人费解的文本？ 我总会弄点噪音作为伴奏。Brp, brp brp...</p>
+<pre><code>Copying &apos;/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/actions.min.js&apos;
+Copying &apos;/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/js/inlines.min.js&apos;
+[...]
+Copying &apos;/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/changelists.css&apos;
+Copying &apos;/home/edith/my-first-blog/mvenv/lib/python3.4/site-packages/django/contrib/admin/static/admin/css/base.css&apos;
+62 static files copied to &apos;/home/edith/my-first-blog/static&apos;.
+</code></pre><h3 id="在-pythonanywhere-上创建数据库">在 PythonAnywhere 上创建数据库</h3>
+<p>服务器与你自己的计算机不同的另外一点是：它使用不同的数据库。因此用户账户以及文章和你电脑上的可能会有不同。</p>
+<p>我们可以像在自己的计算机上一样在服务器上初始化数据库，使用 <code>migrate</code> 以及 <code>createsuperuser</code>：</p>
+<pre><code>(mvenv) $ python manage.py migrate
+Operations to perform:
+[...]
+  Applying sessions.0001_initial... OK
+
+
+(mvenv) $ python manage.py createsuperuser
+
+Context | Request Context
+</code></pre><h2 id="将我们的博客发布为一个网络应用程序">将我们的博客发布为一个网络应用程序</h2>
+<p>现在我们的代码已在PythonAnywhere上，我们的 virtualenv 已经准备好，静态文件已收集，数据库已初始化。我们准备好发布网络应用程序！</p>
+<p>通过点击 logo 返回到 PythonAnywhere 仪表盘，然后点击 <strong>Web</strong> 选项卡。最终，点 <strong>Add a new web app</strong>.</p>
+<p>在确认你的域名之后，选择对话框中 <strong>manual configuration</strong> (注 <em>不是</em> &quot;Django&quot; 选项) ： 下一步选择 <strong>Python 3.4</strong>，然后点击 Next 以完成该向导。</p>
+<blockquote>
+<p><strong>注意</strong> 确保你选中 &quot;Manual configuration&quot; 选项，而不是 &quot;Django&quot; 那个。我们太牛逼，所以不要用 PythonAnywhere Django 默认设置 ;-)</p>
+</blockquote>
+<h3 id="设置-virtualenv">设置 virtualenv</h3>
+<p>你将会被带到 PythonAnywhere 上你的Web 应用程序的配置屏，那个页面是每次你想修改服务器上你的应用程序时候要去的页面。</p>
+<p><img src="images/pythonanywhere_web_tab_virtualenv.png" alt></p>
+<p>在 “Virtualenv” 一节，点击红色文字 “Enter the path to a virtualenv&quot;，然后键入： <code>/home/&lt;your-username&gt;/my-first-blog/myvenv/</code>。 前进之前，先点击有复选框的蓝色框以保存路径。</p>
+<blockquote>
+<p><strong>注意</strong> 替换你自己的用户名。如果你犯了错，PythonAnywhere 会显示一个小警告。</p>
+</blockquote>
+<h3 id="配置-wsgi-文件">配置 WSGI 文件</h3>
+<p>Django 使用 “WSGI 协议”，它是用来服务 Python 网站的一个标准。PythonAnywhere 支持这个标准。 PythonAnywhere 识别我们 Django 博客的方式是通过配置 WSGI 配置文件。</p>
+<p>点击 “WSGI configuration file” 链接（在 &quot;Code&quot; 一节，接近页面上方 — 它将被命名为如 <code>/var/www/&lt;your-username&gt;_pythonanywhere_com_wsgi.py</code>），然后跳转到一个编辑器。</p>
+<p>删除所有的内容并用以下内容替换：</p>
+<pre><code>import os
+import sys
+
+path = &apos;/home/&lt;your-username&gt;/my-first-blog&apos;  # use your own username here
+if path not in sys.path:
+    sys.path.append(path)
+
+os.environ[&apos;DJANGO_SETTINGS_MODULE&apos;] = &apos;mysite.settings&apos;
+
+from django.core.wsgi import get_wsgi_application
+from whitenoise.django import DjangoWhiteNoise
+application = DjangoWhiteNoise(get_wsgi_application())
+</code></pre><blockquote>
+<p><strong>注意</strong> 当看到 <code>&lt;your-username&gt;</code>时，别忘了替换为你自己的用户名。</p>
+</blockquote>
+<p>这个文件的作用是告诉 PythonAnywhere 我们的Web应用程序在什么位置，Django 设置文件的名字是什么。它也设置 &quot;whitenoise&quot; 静态文件工具。</p>
+<p>点击 <strong>Save</strong> 然后返回到 <strong>Web</strong> 选项卡。</p>
+<p>一切搞定！点击大大的绿色 <strong>Reload</strong> 按钮然后你将会看到你的应用程序。页面的顶部可以看到它的链接。</p>
+<h2 id="调试小贴士">调试小贴士</h2>
+<p>如果你在访问你的网站时候看到一个错误，首先要去 <strong>error log</strong> 中找一些调试信息。 你可以在 PythonAnywhere <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">Web 选项卡</a> 中发现它的链接。 检查那里是否有任何错误信息，底部是最新的信息。 常见问题包括：</p>
+<ul>
+<li><p>忘记我们在控制台中的步骤之一：创建 virtualenv，激活它，安装 Django 进去，运行 collectstatic，迁移数据库。</p>
+</li>
+<li><p>在 Web 选项卡中，virtualenv 路径设置错误 — 如果真是这样，这通常会是一个红色错误消息。</p>
+</li>
+<li><p>WSGI 文件设置错误 — 你的 my-first-blog 目录地址设置是否正确？</p>
+</li>
+<li><p>你是否为你的 virtualenv 选择了同样的 Python 版本，如同 Web 应用程序里的那样？两个应该都是 3.4。</p>
+</li>
+<li><p>有一些常见的调试小贴士在 <a href="https://www.pythonanywhere.com/wiki/DebuggingImportError" target="_blank">general debugging tips on the PythonAnywhere wiki</a> 里.</p>
+</li>
+</ul>
+<p>记住，你的教练会在这里帮你！</p>
+<h1 id="你上线了！">你上线了！</h1>
+<p>你网站的默认页面说 “Welcome to Django”，如同你本地计算机上的一样。 试着添加 <code>/admin/</code>到URL的末尾，然后你会到达管理者的页面。 输入用户名和密码登录，然后你会看到服务器上的 add new Posts 。</p>
+<p>给你自己一个<em>超大</em>的鼓励！ 服务器部署是web开发中最棘手的部分之一， 它通常要耗费人们几天时间才能搞定。 但你的网站已经上线，运转在真正的互联网上，就是这样！</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_admin/" class="navigation navigation-prev " aria-label="Previous page: Django管理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_urls/" class="navigation navigation-next " aria-label="Next page: Django urls">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"部署！","level":"1.13","depth":1,"next":{"title":"Django urls","level":"1.14","depth":1,"path":"django_urls/README.md","ref":"django_urls/README.md","articles":[]},"previous":{"title":"Django管理","level":"1.12","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"zh","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"deploy/README.md","mtime":"2021-03-25T14:00:00.567Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,872 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS - 예쁘게 만들기 · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../template_extending/" />
+    
+    
+    <link rel="prev" href="../django_templates/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.21" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CSS - 예쁘게 만들기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="css---예쁘게-만들기">CSS - 예쁘게 만들기</h1>
+<p>아직 우리가 만든 블로그가 예쁘지 않죠? 이제 눈에 보기 좋게 예쁘게 만들어 볼 시간이에요. CSS를 사용해 만들어볼 거에요.</p>
+<h2 id="css는-무엇인가요">CSS는 무엇인가요?</h2>
+<p>CSS(Cascading Style Sheets)는 HTML와 같이 마크업언어(Markup Language)로 작성된 웹사이트의 외관을 꾸미기 위해 사용되는 언어입니다. 웹사이트에 메이크업을 해볼까요. ;)</p>
+<p>아무것도 없는 상태에서 시작하기 어렵겠죠? 개발자들이 만든 오픈 소스 코드를 사용해 만들어 볼 거에요. 이미 있는 바퀴를 다시 발명하는 것은 재미가 없잖아요.</p>
+<h2 id="부트스트랩을-사용해봐요">부트스트랩을 사용해봐요!</h2>
+<p>부트스트랩(Bootstrap)은 유명한 HTML과 CSS프레임워크로 예쁜 웹사이트를 만들 수 있습니다. : <a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></p>
+<p>트위터 개발자들이 부트스트랩을 만들었고, 전 세계 자원봉사자들이 지속적으로 참여해 발전시키고 있어요!</p>
+<h2 id="부트스트랩-설치하기">부트스트랩 설치하기</h2>
+<p>부트스트랩을 설치하려면, <code>.html</code>파일 내 <code>&lt;head&gt;</code>에 이 링크를 넣어야 합니다.</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+</code></pre>
+<p>이 링크는 프로젝트에 새 파일을 추가하는 게 아니에요. 인터넷에 있는 파일을 연결하는 거죠. 이제 웹사이트를 열어 새로고침 버튼을 눌러보세요. 짠!</p>
+<p><img src="images/bootstrap1.png" alt="Figure 14.1"></p>
+<p>어때요, 보기 좋아졌죠!</p>
+<h2 id="정적-파일">정적 파일</h2>
+<p>마지막으로 <strong>정적 파일(static files)</strong> 을 다뤄볼 거에요. 정적 파일은 CSS와 이미지 파일에 해당합니다. 이 컨텐츠는 요청 내용에 따라 바뀌는 것이 아니기 때문에 모든 사용자들이 동일한 내용을 볼 수 있어요.</p>
+<h3 id="정적-파일은-어디에-넣어야-하나요">정적 파일은 어디에 넣어야 하나요</h3>
+<p>서버에서 <code>collectstatic</code>를 실행할 때 처럼, 장고는 &quot;admin&quot;앱에서 정적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 &quot;blog&quot;앱에 정적파일을 추가하면 됩니다.</p>
+<p>&quot;blog&quot;앱 안에 <code>static</code>라는 새 폴더를 만드세요. :</p>
+<pre><code>    djangogirls
+    ├── blog
+    │   ├── migrations
+    │   ├── static
+    │   └── templates
+    └── mysite
+</code></pre><p>장고는 app 폴더 안에 있는 <code>static</code>폴더를 자동으로 찾을 수 있어요. 이 컨텐츠를 정적 파일로 사용하게 되는 것입니다.</p>
+<h2 id="나의-첫-번째-css-파일">나의 첫 번째 CSS 파일!</h2>
+<p>CSS파일을 만들어 나만의 스타일을 가진 웹페이지를 만들어봐요. <code>static</code>디렉토리 안에 <code>css</code>라고 새로운 디렉토리를 만드세요. 그리고 <code>css</code>디렉토리 안에 <code>blog.css</code>라는 파일을 만드세요. 준비되셨나요?</p>
+<pre><code>    djangogirls
+    └─── blog
+         └─── static
+              └─── css
+                   └─── blog.css
+</code></pre><p>CSS를 쓸 차례예요! 코드 에디터에서 <code>blog/static/css/blog.css</code>파일을 열어보세요.</p>
+<p>CSS는 꽤 쉽고 워크샵 후에도 스스로 배울 수 있기 때문에 CSS에 대해 깊이 살펴보지는 않을 거에요. 이 장 맨 마지막 부분에 추천하는 무료 사이트가 있습니다.</p>
+<p>하지만 조금이라도 해보자구요. 제목 색상을 바꿔볼까요? 컴퓨터는 특별한 코드를 사용해 색상을 나타내요. <code>#</code>으로 시작해 알파벳(A-F)와 숫자(0-9) 중 6개를 조합해 헥사코드(hexacode)로 나타냅니다. 이 곳에서 원하는 색상 코드를 찾을 수 있어요. <a href="https://www.colorpicker.com/" target="_blank">https://www.colorpicker.com/</a> 또는 <code>빨간색(red)</code> 또는 <code>녹색(green)</code> 등 <a href="http://www.w3schools.com/colors/colors_names.asp" target="_blank">미리 명시된 색상</a>을 사용할 수 있어요.</p>
+<p><code>blog/static/css/blog.css</code> 파일에 아래 코드를 추가하세요. :</p>
+<p></p><p class="code-label">blog/static/css/blog.css</p><p></p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#FCA205</span>;
+}
+</code></pre>
+<p><code>h1 a</code>는 CSS 셀렉터(Selector)라고 합니다. <code>h1</code>요소 안에 어떠한 <code>a</code>요소를 넣어 스타일을 적용 할 수 있다는 거죠. 예를 들어 <code>&lt;h1&gt;&lt;a href=&quot;&quot;&gt;link&lt;/a&gt;&lt;/h1&gt;</code> 라면, 오렌지색 <code>#FCA205</code>으로 바꿀 수 있어요. 물론, 내가 원하는 다른 색상을 지정할 수 있어요!</p>
+<p>CSS 파일에서는 HTML 파일에 있는 각 요소들에 스타일을 정의할 수 있어요. 요소를 식별하는 첫 번째 방법은 요소 이름을 사용하는 것입니다. HTML 섹션에서 태그로 기억할 수 있습니다. <code>a</code>,<code>h1</code>,<code>body</code>와 같은 것은 모두 요소 이름의 예입니다. 또 <code>class</code> 속성이나 <code>id</code> 속성에 의해 요소를 식별합니다. 클래스와 ID는 요소에 직접 부여한 이름이에요. 클래스는 요소 그룹을 정의하고 ID는 특정 요소를 가리킵니다. 아래 코드와 같이 태그 이름은 <code>a</code>, 클래스는 <code>external_link</code> 또는 ID는 <code>link_to_wiki_page</code>로 사용하여 태그를 통해 요소를 식별할 수 있습니다.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://en.wikipedia.org/wiki/Django&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;external_link&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;link_to_wiki_page&quot;</span>&gt;</span>
+</code></pre>
+<p>W3Schools에서 <a href="https://www.w3schools.com/cssref/css_selectors.asp" target="_blank">CSS 선택자</a>에 대해 읽어보시길 바랍니다.</p>
+<p>이제 CSS를 HTML에 추가해봅시다. <code>blog/templates/blog/post_list.html</code> 파일을 열고 맨 처음 줄에 이 라인을 추가하세요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html">{% load static %}
+</code></pre>
+<p>여기에서 정적 파일을 로딩하는 거에요. :)
+다음 <code>&lt;head&gt;</code>와 <code>&lt;/head&gt;</code> 사이에 부트스트랩 CSS파일 링크 다음에 아래 코드를 추가하세요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+</code></pre>
+<p>브라우저는 주어진 순서대로 파일을 읽으므로 파일이 올바른 위치에 있는지 확인해야합니다. 그렇지 않으면 파일 코드가 부트 스트랩 파일의 코드를 무시할 수 있습니다.
+이제까지 CSS파일이 있는 템플릿에 대해 알아보았어요.</p>
+<p>코드는 아래와 같아야 해요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html">{% load static %}
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        {% for post in posts %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {% endfor %}
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>자, 이제 파일을 저장하고 새로고침을 해보세요!</p>
+<p><img src="images/color2.png" alt="Figure 14.2"></p>
+<p>잘했어요! 웹사이트 왼쪽 여백을 좀더 주고 싶지 않나요? 한번 해봐요!</p>
+<p></p><p class="code-label">blog/static/css/blog.css</p><p></p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">body</span> {
+    <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+}
+</code></pre>
+<p>이 코드를 CSS에 붙여넣고, 파일을 저장하고 어떻게 바뀌었는지 확인해봐요!</p>
+<p><img src="images/margin2.png" alt="Figure 14.3"></p>
+<p>제목 폰트를 바꾸고 싶나요? <code>blog/templates/blog/post_list.html</code> 파일 내 <code>&lt;head&gt;</code>부분에 아래 코드를 붙여넣기 해보세요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span>
+</code></pre>
+<p><code>blog/static/css/blog.css</code> 파일 내 넣은 코드의 순서와 위치를 다시 확인해보세요. 이 라인은 Google 글꼴 (<a href="https://www.google.com/fonts)에서" target="_blank">https://www.google.com/fonts)에서</a> <em> Lobster</em> 라는 글꼴을 가져온 것을 말해요.</p>
+<p>그리고 CSS파일  <code>blog/static/css/blog.css</code> 에서<code>h1 a</code> 선언 블록 (중괄호<code>{</code>와<code>}</code>) 사이의 코드를 찾으세요. <code>font-family : &apos;Lobster&apos;;</code> 를 중괄호 사이에 추가하고 페이지를 새로고침 합니다.</p>
+<p></p><p class="code-label">blog/static/css/blog.css</p><p></p>
+<pre><code class="lang-css"><span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#FCA205</span>;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Lobster&apos;</span>;
+}
+</code></pre>
+<p><img src="images/font.png" alt="Figure 14.3"></p>
+<p>잘했어요!</p>
+<p>앞서 말했듯이, CSS는 클래스 개념을 가지고 있어요. 클래스는 HTML의 코드 일부에 이름을 붙이고 그 부분만 특정 스타일을 적용할 수 있게 해줍니다. 각기 다른 div를 (예를 들어 하나는 제목에 있고 하나는 글 본문에 있는 경우) 구분할 때 정말 유용해요. HTML 코드의 일부 이름을 지정하십시오. </p>
+<p>제목이 포함된 <code>div</code>에 <code>page-header</code>라는 클래스명을 붙여보세요. :</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-header&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>그리고 블로그 게시글을 나타내는 <code>div</code>에 <code>post</code>라고 클래스명을 붙여보세요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>이제 여러 선택자들을 추가해봅시다. 클래스 선택자는 <code>.</code>으로 시작합니다. 인터넷에 많은 CSS 튜토리얼과 설명 가이드가 있으니 찾아보면 도움이 될 거에요. 이제 <code>blog/static/css/blog.css</code> 파일에 아래 코드를 복사, 붙여넣기 하세요.</p>
+<p></p><p class="code-label">blog/static/css/blog.css</p><p></p>
+<pre><code class="lang-css"><span class="hljs-selector-class">.page-header</span> {
+    <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ff9400</span>;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">40px</span>;
+}
+
+<span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span>, <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span>, <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">36pt</span>;
+    <span class="hljs-attribute">text-decoration</span>: none;
+}
+
+<span class="hljs-selector-class">.content</span> {
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">40px</span>;
+}
+
+<span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span> {
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Lobster&apos;</span>, cursive;
+}
+
+<span class="hljs-selector-class">.date</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#828282</span>;
+}
+
+<span class="hljs-selector-class">.save</span> {
+    <span class="hljs-attribute">float</span>: right;
+}
+
+<span class="hljs-selector-class">.post-form</span> <span class="hljs-selector-tag">textarea</span>, <span class="hljs-selector-class">.post-form</span> <span class="hljs-selector-tag">input</span> {
+    <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+}
+
+<span class="hljs-selector-class">.top-menu</span>, <span class="hljs-selector-class">.top-menu</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.top-menu</span><span class="hljs-selector-pseudo">:visited</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+    <span class="hljs-attribute">float</span>: right;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">26pt</span>;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">20px</span>;
+}
+
+<span class="hljs-selector-class">.post</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">70px</span>;
+}
+
+<span class="hljs-selector-class">.post</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span>, <span class="hljs-selector-class">.post</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#000000</span>;
+}
+</code></pre>
+<p>자, 다음은 글을 보여주는 HTML 코드를 post라는 클래스 명을 선언해 div로 감싸세요. 이렇게 바꾸면 됩니다. :</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html">{% for post in posts %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endfor %}
+</code></pre>
+<p><code>blog/templates/blog/post_list.html</code> 파일 안에 아래 코드를 넣으세요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content container&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-8&quot;</span>&gt;</span>
+            {% for post in posts %}
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            {% endfor %}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>파일을 저장하고 웹 사이트를 새로고침하세요.</p>
+<p><img src="images/final.png" alt="Figure 14.4"></p>
+<p>방금 붙여 넣은 코드를보고 HTML에 클래스를 추가하고 CSS에서 사용했던 곳을 찾아보세요. 날짜를 초록색으로 바꾸려면 어느 부분을 수정하면 될까요?</p>
+<p>CSS를 바꿔보는 것을 두려워하지 마세요. CSS를 가지고 놀다보면 어떻게 작동되는지 좀더 이해할 수 있을 거에요. 망가뜨렸더라도 괜찮아요. 언제든지 되돌릴 수 있으니까요!</p>
+<p>무료 온라인 <a href="https://www.codecademy.com/tracks/web" target="_blank">Codecademy HTML &amp; CSS 코스</a>를 수강해보는 것을 추천합니다. CSS로 웹 사이트를 더 아름답게 만드는 방법을 배울 수 있어요.</p>
+<p>다음 장을 읽을 준비가 되셨나요?! :)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_templates/" class="navigation navigation-prev " aria-label="Previous page: Django 템플릿">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../template_extending/" class="navigation navigation-next " aria-label="Next page: 템플릿 확장하기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CSS - 예쁘게 만들기","level":"1.21","depth":1,"next":{"title":"템플릿 확장하기","level":"1.22","depth":1,"path":"template_extending/README.md","ref":"template_extending/README.md","articles":[]},"previous":{"title":"Django 템플릿","level":"1.20","depth":1,"path":"django_templates/README.md","ref":"django_templates/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"css/README.md","mtime":"2021-03-25T14:00:00.363Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,895 @@
+
+<!DOCTYPE HTML>
+<html lang="es" >
+    <head>
+        <meta charset="UTF-8">
+        <title>ORM de Django (QuerySets) · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../dynamic_data_in_templates/" />
+    
+    
+    <link rel="prev" href="../html/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Escribe para buscar" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introducción
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalación
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#brief-intro-to-the-command-line">
+            
+                    
+                    Línea de Comandos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#install-python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#install-a-code-editor">
+            
+                    
+                    Editor de texto
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtual-environment">
+            
+                    
+                    Entorno Virtual
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#installing-django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#install-git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#create-a-github-account">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#create-a-pythonanywhere-account">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Instalación (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Cómo funciona Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Introducción a la línea de comandos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalación de Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor de código
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Introducción a Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    ¿Qué es Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalación de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    ¡Tu primer proyecto en Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Modelos en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Administrador de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    ¡Despliega!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    URLs en Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Vistas en Django - ¡Hora de crear!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Introducción a HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    ORM de Django (QuerySets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Datos dinámicos en las plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Plantillas de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - ¡Que quede bonito!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Extendiendo plantillas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Amplía tu aplicación
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formularios de Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    ¿Y ahora qué?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publicado con HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >ORM de Django (QuerySets)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="orm-de-django-y-querysets">ORM de Django y QuerySets</h1>
+<p>En este capítulo aprenderás cómo Django se conecta a la base de datos y almacena los datos en ella. ¡Vamos a sumergirnos!</p>
+<h2 id="¿qué-es-un-queryset">¿Qué es un QuerySet?</h2>
+<p>Un QuerySet es, en esencia, una lista de objetos de un modelo determinado. Un QuerySet te permite leer los datos de la base de datos, filtrarlos y ordenarlos.</p>
+<p>Es más fácil de aprender con ejemplos. Vamos a intentarlo, ¿de acuerdo?</p>
+<h2 id="django-shell">Django shell</h2>
+<p>Abre tu consola local (no la de PythonAnywhere) y escribe este comando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py shell
+</code></pre><p>El resultado debería ser:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">(InteractiveConsole)
+&gt;&gt;&gt;
+</code></pre>
+<p>Ahora estás en la consola interactiva de Django. Es como una consola de Python normal, pero con un poco de magia de Django. :) Aquí también se pueden usar todos los comandos de Python.</p>
+<h3 id="todos-los-objetos">Todos los objetos</h3>
+<p>Vamos a mostrar todos nuestros posts primero. Puedes hacerlo con el siguiente comando:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">all</span>()
+Traceback (most recent call last):
+      File <span class="hljs-string">&quot;&lt;console&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;Post&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>¡Uy! Apareció un error. Nos dice que Post no existe. Esto es correcto, ¡olvidamos importarlo!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> blog.models <span class="hljs-keyword">import</span> Post
+</code></pre>
+<p>Vamos a importar el modelo <code>Post</code> de <code>blog.models</code>. Y probamos de nuevo a mostrar todas las publicaciones (posts):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">all</span>()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;]&gt;
+</code></pre>
+<p>¡Es la lista de posts que creamos anteriormente! Creamos estos posts usando la interfaz de administración de Django. Pero, ahora queremos crear nuevos posts usando Python, ¿cómo lo hacemos?</p>
+<h3 id="crear-objetos">Crear objetos</h3>
+<p>Esta es la forma de crear un nuevo objeto Post en la base de datos:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.create(author=me, title=<span class="hljs-string">&apos;Sample title&apos;</span>, text=<span class="hljs-string">&apos;Test&apos;</span>)
+</code></pre>
+<p>Pero nos falta un ingrediente aquí: <code>me</code>. Tenemos que pasar una instancia del modelo <code>User</code> como autor. ¿Eso cómo se hace?</p>
+<p>Primero importemos el modelo User:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> django.contrib.auth.models <span class="hljs-keyword">import</span> User
+</code></pre>
+<p>¿Qué usuarios tenemos en nuestra base de datos? Prueba esto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>User.objects.<span class="hljs-built_in">all</span>()
+&lt;QuerySet [&lt;User: ola&gt;]&gt;
+</code></pre>
+<p>¡Este es el superusuario que hemos creado antes! Ahora, vamos a obtener una instancia de este usuario (cambia el código para usar tu propio nombre de usuario):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>me = User.objects.get(username=<span class="hljs-string">&apos;ola&apos;</span>)
+</code></pre>
+<p>Como ves, ya hemos obtenido (<code>get</code>) un usuario (<code>User</code>) cuyo <code>username</code> es igual a &apos;ola&apos;. ¡Mola!</p>
+<p>Ahora, finalmente, podemos crear nuestra entrada:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.create(author=me, title=<span class="hljs-string">&apos;Sample title&apos;</span>, text=<span class="hljs-string">&apos;Test&apos;</span>)
+&lt;Post: Sample title&gt;
+</code></pre>
+<p>¡Hurra! ¿Quieres probar si funcionó?</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">all</span>()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;, &lt;Post: Sample title&gt;]&gt;
+</code></pre>
+<p>¡Ahí está, una entrada de blog más en la lista!</p>
+<h3 id="agrega-más-entradas">Agrega más entradas</h3>
+<p>Ahora puedes divertirte un poco y agregar más entradas para ver cómo funciona. Agrega dos o tres más y avanza a la siguiente parte.</p>
+<h3 id="filtrar-objetos">Filtrar objetos</h3>
+<p>Una parte importante de los QuerySets es la habilidad para filtrar los resultados. Digamos que queremos encontrar todos los post del usuario ola. Usaremos <code>filter</code> en vez de <code>all</code> en <code>Post.objects.all()</code>. Entre paréntesis estableceremos qué condición (o condiciones) debe cumplir un post del blog para aparecer como resultado en nuestro queryset. En nuestro caso sería <code>author</code> es igual a <code>me</code>. La forma de escribirlo en Django es: <code>author=me</code>. Ahora nuestro bloque de código tiene este aspecto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(author=me)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: My 3rd post!&gt;, &lt;Post: 4th title of post&gt;]&gt;
+</code></pre>
+<p>¿O quizá queremos ver todas las entradas que contengan la palabra &apos;title&apos; en el campo <code>title</code>?</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(title__contains=<span class="hljs-string">&apos;title&apos;</span>)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: 4th title of post&gt;]&gt;
+</code></pre>
+<blockquote>
+<p><strong>Nota</strong> Hay dos guiones bajos (<code>_</code>) entre <code>title</code> y <code>contains</code>. El ORM de Django utiliza esta sintaxis para separar los nombres de los campos (&quot;title&quot;) de las operaciones o filtros (&quot;contains&quot;). Si sólo utilizas un guion bajo, obtendrás un error como &quot;FieldError: Cannot resolve keyword title_contains&quot;.</p>
+</blockquote>
+<p>También puedes obtener una lista de todos los post publicados. Lo hacemos filtrando los post que tienen la fecha de publicación, <code>published_date</code>, en el pasado:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+<span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(published_date__lte=timezone.now())
+&lt;QuerySet []&gt;
+</code></pre>
+<p>Por desgracia, el post que hemos añadido desde la consola de Python aún no está publicado. ¡Pero lo podemos cambiar! Primero obtén una instancia de la entrada que queremos publicar:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>post = Post.objects.get(title=<span class="hljs-string">&quot;Sample title&quot;</span>)
+</code></pre>
+<p>Y luego publícala con nuestro método <code>publish</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>post.publish()
+</code></pre>
+<p>Ahora vuelve a intentar obtener la lista de posts publicados (pulsa la tecla de &quot;flecha arriba&quot; tres veces y pulsa <code>enter</code>):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(published_date__lte=timezone.now())
+&lt;QuerySet [&lt;Post: Sample title&gt;]&gt;
+</code></pre>
+<h3 id="ordenar-objetos">Ordenar objetos</h3>
+<p>Los QuerySets también te permiten ordenar la lista de objetos. Intentemos ordenarlos por el campo <code>created_date</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.order_by(<span class="hljs-string">&apos;created_date&apos;</span>)
+&lt;QuerySet [&lt;Post: Sample title&gt;, &lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: My 3rd post!&gt;, &lt;Post: 4th title of post&gt;]&gt;
+</code></pre>
+<p>También podemos invertir el orden agregando <code>-</code> al principio:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.order_by(<span class="hljs-string">&apos;-created_date&apos;</span>)
+&lt;QuerySet [&lt;Post: 4th title of post&gt;,  &lt;Post: My 3rd post!&gt;, &lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: Sample title&gt;]&gt;
+</code></pre>
+<h3 id="consultas-complejas-a-través-de-encadenamiento-de-métodos">Consultas complejas a través de encadenamiento de métodos</h3>
+<p>Como ves, algunos métodos en <code>Post.objects</code> devuelven un QuerySet. Los mismos métodos pueden ser llamados también en un QuerySet, y entonces devolverán un nuevo QuerySet. También puedes combinar QuerySets <strong>encadenando</strong> uno con otro:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(published_date__lte=timezone.now()).order_by(<span class="hljs-string">&apos;published_date&apos;</span>)
+&lt;QuerySet [&lt;Post: Post number <span class="hljs-number">2</span>&gt;, &lt;Post: My 3rd post!&gt;, &lt;Post: 4th title of post&gt;, &lt;Post: Sample title&gt;]&gt;
+</code></pre>
+<p>Es muy potente y te permite escribir consultas bastante complejas.</p>
+<p>¡Genial! ¡Ahora estás lista para la siguiente parte! Para cerrar la consola, escribe esto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../html/" class="navigation navigation-prev " aria-label="Previous page: Introducción a HTML">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../dynamic_data_in_templates/" class="navigation navigation-next " aria-label="Next page: Datos dinámicos en las plantillas">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"ORM de Django (QuerySets)","level":"1.18","depth":1,"next":{"title":"Datos dinámicos en las plantillas","level":"1.19","depth":1,"path":"dynamic_data_in_templates/README.md","ref":"dynamic_data_in_templates/README.md","articles":[]},"previous":{"title":"Introducción a HTML","level":"1.17","depth":1,"path":"html/README.md","ref":"html/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"es","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_orm/README.md","mtime":"2021-03-25T14:00:00.203Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"es"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

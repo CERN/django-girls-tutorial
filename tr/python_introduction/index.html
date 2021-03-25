@@ -1,0 +1,1327 @@
+
+<!DOCTYPE HTML>
+<html lang="tr" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Python'a giriş · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django/" />
+    
+    
+    <link rel="prev" href="../code_editor/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Aramak istediğiniz" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Kurulum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Kurulum (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    İnternet nasıl çalışır
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Komut satırına giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kod editörü
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Python'a giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django nedir?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    İlk Django projen!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modelleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Yayına alın!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url'leri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - yaratma zamanı geldi!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML'ye giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM ve QuerySets (Sorgu Setleri)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Template içinde dinamik veri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templateleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Güzelleştirin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template genişletmek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Uygulamanı genişlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django Formları
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Sırada ne var?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit ile yayınla
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Python'a giriş</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="pythona-giriş">Python&apos;a giriş</h1>
+<blockquote>
+<p>Bu bölümün bir kısmı Geek Girls Carrots tarafından hazırlanmış eğitimlere dayanılarak hazırlanmıştır (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p>
+</blockquote>
+<p>Biraz kod yazalım!</p>
+<h2 id="python-komut-istemi-prompt">Python komut istemi (prompt)</h2>
+<blockquote>
+<p>Evdeki okuyucular için: Bu kısım <a href="https://www.youtube.com/watch?v=MO63L4s-20U" target="_blank">Python Temelleri: Tamsayılar, Dizeler, Listeler, Değişkenler ve Hatalar</a> videosunda bulunabilir.</p>
+</blockquote>
+<p>Python&apos;la oynamaya başlamadan önce bilgisayarımızda bir <em>komut satırı</em> açmamız gerekiyor. Bunu zaten nasıl yapacağınızı artık biliyorsunuz, <a href="../intro_to_command_line/">Komut satırına giriş</a> bölümünde öğrenmiştiniz.</p>
+<p>Hazır olduğunuzda, aşağıdaki talimatları takip edin.</p>
+<p>Bir Python konsolu açmak istiyoruz; öyleyse Windows&apos;ta <code>python</code>, Mac OS/Linux&apos;ta <code>python3</code> yazıp, <code>enter</code>&apos;a basın.</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ python3
+Python 3.6.1 (...)
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</code></pre><h2 id="i̇lk-python-komutunuz">İlk Python komutunuz!</h2>
+<p>Python komutunu çalıştırdıktan sonra, komut istemi <code>&gt;&gt;&gt;</code> şeklinde değişti. Bizim için bu, şimdi yalnızca Python dilinde komutlar kullanabileceğimiz anlamına geliyor. <code>&gt;&gt;&gt;</code> yazmanıza gerek yok - Python bunu sizin için yapacak.</p>
+<p>Eğer herhangi bir zamanda Python komut satırından çıkmak isterseniz, yalnızca <code>exit()</code> yazmanız ya da Windows için <code>Ctrl + Z</code>, Mac/Linux için <code>Ctrl + D</code> kısa yolunu kullanmanız yeterli. Bunu yaptığınız taktirde artık <code>&gt;&gt;&gt;</code> yazısını görmeyeceksiniz.</p>
+<p>Şimdilik, Python konsolundan çıkmak istemiyoruz. Bu konuda daha fazla bilgi edinmek istiyoruz. Biraz matematik yazarak başlayalım (<code>2 + 3</code> gibi) ve <code>enter</code> &apos;a basalım.</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+<span class="hljs-number">5</span>
+</code></pre>
+<p>Güzel! Cevap nasıl da çıktı görüyor musun? Python matematik biliyor! Sen de diğer komutları şöyle deneyebilirsin:</p>
+<ul>
+<li><code>4 * 5</code></li>
+<li><code>5 - 1</code></li>
+<li><code>40 / 2</code></li>
+</ul>
+<p>Üstel hesaplama yapmak için 2 üzeri 3 deyin, şöyle yazalım: </p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> ** <span class="hljs-number">3</span>
+<span class="hljs-number">8</span>
+</code></pre>
+<p>Bunları biraz kurcalayıp eğlen, sonra tekrar burada buluşalım. :)</p>
+<p>Gördüğün gibi Python çok iyi bir hesap makinesi. Eğer başka neler yapabileceğini merak ediyorsan...</p>
+<h2 id="stringler-dizeler">String&apos;ler (dizeler)</h2>
+<p>Mesela ismin? İsmini tırnak işaretleri içerisinde şu şekilde yaz:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Zeynep&quot;</span>
+<span class="hljs-string">&apos;Zeynep&apos;</span>
+</code></pre>
+<p>İlk string&apos;ini oluşturdun! String (dize), bilgisayar tarafından işlenebilen ve karakterlerden oluşan dizilerin genel adıdır. Bir string her zaman aynı özel karakterle başlamalı ve aynı özel karakterle bitmelidir. Tek tırnak (<code>&apos;</code>) veya çift tırnak (<code>&quot;</code>) olabilir (aralarında herhangi bir fark yok!). Tırnak işaretleri Python&apos;da içlerinde olan şeyin bir string olduğunu ifade eder.</p>
+<p>Stringler birbirlerine eklenebilir. Şunu dene:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Merhaba &quot;</span> + <span class="hljs-string">&quot;Zeynep&quot;</span>
+<span class="hljs-string">&apos;Merhaba Zeynep&apos;</span>
+</code></pre>
+<p>Ayrıca stringleri bir sayı ile çarpabilirsin:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Zeynep&quot;</span> * <span class="hljs-number">3</span>
+<span class="hljs-string">&apos;ZeynepZeynepZeynep&apos;</span>
+</code></pre>
+<p>Eğer stringinin içerisine bir tırnak işareti koymak istiyorsan, bunun için iki seçeneğin var.</p>
+<p>Çift tırnak kullanarak:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Turgut Uyar&apos;ın dizeleriyiz&quot;</span>
+<span class="hljs-string">&quot;Turgut Uyar&apos;ın dizeleriyiz&quot;</span>
+</code></pre>
+<p>veya backslash (<code>\</code>) kullanarak:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;Turgut Uyar\&apos;ın dizeleriyiz&apos;</span>
+<span class="hljs-string">&quot;Turgut Uyar&apos;ın dizeleriyiz&quot;</span>
+</code></pre>
+<p>Hoş değil mi? İsminin tamamını büyük harf yapmak için, sadece şunu yazman yeterli:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Zeynep&quot;</span>.upper()
+<span class="hljs-string">&apos;ZEYNEP&apos;</span>
+</code></pre>
+<p>String&apos;in üzerinde <code>upper</code> <strong>fonksiyon</strong>unu kullandın! Bir fonksiyon (<code>upper()</code> gibi), çağırıldığında (calling) Python&apos;un girdi olarak verilen bir obje (<code>&quot;Zeynep&quot;</code>) üzerinde gerçekleştirmesi gereken bir dizi işleme denilir.</p>
+<p>Eğer ismindeki harflerin sayısını öğrenmek istiyorsan bunun için de bir <strong>fonksiyon</strong> var!</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-string">&quot;Zeynep&quot;</span>)
+<span class="hljs-number">6</span>
+</code></pre>
+<p>Fonksiyonları neden bazen stringin sonunda bir <code>.</code> ile (<code>&quot;Zeynep&quot;.upper()</code> gibi) ve bazen de önce fonksiyonu çağırıp sonra parantez içerisine stringi yazarak kullandığımızı merak ediyor musun? Pekala, bazı durumlarda, fonksiyonlar bir takım nesnelere aittirler, mesela <code>upper()</code>, yalnızca stringler üzerinde kullanılabilir. Böyle durumlarda, bu tarz fonksiyonlara biz <strong>method</strong> ismini veriyoruz. Diğer durumlarda, bir fonksiyon özel olarak bir nesneye ait olmayıp, farklı çeşitlerde nesneler üzerinde de kullanılabilir, aynı <code>len()</code> gibi. İşte bu nedenle <code>&quot;Zeynep&quot;</code> stringini <code>len</code> fonksiyonuna bir parametre olarak veriyoruz.</p>
+<h3 id="özet">Özet</h3>
+<p>Tamam, stringlerden yeterince bahsettik. Şu ana kadar şu konuları öğrendin:</p>
+<ul>
+<li><strong>komut istemi</strong> – komutları (kod) Python&apos;un komut istemine yazdığınızda Python&apos;da sonuçlandırarak yanıtlar üretir</li>
+<li><strong>sayılar ve dizeler</strong> – Python&apos;da sayılar matematik için dizeler ise metin nesneleri için kullanılmaktadır</li>
+<li><strong>operatörler</strong> <code>+</code> ve <code>*</code> gibi, değerleri birleştirerek yeni bir değer üretmek için kullanılmaktadır</li>
+<li><strong>fonksiyonlar</strong> <code>upper()</code> ve <code>len()</code> gibi, nesneler üzerinde eylemler gerçekleştirmektedirler.</li>
+</ul>
+<p>Bunlar öğreneceğiniz her programlama dilinin temelleri. Biraz daha zor bir şey için hazır mısın? İddiaya gireriz öylesin!</p>
+<h2 id="hatalar">Hatalar</h2>
+<p>Şimdi yeni bir şey deneyelim. Bir sayının uzunluğunu, bir string&apos;in uzunluğunu bulduğumuz gibi bulabilir miyiz? Bunu görmek için <code>len(304023)</code> yazıp <code>enter</code> a basalım:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-number">304023</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-built_in">object</span> of <span class="hljs-built_in">type</span> <span class="hljs-string">&apos;int&apos;</span> has no <span class="hljs-built_in">len</span>()
+</code></pre>
+<p>İlk hatamızı aldık! <span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> ikonu çalıştırmak üzere olduğunuz programın beklediğiniz gibi çalışmayacağı konusunda sizi ikaz eder. Hatalar yapmak (kasıtlı olanlar bile) öğrenmenin önemli bir kısmı!</p>
+<p>Nesne türü &quot;int&quot; (tam sayılar, tüm sayılar) in uzunluğu olmadığını söylüyor. Şimdi ne yapabiliriz? Belki de rakamı bir string olarak yazabiliriz? Stringlerin bir uzunluğu var, değil mi?</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-built_in">str</span>(<span class="hljs-number">304023</span>))
+<span class="hljs-number">6</span>
+</code></pre>
+<p>İşe yaradı! <code>str</code> fonksiyonunu <code>len</code> fonksiyonunun içinde kullandık. <code>str</code> her şeyi string&apos;e çeviriyor.</p>
+<ul>
+<li><code>str</code> fonksiyonu, değişkenleri <strong>stringe</strong> çeviriyor</li>
+<li><code>int</code> fonksiyonu değişkenleri <strong>integera</strong> çeviriyor</li>
+</ul>
+<blockquote>
+<p>Önemli: Sayıları metin durumuna getirebiliriz ama metni sayılar durumuna tam olarak getiremeyebiliriz - yine de <code>int(&apos;hello&apos;)</code> olsa ne olurdu?</p>
+</blockquote>
+<h2 id="değişkenler">Değişkenler</h2>
+<p>Programlamada en önemli konulardan biri değişkenlerdir. Değişken (variable), daha sonra kullanmak istediğiniz bir yapıya verdiğiniz isimdir. Programcılar değişkenleri verileri tutmak ya da kodlarını daha okunabilir ve anlaşılabilir kılmak için kullanırlar ve böylece her şeyi sürekli akıllarında tutmaya gerek kalmaz.</p>
+<p><code>name</code> adında bir değişken yaratmak istediğimizi varsayalım:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&quot;Ayşe&quot;</span>
+</code></pre>
+<p>name (isim) eşittir &quot;Ayşe&quot; yazalım.</p>
+<p>Farkettiğiniz gibi, program daha öncekilerinin aksine bu kez hiçbir cevap vermedi. O zaman böyle bir değişkenin gerçekten tanımlı olduğunu nasıl bilebiliriz? Basitçe, <code>name</code> yazıp <code>enter</code> tuşuna basalım:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Ayşe&apos;</span>
+</code></pre>
+<p>Yaşasın! İşte bu senin ilk değişkenin! :) Bu değişkenin işaret ettiği şeyi her zaman değiştirebilirsin:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&quot;Suzan&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Suzan&apos;</span>
+</code></pre>
+<p>Bu değişkeni fonksiyonlar içinde de kullanabilirsin:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(name)
+<span class="hljs-number">5</span>
+</code></pre>
+<p>Harika değil mi? Tabii ki değişkenler, sayılar da dahil herhangi bir şey olabilir. Şunu deneyin:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a * b
+<span class="hljs-number">24</span>
+</code></pre>
+<p>Peki ya değişkenin adını yanlış kullanırsak? Ne olacağını tahmin ediyor musun? Deneyelim!</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>city = <span class="hljs-string">&quot;Tokyo&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>ctiy
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;ctiy&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>Bir hata! Gördüğünüz gibi, Python birçok hata çeşidine sahip ve bu hatanın adı <strong>NameError</strong>, yani İsimlendirme Hatası. Tanımlamadığınız bir değişkenin adını kullanmaya çalışırsanız, Python size bu hatayı verir. Eğer bu hata ile daha sonra karşılaşırsanız, kodunuzdaki değişkenlerin adını doğru yazıp yazmadığınızı kontrol edin.</p>
+<p>Bununla biraz oynayıp, neler yapabildiğinizi görün!</p>
+<h2 id="yazdırma-print-i̇şlevi">Yazdırma (Print) İşlevi</h2>
+<p>Şunu deneyin:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&apos;Merve&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Merve&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(name)
+Merve
+</code></pre>
+<p>Sadece <code>name</code> yazdığınız zaman, Python yorumlayıcısından &apos;name&apos; değişkeninin dize olarak <em>temsili</em> döner, yani tek tırnaklar içine alınmış M-e-r-v-e harfleri. Eğer <code>print(name)</code> derseniz Python ekrana değişkenin içeriğini yazdıracaktır, bu kez tırnaklar olmaksızın, daha temiz biçimde.</p>
+<p>Daha ileride göreceğimiz gibi <code>print()</code>, işlevlerin içindeyken bir şey yazdırmak istediğimizde ya da bazı şeyleri birden fazla satırda yazdırmak istediğimizde de kullanışlıdır.</p>
+<h2 id="listeler">Listeler</h2>
+<p>Python, string (dize) ve integerın (tam sayı) yanı sıra, çok değişik türlerde nesnelere sahiptir. Şimdi, <strong>liste</strong> türünü tanıtacağız. Listeler tam da düşündüğünüz gibidir: diğer nesnelerin listesi olan nesne. :)</p>
+<p>Yeni bir liste yaratmakla devam edelim:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[]
+[]
+</code></pre>
+<p>Evet, liste boş. Çok kullanışlı sayılmaz, değil mi? Hadi loto numaralarıyla liste oluşturalım. Sürekli kendimizi tekrar etmek istemeyiz, o yüzden listeyi değişkene atayalım:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery = [<span class="hljs-number">3</span>, <span class="hljs-number">42</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>Pekala, listeyi oluşturduk! Onunla ne yapabiliriz? Hadi listede kaç tane loto numarası olduğunu görelim. Hangi fonksiyonu kullanman gerektiği hakkında bir fikrin var mı? Zaten bildiğin bir fonksiyon!</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(lottery)
+<span class="hljs-number">6</span>
+</code></pre>
+<p>Evet! <code>len()</code> listedeki nesne sayısını verir. Kullanışlı, değil mi? Belki de şu an listeyi sıralarız:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.sort()
+</code></pre>
+<p>Bu hiçbir cevap vermez, sadece listedeki numaraların sırasını değiştirir. Şimdi listeyi yazdıralım ve ne olduğunu görelim:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">3</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">42</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>Gördüğünüz gibi, listedeki sayılar artık küçükten büyüğe sıralı. Tebrikler!</p>
+<p>Belki de sıralamayı ters çevirmek isteriz? Hadi yapalım!</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.reverse()
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>]
+</code></pre>
+<p>Kolay, değil mi? Listeye yeni bir eleman eklemek isterseniz, şu komutu yazarak yapabilirsiniz:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.append(<span class="hljs-number">199</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>Sadece listedeki ilk elemanı göstermek isterseniz, <strong>indexes</strong> (indeksler) ile yapabilirsiniz. İndeks elemanın listede nerede olduğunu belirten numaradır. Programcılar sıfırdan başlamayı tercih ederler, bu yüzden listedeki ilk eleman listenin 0. indeksindedir, sonraki 1. indeksindedir ve böyle devam eder. Şunu deneyin:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">1</span>])
+<span class="hljs-number">42</span>
+</code></pre>
+<p>Gördüğünüz gibi, listedeki nesnelere listenin ismi ve köşeli parantez içindeki nesnenin indeksini kullanarak ulaşabilirsin.</p>
+<p>Listenizden bir şeyler silmek için, yukarıda öğrendiğimiz gibi <strong>indeksleri</strong> ve <code>pop()</code> metodunu kullanmamız gerekecektir. Bir örnekle öğrendiklerimizi pekiştirelim; listeden ilk numarayı sileceğiz.</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>lottery.pop(<span class="hljs-number">0</span>)
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>Kusursuz çalıştı!</p>
+<p>Daha fazla eğlence için diğer indeksleri de deneyin: 6, 7, 1000, -1, -6 veya -1000. Denemeden önce komutların sonuçlarını tahmin etmeye çalışın. Sonuçlar mantıklı mıydı?</p>
+<p>Bütün liste fonksiyonlarını Python dökümantasyonunun bu bölümünde bulabilirsin: <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a></p>
+<h2 id="sözlükler-dictionaries">Sözlükler (Dictionaries)</h2>
+<blockquote>
+<p>Evdeki okuyucular için: Bu kısım <a href="https://www.youtube.com/watch?v=ZX1CVvZLE6c" target="_blank">Python Temelleri: Sözlükler</a> videosunda işlenmiştir.</p>
+</blockquote>
+<p>Sözlük listeye benzerdir ancak sözlük değerlerine indeks yerine anahtar ile ulaşılır. Anahtar metin veya numara olabilir. Boş bir sözlük oluşturmak için kullanılan söz dizimi şudur:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>{}
+{}
+</code></pre>
+<p>Bu boş bir sözlük oluşturduğunuzu gösterir. Yaşasın!</p>
+<p>Şimdi, bu komutu yazmayı deneyin (kendi bilgilerinizle değiştirmeyi deneyin):</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant = {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ayşe&apos;</span>, <span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Türkiye&apos;</span>, <span class="hljs-string">&apos;favorite_numbers&apos;</span>: [<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]}
+</code></pre>
+<p>Bu komutla, üç anahtar-değer çifti ile <code>participant</code> (katılımcı) isminde bir değişken oluşturdunuz:</p>
+<ul>
+<li>Anahtar <code>name</code> <code>&apos;Ayşe&apos;</code> (<code>string</code> nesnesi) değerine işaret eder,</li>
+<li><code>country</code> <code>Türkiye</code> (bir diğer <code>string</code>) değerine),</li>
+<li>ve <code>favorite_numbers</code> <code>[7, 42, 92]</code> (3 numaralı bir <code>list</code>) değerine işaret eder.</li>
+</ul>
+<p>Bu söz dizimi ile tek bir anahtarın içeriğini kontrol edebilirsin:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(participant[<span class="hljs-string">&apos;name&apos;</span>])
+Ayşe
+</code></pre>
+<p>Gördünüz mü, bu listeye benzer. Fakat indeksi hatırlamanıza gerek yok - sadece ismini hatırlayın.</p>
+<p>Python&apos;a olmayan bir anahtarın değerini sorarsak ne olur? Tahmin edebiliyor musun? Hadi deneyip görelim!</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;age&apos;</span>]
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+KeyError: <span class="hljs-string">&apos;age&apos;</span>
+</code></pre>
+<p>Bir başka hata! <strong>KeyError</strong> hatası. Python yardımseverdir ve sana <code>&apos;age&apos;</code> anahtarının sözlükte bulunmadığını söyler.</p>
+<p>Ne zaman sözlük veya liste kullanmalısın? Düşünmek için güzel bir nokta. Sonraki satıra bakmadan önce cevap üzerinde bir düşünün.</p>
+<ul>
+<li>Sıralı elemanlara mı ihtiyacın var? Liste ile devam et.</li>
+<li>İleride hızlıca (anahtarlar ile) değerlere ulaşmak istediğin için anahtarlar ile ilişkilendirilmiş değerlere mi ihtiyacın var? Sözlük kullan.</li>
+</ul>
+<p>Sözlükler de listeler gibi değişebilirdir (<em>mutable</em>), yani oluşturulduktan sonra değiştirilebilirler. Oluşturulduktan sonra sözlüklere anahtar/değer çifti ekleyebilirsiniz, aşağıdaki gibi:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;favorite_language&apos;</span>] = <span class="hljs-string">&apos;Python&apos;</span>
+</code></pre>
+<p>Listeler gibi, <code>len()</code> metodu sözlükteki anahtar-değer çiftlerinin sayısını bize verir. Devam edip şu komutu yazın:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(participant)
+<span class="hljs-number">4</span>
+</code></pre>
+<p>Umarım şu ana kadar mantıklı gelmiştir :) Sözlüklerle biraz daha eğlenceye hazır mısın? İlginç şeyler için sonraki satıra atla.</p>
+<p>Sözlükten bir maddeyi silmek için <code>pop()</code> metodunu kullanabilirsin. Mesela, <code>&apos;favorite_numbers&apos;</code> anahtarına karşılık gelen elemanı silmek istersen, şu komutu yaz:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">del</span> participant[<span class="hljs-string">&apos;favorite_numbers&apos;</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>participant
+{<span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Türkiye&apos;</span>, <span class="hljs-string">&apos;favorite_language&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ayşe&apos;</span>}
+</code></pre>
+<p>Çıktıdan görebildiğin gibi, &apos;favorite_numbers&apos; anahtarına karşılık gelen anahtar-değer çifti silindi.</p>
+<p>Bunun yanı sıra, sözlükteki daha önce oluşturulmuş anahtarın değerini değiştirebilirsiniz. Şunu yazın:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;country&apos;</span>] = <span class="hljs-string">&apos;Almanya&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>participant
+{<span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Almanya&apos;</span>, <span class="hljs-string">&apos;favorite_language&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ayşe&apos;</span>}
+</code></pre>
+<p>Gördüğün gibi, <code>&apos;country&apos;</code> anahtarının değeri <code>&apos;Türkiye&apos;</code>den <code>&apos;Almanya</code>&apos;ya çevrildi. :) Heyecan verici değil mi? Yaşasın! Bir başka harika şey öğrendin.</p>
+<h3 id="özet">Özet</h3>
+<p>Harika! Şu an programlama hakkında birçok şey biliyorsun. Bu kısımda, şunları öğrendin:</p>
+<ul>
+<li><strong>errors</strong> - eğer Python yazdığın komutu anlamazsa çıkan hataları nasıl okuyacağını ve anlayacağını artık biliyorsun</li>
+<li><strong>değişkenler</strong> - daha kolay kod yazmanı sağlayan ve kodunu daha okunabilir yapan nesnelerin isimleri</li>
+<li><strong>listeler</strong> - belirli bir sırada tutulan nesnelerin listesi</li>
+<li><strong>sözlükler</strong> - anahtar-değer çifti olarak tutulan nesneler</li>
+</ul>
+<p>Bir sonraki bölüm için heyecanlı mısınız? :)</p>
+<h2 id="karşılaştırma">Karşılaştırma</h2>
+<blockquote>
+<p>Evden okuyanlar için: Bu kısım <a href="https://www.youtube.com/watch?v=7bzxqIKYgf4" target="_blank">Python Basics: Comparisons</a> videosunda anlatılıyor.</p>
+</blockquote>
+<p>Programlamanın büyük kısmı karşılaştırma içerir. Karşılaştırması en kolay olan şey nedir? Tabi ki sayılar. Bakalım nasıl çalışıyor:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span> * <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> == <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> != <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Python&apos;a birkaç sayı karşılaştırmasını söyledik. Gördüğünüz gibi, sadece sayıları karşılaştırmakla kalmadı, aynı zamanda metodların sonuçlarını da karşılaştırdı. Güzel değil mi?</p>
+<p>İki sayının eşit olup olmadığını öğrenmek için neden iki tane eşittir işraretini <code>==</code> yan yana koyduk? Değişkenlere içerik verirken, tek <code>=</code> işaretini kullanıyoruz. Her zaman ama <strong>her zaman</strong> ikisini birden koyman gerekir – <code>==</code> – eğer birbirlerine eşit olup olmadıklarını kontrol etmek isterseniz. Sayıların birbirine eşit olmaması durumunu da kontrol edebiliriz. Bunun için, yukarıdaki örnekteki gibi <code>!=</code> sembolünü kullanıyoruz. </p>
+<p>Python&apos; a iki görev daha verin:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt;= <span class="hljs-number">12</span> / <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt;= <span class="hljs-number">2</span>
+<span class="hljs-literal">False</span>
+</code></pre>
+<p><code>&gt;</code>‘ı ve <code>&lt;</code>‘ı gördük, ama <code>&gt;=</code> ve <code>&lt;=</code> ne anlama geliyor? Onları böyle okuyabilirsin:</p>
+<ul>
+<li>x <code>&gt;</code> y : x büyüktür y</li>
+<li>x <code>&lt;</code> y : x küçüktür y</li>
+<li>x <code>&lt;=</code> y : x küçük eşittir y</li>
+<li>x <code>&gt;=</code> y : x büyük eşittir y</li>
+</ul>
+<p>Harika! Birkaç denemeye daha ne dersiniz? Şunu deneyin:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">3</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Python&apos;a istediğiniz kadar sayıyı karşılaştırmak için verebilirsiniz, ve size hepsinin cevabını verecek. Çok akıllı değil mi?</p>
+<ul>
+<li><strong>and</strong> - Mantıkta kullandığımız &quot;ve&quot; anlamına geliyor, yani iki taraf da True, yani doğruysa, cevap da True olacak</li>
+<li><strong>or</strong> - Bu da &quot;veya&quot; anlamına geliyor, karşılaştırılan iki taraftan tek bir tanesi bile True ise bize True cevabını verecek</li>
+</ul>
+<p>Portakallarla elmaları karşılaştılaştırabilir miyiz? Bunun Python&apos;daki eşdeğerini deneyelim: </p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> &gt; <span class="hljs-string">&apos;django&apos;</span>
+Geri görüş (en son çağrı):
+  Dosya <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, satır <span class="hljs-number">1</span>, &lt;module&gt;‘<span class="hljs-keyword">in</span> içinde
+HataTürü: ‘&gt;’ <span class="hljs-string">&apos;int&apos;</span> ve <span class="hljs-string">&apos;str&apos;</span> örnekleri arasında desteklenmiyor
+</code></pre>
+<p>Gördüğünüz gibi Python tam sayılar(<code>int</code>) ve kelimeleri(yani stringleri, <code>str</code>) karşılaştıramıyor. Onun yerine, <strong>TypeError</strong> göstererek iki farklı tipteki değişkenin karşılaştırılamayacağını söylüyor.</p>
+<h2 id="boolean-mantıksal">Boolean (Mantıksal)</h2>
+<p>Bu arada, python&apos;da yeni bir nesne türü öğrendin. Buna <strong>Boolean</strong> denir.</p>
+<p>Yalnızca iki Boolean nesnesi vardır:</p>
+<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+<p>Python&apos;un bunu anlaması için her zaman &quot;True&quot; (ilk harf büyük, geri kalanları küçük) yazmanız gerekiyor. <strong>true, TRUE, tRUE işe yaramaz -- sadece True doğru.</strong> (Aynısı &quot;False&quot; için de geçerli.)</p>
+<p>Boolean&apos;lar değişken de olabiliyor! Bakınız:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Ayrıca bu şekilde de yapabilirsiniz:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">False</span>
+</code></pre>
+<p>Boolean&apos;lar ile aşağıdaki komutları deneyerek biraz oynayın:</p>
+<ul>
+<li><code>True and True</code></li>
+<li><code>False and True</code></li>
+<li><code>True or 1 == 1</code></li>
+<li><code>1 != 2</code></li>
+</ul>
+<p>Tebrikler! Boolean&apos;lar programlamadaki en havalı özelliklerden, ve az önce onları nasıl kullanmanız gerektiğini öğrendiniz!</p>
+<h1 id="kaydet">Kaydet!</h1>
+<blockquote>
+<p>Evdeki okuyucular için: Bu kısım <a href="https://www.youtube.com/watch?v=dOAg6QVAxyk" target="_blank">Python Basics: Saving files and &quot;If&quot; statement</a> videosunda işlenmiştir.</p>
+</blockquote>
+<p>Şimdiye kadar kodumuzu bizi sadece tek satır yazmaya limitleyen yorumlayıcı üzerinde yazdık. Normal programlar dosyalar içine kaydedilir ve programlama dilimizin <strong>yorumlayıcısıyla</strong> veya <strong>derleyicisiyle</strong> çalıştırılır. Şimdiye kadar programlarımızı Python <strong>yorumlayıcısında</strong> teker satır teker satır çalıştırdık. Bundan sonraki görevlerde, birden fazla satıra ihtiyacımız olacak, bu yüzden şunlara ihtiyacımız olacak:</p>
+<ul>
+<li>Python yorumlayıcısından çıkın</li>
+<li>Seçtiğiniz kod düzenleyicisini açın</li>
+<li>Yeni Python dosyasına kod kaydedin</li>
+<li>Çalıştırın!</li>
+</ul>
+<p>Kullandığımız Python yorumlayıcısından çıkmak için <code>exit()</code> fonksiyonunu yazın</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$
+</code></pre>
+<p>Bu sizi komut satırına geri yönlendirecektir.</p>
+<p>Biraz önce <a href="../code_editor/">kod editörü</a> bölümünden bir kod editörü seçmiştik. Şimdi o editörü açmalı ve yeni bir dosya içine kod yazmalıyız:</p>
+<p></p><p class="code-label">editör</p><p></p>
+<pre><code class="lang-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Merhaba, Django girls!&apos;</span>)
+</code></pre>
+<p>Açıkça, artık oldukça deneyimli Python programcısısın, bu yüzden bugün öğrendiğin kodları yazmaktan çekinme.</p>
+<p>Şimdi dosyayı tanımlayıcı bir isimle kaydetmemiz gerekir. Dosyanın ismine <strong>python_intro.py</strong> diyelim ve masaüstüne kaydedelim. Dosyaya istediğimiz ismi verebiliriz, burada önemli olan kısım dosyanın <strong>.py</strong> uzantısı ile bitmesidir. <strong>.py</strong> uzantısı işletim sistemimize bu dosyanın bir <strong>python çalıştırılabilir dosyası</strong> olduğunu ve Python&apos;un bu dosyayı çalıştırabileceğini belirtiyor.</p>
+<blockquote>
+<p><strong>Not</strong> Kod editörleriyle ilgili en harika şeylerden birine dikkat etmelisiniz: renkler! Python konsolunda herşey aynı renkteydi; şimdi bakın <code>print</code> fonksiyonu dizeden farklı renkte. Bunun ismi &quot;söz dizimi vurgulama&quot; ve kod yazarken gerçekten yararlı bir özellik. Koddaki renkler ipucu verir, kapanmamış dizeler gibi ya da aşağıda göreceğimiz (<code>def</code> fonksiyonu gibi imla hatası içeren anahtar kelimeler olabilir). Bu kod düzenleyicisi kullanma nedenlerimizden biri. :)</p>
+</blockquote>
+<p>Dosyayı kaydettiğimize göre artık çalıştırabiliriz! Konsoldan <strong>klasör değiştirme </strong> yaparak masaüstüne ulaşın, komut satırı bölümünde öğrendiklerinizi hatırlayın.</p>
+<sec data-title="Change directory: OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+<p>Mac&apos;de bu komut şunun gibi görünecektir:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+<p>Linux&apos;ta ise bu şekilde (&quot;Desktop&quot; kelimesi &quot;Masaüstü&quot; olarak da görünebilir):</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+<p>Windows Komut İstemi’nde, bunun gibi olacak:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>&gt; cd %HomePath%\Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Powershell<a class="pull-right section atTitle btn btn-default" target="python_windowsPSH"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windowsPSH"><div class="panel-body">
+<p>Ve Windows Powershell’de, bunun gibi olacak:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>&gt; cd $Home\Desktop
+</code></pre></div></div></div></sec>
+<p>Takılırsanız, yardım isteyin. Eğitmenler bunun için var!</p>
+<p>Şimdi dosyadaki komutları çalıştırmak için Python&apos;u kulllanın:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+Merhaba, Django girls!
+</code></pre><p>Not: Windows&apos;ta &apos;python3&apos; bir komut olarak geçmez. Onun yerine, dosyayı çalıştırmak için &apos;python&apos;ı kullanın:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python">&gt; python python_intro.py
+</code></pre>
+<p>Tamam! Bir dosyaya kaydedilen ilk Python programınızı çalıştırdınız. Harika hissediyor musunuz?</p>
+<p>Şimdi programlamanın olmazsa olmaz bir aracını öğrenme zamanı:</p>
+<h2 id="if--elif--else">If … elif … else</h2>
+<p>Kodunuzdaki bir çok şeyi sadece belirli bir durum sağlanıyorsa çalıştırmayı isteyeceksiniz. İşte tam da bu yüzden Python&apos;da <strong>if deyimi</strong> isminde bir yapı bulunuyor.</p>
+<p><strong>python_intro.py</strong> dosyasındaki kodunuzu şununla değiştirin:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+</code></pre>
+<p>Eğer bunu kaydetmiş ve çalıştırmış olsaydık, bunun gibi bir hata görecektik:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> komut satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+File &quot;python_intro.py&quot;, line 2
+         ^
+SyntaxError: unexpected EOF while parsing
+</code></pre><p>Python bizden kendisine <code>3 &gt; 2</code> durumu (veya <code>True</code>) sağlandığında neyi çalıştıracağını söylememizi bekliyor. Python&apos;a &quot;Çalışıyor!&quot; yazmasını söyleyelim. <strong>python_intro.py</strong> dosyanızdaki kodu şununla değiştirin:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Çalışıyor!&apos;</span>)
+</code></pre>
+<p>4 tane boşluk karakteri bıraktığımıza dikkat ettiniz mi? Bunu yaparak if ifadesine yazılan durum doğru olduğunda neyi çalıştırması gerektiğini Python&apos;a söylemiş oluyoruz. Aslında tek bir boşlukla da yapabilirsiniz, ama hemen hemen bütün Python programcıları kodlarının temiz görünmesi için 4 boşluk bırakıyor. Metin düzenleyiciniz ayarlıysa bir tab karakteri de 4 boşluk karakteri olarak sayılacaktır. Seçiminizi yaptıktan sonra değiştirmeyin! Eğer girintilerde 4 boşluk kullandıysanız, gelecek girintilerde de 4 boşluk kullanmaya devam edin - aksi halde sorunlarla karşılaşabilirsiniz.</p>
+<p>Kaydedip çalıştırmayı deneyelim:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code class="lang-python">$ python3 python_intro.py
+Çalışıyor!
+</code></pre>
+<p>Not: Windows&apos;ta &apos;python3&apos;ün komut olarak geçerli olmadığını unutmayın. Bundan böyle dosyayı çalıştırmak için &apos;python3&apos;ü &apos;python&apos;la değiştirin.</p>
+<h3 id="ya-bir-koşul-true-doğru-değilse">Ya bir koşul True (Doğru) değilse?</h3>
+<p>Önceki örneklerde kod sadece koşullar sadece True (doğru) olduğunda çalışıyordu. Ama Python ayrıca <code>elif</code> ve <code>else</code> ifadelerine de sahip:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>:    
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;5 gerçekten de 2&apos;den büyüktür&quot;</span>) 
+<span class="hljs-keyword">else</span>:     
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;5  2&apos;den büyük değildir&quot;</span>)
+</code></pre>
+<p>Bu kod çalıştığında aşağıdaki çıktıyı verecektir:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+5 gerçekten de 2&apos;den büyüktür
+</code></pre><p>Eğer 2 5&apos;ten büyük bir sayı olsaydı, ikinci komut çalıştırılmış olacaktı. Bakalım <code>elif</code> nasıl çalışıyor:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">name = <span class="hljs-string">&apos;Zeynep&apos;</span>
+<span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ayşe&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Selam Ayşe!&apos;</span>)
+<span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Zeynep&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Selam Zeynep!&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Selam yabancı!&apos;</span>)
+</code></pre>
+<p>ve çalıştırılınca:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+Selam Zeynep!
+</code></pre><p>Gördünüz mü? Eğer önceki if ifadeleriniz doğru olmazsa kontrol edilmek üzere <code>elif</code> ifadeleri ekleyebilirsiniz.</p>
+<p><code>if</code> ifadesinden sonra istediğiniz kadar <code>elif</code> ifadesi ekleyebilirsiniz. Mesela:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">volume = <span class="hljs-number">57</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Çok sessiz.&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">20</span> &lt;= volume &lt; <span class="hljs-number">40</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Güzel bir fon müziği&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">40</span> &lt;= volume &lt; <span class="hljs-number">60</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Harika, her notayı duyabiliyorum&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">60</span> &lt;= volume &lt; <span class="hljs-number">80</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Parti başlasın&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">80</span> &lt;= volume &lt; <span class="hljs-number">100</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Biraz gürültülü!&quot;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Kulaklarım ağrıyor! :(&quot;</span>)
+</code></pre>
+<p>Python sırayla her sorguyu çalıştırır ve sonucu ona göre yazar:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+Harika, her notayı duyabiliyorum
+</code></pre><h2 id="yorumlar">Yorumlar</h2>
+<p>Yorumlar <code>#</code> ile başlayan satırlardır. İstediğiniz her neyse <code>#</code> den sonra yazabilirsiniz ve Python onu gözardı eder. Yorumlar kodunuzu diğer insanların anlamasını daha kolaylaştırabilir.</p>
+<p>Bakalım nasıl gözüküyor:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-comment"># Çok yüksek ya da çok düşük olduğunda ses seviyesini değiştirme</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span> <span class="hljs-keyword">or</span> volume &gt; <span class="hljs-number">80</span>:
+    volume = <span class="hljs-number">50</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;That&apos;s better!&quot;</span>)
+</code></pre>
+<p>Kodun her satırı için bir açıklama yazmaya ihtiyacınız yoktur, ama kodunuzun niçin birşey yaptığını açıklamak ya da kompleks bir şey yaptığında bir özet sunmak için faydalıdırlar.</p>
+<h3 id="özet">Özet</h3>
+<p>En son yaptığınız alıştırmalarda öğrendikleriniz:</p>
+<ul>
+<li><strong>kıyaslama yapmak</strong> - Python&apos;da <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>&lt;=</code>, <code>&lt;</code> ve <code>ve</code>, <code>veya</code> operatörlerini kullanarak kıyaslama yapabilirsiniz</li>
+<li><strong>Boolean</strong> - İki farklı değer alabilen bir nesne tipidir: Ya <code>True</code> (doğru) olur ya da <code>False</code> (yanlış)</li>
+<li><strong>Dosya kaydetmek</strong> – kodlarımızı dosyalara kaydederek daha büyük programları çalıştırabiliriz.</li>
+<li><strong>if ... elif ... else</strong> - ifadelerini sadece belirli durumlar sağlandığında çalıştırmak istediğimiz komutlar için kullanabiliriz.</li>
+<li><strong>yorumlar</strong> - kodunuzu belgelemenize izin verecek şekilde Python’un çalışmayacağı satırlar</li>
+</ul>
+<p>Bu bölümün son kısmının zamanı geldi!</p>
+<h2 id="kendi-fonksiyonlarınız">Kendi fonksiyonlarınız!</h2>
+<blockquote>
+<p>Evdeki okuyucular için: Bu kısım <a href="https://www.youtube.com/watch?v=5owr-6suOl0" target="_blank">Python Basics: Functions</a> videosunda işlenmiştir.</p>
+</blockquote>
+<p>Python&apos;da çalıştırabileceğin <code>len()</code> gibi fonksiyonları hatırlıyor musun? Güzel, iyi haber - Şimdi kendi fonksiyonlarını nasıl yazacağını öğreneceksin!</p>
+<p>Fonksiyon Python tarafından işlenmesi gereken yönergeler dizisidir. Python&apos;da her fonksiyon <code>def</code> anahtar kelimesi ile başlar, bir isim verilir ve bazı parameterleri olabilir. Hadi başlayalım. <strong>python_intro.py</strong> içindeki kodu aşağıdaki ile değiştirelim:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">python
+<span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>():</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Merhaba!&apos;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Nasılsın?&apos;</span>)
+
+hi()
+</code></pre>
+<p>Tamam, ilk fonksiyonumuz hazır!</p>
+<p>Fonksiyon adını neden dosyanın en altına yazdığımızı merak edebilirsiniz. Bunun nedeni, Python&apos;ın dosyayı okuyup, onu yukarıdan aşağı doğru işlemesi. Yani fonksiyonumuzu kullanabilmek için, onu en alt kısımda yeniden yazmalıyız.</p>
+<p>Haydi şimdi bunu çalıştıralım ve neler olacağını görelim:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+Merhaba!
+Nasılsın?
+</code></pre><p>Not: Eğer çalışmadıysa panik yapmayın! Çıktı neden olduğu hakkında bir fikir verir:</p>
+<ul>
+<li>Eğer bir <code>NameError</code> alırsanız, muhtemelen yanlış bir şey yazdığınız anlamına gelir, bu nedenle <code>def hi():</code> lı fonksiyonu oluştururken ve <code>hi()</code> lıyı çağırırken aynı adı kullanıp kullanmadığınızı kontrol etmelisiniz.</li>
+<li>Eğer bir <code>IndentationError</code> alırsanız,<code>print</code> dizelerinin her ikisinin de satır başında aynı boşluğa sahip olduğunu kontrol et: python fonksiyonun içindeki tüm kodların düzenli bir şekilde hizalanmasını ister.</li>
+<li>Eğer tamamında da çıktı yoksa, son <code>hi()</code> <em>isn&apos;t</em> girintiliğini kontrol et - eğer öyleyse, bu dize fonksiyonunda bir parçası haline gelecek ve hiçbir zaman çalışmayacak.</li>
+</ul>
+<p>İlk fonksiyonumuzu parametrelerle birlikte oluşturalım. Önceki örneği - çalışmaktaki kişiye merhaba diyen bi fonksiyon - ismiyle kullanacağız:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+</code></pre>
+<p>Gördüğünüz gibi, fonksiyonumuza <code>name</code> (isim) adında bir parametre ekledik:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">def hi(name):
+    if name == &apos;Ayşe&apos;:
+        print(&quot;Merhaba Ayşe!&apos;)
+    elif name == &apos;Zeynep&apos;:
+        print(&apos;Merhaba Zeynep!&apos;)
+    else:
+        print(&apos;Merhaba yabancı!&apos;)
+
+hi()
+</code></pre>
+<p>Unutmayın: <code>if</code> içerisindeki <code>print</code> fonksiyonundan önce dört tane boşluk var. Bunun sebebi sadece durum sağlandığında çalışmasını istememiz. Bakalım nasıl çalışıyor:</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> komut satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+Traceback (most recent call last):
+File &quot;python_intro.py&quot;, line 10, in &lt;module&gt;
+  hi()
+TypeError: hi() missing 1 required positional argument: &apos;name&apos;
+</code></pre><p>Üzgünüz, bir hata. Neyse ki, Python bize oldukça yararlı bir hata mesajı veriyor. <code>hi()</code> fonksiyonun (yukarıda tanımladığımız) bir değişken kullanımını gerektirdiğini (<code>name</code> isimli) ve bizim o değişkeni fonksiyonu çağırırken iletmeyi unuttuğumuzu söylüyor. Dosyanın alt kısmında hatayı düzeltelim:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">hi(<span class="hljs-string">&quot;Ayşe&quot;</span>)
+</code></pre>
+<p>Ve tekrar çalıştıralım:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+Selam Ayşe!
+</code></pre><p>Eğer ismi değiştirirsek ne olur?</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">hi(<span class="hljs-string">&quot;Zeynep&quot;</span>)
+</code></pre>
+<p>Ve çalıştırın:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+Selam Zeynep!
+</code></pre><p>Peki Ayşe veya Zeynep dışında başka bir isim yazdığımızda ne olacağını tahmin edebiliyor musunuz? Deneyin ve tahmininizin doğru olup olmadığını görün. Şunun gibi bir şey yazmalı:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>Selam yabancı!
+</code></pre><p>Süper değil mi? Böylece fonksiyona göndereceğiniz isim değiştiğinde aynı kodu tekrar tekrar yazmanıza gerek kalmayacak. İşte fonksiyonlara tam da bu yüzden ihtiyacımız var - aynı kodu tekrar yazmaya gerek yok!</p>
+<p>Hadi daha zekice bir şey yapalım - İkiden fazla isim var ve her biri için bir şart yazmak zor olur değil mi?</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Merhaba &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+hi(<span class="hljs-string">&quot;Seda&quot;</span>)
+</code></pre>
+<p>Şimdi kodu çağıralım:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+Merhaba Seda!
+</code></pre><p>Tebrikler! Az önce fonksiyonları nasıl yazacağınızı öğrendiniz! :)</p>
+<h2 id="döngüler">Döngüler</h2>
+<blockquote>
+<p>Evdeki okuyucular için: Bu kısım <a href="https://www.youtube.com/watch?v=aEA6Rc86HF0" target="_blank">Python Basics: For Loop</a> videosunda işlenmiştir.</p>
+</blockquote>
+<p>Bu da zaten son parça. Hızlı oldu, değil mi? :)</p>
+<p>Programcılar kendilerini tekrar etmeyi sevmezler. Programlama tamamen işleri otomatize etmedir, bu yüzden her insanı ismiyle selamlamak istemeyiz, değil mi? İşte burası döngülerin devreye girdiği yerdir.</p>
+<p>Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">kızlar = [<span class="hljs-string">&apos;Seda&apos;</span>, <span class="hljs-string">&apos;Gül&apos;</span>, <span class="hljs-string">&apos;Pınar&apos;</span>, <span class="hljs-string">&apos;Ayşe&apos;</span>, <span class="hljs-string">&apos;Sen&apos;</span>]
+</code></pre>
+<p>Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız <code>hi</code> fonksiyonunu döngü içinde kullanabiliriz:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+</code></pre>
+<p><code>for</code> un davranışı <code>if</code> e benziyor; aşağıdaki kodda her iki satır girintili olmalı (dört boşluk ile).</p>
+<p>Dosyada yer alacak tam kod aşağıdadır:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Merhaba &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+girls = [<span class="hljs-string">&apos;Seda&apos;</span>, <span class="hljs-string">&apos;Gül&apos;</span>, <span class="hljs-string">&apos;Pınar&apos;</span>, <span class="hljs-string">&apos;Ayşe&apos;</span>, <span class="hljs-string">&apos;Sen&apos;</span>]
+<span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+    hi(name)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Sıradaki kız&apos;</span>)
+</code></pre>
+<p>Ve onu çalıştırdığımız zaman:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ python3 python_intro.py
+Selam Seda!
+Sıradaki kız
+Selam Gül!
+Sıradaki kız
+Selam Pınar!
+Sıradaki kız
+Selam Ayşe!
+Sıradaki kız
+Selam Sen!
+Sıradaki kız
+</code></pre><p>Gördüğünüz gibi, <code>for</code> cümlesinin içine boşluk karakteri ile koyduğunuz her şey <code>girls</code> listesi için tekrarlanıyor.</p>
+<p>Ayrıca <code>for</code>&apos;u <code>range</code> fonksiyonuyla beraber sayılar üzerinde de kullanabilirsiniz:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
+    <span class="hljs-built_in">print</span>(i)
+</code></pre>
+<p>Çalıştırırsak:</p>
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>1
+2
+3
+4
+5
+</code></pre><p><code>range</code> fonksiyonu birbirini takip eden sayılardan bir liste oluşturur (bu sayıları da siz parametre olarak yazarsınız).</p>
+<p>Sizin verdiğiniz ikinci parametrenin listede olmadığına dikkat edin. Yani <code>range(1, 6)</code> 1&apos;den 5&apos;e kadar sayıyor, 6 dahil edilmiyor. Çünkü “aralık” yarı açıktır, ve yani ilk değeri içerir, ama son değeri içermez.</p>
+<h2 id="özet">Özet</h2>
+<p>İşte bu. <strong>Harikasın, süpersin!</strong> Bu bölüm biraz zordu, kendinle gurur duymalısın. Biz buraya kadar geldiğin için seninle gurur duyuyoruz!</p>
+<p>Resmi ve tam python tutorialı için <a href="https://docs.python.org/3/tutorial/" target="_blank">https://docs.python.org/3/tutorial/</a> adresini ziyaret edin. Bu size dil hakkında daha kapsamlı ve eksiksiz bir çalışma sunacaktır. Teşekkürler :)</p>
+<p>Sonraki bölüme geçmeden başka bir şey yapmak isteyebilirsin. -gerin, biraz etrafta gezin, gözlerini dinlendir- :)</p>
+<p><img src="images/cupcake.png" alt="Cupcake"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../code_editor/" class="navigation navigation-prev " aria-label="Previous page: Kod editörü">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django/" class="navigation navigation-next " aria-label="Next page: Django nedir?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python'a giriş","level":"1.8","depth":1,"next":{"title":"Django nedir?","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"previous":{"title":"Kod editörü","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"tr","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_introduction/README.md","mtime":"2021-03-25T14:00:00.539Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"tr"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1326 @@
+
+<!DOCTYPE HTML>
+<html lang="sk" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Úvod do jazyka Python · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django/" />
+    
+    
+    <link rel="prev" href="../code_editor/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Úvod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Inštalácia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Inštalácia (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Ako funguje Internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Úvod do príkazového riadku
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Inštalácia Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Úvod do jazyka Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Čo je Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Inštalácia Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Tvoj prvý Django projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Nasadenie!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - čas tvoriť!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Úvod do HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (tvorba dotazov)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamické dáta v šablónach
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Šablóny Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - skrášli to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozširovanie šablón
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Ako rozšíriť aplikáciu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formuláre Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Čo ďalej?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Úvod do jazyka Python</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="úvod-do-jazyka-python">Úvod do jazyka Python</h1>
+<blockquote>
+<p>Časť tejto kapitoly je založená na tutoriáli Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p>
+</blockquote>
+<p>Poďme napísať nejaký kód!</p>
+<h2 id="python-prompt">Python prompt</h2>
+<blockquote>
+<p>Pre čitateľov doma: Táto kapitola je spracovaná v <a href="https://www.youtube.com/watch?v=MO63L4s-20U" target="_blank">Python Basics: Integers, Strings, Lists, Variables and Errors</a> videu.</p>
+</blockquote>
+<p>Aby sme mohli začať s Pythonom, musíte otvoriť <em>príkazový riadok</em> (angl. command line) na svojom počítači. Už by ste mali vedieť ako sa to robí -- naučili ste sa to v <a href="../intro_to_command_line/"> Úvode do príkazového riadku</a>.</p>
+<p>Ak ste hotoví, pokračujte s inštrukciami nižšie.</p>
+<p>Chceme otvoriť Python konzolu, takže napíšte <code>python</code> na Windowse alebo <code>python3</code> na Mac alebo OS/Linux a stlačte <code>enter</code>.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3
+Python 3.6.1 (...)
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</code></pre><h2 id="váš-prvý-príkaz-v-pythone">Váš prvý príkaz v Pythone!</h2>
+<p>Po spustení príkazu Python sa prompt zmenil na <code>&gt;&gt;&gt;</code>. Pre nás to znamená že odteraz by sme mali písať príkazy iba v jazyku Python. Nemusíte písať <code>&gt;&gt;&gt;</code> - Python to urobí pre Vás.</p>
+<p>Ak by ste chceli kedykoľvek ukončiť konzolu Pythonu, len napíšte <code>exit()</code> alebo môžete použiť aj skratku <code>Ctrl + Z</code> vo Windowse alebo <code>Ctrl + D</code> pre Mac/Linux. Potom už nebudete vidieť toto: <code>&gt;&gt;&gt;</code>.</p>
+<p>Zatiaľ nechceme opustiť Python konzolu. Chceme sa o nej dozvedieť viac. Začnime tým, že skúsime matematiku, napr. <code>2 + 3</code>a stlač <code>enter</code>.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+<span class="hljs-number">5</span>
+</code></pre>
+<p>Super! Vidíte ako vyskočilo riešenie? Python vie počítať! Môžete skúsiť aj ďalšie príkazy, ako:</p>
+<ul>
+<li><code>4 * 5</code></li>
+<li><code>5 - 1</code></li>
+<li><code>40 / 2</code></li>
+</ul>
+<p>Aby sme vypočítali mocninu, povedzme 2 na tretiu, zadáme: </p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> ** <span class="hljs-number">3</span>
+<span class="hljs-number">8</span>
+</code></pre>
+<p>Bavte sa s tým trošku, potom sa vráťte späť k nám. :)</p>
+<p>Ako vidíte, Python je dobrá kalkulačka. A ak ste zvedaví, čo všetko vie ešte…</p>
+<h2 id="reťazce">Reťazce</h2>
+<p>Čo tak vaše meno? Napíšte svoje meno v úvodzovkách:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&quot;Ola&quot;</span>
+</code></pre>
+<p>Práve ste vytvorili svoj prvý reťazec! Je postupnosť znakov, ktoré môžu byť spracované počítačom. Reťazec musí vždy začínať a končíť s rovnakým znakom. Sú to jednoduché (<code>&apos;</code>) alebo dvojité (<code>&quot;</code>) úvodzovky (nie je medzi nimi žiadny rozdiel!). Úvodzovky naznačujú, že to čo je medzi nimi je reťazec (string).</p>
+<p>Reťazce možno spájať dohromady. Skús toto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ahoj&quot;</span> + <span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&apos;Ahoj Ola&apos;</span>
+</code></pre>
+<p>Reťazce môžete násobiť aj s číslom:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span> * <span class="hljs-number">3</span>
+<span class="hljs-string">&apos;OlaOlaOla&apos;</span>
+</code></pre>
+<p>Ak potrebujete dať apostrof do vnútra reťazca, máte dva spôsoby, ako to urobiť.</p>
+<p>Použitím dvojitých úvodzoviek:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+</code></pre>
+<p>alebo pomocou spätného lomítka - tento znak (ak je napísaný pred úvodzovkou) povie, že ona je súčasťou reťazca a nie koniec / začiatok reťazca (``):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;Runnin\&apos; down the hill&apos;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+</code></pre>
+<p>Pekné, hm? Ak chcete vidieť svoje meno veľkými písmenami, jednoducho zadajte:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>.upper()
+<span class="hljs-string">&apos;OLA&apos;</span>
+</code></pre>
+<p>Práve si použila <code>upper</code> <strong>metódu</strong> na reťazci! Metóda (ako <code>upper()</code>) je postupnosť inštrukcií, ktoré Python vykonáva na danom objekte (<code>&quot;Ola&quot;</code>), potom, čo ju zavoláš.</p>
+<p>Ak chcete poznať počet písmen, ktoré sú obsiahnuté vo vašom mene, tak na to má Python <strong>funkciu</strong> tiež!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-string">&quot;Ola&quot;</span>)
+<span class="hljs-number">3</span>
+</code></pre>
+<p>Ste zvedaví, prečo voláme niekedy funkciu s bodkou (<code>.</code>) na konci reťazca (ako <code>&quot;Ola&quot;.upper()</code>) a niekedy najprv voláme funkciu a reťazec vložíme do zátvoriek? V niektorých prípadoch funkcie patria k objektom, ako napr. <code>upper()</code>, čo môže byt vykonaná len na reťazcoch. V takomto prípade sa tieto funkcie volajú <strong>metódy</strong>. Inokedy funkcie nepatria k žiadnemu konkrétnemu objektu a môžu byť použité na rôzne typy objektov, rovnako ako <code>len()</code>. Preto zadáme <code>&quot;Ola&quot;</code> ako parameter pre funkciu <code>len</code>.</p>
+<h3 id="zhrnutie">Zhrnutie</h3>
+<p>OK, dosť už reťazcoch. Zatiaľ ste sa naučili o:</p>
+<ul>
+<li><strong>prompt</strong> - píšeme príkazy (kód) do Python promptu, z čoho dostaneme výsledky zase v jazyku Python</li>
+<li><strong>čísla a reťazce</strong> - v Pythone sú čísla použité pre počítanie a reťazce pre textové objekty</li>
+<li><strong>operátory</strong> - ako <code>+</code> alebo <code>*</code>, z daných hodnôt vyrobia novú hodnotu</li>
+<li><strong>funkcie</strong> - napr. <code>upper()</code> alebo <code>len()</code>, vykonávajú činnosti na objektoch.</li>
+</ul>
+<p>Toto sú základy každého programovacieho jazyka. Ste pripravení na niečo ťažšie? Stavíme sa, že áno!</p>
+<h2 id="chyby">Chyby</h2>
+<p>Teraz skúsme niečo nové. Je možné zistiť dĺžku nejakého čísla rovnako ako sme to robili s našim menom? Napíšte <code>len(304023)</code> a stlačte <code>enter</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-number">304023</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-built_in">object</span> of <span class="hljs-built_in">type</span> <span class="hljs-string">&apos;int&apos;</span> has no <span class="hljs-built_in">len</span>()
+</code></pre>
+<p>Dostali sme našu prvú chybovú hlášku! Hovorí nám, že objekty typu &quot;int&quot; (celé čísla, angl. integers) nemajú dĺžku. Tak čo môžeme teraz robiť? Možno by sme mohli napísať naše číslo ako reťazec? Reťazce majú dĺžku, pravda?</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-built_in">str</span>(<span class="hljs-number">304023</span>))
+<span class="hljs-number">6</span>
+</code></pre>
+<p>Funguje to! Použili sme funkciu <code>str</code> vo vnútri funkcie <code>len</code>. Funkcia <code>str()</code> prevedie všetko na reťazce.</p>
+<ul>
+<li>Funkcia <code>str</code> prevedie (konvertuje) všetko na <strong>reťazce</strong> (angl. string)</li>
+<li>Funkcia <code>int</code> prevedie všetko na <strong>int</strong> (celé čísla)</li>
+</ul>
+<blockquote>
+<p>Dôležité: je možné konvertovať čísla na reťazce, ale opačne sa to nedá vždy - inak čo by bolo napr. <code>int(&apos;hello&apos;)</code>?</p>
+</blockquote>
+<h2 id="premenné">Premenné</h2>
+<p>Veľmi dôležitý pojem v programovaní je pojem premennej. Premenná je nič iné ako názov niečoho, čo môžeme použiť aj neskoršie v programe. Programátori používajú premenné aby v nich ukladali dáta, aby ich zdrojový kód bol prehľadnejší a aby nemuseli všetko držať v hlave.</p>
+<p>Povedzme, že chceme vytvoriť novú premennú s názvom <code>meno</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>meno = <span class="hljs-string">&quot;Ola&quot;</span>
+</code></pre>
+<p>Zadáme meno sa rovná Ola.</p>
+<p>Ako ste si to zbadali už, váš program nič nevrátil späť ako to robil v predchádzajúcich príkladoch. Tak ako vieme, či tá premenná existuje? Jednoducho napíšte <code>meno</code> a stlačte <code>enter</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>meno
+<span class="hljs-string">&apos;Ola&apos;</span>
+</code></pre>
+<p>Hurá! Vaša prvá premenná! :) Vždy je možné zmeniť jej obsah:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>meno = <span class="hljs-string">&quot;Sonja&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>meno
+<span class="hljs-string">&apos;Sonja&apos;</span>
+</code></pre>
+<p>Môžete ju použiť aj vo funkciách:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(meno)
+<span class="hljs-number">5</span>
+</code></pre>
+<p>Úžasné, že? Samozrejme premenné môžu byť hocičo, takže aj čísla! Skúste toto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a * b
+<span class="hljs-number">24</span>
+</code></pre>
+<p>Ale čo by sa stalo, keby sme použili zlý názov? Uhádnete, čo sa stane? Skúsme!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>mesto = <span class="hljs-string">&quot;Tokyo&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>mseto
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;mseto&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>Chyba! Ako vidíte, Python má viacero chýb a táto jedna sa volá <strong>NameError</strong>. Python vám hodí túto chybu ak sa pokúsite použiť premennú ktorá ešte nebola definovaná. Ak sa stretnete s touto chybou v budúcnosti, vždy skontrolujte svoj kód, či nemáte preklep v niektorom názve.</p>
+<p>Hrajte sa s tým trošku, a potom uvidíme čo môžeme ešte urobiť!</p>
+<h2 id="funkcia-print">Funkcia print</h2>
+<p>Vyskúšajte toto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>meno = <span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>meno
+<span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(meno)
+Maria
+</code></pre>
+<p>Ak zadáte len <code>meno</code>, Python interpreter odpovie reťazcovou <em>reprezentáciou</em> premennej &apos;meno&apos;, teda písmenami M-a-r-i-a medzi jednoduchými úvodzovkami, &apos;&apos;. Keď napíšete <code>print(meno)</code>, Python vypíše obsah premennej na obrazovku, bez úvodzoviek, čo vyzerá krajšie.</p>
+<p>Ako uvidíme neskôr, funkcia <code>print()</code> je tiež užitočná, keď chceme tlačiť veci z funkcií, alebo ak chceme tlačiť veci na viacerých riadkoch.</p>
+<h2 id="zoznamy">Zoznamy</h2>
+<p>Okrem reťazcov a celých čísel, má Python všetky možné typy objektov. Teraz sa zoznámime s typom, ktorý sa volá <strong>zoznam</strong> (list). Zoznamy sú presne to, čo si myslíte, že sú: objekty, ktoré sú zoznamami iných objektov. :)</p>
+<p>Poďme na to, vytvorte zoznam:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[]
+[]
+</code></pre>
+<p>Áno, tento zoznam je prázdny. Nie veľmi užitočné, však? Vytvorme zoznam s číslami lotérie. Nechceme sa dokola opakovať, takže ho hneď aj priradíme do premennej:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>loteria = [<span class="hljs-number">3</span>, <span class="hljs-number">42</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>OK, máme zoznam! Čo s ním môžeme urobiť? Pozrime sa, koľko čísel lotérie máme v zozname. Máte predstavu, ktorú funkciu by sme mohli použiť? Toto už predsa viete!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(loteria)
+<span class="hljs-number">6</span>
+</code></pre>
+<p>Áno! <code>len()</code> vám vráti počet objektov v zozname. Šikovné, nie? Možno by sme to teraz mohli usporiadať:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>loteria.sort()
+</code></pre>
+<p>Nič nám to nevrátilo, iba sa zmenilo poradie poradie, v ktorom sa čísla zobrazia v zozname. Vytlačme to znova a pozrime sa, čo sa stalo:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(loteria)
+[<span class="hljs-number">3</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">42</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>Ako vidíte, čísla vo vašom zozname sú teraz zoradené od najnižšej po najvyššiu hodnotu. Gratulujeme!</p>
+<p>Chceli by sme otočiť poradie? Urobme to!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>loteria.reverse()
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(loteria)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>]
+</code></pre>
+<p>Ak chceš pridať niečo do svojho zoznamu, môžeš to urobiť zadaním tohto príkazu:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>loteria.append(<span class="hljs-number">199</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(loteria)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>Ak chcete zobraziť iba prvé číslo, môžete to urobiť pomocou <strong>indexov</strong>. Index je číslo, ktoré hovorí, kde v zozname sa položka nachádza. Programátori radi počítajú od nuly, takž eprvý objekt vo vašom zozname je na indexe 0, ďalší je na 1 a tak ďalej. Vyskúšajte toto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(loteria[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(loteria[<span class="hljs-number">1</span>])
+<span class="hljs-number">42</span>
+</code></pre>
+<p>Ako vidíte, k rôznym objektom vo vašom zozname môžete pristupovať použitím názvu zoznamu a indexom objektu v hranatých zátvorkách.</p>
+<p>Aby ste odstránili niečo zo svojho zoznamu, budete potrebovať <strong>indexy</strong>, ako sme sa dozvedeli vyššie a príkaz <code>pop()</code>. Vyskúšajme to na príklade a zopakujme si, čo sme sa už naučili; zmažeme prvé číslo v našom zozname.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(loteria)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(loteria[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>loteria.pop(<span class="hljs-number">0</span>)
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(loteria)
+[<span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>Funguje to ako hodinky!</p>
+<p>Pre zábavu vyskúšajte aj nejaké iné indexy: 6, 7, 1000, -1, -6 alebo -1000. Skúste predpovedať výsledok predtým ako príkaz použijete. Dávajú výsledky zmysel?</p>
+<p>Zoznam všetkých dostupných metód pre zoznamy v tejto kapitole dokumentácie Pythonu: <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a></p>
+<h2 id="slovníky">Slovníky</h2>
+<blockquote>
+<p>Pre čitateľov doma: Táto kapitola je spracovaná v <a href="https://www.youtube.com/watch?v=ZX1CVvZLE6c" target="_blank">Python Basics: Dictionaries</a> videu.</p>
+</blockquote>
+<p>Slovník je podobný ako zoznam, ale k jeho hodnotám pristupujete vyhľadaním kľúča namiesto číselného indexu. Kľúč môže byť akýkoľvek reťazec alebo číslo. Syntax na definovanie prázdneho slovníka je:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>{}
+{}
+</code></pre>
+<p>To znamená, že ste práve vytvorili prázdny slovník. Hurá!</p>
+<p>Teraz skúste napísať nasledujúci príkaz (skúste ale nahradiť hodnoty vlastnými údajmi):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka = {<span class="hljs-string">&apos;meno&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;krajina&apos;</span>: <span class="hljs-string">&apos;Slovensko&apos;</span>, <span class="hljs-string">&apos;oblubene_cisla&apos;</span>: [<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]}
+</code></pre>
+<p>Týmto príkazom ste práve vytvorili premennú s názvom <code>ucastnicka</code> s tromi pármi kľúč-hodnota:</p>
+<ul>
+<li>Kľúč <code>meno</code> odkazuje na hodnotu <code>&quot;Ola&quot;</code> (objekt typu <code>reťazec/string</code>),</li>
+<li><code>krajina</code> odkazuje na <code>&quot;Slovensko&quot;</code> (ďalší <code>reťazec</code>),</li>
+<li>a <code>oblubene_cisla</code> smeruje na <code>[7, 42, 92]</code> (<code>zoznam</code> s tromi číslami).</li>
+</ul>
+<p>Obsah jednotlivých kľúčov môžete skontrolovať touto syntaxou:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(ucastnicka[<span class="hljs-string">&apos;meno&apos;</span>])
+Ola
+</code></pre>
+<p>Ako vidíte, podobá sa to na zoznam. Ale nemusíte si pamätať index - stačí meno.</p>
+<p>Čo sa stane ak si od Pythonu vypýtame hodnotu kľúča, ktorý neexistuje? Uhádnete? Vyskúšajme to a uvidíme!</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka[<span class="hljs-string">&apos;vek&apos;</span>]
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+KeyError: <span class="hljs-string">&apos;vek&apos;</span>
+</code></pre>
+<p>Aha, ďalšia chyba! Táto sa volá <strong>KeyError</strong> (chyba kľúča). Python je nápomocný a povie vám, že kľúč <code>&apos;vek&apos;</code> v tomto slovníku neexistuje.</p>
+<p>Kedy by používať slovník alebo zoznam? No, to je dobrá otázka. Porozmýšľaj predtým, ako si pozrieš odpoveď v nasledujúcom riadku.</p>
+<ul>
+<li>Potrebuješ zoradenú postupnosť položiek? Vyber si zoznam (list).</li>
+<li>Potrebuješ priraďovať hodnoty kľúčovým slovám, aby si si ich mohla efektívne (podľa kľúča) neskôr vyhľadať? Použi slovník (dictionary).</li>
+</ul>
+<p>Slovníky, rovnako ako zoznamy sú <em>premenlivé</em>, čo znamená, že ich môžeme zmeniť po ich vytvorení. Po vytvorení môžeš do slovníka pridať nové dvojice kľúč/hodnota takto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka[<span class="hljs-string">&apos;oblubeny_jazyk&apos;</span>] = <span class="hljs-string">&apos;Python&apos;</span>
+</code></pre>
+<p>Tak ako pri zoznamoch, použitím metódy <code>len()</code> na slovníkoch dostaneš počet párov kľúč-hodnota v slovníku. Poďme na to, zadaj tento príkaz:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(ucastnicka)
+<span class="hljs-number">4</span>
+</code></pre>
+<p>Dúfam, že to dáva zmysel. :) Pripravená na trochu zábavy so slovníkmi? Tak šup na ďalší riadok za úžasnými vecami.</p>
+<p>Na odstránenie položky zo slovníka môžeš použiť metódu <code>pop()</code>. Napríklad ak chceš odstrániť položku zodpovedajúcu kľúču <code>&apos;oblubene_cisla&apos;</code>, zadaj nasledujúci príkaz:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka.pop(<span class="hljs-string">&apos;oblubene_cisla&apos;</span>)
+[<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka
+{<span class="hljs-string">&apos;meno&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;krajina&apos;</span>: <span class="hljs-string">&apos;Slovensko&apos;</span>, <span class="hljs-string">&apos;oblubeny_jazyk&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>}
+</code></pre>
+<p>Ako vidíš z výstupu, pár kľúč-hodnota zodpovedajúci kľúču &apos;oblubene_cisla&apos; bol vymazaný.</p>
+<p>Taktiež môžeš zmeniť hodnotu priradenú k už vytvorenému kľúču v slovníku. Napíš:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka[<span class="hljs-string">&apos;krajina&apos;</span>] = <span class="hljs-string">&apos;Nemecko&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>ucastnicka
+{<span class="hljs-string">&apos;krajina&apos;</span>: <span class="hljs-string">&apos;Nemecko&apos;</span>, <span class="hljs-string">&apos;oblubeny_jazyk&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;meno&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}
+</code></pre>
+<p>Ako vidíš, hodnota kľúča <code>&quot;krajina&quot;</code> sa zmenila z <code>&quot;Poľsko&quot;</code> na <code>&quot;Nemecko&quot;</code>. :) Vzrušujúce? Hurá! Práve si sa naučila ďalšiu úžasnú vec.</p>
+<h3 id="zhrnutie">Zhrnutie</h3>
+<p>Skvelé! Teraz už vieš o programovaní dosť veľa. Pozrime sa, čo sme si vysvetlili v poslednej časti:</p>
+<ul>
+<li><strong>chyby</strong> (angl. error) - teraz už vieš ako čítať a rozumieť chybám, ktoré sa zobrazia, ak Python nerozumie príkazu, ktorý mu zadáš</li>
+<li><strong>premenné</strong> - názvy objektov, ktoré ti uľahčujú písanie kódu a robia tiež kód zrozumiteľnejším</li>
+<li><strong>zoznamy</strong> (angl. list) - zoznam objektov uložených v určitom poradí</li>
+<li><strong>slovníky</strong> (angl. dictionary) - objekty uložené v pároch kľúč-hodnota</li>
+</ul>
+<p>Tešíš sa na ďalšiu časť? :)</p>
+<h2 id="porovnávanie-vecí">Porovnávanie vecí</h2>
+<blockquote>
+<p>Pre čitateľov doma: Táto kapitola je spracovaná v <a href="https://www.youtube.com/watch?v=7bzxqIKYgf4" target="_blank">Python Basics: Comparisons</a> videu.</p>
+</blockquote>
+<p>Veľkú časť programovania predstavuje porovnávanie veci. Čo je najjednoduchšia vec na porovnanie? Čísla, samozrejme. Pozrime sa, ako to funguje:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span> * <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> == <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> != <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Dali sme Pythonu pár čísiel na porovnanie. Ako vidíš, Python vie porovnávať nielen čísla, ale vie porovnávať aj výsledky metód. Pekné, nie?</p>
+<p>Zaujíma ťa, prečo sme použili dve &quot;rovná sa&quot; <code>==</code> vedľa seba, aby sme porovnali, či sú čísla rovnaké? Jeden znak <code>=</code> používame na priraďovanie hodnôt premenným. Takže, ak chceš skontrolovať, či sú veci rovnaké, musíš vždy, úplne <strong>vždy</strong> použiť dve <code>==</code>. Taktiež môžeme zisťovať, či sa veci navzájom líšia. Na to použijeme symbol <code>!=</code>, ako bolo uvedené v príklade vyššie.</p>
+<p>Zadaj Pythonu ešte dve úlohy:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt;= <span class="hljs-number">12</span> / <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt;= <span class="hljs-number">2</span>
+<span class="hljs-literal">False</span>
+</code></pre>
+<p><code>&gt;</code> a <code>&lt;</code> sme už videli, ale čo znamenajú <code>&gt;=</code> a <code>&lt;=</code>? Prečítať ich môžeš takto:</p>
+<ul>
+<li>x <code>&gt;</code> y znamená: x je väčšie ako y</li>
+<li>x <code>&lt;</code> y znamená: x je menšie ako y</li>
+<li>x <code>&lt;=</code> y znamená: x je menšie alebo sa rovná y</li>
+<li>x <code>&gt; =</code> y znamená: x je väčšie alebo sa rovná y</li>
+</ul>
+<p>Skvelé! Chceš vyskúšať ešte jeden? Skús toto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">3</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Môžeš dať Pythonu toľko čísel, koľko chceš a on ti dá vždy odpoveď! Vcelku šikovné, nie?</p>
+<ul>
+<li><strong>and</strong> - ak použiješ operátor <code>and</code>, obidve porovnávané veci musia byť pravdivé (True), aby príkaz bol pravdivý (True)</li>
+<li><strong>or</strong> - ak použiješ operátor <code>or</code>, stačí aby jedna z porovnávaných vecí bola pravdivá, aby bol celý príkaz pravda (True)</li>
+</ul>
+<p>Už ste počula výraz &quot;porovnávať hrušky s jablkami&quot;? Skúsme pythonský ekvivalent:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> &gt; <span class="hljs-string">&apos;django&apos;</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-string">&apos;&gt;&apos;</span> <span class="hljs-keyword">not</span> supported between instances of <span class="hljs-string">&apos;int&apos;</span> <span class="hljs-keyword">and</span> <span class="hljs-string">&apos;str&apos;</span>
+</code></pre>
+<p>Tu vidíš, že tak ako nevieme porovnávať hrušky s jablkami, ani Python neviem porovnať číslo (<code>int</code>) s reťazcom (<code>str</code>). Namiesto toho vypíše chybu <strong>TypeError</strong> a povie nám, ktoré dva typy sa nedajú porovnať.</p>
+<h2 id="logické-hodnoty-boolean">Logické hodnoty (Boolean)</h2>
+<p>Mimochodom práve si sa naučila nový typ objektu v Pythone. Volá sa <strong>Boolean</strong>.</p>
+<p>Existujú iba dva typy Booleovských objektov:- True (Pravda)- False (Nepravda):</p>
+<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+<p>Aby ich Python spoznal, musíš vždy napísať &apos;True&apos; (s veľkým písmenom na začiatku a zvyšok malým písmom). <strong>true, TRUE, tRUE nebudú fungovať -- iba True je správne.</strong> (Samozrejme, to isté platí aj pre &apos;False&apos;.)</p>
+<p>Logické hodnoty môžu byť aj premenné. Aha:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Môžeš to urobiť aj takto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">False</span>
+</code></pre>
+<p>Precvič si to a zabav sa s logickými premennými - skús spustiť tieto príkazy:</p>
+<ul>
+<li><code>True and True</code></li>
+<li><code>False and True</code></li>
+<li><code>True or 1 == 1</code></li>
+<li><code>1 != 2</code></li>
+</ul>
+<p>Gratulujeme! Logické hodnoty patria k tomu najužitočnejšiemu z programovania a ty si sa práve naučila, ako sa používajú!</p>
+<h1 id="ulož-to">Ulož to!</h1>
+<blockquote>
+<p>Pre čitateľov doma: Táto kapitola je spracovaná v <a href="https://www.youtube.com/watch?v=dOAg6QVAxyk" target="_blank">Python Basics: Saving files and &quot;If&quot; statement</a> videu.</p>
+</blockquote>
+<p>Zatiaľ sme písali všetok pythonský kód do konzoly interpretera, čiže môžeme na jedenkrát zadať iba jeden riadok kódu. Normálne programy sú uložené v súboroch, ktoré spúšťa buď <strong>interpreter</strong> alebo <strong>kompilátor</strong>. Doteraz sme spúšťali naše programy riadok po riadku v <strong>interpreteri</strong> Pythonu. Na ďalšie úlohy budeme potrebovať viac ako jeden riadok kódu, takže teraz rýchlo musíme:</p>
+<ul>
+<li>Ukončiť interpreter Pythonu</li>
+<li>Otvoriť si zvolený editor kódu</li>
+<li>Uložiť v ňom nejaký kód do nového pythonského súboru</li>
+<li>Spustiť ho!</li>
+</ul>
+<p>Pre opustenie interpretera Pythonu, ktorý sme doteraz používali, zadaj jednoducho funkciu <code>exit()</code></p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$
+</code></pre>
+<p>Tak sa dostaneš späť na príkazový riadok.</p>
+<p>Už skôr si si vybrala editor kódu v kapitole <a href="../code_editor/">editor kódu</a>. Teraz ho potrebujeme otvoriť a napísať v ňom do nového súboru nejaký kód:</p>
+<p></p><p class="code-label">editor</p><p></p>
+<pre><code class="lang-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hello, Django girls!&apos;</span>)
+</code></pre>
+<p>Samozrejme, teraz si už vcelku skúsená Python developerka, takže kľudne napíš nejaký kód, ktorý si sa dnes naučila.</p>
+<p>Teraz uložíme súbor a dáme mu nejaký zrozumiteľný názov. Nazvime ho <strong>python_intro.py</strong> a ulož ho plochu. Tento súbor môžeš nazvať akokoľvek chceš, ale dôležité je, aby jeho názov končil <strong>.py</strong>. Prípona <strong>.py</strong> nášmu operačnému systému hovorí, že je to <strong>súbor spustiteľný Pythonom</strong> a môže ho spustiť Pythonom.</p>
+<blockquote>
+<p><strong>Poznámka</strong> Všimni si jednu z najúžasnejších vecí editorov kódu: farby! V pythonskej konzole bolo všetko napísané jednou farbou, teraz však vidíš, že funkcia <code>print</code> je napísaná inou farbou ako reťazec. Toto sa nazýva &quot;zvýraznenie syntaxe&quot; a pri programovaní je to fakt užitočná vec. Farba výrazov ti môže pomôcť, ak máš neuzavretý reťazec či preklep v názve špeciálnych slov (ako napríklad <code>def</code> vo funkcii, ktorú uvidíme neskôr). Toto je jedným z dôvodov, prečo používame editor kódu. :)</p>
+</blockquote>
+<p>Súbor máme uložený, je čas ho spustiť! Pomocou poznatkov z kapitoly o príkazovom riadku, pomocou Terminálu <strong>zmeň adresár</strong> na plochu.</p>
+<sec data-title="Change directory: OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+<p>Na Macu bude príkaz vyzerať takto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+<p>Na Linuxe to bude takto (slovo &quot;Desktop&quot; bude možno preložené):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+<p>Vo Windowse v Command Prompt, to bude takto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd %HomePath%\Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Powershell<a class="pull-right section atTitle btn btn-default" target="python_windowsPSH"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windowsPSH"><div class="panel-body">
+<p>A vo Windows Powershell bude príkaz vyzerať takto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd $Home\Desktop
+</code></pre></div></div></div></sec>
+<p>Ak máš akékoľvek ťažkosti, stačí požiadať o pomoc.</p>
+<p>Teraz použi Python na spustenie kódu v súbore:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hello, Django girls!
+</code></pre><p>Poznámka na Windowse python3 príkaz neexistuje. Použi python na spustenie súboru:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">&gt; python python_intro.py
+</code></pre>
+<p>Výborne! Práve si spustila svoj prvý pythonský program uložený v súbore. Skvelý pocit, však?</p>
+<p>Teraz sa môžeš posunúť na ďalší základný nástroj v programovaní:</p>
+<h2 id="if--elif--else">If … elif … else</h2>
+<p>Kopec vecí v kóde sa má spúšťať len ak sú splnené nejaké podmienky. Práve na to používa Python príkaz <strong>if</strong>.</p>
+<p>Nahraď kód v súbore <strong>python_intro.py</strong> týmto:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+</code></pre>
+<p>Ak to uložíš a spustíš, dostaneš túto chybu:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+File &quot;python_intro.py&quot;, line 2
+         ^
+SyntaxError: unexpected EOF while parsing
+</code></pre><p>Python očakáva, že od nás dostane ďalšie inštrukcie, ktoré majú byť vykonané ak je podmienka <code>3 &gt; 2</code> pravdivá (teda ak bude mať hodnotu <code>True</code>). Skúsme zariadiť, aby Python napísal &quot;Funguje to!&quot;. Zmeň svoj kód v súbore <strong>python_intro.py</strong> takto:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;It works!&apos;</span>)
+</code></pre>
+<p>Všimla si si, ako sme odsadili druhý riadok o 4 medzery? To musíme urobiť preto, aby Python vedel, ktorú časť kódu má spustiť ak je výsledok pravdivý. Môžeš použiť len jednu medzeru, ale takmer všetci programátori v Pythone používajú 4 medzery, aby bol kód dobre čitateľný. Jeden <code>tab</code> sa tiež počíta ako 4 medzery.</p>
+<p>Ulož to a spusti to znova:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">$ python3 python_intro.py
+Funguje to!
+</code></pre>
+<p>Poznámka: Zapamätaj si že Windows nepozná príkaz &quot;python3&quot;. Od teraz a naďalej, nahraď &quot;python3&quot; príkazom &quot;python&quot;pri spúšťaní súborov.</p>
+<h3 id="čo-ak-podmienka-nie-je-pravdivá">Čo ak podmienka nie je pravdivá?</h3>
+<p>V predchádzajúcich príkladoch, bol kód vykonaný len vtedy, keď podmienky boli pravdivé. Ale Python má tiež príkazy <code>elif</code> a <code>else</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;5 is indeed greater than 2&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;5 is not greater than 2&apos;</span>)
+</code></pre>
+<p>Keď to spustíš, vypíše to:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+5 je naozaj viac ako 2
+</code></pre><p>Ak by 2 bolo väčšie ako 5, spustil by sa druhý príkaz. Jednoduché, nie? Pozrime sa, ako funguje <code>elif</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">name = <span class="hljs-string">&apos;Sonja&apos;</span>
+<span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ahoj Ola!&apos;</span>)
+<span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ahoj Sonja!&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ahoj neznama!&apos;</span>)
+</code></pre>
+<p>a po spustení:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ahoj Sonja!
+</code></pre><p>Všimla si si, čo sa stalo? <code>elif</code> ti dovolí pridať dodatočné podmienky, ktoré sa spustia, ak sú predchádzajúce nesplnené.</p>
+<p>Za prvý <code>if</code> môžeš dať <code>elif</code> toľkokrát, koľko len chceš. Napríklad:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">volume = <span class="hljs-number">57</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;It&apos;s kinda quiet.&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">20</span> &lt;= volume &lt; <span class="hljs-number">40</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;It&apos;s nice for background music&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">40</span> &lt;= volume &lt; <span class="hljs-number">60</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Perfect, I can hear all the details&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">60</span> &lt;= volume &lt; <span class="hljs-number">80</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Nice for parties&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">80</span> &lt;= volume &lt; <span class="hljs-number">100</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;A bit loud!&quot;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;My ears are hurting! :(&quot;</span>)
+</code></pre>
+<p>Python prejde všetkými podmienkami v poradí a vypíše:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Super, pocujem vsetky detaily
+</code></pre><h2 id="komentáre">Komentáre</h2>
+<p>Komentáre su riadky, ktoré sa začínajú s <code>#</code>. Po <code>#</code> môžeš napísať hocičo, Python to bude ignorovať. Komentáre urobia tvoj kód čitateľnejším pre iných ludí.</p>
+<p>Pozrime sa ako to vyzerá:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-comment"># Change the volume if it&apos;s too loud or too quiet</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span> <span class="hljs-keyword">or</span> volume &gt; <span class="hljs-number">80</span>:
+    volume = <span class="hljs-number">50</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;That&apos;s better!&quot;</span>)
+</code></pre>
+<p>Nemusíš písať komentár pre každý riadok kódu čo napíšeš, ale je užitočné vysvetliť prečo tvoj kód niečo robǐ, alebo stručne popísať keď robí niečo zložité.</p>
+<h3 id="zhrnutie">Zhrnutie</h3>
+<p>V posledných troch cvičeniach si sa naučila:</p>
+<ul>
+<li><strong>porovnávať veci</strong> - v Pythone môžeš porovnávať veci pomocou znamienok <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>&lt;=</code>, <code>&lt;</code> a operátorov <code>and</code>, <code>or</code></li>
+<li><strong>Booleovské/logické premenné</strong> - typ objektu, ktorý môže mať len jednu z dvoch hodnôt: <code>True</code> (pravda) alebo <code>False</code> (nepravda)</li>
+<li><strong>Ukladať súbory</strong> - ukladanie kódu v súboroch, takže môžete spúšťať väčšie programy.</li>
+<li><strong>if... elif... else</strong> - príkazy, ktoré ti umožňujú spustiť kód, iba ak sú splnené určité podmienky.</li>
+<li><strong>comments</strong> - lines that Python won&apos;t run which let you document your code</li>
+</ul>
+<p>Teraz je čas na poslednú časť tejto kapitoly!</p>
+<h2 id="tvoje-vlastné-funkcie">Tvoje vlastné funkcie!</h2>
+<blockquote>
+<p>Pre čitateľov doma: Táto kapitola je spracovaná v <a href="https://www.youtube.com/watch?v=5owr-6suOl0" target="_blank">Python Basics: Functions</a> videu.</p>
+</blockquote>
+<p>Pamätáš si funkcie ako napríklad <code>len()</code>, ktoré môžeš v Pythone spúšťať? Máme pre teba dobrú správu - teraz sa naučíš ako napísať vlastnú funkciu!</p>
+<p>Funkcia je postupnosť inštrukcií, ktoré by mal Python spustiť. Každá funkcia v Pythone začína kľúčovým slovom <code>def</code>, má svoje meno a môže mať nejaké parametre. Skusme to. Nahraď kód v <strong>python_intro.py</strong> týmto:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>():</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ahoj!&apos;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ako sa mas?&apos;</span>)
+
+hi()
+</code></pre>
+<p>OK, naša prvá funkcia je pripravená!</p>
+<p>Možno sa čuduješ prečo sme na koniec súboru napísali názov funkcie. To preto, lebo Python číta súbor a vykonáva kód od vrchu po spodok. Takže aby sme mohli našu funkciu použiť, musíme jej názov napísať opäť.</p>
+<p>Spusťme to a pozrime sa, čo sa stane:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ahoj!
+Ako sa mas?
+</code></pre><p>Poznámka: Ak nefunguje, nepanikár! Výstup ti pomôže zistiť dôvod, prečo:</p>
+<ul>
+<li>Ak sa ti zjaví <code>NameError</code>, to znamená, že si niečo chybne napísala, takže by si mala overiť, že si použila rovnaké meno, keď si vytvárala pomocou <code>def hi()</code> a keď si ju zavolala pomocou <code>hi()</code>.</li>
+<li>Ak sa ti zjaví <code>IndentationError</code>, uisti sa, že oba <code>print</code> riadky, majú rovnaký počet medzier od začiatku riadku: python vyžaduje aby všetky riadky boli pedatne zarovnané.</li>
+<li>Ak nevidíš žiaden výstup, tak sa pozri či posledné <code>hi()</code> <em>nie je</em> odsadené - ak je, ten riadok sa stal súčasťou funkcie a nikdy nedojde k jeho spusteniu.</li>
+</ul>
+<p>Poďme vytvoriť našu prvú funkciu s parametrami. Použijeme predchádzajúci príklad - funkcia, ktorá hovorí &quot;ahoj&quot; osobe, ktorá ju spustí - s menom:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+</code></pre>
+<p>Ako vidíš, dali sme našej funkcii parameter, ktorý sme nazvali <code>meno</code>:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">meno</span>):</span>
+    <span class="hljs-keyword">if</span> meno == <span class="hljs-string">&apos;Ola&apos;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ahoj Ola!&apos;</span>)
+    <span class="hljs-keyword">elif</span> meno == <span class="hljs-string">&apos;Sonja&apos;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ahoj Sonja!&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ahoj neznama!&apos;</span>)
+
+hi()
+</code></pre>
+<p>Zapamätaj si: Funkcia <code>print</code> je odsadená o 4 medzery vo vnútri príkazu <code>if</code>. Je to preto, lebo funkcia sa spustí, len ak je splnená podmienka. Pozrime sa ako to funguje:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Traceback (most recent call last):
+File &quot;python_intro.py&quot;, line 10, in &lt;module&gt;
+  hi()
+TypeError: hi() missing 1 required positional argument: &apos;meno&apos;
+</code></pre><p>Ups, chyba. Našťastie Python nám dáva vcelku užitočnú chybovú hlášku. Hovorí nám, že funkcia <code>hi()</code> (tá, čo sme definovali) má jeden povinný argument (s názvom <code>meno</code>) a že sme mu ju zabudli zadať pri volaní funkcie. Opravme to na konci súboru:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">hi(<span class="hljs-string">&quot;Ola&quot;</span>)
+</code></pre>
+<p>A znova ho spusti:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ahoj Ola!
+</code></pre><p>A čo ak zmeníme meno?</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">hi(<span class="hljs-string">&quot;Sonja&quot;</span>)
+</code></pre>
+<p>A spustíme to:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ahoj Sonja!
+</code></pre><p>No a čo si myslíš, čo sa stane, ak tam napíšeš iné meno? (Nie Ola ani Sonja). Vyskúšaj a uvidíš, či bol tvoj predpoklad správny. Malo by ti vypísať toto:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>Ahoj neznáma!
+</code></pre><p>Úžasné, nie? Vďaka tomu nemusíš prepisovať dokola to isté zakaždým, keď chceš zmeniť meno osoby, ktorú má funkcia pozdraviť. A to je presne dôvod, prečo potrebujeme funkcie - aby sme nemuseli opakovať svoj kód!</p>
+<p>Urobme to teda trochu rozumnejšie - existujú viac ako dve mená a písať podmienku pre každé by bolo trochu náročné, však?</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">meno</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ahoj &apos;</span> + meno + <span class="hljs-string">&apos;!&apos;</span>)
+
+hi(<span class="hljs-string">&quot;Katka&quot;</span>)
+</code></pre>
+<p>Teraz spusťme kód:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ahoj Katka!
+</code></pre><p>Gratulujeme! Práve si sa naučila ako sa píšu funkcie! :)</p>
+<h2 id="cykly">Cykly</h2>
+<blockquote>
+<p>Pre čitateľov doma: Táto kapitola je spracovaná v <a href="https://www.youtube.com/watch?v=aEA6Rc86HF0" target="_blank">Python Basics: For Loop</a> videu.</p>
+</blockquote>
+<p>Toto je už posledná časť. Išlo to rýchlo, však? :)</p>
+<p>Programátori sa neradi opakujú. Programovanie je o automatizácii vecí, takže nechceme zdraviť každú osobu manuálne, nie? A vtedy nám prídu vhod cykly.</p>
+<p>Ešte si spomínaš na zoznamy? Pripravme zoznam dievčat:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">dievcata = [<span class="hljs-string">&apos;Katka&apos;</span>, <span class="hljs-string">&apos;Monika&apos;</span>, <span class="hljs-string">&apos;Zuzka&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;Ty&apos;</span>]
+</code></pre>
+<p>Chceme ich pozdraviť všetky menom. Na to máme funkciu <code>hi</code>, tak ju použime v cykle:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> meno <span class="hljs-keyword">in</span> dievcata:
+</code></pre>
+<p>Príkaz <code>for</code> sa správa podobne ako <code>if</code>; kód pod oboma z nich musí byť odsadený o štyri medzery.</p>
+<p>Tu je plný kód, ktorý napíšeme do súboru:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">meno</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Ahoj &apos;</span> + meno + <span class="hljs-string">&apos;!&apos;</span>)
+
+dievcata = [<span class="hljs-string">&apos;Katka&apos;</span>, <span class="hljs-string">&apos;Monika&apos;</span>, <span class="hljs-string">&apos;Zuzka&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;Ty&apos;</span>]
+<span class="hljs-keyword">for</span> meno <span class="hljs-keyword">in</span> dievcata:
+    hi(meno)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Dalsie dievca&apos;</span>)
+</code></pre>
+<p>A keď to spustíme:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Ahoj Katka!
+Dalsie dievca
+Ahoj Monika!
+Dalsie dievca
+Ahoj Zuzka!
+Dalsie dievca
+Ahoj Ola!
+Dalsie dievca
+Ahoj Ty!
+Dalsie dievca
+</code></pre><p>Ako vidíš, všetko, čo dáš do príkazu <code>for</code> s oddsadením sa bude opakovať pre každý prvok zoznamu <code>dievcata</code>.</p>
+<p><code>for</code> môžeš pomocou funkcie <code>range</code> použiť aj na čísla:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
+    <span class="hljs-built_in">print</span>(i)
+</code></pre>
+<p>Čo vypíše:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>1
+2
+3
+4
+5
+</code></pre><p><code>range</code> je funkcia, ktorá vytvára zoznam čísel s postupnosťou čísel (krajné čísla funkcii poskytneš ako parametre).</p>
+<p>Všimni si, že druhé číslo sa nenachádza vo výstupnom zozname (teda <code>range(1, 6)</code> počíta od 1 po 5, ale neobsahuje číslo 6). To je preto, lebo &quot;range&quot; je jednostranne otvorený, čo znamená, že obsahuje prvú hodnotu, ale nie poslednú.</p>
+<h2 id="zhrnutie">Zhrnutie</h2>
+<p>To je všetko. <strong>Si úplne geniálna!</strong> Toto bola náročná kapitola, takže by si mala byť na seba pyšná. My sme rozhodne hrdí na teba, že si to zvládla až potiaľto!</p>
+<p>Oficiálnu a plnú verziu tutoriálu najdeš na <a href="https://docs.python.org/3/tutorial/" target="_blank">https://docs.python.org/3/tutorial/</a>. Tam najdeš podrobnejšie a úplné informácie o jazyku. Nech sa darí :)</p>
+<p>Teraz na chvíľu si daj pauzu - natiahni sa trochu, poprechádzaj sa, nechaj svoje oči oddýchnuť si - a potom prejdeme na ďalšiu kapitolu. :)</p>
+<p><img src="images/cupcake.png" alt="Koláčik"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../code_editor/" class="navigation navigation-prev " aria-label="Previous page: Editor kódu">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django/" class="navigation navigation-next " aria-label="Next page: Čo je Django?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Úvod do jazyka Python","level":"1.8","depth":1,"next":{"title":"Čo je Django?","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"previous":{"title":"Editor kódu","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"sk","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_introduction/README.md","mtime":"2021-03-25T14:00:00.511Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"sk"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

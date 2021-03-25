@@ -1,0 +1,889 @@
+
+<!DOCTYPE HTML>
+<html lang="hu" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Deploy! · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_urls/" />
+    
+    
+    <link rel="prev" href="../django_admin/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Bevezetés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installáció
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Hogy működik az Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Bevezetés a parancssor használatába
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    A Python telepítése
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kódszerkesztő (editor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Bevezetés a Pythonba
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Mi a Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django telepítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Az első Django projekted!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modellek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.13" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - itt az ideje alkotni!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Bevezetés a HTML-be
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM és QuerySet-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dinamikus adatok a template-ben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django sablonok (template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Tegyük széppé!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template-kiegészítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Egészítsd ki az applikációdat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django űrlapok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Következő lépések
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Deploy!</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="deploy">Deploy!</h1>
+<blockquote>
+<p><strong>Megjegyzés</strong> A következő fejezet néhol kissé bonyolult lehet. Tarts ki és vedd át az egész fejezetet; ugyanis most a webfejlesztés egy nagyon fontos része következik - az ún. deployment. Ez a fejezet a tutorial közepén található, így majd a mentorod is tud segíteni a trükkösebb részeknél, miközben a honlapodat online is elérhetővé teszed. Magát a tutorialt később egyedül is befejezheted, ha esetleg kifutnál az időből.</p>
+</blockquote>
+<p>Ezidáig a honlapod csak a saját számítógépeden volt elérhető - most tanuljuk meg, hogyan tegyük mások számára is elérhetővé! Ez az ún. deploying - az a tevékenység, amely során az alkalmazásodat közzé teszed az interneten, hogy mások is láthassák és használhassák azt :).</p>
+<p>Ahogyan azt már tudod, a honlapot egy szerveren kell elhelyezni. Több szerver szolgáltató is elérhető az interneten. Mi egy olyat fogunk használni, amit viszonylag egyszerű kezelni: <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere</a>. A PythonAnywhere ingyenes olyan kisebb alkalmazások számára, amelyeknek nincs sok látogatójuk, tehát a mi esetünkben ez pont megfelelő lesz.</p>
+<p>A másik külső szolgáltatás, amit igénybe fogunk venni a <a href="https://www.github.com" target="_blank">GitHub</a>, ami egy ún. code hosting service (forráskód tárolására és megosztására alkalmas online tárhely). Vannak más hozzá hasonló szolgáltatók is, de szinte minden programozó ezt használja manapság, és nemsokára te is közéjük tartozhatsz!</p>
+<p>Ez a három hely lesz fontos. A saját számítógéped lesz az a hely, ahol fejlesztesz és tesztelsz. Amikor elégedett vagy a módosításaiddal, felmásolod a programodat GitHub-ra. A website-od a PythonAnywhere-en lesz, és a GitHub-ról fogod frissíteni.</p>
+<h1 id="git">Git</h1>
+<blockquote>
+<p><strong>Megjegyzés</strong> Ha már követted a korábbi telepítési utasításokat, ezt a pontot átugorhatod és kezdheted kialakítani a saját Git csomagtáradat!</p>
+</blockquote>
+<p>A Git egy &quot;version control system&quot; (VCS, magyarul verziókezelő rendszer), amit sok programozó használ. Ez a szoftver nyomon követ minden változást a fájlokban, így a későbbiekben is visszatérhetünk egy bizonyos régebbi verzióhoz. Valamelyest hasonlít a &quot;változások nyomon követése&quot; funkcióhoz a Microsoft Wordben, de ez jóval hatékonyabb.</p>
+<h2 id="git-telepítése">Git telepítése</h2>
+<sec data-title="Windows" data-id="git_install_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="git_install_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_windows"><div class="panel-body">
+<p>A Gitet innen töltheted le: <a href="https://git-scm.com/" target="_blank">git-scm.com</a>. Telepítése: csak kattints a &quot;next&quot; gombra egészen addig, amíg el nem érsz az ötödik lépésig - &quot;Adjusting your PATH environment&quot; címmel - itt válaszd ki a &quot;Run Git and associated Unix tools from the Windows command-line&quot; lehetőséget (keresd alul). Ezen kívül a többi maradhat az alapbeállításon. Checkout Windows-style, commit Unix-style line endings - ezek is maradhatnak így.</p>
+</div></div></div></sec>
+<sec data-title="OS X" data-id="git_install_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>OS X<a class="pull-right section atTitle btn btn-default" target="git_install_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_OSX"><div class="panel-body">
+<p>Töltsd le a Git-tet az alábbi linken: <a href="https://git-scm.com/" target="_blank">git-scm.com</a>, majd kövesd az utasításokat.</p>
+<blockquote>
+<p><strong>Megjegyzés</strong> Ha OS X 10.6, 10.7, vagy 10.8-et használsz, Az ezen a linken elérhető verziót kell telepítened: <a href="https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download" target="_blank">Git teleptő OS X Snow Leopard-ra</a></p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Debian or Ubuntu" data-id="git_install_debian_ubuntu" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Debian or Ubuntu<a class="pull-right section atTitle btn btn-default" target="git_install_debian_ubuntu"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_debian_ubuntu"><div class="panel-body">
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code class="lang-bash">$ sudo apt install git
+</code></pre>
+</div></div></div></sec>
+<sec data-title="Fedora (up to 21)" data-id="git_install_fedora_21" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Fedora (up to 21)<a class="pull-right section atTitle btn btn-default" target="git_install_fedora_21"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_fedora_21"><div class="panel-body">
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code class="lang-bash">$ sudo yum install git
+</code></pre>
+</div></div></div></sec>
+<sec data-title="Fedora 22+" data-id="git_install_fedora_22" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Fedora 22+<a class="pull-right section atTitle btn btn-default" target="git_install_fedora_22"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_fedora_22"><div class="panel-body">
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code class="lang-bash">$ sudo dnf install git
+</code></pre>
+</div></div></div></sec>
+<sec data-title="openSUSE" data-id="git_install_openSUSE" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>openSUSE<a class="pull-right section atTitle btn btn-default" target="git_install_openSUSE"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_openSUSE"><div class="panel-body">
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code class="lang-bash">$ sudo zypper install git
+</code></pre>
+</div></div></div></sec>
+<h2 id="készítsünk-git-repository-t">Készítsünk Git repository-t</h2>
+<p>A Git nyomon követi a változásokat az adott fájlokban egy ún. csomagtárban (repository vagy röviden &quot;repo&quot;). Nyissunk egy új repo-t a projektünknek. Nyisd fel a konzolt és futtasd le a következő parancsokat, a <code>djangogirls</code> mappában:</p>
+<blockquote>
+<p><strong>Megjegyzés</strong> Az alábbi parancsokkal ellenőrizheted a munkamappát (working directory, az éppen megnyitott mappa): <code>pwd</code> (OSX/Linux) vagy <code>cd</code> (Windows) mielőtt létrehoznád a repositoryt. A <code>djangogirls</code> mappában kell lenned.</p>
+</blockquote>
+<pre><code>$ git init
+Initialized empty Git repository in ~/djangogirls/.git/
+$ git config --global user.name &quot;Your Name&quot;
+$ git config --global user.email you@example.com
+</code></pre><p>A git csomagtár inicializálása olyasvalami, amit minden projekt esetében csak egyszer kell véghezvinni (így majd nem kell újra és újra megadni a felhasználónevet ill. jelszót).</p>
+<p>A Git ezután nyomon követ minden változást a fájlokban és mappákban ezen a mappán belül. De vannak bizonyos fájlok, amiket nem szeretnénk figyelembe venni. Ezt úgy tehetjük meg, hogy létrehozunk egy fájlt <code>.gitignore</code> névvel a gyökérkönyvtárban. Nyisd meg a szövegszerkesztőt és hozz létre egy új fájlt, amibe az alábbi sorok kerülnek:</p>
+<p></p><p class="code-label">.gitignore</p><p></p>
+<pre><code>*.pyc
+*~
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+</code></pre><p>Majd mentsd le <code>.gitignore</code> néven a &quot;djangogirls&quot; legfelsőbb mappájában.</p>
+<blockquote>
+<p><strong>Megjegyzés</strong> Nagyon fontos, hogy a fájl neve ponttal kezdődjön! Ha bármi gond adódna a fájl létrehozásánál (pl. Mac számítógépeken a Finder alapvetően nem engedi, hogy a fájlnév ponttal kezdődjön), akkor használd a &quot;Save as&quot; lehetőséget.</p>
+<p><strong>Megjegyzés</strong> A <code>.gitignore</code> file-ban megadott file-ok egyike a <code>db.sqlite3</code>. Ez a file a lokális adatbázisod, ez tárolja az összes blogposztodat. Nem akarjuk hozzáadni a repository-hoz, mert a PythonAnywhere-en lévő weboldal egy másik adatbázist fog használni. Az az adatbázis lehet SQLite, mint a fejlesztői gépeden, de többnyire egy MySQL nevűt fogsz használni, amely jóval több látogatót tud kiszolgálni mint az SQLite. Akármelyiket választod, azzal hogy az SQLite adatbázisod kihagyjuk a GitHub másolatból, az összes blogpost amelyet eddig létrehoztál csak lokálisan lesz elérhető, a publikus weboldalon újra létre kell majd ezeket hozni. Gondolj úgy a lokális adatbázisodra, mint egy  játszótérrel, ahol kipróbálhatsz különböző dolgokat és nem kell attól tartanod, hogy valódi posztokat fogsz törölni a blogodról.</p>
+</blockquote>
+<p>Jó ötlet a <code>git status</code> parancs használata még a <code>git add</code> előtt, valamint ezen kívül még bármikor, ha tudni szeretnéd, hogy mi változott. Ez majd segít elkerülni olyan szituációkat, mint például rossz fájlok hozzáadása ill. feltöltése a csomagtárba. A <code>git status</code> parancs információt szolgáltat minden nem követett (not tracked) / megváltozott (modified) /feltöltésre felkészített fájlról (staged files) stb. A kimenet ehhez hasonló lesz:</p>
+<pre><code>$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+        .gitignore
+        blog/
+        manage.py
+        mysite/
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre><p>Végül mentsük le a változtatásokat. A konzolban futtasd le a következő parancsokat:</p>
+<pre><code>$ git add --all .
+$ git commit -m &quot;My Django Girls app, first commit&quot;
+ [...]
+ 13 files changed, 200 insertions(+)
+ create mode 100644 .gitignore
+ [...]
+ create mode 100644 mysite/wsgi.py
+</code></pre><h2 id="forráskód-feltöltése-a-githubra">Forráskód feltöltése a GitHubra</h2>
+<p>A böngészőben keresd fel a <a href="https://www.github.com" target="_blank">GitHub.com</a> honlapot és regisztrálj be egy új &quot;free user&quot; fiókba. (Ha már beregisztráltál, ezt a pontot kihagyhatod) </p>
+<p>Ezután hozz létre egy új csomagtárat (&quot;repót&quot;), amit nevezz &quot;my-first-blog&quot;-nak. Hagyd az &quot;initialise with a README&quot; mezőt jelöletlenül, a .gitignore lehetőséget hagyd üresen (ezt manuálisan tettük), a &quot;License&quot; résznél maradjon a &quot;None&quot; opció.</p>
+<p><img src="images/new_github_repo.png" alt></p>
+<blockquote>
+<p><strong>Megjegyzés</strong> A <code>my-first-blog</code> név fontos -- választhattál volna más nevet is, de gyakran előfordul majd a későbbiekben is a parancsokban. Valószínűleg egyszerűbb lesz számodra is, ha a <code>my-first-blog</code> nevet használod.</p>
+</blockquote>
+<p>A következő oldalon látni fogod a repód url-jét (repo&apos;s clone url). Válaszd a &quot;HTTPS&quot; verziót, másold ki - mindjárt bemásoljuk a terminálba:</p>
+<p><img src="images/github_get_repo_url_screenshot.png" alt></p>
+<p>Most összekötjük a Git csomagtárat a számítógépeden a másik csomagtárral a GitHubon.</p>
+<p>A konzolba írd be a következőt (helyettesítsd a <code>&lt;your-github-username&gt;</code> a saját felhasználóneveddel, amivel a GitHubon regisztráltál, de a kacsacsőrök nélkül):</p>
+<pre><code>$ git remote add origin https://github.com/&lt;your-github-username&gt;/my-first-blog.git
+$ git push -u origin master
+</code></pre><p>Add meg a GitHub felhasználónevedet és jelszódat, valami hasonlót kell hogy láss:</p>
+<pre><code>Username for &apos;https://github.com&apos;: hjwp
+Password for &apos;https://hjwp@github.com&apos;:
+Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/hjwp/my-first-blog.git
+ * [new branch]      master -&gt; master
+Branch master set up to track remote branch master from origin.
+</code></pre><!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
+<p>A forráskódod most már fent van a GitHubon. Menj és nézd meg! Láthatod hogy jó társasága van - <a href="https://github.com/django/django" target="_blank">Django</a>, a <a href="https://github.com/DjangoGirls/tutorial" target="_blank">Django Girls Tutorial</a>, és sok más szuper nyílt forráskódú szoftver forráskódja szintén a GitHubon található :)</p>
+<h1 id="tegyük-fel-a-blogot-a-pythonanywhere-re">Tegyük fel a blogot a PythonAnywhere-re</h1>
+<blockquote>
+<p><strong>Megjegyzés</strong> Valószínűleg már létrehoztál egy PythonAnywhere fiókot korábban a telepítés során - ha így van, ezt nem kell újból megtenned.</p>
+</blockquote>
+<p>Most itt az ideje, hogy létrehozz magadnak egy ingyenes, &quot;Kezdő&quot; (&quot;Beginner&quot;) fiókot a PythonAnywhere oldalon.</p>
+<ul>
+<li><a href="https://www.pythonanywhere.com/" target="_blank">www.pythonanywhere.com</a></li>
+</ul>
+<blockquote>
+<p><strong>Megjegyzés:</strong> A blogod címe, vagyis URL-je <code>felhasználónév.pythonanywhere.com</code> lesz, vagyis érdemes a regisztrációkor felhasználónévnek vagy a saját becenevedet választani, vagy a blogod témájához kapcsolódó nevet.</p>
+</blockquote>
+<h2 id="forráskód-letöltése-a-pythonanywhere-be">Forráskód letöltése a PythonAnywhere-be</h2>
+<p>Amikor bejelentkezel a PythonAnywhere-be, egyből a dashboard-on, vagy &quot;Consoles&quot; oldalon találod magad. Válaszd a &quot;Bash&quot; konzol indítása opciót -- ez a PythonAnywhere konzolja, ugyanolyan, mint a parancssor a gépeden.</p>
+<blockquote>
+<p><strong>Megjegyzés</strong> A PythonAnywhere Linux rendszeren alapszik, tehát ha Windows-ot használsz, a konzol egy kissé máshogy fog kinézni a te számítógépeden.</p>
+</blockquote>
+<p>Töltsük be a forráskódodat a GitHubról a PythonAnywhere-be egy &quot;clone&quot; létrehozásával. Írd be az alábbiakat a konzolba a PythonAnywhere-ben (ne felejtsd, hogy a <code>&lt;your-github-username&gt;</code> helyébe a saját, GitHubon használt felhasználónevedet helyettesítsd be):</p>
+<pre><code>$ git clone https://github.com/&lt;your-github-username&gt;/my-first-blog.git
+</code></pre><p>Ez majd betölti a forráskódod másolatát a PythonAnywhere-be. Ellenőrizheted, ha beírod a konzolba, hogy <code>tree my-first-blog</code>:</p>
+<pre><code>$ tree my-first-blog
+my-first-blog/
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── migrations
+│   │   ├── 0001_initial.py
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+</code></pre><h3 id="virtuális-környezet-létrehozása-a-pythonanywhere-en">Virtuális környezet létrehozása a PythonAnywhere-en</h3>
+<p>Ugyanúgy, ahogy a saját gépeden csináltad, a PythonAnywhere-en is létrehozhatsz virtualenvet. Írd be a Bash konzolba:</p>
+<p></p><p class="code-label">PythonAnywhere parancssor</p><p></p>
+<pre><code>$ cd my-first-blog
+
+$ virtualenv --python=python3.6 myvenv
+Running virtualenv with interpreter /usr/bin/python3.6
+[...]
+Installing setuptools, pip...done.
+
+$ source myvenv/bin/activate
+
+(myvenv) $  pip install django~=1.11.0
+Collecting django
+[...]
+Successfully installed django-1.11.3
+</code></pre><blockquote>
+<p><strong>Megjegyzés</strong> A <code>pip install</code> lépés eltarthat pár percig. Légy türelmes! De ha több mint 5 percig tart, akkor valószínűleg valami nincs rendben. Kérdezd meg a coachodat!</p>
+</blockquote>
+<!--TODO: think about using requirements.txt instead of pip install.-->
+<h2 id="tegyük-közzé-a-blogot-a-weben">Tegyük közzé a blogot a weben!</h2>
+<p>Most már fent van a kódod a PythonAnywhere-en, kész a virtuális környezet, össze vannak gyűjtve a statikus fájlok, és az adatbázist is elkészítetted. Készen állsz, hogy webes alkalmazást csinálj belőle!</p>
+<p>Menj vissza a PythonAnywhere dashboardra (a logóra kattintva megteheted), majd kattints a <strong>Web</strong> tabra. Végül nyomd meg a <strong>Add a new web app</strong> gombot.</p>
+<p>Miután leokéztad a domainnevedet, válaszd a <strong>manual configuration</strong>-t (kézi konfiguráció - vigyázz, <em>ne</em> a &quot;Django&quot; opciót válaszd!) a párbeszédablakban. Aztán válaszd ki a <strong>Python 3.4</strong>-et, majd nyomd meg a Nextet.</p>
+<blockquote>
+<p><strong>Megjegyzés</strong> Fontos, hogy a &quot;Manual configuration&quot; lehetőséget válaszd, ne a &quot;Django&quot;-t. Túl menők vagyunk a PythonAnywhere-es Django setuphoz:)</p>
+</blockquote>
+<h3 id="adatbázis-létrehozása-pythonanywhere-en">Adatbázis létrehozása PythonAnywhere-en</h3>
+<p>Van még valami, ami máshogy működik a saját gépeden és a szerveren: különböző adatbázist használnak. Így a felhasználói fiókok és a blogposztok különbözőek lehetnek a szerveren és a gépeden.</p>
+<p>A szerveren ugyanúgy tudod létrehozni az adatbázist, mint a saját gépeden, a <code>migrate</code> és <code>createsuperuser</code> parancsokkal:</p>
+<pre><code>(mvenv) $ python manage.py migrate
+Operations to perform:
+[...]
+  Applying sessions.0001_initial... OK
+
+
+(mvenv) $ python manage.py createsuperuser
+</code></pre><h3 id="virtuális-környezet-beállítása">Virtuális környezet beállítása</h3>
+<p>Most a PythonAnywhere config oldalára kerülsz, ahol különböző dolgokat állíthatsz be az appeddel kapcsolatban. Ha bármit meg szeretnél változtatni később, ide kell visszajönnöd.</p>
+<p><img src="images/pythonanywhere_web_tab_virtualenv.png" alt></p>
+<p>A &quot;Virtualenv&quot; részben kattints rá a piros szövegre: &quot;Enter the path to a virtualenv&quot;, majd írd be: <code>/home/&lt;your-username&gt;/my-first-blog/myvenv/</code>. Kattints a kék dobozra a pipajellel, hogy elmentsd a path-t, mielőtt továbblépsz.</p>
+<blockquote>
+<p><strong>Megjegyzés</strong> Helyettesítsd be a saját felhasználóneved. Ha elrontasz valamit, a PythonAnywhere figyelmeztetni fog.</p>
+</blockquote>
+<h3 id="a-wsgi-fájl-konfigurálása">A WSGI fájl konfigurálása</h3>
+<p>A Django a &quot;WSGI protokollt&quot; használja. Ez egy szabvány, ami a Python segítségével kiszolgált weboldalakra érvényes. A PythonAnywhere is támogatja ezt. Ahhoz, hogy a PythonAnywhere felismerje a Django blogunkat, egy WSGI konfigurációs fájlt kell szerkesztenünk.</p>
+<p>Kattints a &quot;WSGI configuration file&quot; linkre (a &quot;Code&quot; szekcióban az oldal tetejénél -- olyasmi neve lesz, hogy <code>/var/www/&lt;your-username&gt;_pythonanywhere_com_wsgi.py</code>). Egy kódszerkesztőbe fogsz jutni.</p>
+<p>Törölj ki mindent, és cseréld ki valami ilyesmire:</p>
+<pre><code class="lang-python"><span class="hljs-keyword">import</span> os
+<span class="hljs-keyword">import</span> sys
+
+path = <span class="hljs-string">&apos;/home/&lt;your-username&gt;/my-first-blog&apos;</span>  <span class="hljs-comment"># itt a saját felhasználónevedet használd!</span>
+<span class="hljs-keyword">if</span> path <span class="hljs-keyword">not</span> <span class="hljs-keyword">in</span> sys.path:
+    sys.path.append(path)
+
+os.environ[<span class="hljs-string">&apos;DJANGO_SETTINGS_MODULE&apos;</span>] = <span class="hljs-string">&apos;mysite.settings&apos;</span>
+
+<span class="hljs-keyword">from</span> django.core.wsgi <span class="hljs-keyword">import</span> get_wsgi_application
+<span class="hljs-keyword">from</span> django.contrib.staticfiles.handlers <span class="hljs-keyword">import</span> StaticFilesHandler
+application = StaticFilesHandler(get_wsgi_application())
+</code></pre>
+<blockquote>
+<p><strong>Megjegyzés</strong> Ne felejtsd el a saját felhasználóneveddel helyettesíteni a <code>&lt;your-username&gt;</code>-et!
+<strong>Megjegyzés</strong> A negyedik sorban gondoskodunk arról, hogy Python megtalálja a programunkat. Fontos, hogy ez az elérési út helyes legyen, és különösen hogy ne legyenek benne fölösleges szóközök. Különben &quot;ImportError&quot; hibát fogsz találni a logfile-ban.</p>
+</blockquote>
+<p>Ennek a fájlnak az a dolga, hogy megmondja a PythonAnywhere-nek, hol lakik a webes alkalmazásunk, és mi annak a fájlnak a neve, ahol a Django beállításai vannak.</p>
+<p>A <code>StaticFilesHandler</code> a CSS-ünkről gondoskodik. Helyi fejlesztéskor a <code>runserver</code> parancs látja el ezt a feladatot. Kicsivel később behatóbban megismerkedünk a statikus file-okkal, amikor a weboldalunk CSS-ét szerkesztjük.</p>
+<p>Nyomd meg a <strong>Save</strong> (Mentés) gombot, majd menj vissza a <strong>Web</strong> fülre.</p>
+<p>Kész is vagyunk! Nyomd meg a nagy zöld <strong>Reload</strong> gombot, és máris meg fogod tudni nézni az alkalmazásodat. Az oldal tetején fogsz találni hozzá egy linket.</p>
+<h2 id="tippek-debuggoláshoz">Tippek debuggoláshoz</h2>
+<p>Ha hibát látsz, amikor megpróbálod meglátogatni az oldaladat, az első hely, ahol információt kaphatsz a debuggoláshoz, az <strong>error log</strong>. Ehhez a PythonAnywhere <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">Web tab</a>-ján találod meg a linket. Nézd meg, hogy van-e benne bármilyen hibaüzenet; a legfrissebbek lesznek alul. Gyakran előforduló problémák:</p>
+<ul>
+<li><p>Kihagytad valamelyik lépést a konzolban: a virtualenv létrehozását, aktiválását, a Django installálását a virtualenvben, a collectstatic lefuttatását, az adatbázis migrálását.</p>
+</li>
+<li><p>Valamit elrontottál a virtualenv path-ban a Web fülön -- általában egy piros hibaüzenet jelzi, ha valami gond van.</p>
+</li>
+<li><p>Valamit elrontottál a WSGI konfigurációs fájlban -- jól írtad be a my-first-blog könyvtárhoz vezető elérési útvonalat?</p>
+</li>
+<li><p>Ugyanazt a Python verziót választottad a virtualenved számára, mint az alkalmazásodhoz? Mindkettőnek a 3.4-esnek kell lennie.</p>
+</li>
+<li><p>A <a href="https://www.pythonanywhere.com/wiki/DebuggingImportError" target="_blank">PythonAnywhere wikiben is találsz néhány általános hibakeresési tippet</a>.</p>
+</li>
+</ul>
+<p>És ne feledd, a coachod azért van, hogy segítsen!</p>
+<h1 id="él-a-weboldalad">Él a weboldalad!</h1>
+<p>A honlapod alapértelmezett oldala a &quot;Welcome to Django&quot;, ugyanúgy, mint a saját gépeden. Add hozzá az <code>/admin/</code>-t az URL végéhez, és az adminfelületre kerülsz. Jelentkezz be a felhasználóneveddel és a jelszavaddal, és látni fogod, hogy itt is tudsz új Postokat létrehozni.</p>
+<p>Ha már létrehoztál pár blogpostot, válts vissza a helyi gépedre (nem PythonAnywhere). Ezután a helyi gépeden érdemes dolgoznod. Ez gyakori munkafolyamat webfejlesztéskor - lokális fejlesztés, a változtatások feltöltése GitHub-ra, majd letöltése az éles webszerverre. Ez lehetővé teszi, hogy kisérletezz a éles webszervered elrontása nélkül. Vagány, mi?</p>
+<p>Megérdemelsz egy <em>HATALMAS</em> vállveregetést! A szerver deployment a webfejlesztés legbonyolultabb részei közé tartozik, és a fejlesztők gyakran napokat töltenek azzal, hogy mindent működésre bírjanak. De neked most komolyan van egy működő weboldalad, az Interneten, és nem is tartott sokáig megcsinálni!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_admin/" class="navigation navigation-prev " aria-label="Previous page: Django admin">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_urls/" class="navigation navigation-next " aria-label="Next page: Django url-ek">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Deploy!","level":"1.13","depth":1,"next":{"title":"Django url-ek","level":"1.14","depth":1,"path":"django_urls/README.md","ref":"django_urls/README.md","articles":[]},"previous":{"title":"Django admin","level":"1.12","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"hu","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"deploy/README.md","mtime":"2021-03-25T14:00:00.279Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"hu"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,1096 @@
+
+<!DOCTYPE HTML>
+<html lang="de" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Einführung in die Kommandozeile · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python_installation/" />
+    
+    
+    <link rel="prev" href="../how_the_internet_works/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Suchbegriff eingeben" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Einleitung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    Kommandozeile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    Code-Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    Virtuelle Umgebung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Installation (Chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Wie das Internet funktioniert
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Einführung in die Kommandozeile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python-Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Der Code-Editor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Einführung in Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django - Was ist das?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django-Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Dein erstes Django-Projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django-Models
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django-Administration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Veröffentlichen!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django-URLs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django-Views - leg los!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Einführung in HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django-ORM und QuerySets
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamische Daten in Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django-Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - mach es hübsch!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Erweiterung der Templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Erweitere deine Anwendung
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django-Formulare
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Wie geht es weiter?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Veröffentlicht mit HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Einführung in die Kommandozeile</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="einführung-in-die-kommandozeile">Einführung in die Kommandozeile</h1>
+<blockquote>
+<p>Für die Leser zu Hause: Dieses Kapitel wird im Video <a href="https://www.youtube.com/watch?v=jvZLWhkzX-8" target="_blank">Your new friend: Command Line</a> behandelt.</p>
+</blockquote>
+<p>Aufregend, oder?! In ein paar Minuten wirst du deine erste Zeile Code schreiben! :)</p>
+<p><strong>Erstmal stellen wir dir deine neue Freundin vor: Die Konsole!</strong></p>
+<p>Im Folgenden zeigen wir dir, wie du das schwarze Fenster benutzt, das alle Hackerinnen nutzen. Es sieht vielleicht erstmal etwas unheimlich aus, aber es ist nur ein Programm, das darauf wartet, Anweisungen von dir zu bekommen.</p>
+<blockquote>
+<p><strong>Hinweis:</strong> Bitte beachte, dass wir in dem gesamten Buch die Begriffe &quot;Verzeichnis&quot; und &quot;Ordner&quot; abwechselnd gebrauchen, aber sie stehen für ein und dasselbe.</p>
+</blockquote>
+<h2 id="was-ist-die-konsole">Was ist die Konsole?</h2>
+<p>Das Fenster, welches gewöhnlich die <strong>Kommandokonsole</strong> (command line) oder <strong>Kommandozeilen-Interface</strong> (command-line interface) genannt wird, ist eine textbasierte Applikation zum Betrachten, Bearbeiten und Manipulieren von Dateien auf deinem Computer. Es ist dem Windows Explorer oder Finder auf dem Mac ähnlich, aber ohne die grafische Benutzeroberfläche. Andere Bezeichnungen dafür sind: <em>CMD</em>, <em>CLI</em>, <em>Prompt (Eingabeaufforderung)</em>, <em>Konsole</em> oder <em>Terminal</em>.</p>
+<h2 id="öffnen-der-konsole">Öffnen der Konsole</h2>
+<p>Um mit unserem Tutorial zu starten, musst du als Erstes das Kommandozeilenprogramm starten.</p>
+<sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt"><div class="panel-body">
+<p>Abhängig von deiner Windows-Version und deiner Tastatur sollte eine der folgenden Methoden ein Kommandozeilen-Fenster öffnen (du musst vielleicht etwas herumexperimentieren, aber du musst nicht jeden dieser Vorschläge ausprobieren):</p>
+<ul>
+<li>Gehe zum Start-Menü oder Start-Bildschirm und gib &quot;Eingabeaufforderung&quot; in das Suchfeld ein.</li>
+<li>Klicke Start-Menü → Windows System → Eingabeaufforderung.</li>
+<li>Geh ins Start Menü → Alle Programme → Zubehör → Eingabeaufforderung.</li>
+<li>Gehe zum Startbildschirm, bewege deinen Mauszeiger zur unteren linken Bildschirmecke und klicke auf den nach unten zeigenden Pfeil, der erschienen ist (auf einem Touch-Screen streichst du mit dem Finger vom unteren Bildschirmrand nach oben). Die Apps-Seite sollte sich öffnen. Klicke auf Eingabeaufforderung im Abschnitt Windows System.</li>
+<li>Drücke die Windows-Taste und gleichzeitig &quot;x&quot; auf deiner Tastatur. Wähle &quot;Eingabeaufforderung&quot; aus dem Menü aus.</li>
+<li>Drücke die Windows-Taste und gleichzeitig &quot;r&quot;, um das &quot;Ausführen&quot;-Fenster zu erhalten. Tippe &quot;cmd&quot; in das Feld und klicke OK.</li>
+</ul>
+<p><img src="../python_installation/images/windows-plus-r.png" alt="Tippe &quot;cmd&quot; in das &quot;Ausführen&quot;-Fenster"></p>
+<p>Später im Tutorial wirst du zwei offene Kommandozeilen-Fenster gleichzeitig brauchen. Wenn du aber schon ein Kommandozeilen-Fenster offen hast, wirst du bei manchen Windows-Versionen einfach zu diesem geschickt, wenn du mit derselben Methode versuchst, ein zweites Fenster zu öffnen. Probiere das nun aus und achte darauf, was passiert! Wenn du nur ein Kommandozeilen-Fenster bekommst, versuche eine der anderen Methoden aus der Liste oben. Mindestens eine der Methoden sollte dazu führen, dass ein neues (zweites) Kommandozeilen-Fenster geöffnet wird.</p>
+</div></div></div></sec>
+<sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: OS X<a class="pull-right section atTitle btn btn-default" target="OSX_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_prompt"><div class="panel-body">
+<p>Öffne das Launchpad → Andere → Terminal.</p>
+</div></div></div></sec>
+<sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Linux<a class="pull-right section atTitle btn btn-default" target="linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="linux_prompt"><div class="panel-body">
+<p>Wahrscheinlich ist es unter Programme → Zubehör → Terminal, aber das ist von deinem System abhängig. Wenn es nicht da ist, kannst du versuchen, danach zu googlen. :)</p>
+</div></div></div></sec>
+<h2 id="eingabeaufforderung-prompt">Eingabeaufforderung (Prompt)</h2>
+<p>Du solltest nun ein weißes oder schwarzes Fenster sehen, das auf deine Anweisungen wartet.</p>
+<sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_prompt"><div class="panel-body">
+<p>Auf einem Mac- oder Linux-Rechner siehst du wahrscheinlich ein <code>$</code>, also so:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$
+</code></pre></div></div></div></sec>
+<sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt2"><div class="panel-body">
+<p>Auf einem Windows-Rechner siehst du wahrscheinlich ein <code>&gt;</code>, so hier:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt;
+</code></pre><p>Schau &apos;mal in den Linux-Abschnitt hier obendrüber -- so etwas wirst du wieder im Abschnitt PythonAnywhere später im Tutorial antreffen.</p>
+</div></div></div></sec>
+<p>Vor jedem Kommando wird das Zeichen <code>$</code> oder <code>&gt;</code> und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :)</p>
+<blockquote>
+<p>Ein kleiner Hinweis: Falls du etwas in der Art wie <code>C:\Users\ola&gt;</code> oder <code>Olas-MacBook-Air:~ ola$</code> sehen solltest, ist das auch 100%ig korrekt.</p>
+</blockquote>
+<p>Der Teil bis und einschließlich <code>$</code> oder <code>&gt;</code> heißt <em>Kommandozeilen-Eingabeaufforderung</em> oder kurz <em>Eingabeaufforderung</em>. Sie fordert dich auf, hier etwas einzugeben.</p>
+<p>Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir <code>$</code> oder <code>&gt;</code> mit hin, gelegentlich auch noch die anderen Angaben links davon. Ignoriere den linken Teil und gib nur das Kommando ein, welches rechts der Eingabeaufforderung steht.</p>
+<h2 id="dein-erstes-kommando-yay">Dein erstes Kommando (YAY!)</h2>
+<p>Lass uns mit diesem Kommando beginnen:</p>
+<sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Your first command: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_whoami"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ whoami
+</code></pre></div></div></div></sec>
+<sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Your first command: Windows<a class="pull-right section atTitle btn btn-default" target="windows_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_whoami"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; whoami
+</code></pre></div></div></div></sec>
+<p>Und dann bestätige mit <code>Enter</code>. Das ist unser Ergebnis:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ whoami
+olasitarska
+</code></pre><p>Wie du sehen kannst, hat der Computer gerade deinen Benutzernamen ausgegeben. Toll, was? :)</p>
+<blockquote>
+<p>Versuch, jeden Befehl abzuschreiben und nicht zu kopieren und einzufügen. Auf diese Weise wirst du dir mehr merken!</p>
+</blockquote>
+<h2 id="grundlagen">Grundlagen</h2>
+<p>Jedes Betriebssystem hat einen geringfügig anderen Bestand an Befehlen für die Kommandozeile, beachte daher die Anweisungen für dein Betriebssystem. Lass uns das ausprobieren.</p>
+<h3 id="aktuelles-verzeichnis">Aktuelles Verzeichnis</h3>
+<p>Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib diesen Befehl in die Konsole ein und bestätige ihn mit <code>Enter</code>:</p>
+<sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ pwd
+/Users/olasitarska
+</code></pre><blockquote>
+<p>Hinweis: &apos;pwd&apos; steht für &apos;print working directory&apos; (zeige derzeitiges Arbeitsverzeichnis).</p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd
+C:\Users\olasitarska
+</code></pre><blockquote>
+<p>Hinweis: &quot;cd&quot; steht für &quot;change directory&quot;. Mit Powershell kannst du auch &apos;pwd&apos; verwenden, wie auf Linux oder Mac OS X.</p>
+</blockquote>
+</div></div></div></sec>
+<p>Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Konsole öffnest, befindest du dich normalerweise im Heimverzeichnis deines Benutzers.</p>
+<hr>
+<h3 id="mehr-über-ein-kommando-lernen">Mehr über ein Kommando lernen</h3>
+<p>Viele Befehle, die du in der Kommandozeile nutzen kannst, haben eine eingebaute Hilfe, die du anzeigen und lesen kannst! Zum Beispiel kannst du etwas über den eben verwendeten Befehl lernen:</p>
+<sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Command help: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_man"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_man"><div class="panel-body">
+<p>OS X und Linux haben einen <code>man</code>-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib <code>man pwd</code> ein und schau, was angezeigt wird oder setzte <code>man</code> vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von <code>man</code> wird in der Regel seitenweise ausgegeben. Du kannst die Leertaste benutzen, um auf die nächste Seite zu gelangen und <code>q</code> (für engl. &quot;quit&quot;, was &quot;verlassen&quot;/&quot;rausgehen&quot; heisst), um die Hilfeseiten zu schließen.</p>
+</div></div></div></sec>
+<sec data-title="Command Help: Windows" data-id="windows_help" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Command Help: Windows<a class="pull-right section atTitle btn btn-default" target="windows_help"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_help"><div class="panel-body">
+<p>Wenn du Windows benutzt, dann wird dir der Suffix <code>/?</code> für die meisten Kommandos die Hilfeseite ausgeben. Gegebenenfalls musst du nach oben scrollen, um alles zu sehen. Versuch es mal mit <code>cd /?</code>.</p>
+</div></div></div></sec>
+<h3 id="anzeigen-von-dateien-und-unterordnern">Anzeigen von Dateien und Unterordnern</h3>
+<p>Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden. Lass uns mal schauen:</p>
+<sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>List files and directories: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ ls
+Anwendungen
+Desktop
+Downloads
+Musik
+...
+</code></pre></div></div></div></sec>
+<sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>List files and directories: Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; dir
+ Directory of C:\Users\olasitarska
+ 05/08/2014 07:28 PM &lt;DIR&gt; Applications 
+ 05/08/2014 07:28 PM &lt;DIR&gt; Desktop
+ 05/08/2014 07:28 PM &lt;DIR&gt; Downloads
+ 05/08/2014 07:28 PM &lt;DIR&gt; Music ...
+</code></pre><blockquote>
+<p>Hinweis: Mit Powershell kannst du auch &apos;ls&apos; verwenden, wie auf Linux oder Mac OS X. </p></blockquote></div></div></div></sec><p></p>
+
+<hr>
+<h3 id="wechseln-des-verzeichnisses">Wechseln des Verzeichnisses</h3>
+<p>Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:</p>
+<sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: OS X<a class="pull-right section atTitle btn btn-default" target="OSX_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_move_to"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: Linux<a class="pull-right section atTitle btn btn-default" target="Linux_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="Linux_move_to"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd Desktop
+</code></pre><p>Wenn dein Linux-Benutzerkonto auf Deutsch eingestellt ist, kann es sein, dass auch der Name des Desktop-Verzeichnisses übersetzt ist. Wenn dem so ist, musst du im obigen Befehl <code>Desktop</code> durch den übersetzten Verzeichnisnamen <code>Schreibtisch</code> ersetzen.</p>
+</div></div></div></sec>
+<sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_move_to"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd Desktop
+</code></pre></div></div></div></sec>
+<p>Schau, ob das Wechseln des Verzeichnisses funktioniert hat:</p>
+<sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check if changed: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd2"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ pwd
+/Users/olasitarska/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check if changed: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd2"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd
+C:\Users\olasitarska\Desktop
+</code></pre></div></div></div></sec>
+<p>Passt!</p>
+<blockquote>
+<p>Profi-Tipp: Wenn du <code>cd D</code> tippst und dann <code>tab</code> auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit &quot;D&quot; beginnt, drücke die <code>tab</code>-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.</p>
+</blockquote>
+<hr>
+<h3 id="erstellen-eines-verzeichnisses">Erstellen eines Verzeichnisses</h3>
+<p>Wie wär&apos;s damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:</p>
+<sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_mkdir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ mkdir practice
+</code></pre></div></div></div></sec>
+<sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_mkdir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; mkdir practice
+</code></pre></div></div></div></sec>
+<p>Dieser kleine Befehl erstellt einen Ordner mit dem Namen <code>practice</code> auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl <code>ls</code> oder <code>dir</code> ausführst! Versuch es. :)</p>
+<blockquote>
+<p>Profi-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die <code>Pfeil aufwärts</code>- und <code>Pfeil abwärts</code>-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.</p>
+</blockquote>
+<hr>
+<h3 id="übung">Übung!</h3>
+<p>Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten <code>practice</code>-Ordner ein Verzeichnis namens <code>test</code>. (Verwende dazu die Kommandos <code>cd</code> und <code>mkdir</code>.)</p>
+<h4 id="lösung">Lösung:</h4>
+<sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exercise solution: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_test_dir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd practice
+$ mkdir test
+$ ls
+test
+</code></pre></div></div></div></sec>
+<sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exercise solution: Windows<a class="pull-right section atTitle btn btn-default" target="windows_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_test_dir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd practice
+&gt; mkdir test
+&gt; dir
+05/08/2014 07:28 PM &lt;DIR&gt;      test
+</code></pre></div></div></div></sec>
+<p>Glückwunsch! :)</p>
+<hr>
+<h3 id="aufräumen">Aufräumen</h3>
+<p>Wir wollen kein Chaos hinterlassen, also lass uns das bislang Geschaffene wieder löschen.</p>
+<p>Zuerst müssen wir zurück zum Desktop wechseln:</p>
+<sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Clean up: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_back"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ..
+</code></pre></div></div></div></sec>
+<sec data-title="Clean up: Windows" data-id="windows_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Clean up: Windows<a class="pull-right section atTitle btn btn-default" target="windows_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_back"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd ..
+</code></pre></div></div></div></sec>
+<p>Durch Verwendung von <code>..</code> mit dem <code>cd</code>-Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).</p>
+<p>Schau nach, wo du gerade bist:</p>
+<sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check location: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd3"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ pwd
+/Users/olasitarska/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check location: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd3"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd
+C:\Users\olasitarska\Desktop
+</code></pre></div></div></div></sec>
+<p>Jetzt ist es an der Zeit, dein <code>practice</code>-Verzeichnis zu löschen:</p>
+<blockquote>
+<p><strong>Achtung</strong>: Wenn du Daten mit <code>del</code>, <code>rmdir</code> oder <code>rm</code> löschst, kannst du das nicht mehr rückgängig machen, das bedeutet, <em>die gelöschten Dateien sind für immer weg</em>! Sei also sehr vorsichtig mit diesem Befehl.</p>
+</blockquote>
+<sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Powershell, OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_rm"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_rm"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ rm -r practice
+</code></pre></div></div></div></sec>
+<sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="windows_rmdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_rmdir"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; rmdir /S practice
+practice, Are you sure &lt;Y/N&gt;? Y
+</code></pre></div></div></div></sec>
+<p>Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:</p>
+<sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check deletion: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls2"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ ls
+</code></pre></div></div></div></sec>
+<sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check deletion: Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir2"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; dir
+</code></pre></div></div></div></sec>
+<h3 id="beenden">Beenden</h3>
+<p>Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)</p>
+<sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exit: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_exit"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ exit
+</code></pre></div></div></div></sec>
+<sec data-title="Exit: Windows" data-id="windows_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exit: Windows<a class="pull-right section atTitle btn btn-default" target="windows_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_exit"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; exit
+</code></pre></div></div></div></sec>
+<p>Cool, was? :)</p>
+<h2 id="zusammenfassung">Zusammenfassung</h2>
+<p>Hier ist eine Zusammenfassung einiger nützlicher Kommandos:</p>
+<table>
+<thead>
+<tr>
+<th>Befehl (Windows)</th>
+<th>Befehl (Mac OS / Linux)</th>
+<th>Beschreibung</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exit</td>
+<td>exit</td>
+<td>Fenster schließen</td>
+<td><strong>exit</strong></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>cd</td>
+<td>Verzeichnis wechseln</td>
+<td><strong>cd test</strong></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>pwd</td>
+<td>aktuelles Verzeichnis anzeigen</td>
+<td><strong>cd</strong> (Windows) oder <strong>pwd</strong> (Mac OS / Linux)</td>
+</tr>
+<tr>
+<td>dir</td>
+<td>ls</td>
+<td>Unterordner/Dateien zeigen</td>
+<td><strong>dir</strong></td>
+</tr>
+<tr>
+<td>copy</td>
+<td>cp</td>
+<td>Datei kopieren</td>
+<td><strong>copy c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>move</td>
+<td>mv</td>
+<td>Datei verschieben</td>
+<td><strong>move c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>mkdir</td>
+<td>neues Verzeichnis erstellen</td>
+<td><strong>mkdir testdirectory</strong></td>
+</tr>
+<tr>
+<td>rmdir (oder del)</td>
+<td>rm</td>
+<td>Datei löschen</td>
+<td><strong>del c:\test\test.txt</strong></td>
+</tr>
+<tr>
+<td>rmdir /S</td>
+<td>rm -r</td>
+<td>Verzeichnis löschen</td>
+<td><strong>rm -r testdirectory</strong></td>
+</tr>
+<tr>
+<td>[CMD] /?</td>
+<td>man [CMD]</td>
+<td>Hilfe für ein Kommando aufrufen</td>
+<td><strong>cd /?</strong> (Windows) oder <strong>man cd</strong> (Mac OS / Linux)</td>
+</tr>
+</tbody>
+</table>
+<p>Das sind nur sehr wenige der Befehle, welche du in deiner Konsole verwenden kannst, aber du wirst heute nicht mehr brauchen.</p>
+<p>Falls du neugierig bist, findest du auf <a href="http://ss64.com" target="_blank">ss64.com</a> eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme.</p>
+<h2 id="fertig">Fertig?</h2>
+<p>Lass uns mit Python anfangen!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: Wie das Internet funktioniert">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python_installation/" class="navigation navigation-next " aria-label="Next page: Python-Installation">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Einführung in die Kommandozeile","level":"1.5","depth":1,"next":{"title":"Python-Installation","level":"1.6","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"Wie das Internet funktioniert","level":"1.4","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"de","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"intro_to_command_line/README.md","mtime":"2021-03-25T14:00:00.139Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"de"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,957 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django 폼 · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../whats_next/" />
+    
+    
+    <link rel="prev" href="../extend_your_application/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.24" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django 폼</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="장고-폼">장고 폼</h1>
+<p>한 가지만 더 하면 웹사이트가 완성됩니다. 바로 블로그 글을 추가하거나 수정하는 멋진 기능을 추가하는 것이죠. 장고의 <code>관리자</code> 기능도 충분히 멋있기는 하지만, 좀 더 입맛에 맞게 바꾸고 예쁘게 꾸미기에는 좀 한계가 있습니다. <code>폼(양식, forms)</code>으로 강력한 인터페이스를 만들 수 있어요. - 우리가 상상할 수 있는 거의 모든 것을 할 수 있거든요!</p>
+<p>장고 폼이 정말 멋진 것은 아무런 준비 없이도 양식을 만들 수 있고, <code>ModelForm</code>을 생성해 자동으로 모델에 결과물을 저장할 수 있다는 거예요.</p>
+<p>이 기능이 지금 우리가 할 내용이에요. 폼을 하나 만들어서 <code>Post</code> 모델에 적용해봅시다.</p>
+<p>장고의 모든 중요한 부분과 마찬가지로, 폼도 폼만의 <code>forms.py</code>.라는 파일을 만들어요.</p>
+<p>우리는 이 이름으로 <code>blog</code> 디렉토리 안에 파일을 만들 거에요.</p>
+<pre><code>blog
+ └── forms.py
+</code></pre><p>좋아요. 이제 이 파일을 열고 아래 코드를 작성하세요. :</p>
+<p></p><p class="code-label">blog/forms.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django <span class="hljs-keyword">import</span> forms
+
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostForm</span>(<span class="hljs-params">forms.ModelForm</span>):</span>
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        model = Post
+        fields = (<span class="hljs-string">&apos;title&apos;</span>, <span class="hljs-string">&apos;text&apos;</span>,)
+</code></pre>
+<p>위 코드를 보면 첫 번째로 forms model을 import 해야 하고 (<code>from django import forms</code>), 그다음으로 <code>Post</code> model도 import 해야 합니다. (<code>from .models import Post</code>).</p>
+<p><code>PostForm</code> 은 이미 다들 예상 하셨듯이 우리가 만들 폼의 이름이에요. 그리고 장고에 이 폼이 <code>ModelForm</code>이라는 것을 알려줘야해요. (그러면 장고가 뭔가 마술을 부릴 거에요) - <code>forms.ModelForm</code>은 ModelForm이라는 것을 알려주는 구문이에요.</p>
+<p>자, 이제 다음으로 <code>class Meta</code>가 나오는데요, 이 구문은 이 폼을 만들기 위해서 어떤 model이 쓰여야 하는지 장고에 알려주는 구문입니다. (<code>model = Post</code>).</p>
+<p>마지막으로, 이 폼에 필드를 넣으면 완성되겠죠. 이번 폼에서는 <code>title</code>과 <code>text</code>만 보여지게 해 봅시다. - <code>author</code>는 현재 로그인 하고 있는 사람이 될 것이고 (바로 당신이요!) 그리고 <code>created_date</code>는 글이 등록되는 시간이 될 것입니다. (예를 들어, 코드 상에서요), 됐죠?</p>
+<p>마쳤습니다! 이제 <em>뷰</em> 에서 이 폼을 사용해 템플릿에서 보여주기만 하면 되네요.</p>
+<p>다음에는 링크, URL, 뷰 그리고 템플릿을 만들 거에요.</p>
+<h2 id="폼과-페이지-링크">폼과 페이지 링크</h2>
+<p><code>blog/templates/blog/base.html</code> 파일을 열어봅시다. <code>page-header</code> 라는 <code>div</code> class에 링크를 하나 추가할 거에요.</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>이 새로운 뷰는 <code>post_new</code>입니다. 부트스트랩 테마에 있는 <code>glyphicon glyphicon-plus</code> 클래스로 더하기 기호가 보이게 되는데요.</p>
+<p>위 구문을 추가하고 나면, 이제 html 파일이 아래처럼 보일 거예요.</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html">{% load static %}
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&apos;//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext&apos;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&apos;stylesheet&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;text/css&apos;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-header&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content container&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-8&quot;</span>&gt;</span>
+                    {% block content %}
+                    {% endblock %}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>페이지를 저장하고 나서 <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a> 페이지를 새로고침 해보면, <code>NoReverseMatch</code>이라는 에러가 나타나죠?</p>
+<h2 id="url">URL</h2>
+<p>이제 <code>blog/urls.py</code>를 열고 아래 구문을 추가하겠습니다.</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python">path(<span class="hljs-string">&apos;post/new&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),
+</code></pre>
+<p>전체 코드는 아래와 같을 거예요.</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path 
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/&apos;</span>, views.post_detail, name=<span class="hljs-string">&apos;post_detail&apos;</span>),
+    path(<span class="hljs-string">&apos;post/new/&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),
+]
+</code></pre>
+<p>브라우저에 사이트를 다시 불러오면 <code>AttributeError</code>가 보이게 됩니다. 왜냐하면, 아직 <code>post_new</code>뷰를 구현하지 않았기 때문이죠. 이제 하나 더 추가해봅시다.</p>
+<h2 id="postnew-view"><code>post_new</code> view</h2>
+<p><code>blog/views.py</code>파일을 열어서 <code>from</code>줄에 아래와 같은 코드를 추가합니다.</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> .forms <span class="hljs-keyword">import</span> PostForm
+</code></pre>
+<p>그리고 <em>view</em>에 추가합니다.</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>새 <code>Post</code> 폼을 추가하기 위해 <code>PostForm()</code> 함수를 호출하도록 하여 템플릿에 넘깁니다. 곧 <em>view</em> 로 다시 돌아와서 이 작업을 하겠지만, 지금 당장은 폼을 위한 템플릿을 먼저 빨리 만들어보도록 할게요.</p>
+<h2 id="템플릿">템플릿</h2>
+<p>이번에는 <code>blog/templates/blog</code> 디렉터리 안에 <code>post_edit.html</code> 파일을 생성해 폼이 작동할 수 있게 만들 거에요.</p>
+<ul>
+<li>먼저 폼이 보여야 합니다. 그 예로, <code>{{ form.as_p }}</code>로 간단히 만들 수 있어요….</li>
+<li>위 코드를 HTML 태그로 폼을 감싸세요. <code>&lt;form method=&quot;POST&quot;&gt;...&lt;/form&gt;</code></li>
+<li><code>Save</code> 버튼이 필요합니다. 이것은 HTML 버튼으로 만들 수 있어요: <code>&lt;button type=&quot;submit&quot;&gt;Save&lt;/button&gt;</code></li>
+<li>마지막으로 <code>&lt;form ...&gt;</code>을 열어 <code>{% csrf_token %}</code>를 추가하세요. 이 작업은 폼 보안을 위해 중요하답니다! 이 작업을 빼먹고 저장하면 장고는 이렇게 불평할 거에요.</li>
+</ul>
+<p><img src="images/csrf2.png" alt="CSFR Forbidden page"></p>
+<p>네, 이제 <code>post_edit.html</code> 파일의 HTML을 확인해볼게요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_edit.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>New post<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;POST&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post-form&quot;</span>&gt;</span>{% csrf_token %}
+        {{ form.as_p }}
+        <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;save btn btn-default&quot;</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p>다 작성했으면 화면을 다시 불러옵시다. 폼이 이렇게 나타났나요!</p>
+<p><img src="images/new_form2.png" alt="New form"></p>
+<p>잠깐만요! <code>title</code>과 <code>text</code>필드에 아무거나 입력하고 저장해보세요. 어떻게 됐나요?</p>
+<p>글이 사라졌어요! 한번 더 해봐도 내가 입력한 글들은 어디론가로 사라지고는 새 글이 추가되지 않아요. 뭐가 잘못된 걸까요?</p>
+<p>여러분이 잘못한 게 없답니다. 단지 <em>view</em> 추가 작업이 필요할 뿐이에요.</p>
+<h2 id="폼-저장하기">폼 저장하기</h2>
+<p><code>blog/views.py</code>를 다시 여세요. 지금 여러분이 보고 있는 <code>post_new</code>뷰는 아래와 같을 거에요.</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>폼을 제출할 때, 같은 뷰를 불러옵니다. 이때 <code>request</code>에는 우리가 입력했던 데이터들을 가지고 있는데, <code>request.POST</code>가 이 데이터를 가지고 있습니다. (<code>POST</code>는 글 데이터를 &quot;등록하는(posting)&quot;하는 것을 의미합니다. 블로그 &quot;글&quot;을 의미하는 &quot;post&quot;와 관련이 없어요) HTML에서 <code>&lt;form&gt;</code>정의에 <code>method=&quot;POST&quot;</code>라는 속성이 있던 것이 기억나나요? 이렇게 POST로 넘겨진 폼 필드의 값들은 이제 <code>request.POST</code>에 저장됩니다. <code>POST</code>로 된 값을 다른 거로 바꾸면 안 돼요. <code>method</code> 속성의 값으로 넣을 수 있는 유효한 값 중에 <code>GET</code>같은 것도 있지만, post와 어떤 차이점이 있는지 등에 대해서 다루기에는 너무 길어질 것 같아 생략할게요)</p>
+<p>이제 <em>view</em> 에서 두 상황으로 나누어 처리해볼게요.</p>
+<ul>
+<li>첫 번째: 처음 페이지에 접속했을 때입니다. 당연히 우리가 새 글을 쓸 수 있게 폼이 비어있어야겠죠.</li>
+<li>두 번째: 폼에 입력된 데이터를 <em>view</em> 페이지로 가지고 올 때입니다. 여기서 조건문을 추가시켜야 해요. (<code>if</code>를 사용하세요)</li>
+</ul>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+    [...]
+<span class="hljs-keyword">else</span>:
+    form = PostForm()
+</code></pre>
+<p>이제 생략된 <code>[...]</code>부분에 코드를 추가해봅시다. 만약 <code>method</code>가 <code>POST</code>라면, 폼에서 받은 데이터를 <code>PostForm</code>으로 넘겨줘야겠죠? 이렇게 작성하면 됩니다.</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(request.POST)
+</code></pre>
+<p>참 쉽죠! 다음에는 폼에 들어있는 값들이 올바른지를 확인해야합니다.(모든 필드에는 값이 있어야하고 잘못된 값이 있다면 저장하면 되지 않아야해요) 이를 위해 <code>form.is_valid()</code>을 사용할거에요.</p>
+<p>폼에 입력된 값이 올바른지 확인한 다음, 저장되는거죠!</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> form.is_valid():
+    post = form.save(commit=<span class="hljs-literal">False</span>)
+    post.author = request.user
+    post.published_date = timezone.now()
+    post.save()
+</code></pre>
+<p>일반적으로 이 작업을 두 단계로 나눌 수 있어요. <code>form.save()</code>로 폼을 저장하는 작업과 작성자를 추가하는 작업입니다. (<code>PostForm</code>에는 <code>작성자(author)</code> 필드가 없지만, 필드 값이 필요하죠!) <code>commit=False</code>란 넘겨진 데이터를 바로 <code>Post</code> 모델에 저장하지는 말라는 뜻입니다. 왜냐하면, 작성자를 추가한 다음 저장해야 하니까요. 대부분의 경우에는 <code>commit=False</code>를 쓰지 않고 바로 <code>form.save()</code>를 사용해서 저장해요. 다만 여기서는 작성자 정보를 추가하고 저장해야 하므로 <code>commit=False</code>를 사용하는 거예요. <code>post.save()</code>는 변경사항(작성자 정보를 포함)을 유지할 것이고 새 블로그 글이 만들어질 거에요!</p>
+<p>끝으로, 새 블로그 글을 작성한 다음에 <code>post_detail</code>페이지로 이동할 수 있으면 좋겠죠? 이 작업을 하려면 한 가지를 더 불러와야 해요.</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> redirect
+</code></pre>
+<p>위 코드를 여러분의 파일 맨 위에 추가하세요. 그리고 새로 작성한 글을 볼 수 있도록 <code>post_detail</code>페이지로 가라고 수정합시다.</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+</code></pre>
+<p><code>post_detail</code>은 우리가 이동해야 할 뷰의 이름이에요 <em>post_detail 뷰</em> 는 <code>pk</code>변수가 필요한 거 기억하고 있겠죠? <code>pk=post.pk</code>를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 <code>post</code>는 새로 생성한 블로그 글이에요.</p>
+<p>잘했어요. 너무 설명이 길어졌네요. 이제 <em>view</em> 전체 코드를 확인할게요.</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>잘 작동하는지 확인해보세요. <a href="http://127.0.0.1:8000/post/new/" target="_blank">http://127.0.0.1:8000/post/new/</a> 페이지로 접속해서 <code>title</code>과 <code>text</code>를 입력하고, 저장하세요…. 그리고…. 짜잔!!! 새로운 블로그 글이 추가되고 <code>post_detail</code>페이지가 나타났어요!</p>
+<p>블로그 글을 저장하기 전에 게시일을 설정하고 싶을 거에요. 추후 <strong>장고걸스 튜토리얼</strong> 중 게시글 추가하기 버튼 만들기에서 확인할 수 있어요.</p>
+<p>모두 잘해냈어요!</p>
+<blockquote>
+<p>장고 관리자 인터페이스처럼 로그인된 상태라고 생각해봅시다. 하지만 사용자가 로그아웃되는 상황이 발생하기도 하죠. (브라우저가 닫히거나, DB가 재시작된다든가 등) 만약 로그인되지 않은 상태에서 새 글을 저장한다면, 사용자가 로그인되어있지 않아 누가 글을 작성하였는지 알 수 없어요. 그래서 글을 저장할 때 오류가 발생하고, 로그인시키도록 <a href="http://127.0.0.1:8000/admin" target="_blank">http://127.0.0.1:8000/admin</a> 관리자 페이지가 나타나게 될 거에요. 이 문제는 금방 해결할 수 있어요. 튜토리얼을 마친 후 장고걸스 심화 튜토리얼 - 보안 추가하기 장에서 실습할 수 있어요.</p>
+</blockquote>
+<p><img src="images/post_create_error.png" alt="Logged in error"></p>
+<h2 id="폼-검증하기">폼 검증하기</h2>
+<p>장고 폼이 얼마나 멋진지 알아볼 차례에요. 블로그 글은 <code>title</code>과 <code>text</code>필드가 반드시 있어야 해요. 우리가 만든 <code>Post</code>모델에서는 이 필드 값들이 필요 없다고 했지만(<code>published_date</code>는 제외하고) 장고는 모두 기본값으로 설정되어 있다고 생각합니다.</p>
+<p><code>title</code>과 <code>text</code>없이 폼을 저장해보세요. 어떻게 될지 생각해보세요!</p>
+<p><img src="images/form_validation2.png" alt="Form validation"></p>
+<p>장고는 모든 필드의 값이 올바른지 검증할 수 있답니다. 정말 멋지죠?</p>
+<h2 id="폼-수정하기">폼 수정하기</h2>
+<p>지금까지 새 폼을 추가하는 방법에 대해 배웠어요. 하지만 이미 있던 글을 수정하려면 어떻게 해야 할까요? 이것도 앞서 했던 것과 매우 비슷해요. 빨리해보도록 합시다! (만약 이해하지 못하는 부분이 있다면, 여러분의 코치에게 이전 장의 내용에 관해서 물어보고 차례대로 하나씩 해결해 나가야 합니다)</p>
+<p><code>blog/templates/blog/post_detail.html</code>파일을 열어 아래 내용을 추가하세요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>이제 템플릿이 아래와 같이 보일 거에요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        {% if post.published_date %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {% endif %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p><code>blog/urls.py</code>에 다음 코드를 추가합니다.</p>
+<p></p><p class="code-label">blog/urls.py</p><p></p>
+<pre><code class="lang-python">    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/edit/&apos;</span>, views.post_edit, name=<span class="hljs-string">&apos;post_edit&apos;</span>),
+</code></pre>
+<p>우리는 <code>blog/templates/blog/post_edit.html</code> 템플릿을 재사용할 거에요. 마지막으로 할 일은 <em>view</em> 를 만드는 것입니다.</p>
+<p><code>blog/views.py</code>파일을 열어서 파일 맨 밑에 코드를 추가해봅시다.</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_edit</span>(<span class="hljs-params">request, pk</span>):</span>
+    post = get_object_or_404(Post, pk=pk)
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST, instance=post)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm(instance=post)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>음…. 코드가 <code>post_new</code>와 거의 비슷해 보이지 않나요? 하지만 완전히 같지는 않아요.</p>
+<ul>
+<li>첫 번째: url로부터 추가로 <code>pk</code> 매개변수를 받아서 처리합니다.</li>
+<li>두 번째: <code>get_object_or_404(Post, pk=pk)</code>를 호출하여 수정하고자 하는 글의 <code>Post</code> 모델 <code>인스턴스(instance)</code>로 가져옵니다. (<code>pk</code>로 원하는 글을 찾습니다) 이렇게 가져온 데이터를 폼을 만들 때와(글을 수정할 때 폼에 이전에 입력했던 데이터가 있어야 하겠죠?) 폼을 저장할 때 사용하게 됩니다.</li>
+</ul>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(request.POST, instance=post)
+</code></pre>
+<p>그리고 폼에 아래와 같이 수정하세요.</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python">form = PostForm(instance=post)
+</code></pre>
+<p>잘했어요. 이제 잘 작동하는지 확인해보세요! <code>post_detail</code>페이지로 가보세요. 우측 상단에 수정 버튼이 있어야 합니다.</p>
+<p><img src="images/edit_button2.png" alt="Edit button"></p>
+<p>수정 버튼을 누르면 우리가 쓴 블로그 글이 들어가 있는 폼을 볼 수 있을 거에요.</p>
+<p><img src="images/edit_form2.png" alt="Edit form"></p>
+<p>자유롭게 제목과 텍스트를 수정하고 저장해보세요!</p>
+<p>축하합니다! 여러분의 어플리케이션이 점점 더 완벽해지고 있어요!</p>
+<p>장고 폼에 대해 자세한 정보가 필요하다면 공식 문서를 읽어보세요. :
+<a href="https://docs.djangoproject.com/en/2.0/topics/forms/" target="_blank">https://docs.djangoproject.com/en/2.0/topics/forms/</a></p>
+<h2 id="보안">보안</h2>
+<p>링크를 클릭해 새로운 포스트가 나오게 만드는 것은 멋진 일이에요! 지금은 웹사이트를 방문하는 누구든지 글을 쓸 수 있지만, 그렇게 하고 싶지 않을 수 있어요. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어 볼게요.</p>
+<p><code>blog/templates/blog/base.html</code> 파일에서, <code>page-header</code> <code>div</code>를 찾아 아래와 같이 작성된 앵커 태그(Anchor Tag)를 찾습니다.</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>여기에 <code>{% if %}</code>태그를 추가해 관리자로 로그인한 유저들만 링크가 보일 수 있게 만들 거에요. 그게, 바로 여러분이죠! <code>&lt;a&gt;</code>태그를 아래와 같이 변경하세요.</p>
+<p></p><p class="code-label">blog/templates/blog/base.html</p><p></p>
+<pre><code class="lang-html">{% if user.is_authenticated %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}
+</code></pre>
+<p>이 <code>{% if %}</code>는 브라우저에 페이지를 요청 하는 사용자가 로그인 하는 경우 링크가 발생됩니다. 이는 새 게시글을 완전히 보호해주는 것은 아니지만, 바람직한 방법입니다. 이 부분은 장고걸스 심화 튜토리얼에서 좀더 자세히 다룰거에요.</p>
+<p>세부 페이지에 있는 수정 아이콘이 기억나죠? 이번에도 동일하게 다른 사람들이 게시글을 수정하지 못하게 할 거에요.</p>
+<p><code>blog/templates/blog/post_detail.html</code>파일을 열어 아래와 같이 작성된 라인을 찾아주세요.</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>이렇게 바꾸세요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% if user.is_authenticated %}
+     <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+{% endif %}
+</code></pre>
+<p>로그인했기 때문에, 페이지 새로고침을 해도 아무것도 표시되지 않을 거에요. 새로운 브라우저 또는 시크릿 창을 실행해 보세요. 링크와 아이콘이 보이지 않게 되었어요!</p>
+<h2 id="한-가지만-더-배포하세요">한 가지만 더: 배포하세요!</h2>
+<p>모든 작업을 끝마쳤으면 PythonAnywhere로 배포해야죠!</p>
+<ul>
+<li>제일 먼저 코드를 커밋하고 GitHub로 푸시합니다.</li>
+</ul>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+$ git add --all .
+$ git status
+$ git commit -m &quot;Added views to create/edit blog post inside the site.&quot;
+$ git push
+</code></pre><ul>
+<li>그 다음 <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere Bash console</a>을 여세요. :</li>
+</ul>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd my-first-blog
+$ git pull
+[...]
+</code></pre><ul>
+<li>마지막으로 <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">Web tab</a>에서 <strong>Reload</strong>를 누르세요.</li>
+</ul>
+<p>이제 배포가 완료 되었어요. 잘 작동되는지 확인하세요! 축하합니다. :)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../extend_your_application/" class="navigation navigation-prev " aria-label="Previous page: 애플리케이션 확장하기">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../whats_next/" class="navigation navigation-next " aria-label="Next page: 더 나아가기">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django 폼","level":"1.24","depth":1,"next":{"title":"더 나아가기","level":"1.25","depth":1,"path":"whats_next/README.md","ref":"whats_next/README.md","articles":[]},"previous":{"title":"애플리케이션 확장하기","level":"1.23","depth":1,"path":"extend_your_application/README.md","ref":"extend_your_application/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_forms/README.md","mtime":"2021-03-25T14:00:00.371Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,924 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>HTML 入門 · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_orm/" />
+    
+    
+    <link rel="prev" href="../django_views/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    コマンドライン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    仮想環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Chromebookのセットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    インターネットのしくみ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    コマンドラインを使ってみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Pythonのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Djangoってなに？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Djangoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    プロジェクトを作成しよう！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Djangoモデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    ログインページを作ろう（Django admin）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    デプロイ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Djangoビュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    HTML 入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM（クエリセット）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    テンプレート内の動的データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Djangoテンプレート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSSでカワイくしよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    テンプレートを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    アプリケーションを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Djangoフォーム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    次のステップは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >HTML 入門</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="html-入門">HTML 入門</h1>
+<p>テンプレートとは何でしょうか？</p>
+<p>テンプレートは、異なる情報を統一された形式で示すために繰り返し使われるファイルです。例えば、テンプレートは手紙を書く際に役立ちます。それぞれの手紙のメッセージは様々で、宛先も別々かもしれませんが、どの手紙も同じフォーマットを共有できるのです。</p>
+<p>Djangoのテンプレートのフォーマットは、HTMLと呼ばれる言語 (最初のチャプター<strong>「インターネットのしくみ」</strong>で触れたHTMLのことです) で書かれています。</p>
+<h2 id="htmlとは？">HTMLとは？</h2>
+<p>HTMLは、ChromeやFirefox、Safariなどのウェブブラウザで解読され、利用者にウェブページを表示するためのコードです。</p>
+<p>HTMLは、「HyperText Markup Language」の頭文字を取ったものです。 <strong>HyperText</strong>はWebページ間を結びつけるハイパーリンクをサポートするテキスト形式という意味です。 <strong>Markup</strong>とは、一つの書類について、コードで修飾を付けて、何かに(この場合、ブラウザに) どう解釈するかを伝えることを意味します。 HTMLコードは、 <code>&lt;</code>で始まり、 <code>&gt;</code>で終わる<strong>タグ</strong>で構成されています。 これらのタグが、markup修飾の<strong>要素</strong>なのです。</p>
+<h2 id="最初のテンプレート">最初のテンプレート</h2>
+<p>テンプレートを作るとは、テンプレートのファイルを作ることです。すべてはファイルですよね。皆さんは、たぶん、このことに、もう気づいていると思います。</p>
+<p>テンプレートは、<code>blog/templates/blog</code>ディレクトリに保存されています。 それでは、最初に、自分のblogディレクトリの中に<code>templates</code>という名前のディレクトリを作成してください。 次に、自分のtemplatesディレクトリの中に<code>blog</code>という名前のディレクトリを作ります。</p>
+<pre><code>blog
+└───templates
+    └───blog
+</code></pre><p>（なぜ、両方とも<code>blog</code>という名前の付いたディレクトリを2つ作成する必要があるのか不思議に思う人もいるかもしれません。あとで分かると思いますが、簡単に言うと、これは、もっと複雑なことをやろうとした時に、それが楽にできるようにしてくれる便利な命名法なのです。）</p>
+<p>それでは、<code>blog/templates/blog</code>ディレクトリの中に、<code>post_list.html</code>ファイル(とりあえず何も書かれていないファイルにしておきます)を作成しましょう。</p>
+<p>あなたのウェブサイトを見てみてください: <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a></p>
+<blockquote>
+<p>もし、<code>TemplateDoesNotExist</code>が引き続き表示されるようなら、自分のサーバーを再起動してみてください。 コマンドラインから、Ctrl+C(ControlとCのキーを同時に)を押してサーバーを止め、<code>python manage.py runserver</code>コマンドを動かして再度サーバーを動かします。</p>
+</blockquote>
+<p><img src="images/step1.png" alt="図 11.1"></p>
+<p>もうエラーはありませんか！おめでとうございます:)。しかし、あなたのウェブサイトは実際には空白のページ以外は何も表示していないでしょう。テンプレートも空白だからです。それを直していく必要があります。</p>
+<p>この新しく作ったファイルをコードエディタで開いて、次の内容を書き加えます。</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi there!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>It works!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>さあ、あなたのウェブサイトはどう見えるでしょうか？以下を開いて確認してみましょう: <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a></p>
+<p><img src="images/step3.png" alt="図 11.2"></p>
+<p>うまく動いています！よくできました:)</p>
+<ul>
+<li>どんなウェブページでも、最も基本的なタグである<code>&lt;html&gt;</code>から始まり、そして常に、<code>&lt;/html&gt;</code>で終わります。 みなさん見てとれるように、ウェブサイトの全てのコンテンツは、開始タグの<code>&lt;html&gt;</code>と閉じタグ<code>&lt;/html&gt;</code>の間にあります。</li>
+<li><code>&lt;p&gt;</code>は、段落要素のためのタグです; <code>&lt;/p&gt;</code> でそれぞれの段落を閉じます。</li>
+</ul>
+<h2 id="headとbody">HeadとBody</h2>
+<p>それぞれのHTMLページは<strong>head</strong>と<strong>body</strong>という要素によって2つにわけられています.</p>
+<ul>
+<li><p><strong>head</strong>は文書についての情報を含む要素で、画面には表示されません。</p>
+</li>
+<li><p><strong>body</strong>はWebページの一部として表示されるすべてを含む要素です。</p>
+</li>
+</ul>
+<p><code>&lt;head&gt;</code>でページの設定をブラウザに伝え、<code>&lt;body&gt;</code>でページの内容を伝えます。</p>
+<p>例えば、ウェブページのタイトル要素は<code>&lt;head&gt;</code>の中に書きます。こんな感じですね。</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Ola&apos;s blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi there!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>It works!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>ファイルを保存し、ページを更新してください。</p>
+<p><img src="images/step4.png" alt="図 11.3"></p>
+<p>ブラウザは、どうやって、&quot;Ola&apos;s blog&quot;があなたのウェブサイトのタイトルだと理解したのか分かりましたか？ ブラウザは、<code>&lt;title&gt;Ola&apos;s blog&lt;/title&gt;</code>の意味を解釈して、あなたのブラウザのタイトルバーに文を配置したのです(この文はブックマークなどにも利用されます)。</p>
+<p>各々の開始タグは<em>閉じタグ</em>とセットで、閉じタグには<code>/</code>が付いていて、タグの要素は<em>入れ子</em>になっていることに気がついたことと思います(つまり、ある特定のタグを閉じるには、その中にある全てのタグも閉じられていないとだめなのです)。</p>
+<p>箱の中にものを詰め込むのと同じですね。 大きな箱、 <code>&lt;html&gt;&lt;/html&gt;</code>があります; その中に<code>&lt;body&gt;&lt;/body&gt;</code>があり、さらにもっと小さな<code>&lt;p&gt;&lt;/p&gt;</code>が入っているのです。</p>
+<p>こうした<em>閉じ</em>タグと、<em>入れ子</em>のルールを守らなくてはいけません - そうしないと、ブラウザはタグを適切に解釈することができず、あなたのウェブページが正しく表示されなくなるのです。</p>
+<h2 id="テンプレートのカスタマイズ">テンプレートのカスタマイズ</h2>
+<p>それでは、ちょっぴり楽しくテンプレートを作り変えてみましょう！次のようないくつか便利なタグがあります。</p>
+<ul>
+<li><code>&lt;h1&gt;ヘッダー&lt;/h1&gt;</code> 最も重要性の高い見出し</li>
+<li><code>&lt;h2&gt;サブのヘッダー&lt;/h2&gt;</code> その次のレベルの見出し</li>
+<li><code>&lt;h3&gt;サブのサブのヘッダー&lt;/h3&gt;</code>... など<code>&lt;h6&gt;</code>まで</li>
+<li><code>&lt;p&gt;文章の段落&lt;/p&gt;</code></li>
+<li><code>&lt;em&gt;文章&lt;/em&gt;</code>で文章を強調する</li>
+<li><code>&lt;strong&gt;文章&lt;/strong&gt;</code>でさらに文章を強調する</li>
+<li><code>&lt;br&gt;</code>は改行(brタグの中には何も書いてはいけません。閉じタグも無しです)</li>
+<li><code>&lt;a href=&quot;https://djangogirls.org&quot;&gt;リンク&lt;/a&gt;</code> はリンクを生成します</li>
+<li><code>&lt;ul&gt;&lt;li&gt;第１の項目&lt;/li&gt;&lt;li&gt;第２の項目&lt;/li&gt;&lt;/ul&gt;</code> でリストを作成する、こんな感じに！</li>
+<li><code>&lt;div&gt;&lt;/div&gt;</code>はページ内のセクションを定義</li>
+</ul>
+<p>いろんな要素をまとめたテンプレートの例がこれです。コピーして<code>blog/templates/blog/post_list.html</code>に貼り付けてみましょう:</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: 14.06.2014, 12:14<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>My first post<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Aenean eu leo quam. こんにちは！ よろしくお願いします！ <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>公開日: 2014/06/14, 12:14<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>2番目の投稿<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span> こんにちは！ よろしくお願いします！ <span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>ここで3つの <code>div</code> セクションを作成しました。</p>
+<ul>
+<li>最初の <code>div</code> 要素には、私たちのブログのタイトルが含まれています。見出しとリンクです。</li>
+<li>その他の２つの<code>div</code>要素には、このブログにポストされた記事が公開日とともに記載されています。<code>h2</code>はクリック可能な記事のタイトルです。２つの<code>p</code>(段落) は、１つが日付で、１つがブログにポストされた記事です。</li>
+</ul>
+<p>その結果、次のような結果が得られます。</p>
+<p><img src="images/step6.png" alt="図 11.4"></p>
+<p>いぇーい！ ところが今のところ、私たちのテンプレートは、常に完全に<strong>同じ情報</strong>だけしか表示できません。一方で、以前は、テンプレートを使えば、<strong>異なる</strong>情報を<strong>同じ形式</strong>で表示できるようになるとお伝えしていたのですが。</p>
+<p>本当にやりたいことは、Djangoのadminに追加された本物の記事を表示することです。そして、それが次にやるべきことなのです。</p>
+<h2 id="もう一つ-デプロイしましょう！">もう一つ: デプロイしましょう！</h2>
+<p>ここまでやったことを公開して、インターネットで動かしてみると楽しいですよね。PythonAnywhereでデプロイしてみましょう。</p>
+<h3 id="githubに自分のコードをpushしてみよう">Githubに自分のコードをPushしてみよう</h3>
+<p>まずは、最後に実行したときから、どのファイルを変更したか見てみましょう(以下のコマンドを、PythonAnywhereではなく、自分のパソコンで実行してください。)。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+</code></pre><p><code>djangogirls</code> ディレクトリにいることを確認して、 <code>git</code> に対してこのディレクトリ内の変更を全て反映させるよう指示してください:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git add --all .
+</code></pre><blockquote>
+<p><strong>ノート</strong> <code>--all</code> をつけると、 <code>git</code> は、ファイルを削除したかどうかも判定します (これがない初期設定の状態では、新しいファイルと変更されたファイルしか認識しません)。 <code>.</code> が、今いるディレクトリを表すということも思い出してくださいね(第３章にありました)。</p>
+</blockquote>
+<p>全てのファイルをアップロードする前に、<code>git</code>が何をアップロードするのかチェックしておきましょう(<code>git</code>がアップロードする全ファイルは緑で表示されます):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+</code></pre><p>ほぼ完了です。どこを変更したかを履歴に保存するよう指示してみましょう。 何を変更したのか説明するコミットメッセージを残しましょう。 この時、どんな内容を好みで打ち込んでも構いませんが、何をしたかを具体的に書き込んでおけば、将来、作業内容を思い出す助けになるでしょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git commit -m &quot;Changed the HTML for the site.&quot;
+</code></pre><blockquote>
+<p><strong>ノート</strong> コミットメッセージは二重クォート記号で囲みましょう。</p>
+</blockquote>
+<p>ここまで終われば、GitHubに変更部分をアップロード(push) しましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git push
+</code></pre><h3 id="新しいコードをpythonanywhereにpullして、自分のウェブアプリを再度実行させる">新しいコードをPythonAnywhereにpullして、自分のウェブアプリを再度実行させる</h3>
+<ul>
+<li><a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhereのコンソールページ</a>を開き、<strong>Bash コンソール</strong>に移動してください (または新たなBash コンソールを開始してください)。それから次を実行してください。</li>
+</ul>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>$ cd ~/&lt;your-pythonanywhere-domain&gt;.pythonanywhere.com
+$ git pull
+[...]
+</code></pre><p><code>&lt;your-pythonanywhere-domain&gt;</code>を、山カッコ&lt;&gt;をつけずに、実際のPythonAnywhereのサブドメイン名に置き換える必要があります。 通常、サブドメイン名はPythonAnywhereユーザー名ですが、場合によっては多少異なることがあります（ユーザー名に大文字が含まれている場合など）。 このコマンドが機能しない場合は、<code>ls</code>（ファイルを一覧にする）コマンドを使用して、実際のサブドメイン名とフォルダ名を見つけ、そこに <code>cd</code> します。</p>
+<p>では、自分のコードがダウンロードされたことを確認しましょう。 それをチェックしたい場合は、<strong>「Files」ページ</strong> に移動して、自分のコードをPythonAnywhereの中で見てみましょう（コンソールページのメニューボタンからPythonAnywhereの他のページにアクセスできます）。</p>
+<ul>
+<li>最後に、<a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">「Web」ページ</a>へ移動して、自分のアプリの<strong>Reload</strong>ボタンをクリックします。</li>
+</ul>
+<p>あなたのアプリが更新され、動いています！ウェブサイトを開いて、再読込してみましょう。どう変わったのか、見えるはずです。:)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_views/" class="navigation navigation-prev " aria-label="Previous page: Djangoビュー">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_orm/" class="navigation navigation-next " aria-label="Next page: Django ORM（クエリセット）">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"HTML 入門","level":"1.17","depth":1,"next":{"title":"Django ORM（クエリセット）","level":"1.18","depth":1,"path":"django_orm/README.md","ref":"django_orm/README.md","articles":[]},"previous":{"title":"Djangoビュー","level":"1.16","depth":1,"path":"django_views/README.md","ref":"django_views/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"ja","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"html/README.md","mtime":"2021-03-25T14:00:00.363Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

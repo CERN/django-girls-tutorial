@@ -1,0 +1,958 @@
+
+<!DOCTYPE HTML>
+<html lang="tr" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Komut satırına giriş · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../python_installation/" />
+    
+    
+    <link rel="prev" href="../how_the_internet_works/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Aramak istediğiniz" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Kurulum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Kurulum (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    İnternet nasıl çalışır
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Komut satırına giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kod editörü
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python'a giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django nedir?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    İlk Django projen!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modelleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Yayına alın!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url'leri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - yaratma zamanı geldi!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML'ye giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM ve QuerySets (Sorgu Setleri)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Template içinde dinamik veri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templateleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Güzelleştirin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template genişletmek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Uygulamanı genişlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django Formları
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Sırada ne var?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit ile yayınla
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Komut satırına giriş</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="komut-satırı-arayüzüne-giriş">Komut satırı arayüzüne giriş</h1>
+<blockquote>
+<p>Evden okuyanlar için: Bu bölüm <a href="https://www.youtube.com/watch?v=jvZLWhkzX-8" target="_blank"> Yeni arkadaşınız: Command Line</a> videosu içinde anlatıldı.</p>
+</blockquote>
+<p>Heyecanlı değil mi?! Birkaç dakika içinde ilk kod satırınızı yazacaksın! :)</p>
+<p><strong>Sizi yeni arkadaşınızla tanıştıralım: komut satırı!</strong></p>
+<p>Gelecek aşamalar size tüm &quot;hacker&quot;ların kullandığı siyah pencerenin nasıl kullanıldığını gösterecek. Başta biraz korkutucu görünebilir fakat bu sadece sizden komut bekleyen bir pencere.</p>
+<blockquote>
+<p><strong>Not</strong> Lütfen kitap boyunca &apos;dizin&apos; ve &apos;klasör&apos; terimlerini birbirinin yerine kullandığımızı ve aynı anlama geldiklerini not unutmayın.</p>
+</blockquote>
+<h2 id="komut-satırı-nedir">Komut satırı nedir?</h2>
+<p>Genellikle <strong>komut satırı</strong> veya <strong>komut satırı arabirimi</strong> adı verilen pencere, bilgisayarınızdaki dosyaları görmek, düzenlemek ve yönetmek için kullanılan metin tabanlı bir uygulamadır. Bu tıpkı windows gezgini yada mac&apos;teki finder gibi fakat grafiksel arayüzü olmadan. Komut satırının diğer adları: <em>cmd</em>, <em>CLI</em>, <em>komut istemcisi</em>, <em>konsol</em> veya <em>terminal (uçbirim)</em>dir.</p>
+<h2 id="komut-satırı-arabirimini-açın">Komut satırı arabirimini açın</h2>
+<p>Birkaç deneme yapmak için önce komut satırı arabirimini açmamız gerekir.</p>
+<sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt"><div class="panel-body">
+<p>Başlat&apos;a gidin → Windows sistemi → Komut istemcisi.</p>
+<blockquote>
+<p>Daha eski bir windows sistemi için, Başlat menüsü →Tüm programlar → Aksesuarlar → Komut istemcisi.</p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: OS X<a class="pull-right section atTitle btn btn-default" target="OSX_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_prompt"><div class="panel-body">
+<p>Uygulamalar → Araçlar →Terminal.</p>
+</div></div></div></sec>
+<sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Opening: Linux<a class="pull-right section atTitle btn btn-default" target="linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="linux_prompt"><div class="panel-body">
+<p>Muhtemelen Uygulamalar → Donatılar → Terminal altında olmalı, fakat sistemler arası farklılık gösterebilir. Eğer orada değilse İnternet&apos;te arayın. :)</p>
+</div></div></div></sec>
+<h2 id="i̇stemci">İstemci</h2>
+<p>Şu anda yüksek ihtimalle sizden komut bekleyen siyah ya da beyaz bir ekran görüyor olmalısınız.</p>
+<sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_prompt"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_prompt"><div class="panel-body">
+<p>Eğer Mac veya GNU/Linux kullanıyorsanız, yüksek ihtimalle <code>$</code> işareti göreceksiniz, tıpkı bunun gibi:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$
+</code></pre></div></div></div></sec>
+<sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Prompt: Windows<a class="pull-right section atTitle btn btn-default" target="windows_prompt2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_prompt2"><div class="panel-body">
+<p>Windows&apos;da ise <code>&gt;</code> işareti göreceksiniz, bunun gibi:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>&gt;
+</code></pre></div></div></div></sec>
+<p>Tüm komutlar bu işaret ve bir boşluktan sonra gelir fakat bunu yazmak zorunda değilsiniz. Bilgisayarınız bunu sizin için yapacaktır. :)</p>
+<blockquote>
+<p>Küçük bir not: sizin durumunuzda <code>C:\Users\ola&gt;</code> veya <code>Olas-MacBook-Air:~ ola$</code> benzeri bir durumda olabilir ve kesinlikle sorun yok.</p>
+</blockquote>
+<p>Başında <code>$</code> veya <code>&gt;</code> içeren kısımlar <em>komut satırı istemi</em> veya kısaca <em>komut istemi</em>&apos;dir. Buraya bir şeyler girilir.</p>
+<p>Bu kılavuzda bir komut girmeniz istendiğinde, biz <code>$</code> veya <code>&gt;</code> ekleyeceğiz, genellikle sola doğru. Sol tarafı göz ardı edebilir ve işlemi başlatan komutu girebilirsiniz.</p>
+<h2 id="i̇lk-komutunuz-yaşasın">İlk komutunuz (Yaşasın!)</h2>
+<p>Aşağıdaki komutu yazarak başlayalım:</p>
+<sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Your first command: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_whoami"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ whoami
+</code></pre></div></div></div></sec>
+<sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Your first command: Windows<a class="pull-right section atTitle btn btn-default" target="windows_whoami"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_whoami"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>&gt; whoami
+</code></pre></div></div></div></sec>
+<p>Ve ardından <code>enter</code> tuşuna basın. Sonucumuz bu:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ whoami zeynep
+</code></pre><p>Gördüğünüz gibi bilgisayar kullanıcı adınızı yazdı. Şahane, değil mi ? :)</p>
+<blockquote>
+<p>Her komutu yazmaya çalışın; kopyala - yapıştır yapmayın. Böylece daha akılda kalıcı olur!</p>
+</blockquote>
+<h2 id="temeller">Temeller</h2>
+<p>Tüm işletim sistemleri komut satırı için birbirinden biraz farklı komutlar kullanır, bu nedenle işletim sisteminize uygun yönergeleri izlediğinizden emin olun. Deneyelim mi?</p>
+<h3 id="geçerli-dizin">Geçerli Dizin</h3>
+<p>Nerede olduğumuzu bilmek güzel olurdu, değil mi? Bakalım. Bu komutu yazın ve <code>enter</code> tuşuna basın:</p>
+<sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ pwd
+/Users/zeynep
+</code></pre><blockquote>
+<p>Not: &apos;pwd&apos;nin anlamı &quot;print working directory&quot; yani &quot;çalışma dizinini yazdır&quot;dır.</p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>&gt; cd
+C:\Users\zeynep
+</code></pre><blockquote>
+<p>Not: &apos;cd&apos; komutu &apos;dizin değiştir&apos; anlamındadır. Powershell ile Linux veya Mac OS X&apos;teki gibi pwd komutunu kullanabilirsiniz.</p>
+</blockquote>
+</div></div></div></sec>
+<p>Muhtemelen makinenizde benzeri bir yazı göreceksiniz. Komut satırını açtığınızda genellikle kullanıcınızın ev dizininde başlarsınız.</p>
+<hr>
+<h3 id="dosya-ve-dizinleri-listele">Dosya ve dizinleri listele</h3>
+<p>Yani içeride ne var? Bilmek harika olurdu. Haydi bakalım:</p>
+<sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>List files and directories: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ ls
+Uygulamalar
+Masaüstü
+İndirilenler
+Müzik
+...
+</code></pre></div></div></div></sec>
+<sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>List files and directories: Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>&gt; dir  Directory of C:\Users\zeynep 
+05/08/2014 07:28 PM &lt;DIR&gt; Uygulamalar 
+05/08/2014 07:28 PM &lt;DIR&gt; Masaüstü 
+05/08/2014 07:28 PM &lt;DIR&gt; İndirilenler 
+05/08/2014 07:28 PM &lt;DIR&gt; Müzik 
+...
+</code></pre><blockquote>
+<p>Not: Ayrıca PowerShell kullanırken Linux ve Mac OS X&apos;teki gibi &apos;ls&apos; komutunu kullanabilirsiniz. </p></blockquote></div></div></div></sec><p></p>
+
+<hr>
+<h3 id="geçerli-dizini-değiştir">Geçerli dizini değiştir</h3>
+<p>Şimdi, haydi Masaüstü dizinimize gidelim:</p>
+<sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_move_to"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ cd Masaüstü
+</code></pre></div></div></div></sec>
+<sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change current directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_move_to"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_move_to"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>&gt; cd Masaüstü
+</code></pre></div></div></div></sec>
+<p>Gerçekten değişmiş mi bir bakalım:</p>
+<sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check if changed: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd2"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ pwd
+C:\Users\zeynep\Masaüstü
+</code></pre></div></div></div></sec>
+<sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check if changed: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd2"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>&gt; cd 
+C:\Users\zeynep\Masaüstü
+</code></pre></div></div></div></sec>
+<p>İşte oldu!</p>
+<blockquote>
+<p>Profesyonel İpucu: Eğer <code>cd D</code> yazarsanız ve klavyenizden <code>tab</code>&apos;a basarsanız, komut satırı ismin geri kalanını tamamlar ve daha hızlı gezersiniz. Eğer &quot;D&quot; ile başlayan birden fazla klasör varsa, diğer seçenekleri görmek için <code>tab</code> tuşuna iki kez basın.</p>
+</blockquote>
+<hr>
+<h3 id="dizin-oluşturun">Dizin oluşturun</h3>
+<p>Uygulamalı yapmak için masaüstünüzde bir dizin oluşturmaya ne dersiniz? Bu şekilde yapabilirsiniz:</p>
+<sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_mkdir"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ mkdir uygulama
+</code></pre></div></div></div></sec>
+<sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create directory: Windows<a class="pull-right section atTitle btn btn-default" target="windows_mkdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_mkdir"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>&gt; mkdir uygulama
+</code></pre></div></div></div></sec>
+<p>Bu küçük komut masaüstünüzde <code>uygulama</code> isimli bir klasör oluşturacaktır. Orada olup olmadığını kontrol etmek için <code>ls</code> veya <code>dir</code> komutlarını kullanabilirsiniz! Deneyin. :)</p>
+<blockquote>
+<p>Profesyonel ipucu: Eğer aynı komutları tekrar tekrar yazmak istemiyorsanız, <code>yukarı ok</code> ve <code>aşağı ok</code> tuşlarına basarak yazdığınız komutlar arasında geçiş yapabilirsiniz.</p>
+</blockquote>
+<hr>
+<h3 id="alıştırma">Alıştırma!</h3>
+<p>Sizin için ufak bir alıştırma: yeni oluşturduğunuz <code>alıştırma</code> dizininde <code>test</code> adında bir dizin oluşturun. (<code>cd</code> ve <code>mkdir</code> komutlarını kullanın.)</p>
+<h4 id="çözüm">Çözüm:</h4>
+<sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exercise solution: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_test_dir"><div class="panel-body">
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>$ cd uygulama
+$ mkdir test
+$ ls
+test
+</code></pre></div></div></div></sec>
+<sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exercise solution: Windows<a class="pull-right section atTitle btn btn-default" target="windows_test_dir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_test_dir"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>&gt; cd uygulama
+&gt; mkdir test
+&gt; dir
+05/08/2014 07:28 PM &lt;DIR&gt;      test
+</code></pre></div></div></div></sec>
+<p>Tebrikler! :)</p>
+<hr>
+<h3 id="temizlik">Temizlik</h3>
+<p>Ortalığı dağınık bırakmak istemeyiz, haydi yaptığımız her şeyi silelim.</p>
+<p>İlk önce masaüstüne geri dönmemiz gerek:</p>
+<sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Clean up: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_back"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ cd ..
+</code></pre></div></div></div></sec>
+<sec data-title="Clean up: Windows" data-id="windows_back" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Clean up: Windows<a class="pull-right section atTitle btn btn-default" target="windows_back"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_back"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>&gt; cd ..
+</code></pre></div></div></div></sec>
+<p><code>cd</code> komutu ile <code>..</code> kullanmak sizi geçerli dizinin bir üst dizinine götürür (bu şu anki dizinin ana dizinidir).</p>
+<p>Nerede olduğunuzu kontrol edin:</p>
+<sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check location: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_pwd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_pwd3"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ pwd
+C:\Users\zeynep\Masaüstü
+</code></pre></div></div></div></sec>
+<sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check location: Windows<a class="pull-right section atTitle btn btn-default" target="windows_cd3"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_cd3"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>&gt; cd 
+C:\Users\zeynep\Masaüstü
+</code></pre></div></div></div></sec>
+<p>Şimdi <code>uygulama</code> dizinini silme vakti:</p>
+<blockquote>
+<p><strong>Dikkat</strong>: <code>del</code>, <code>rmdir</code> veya <code>rm</code> komutları kullanılarak yapılan silme işlemleri geri alınamaz, bunun anlamı: <em>silinen dosyalar sonsuza dek yok olur</em>! Yani bu komutları kullanırken çok dikkatli olun.</p>
+</blockquote>
+<sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Powershell, OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_rm"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_rm"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ rm -r uygulama
+</code></pre></div></div></div></sec>
+<sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Delete directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="windows_rmdir"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_rmdir"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>&gt; rmdir /S uygulama
+uygulama, Emin misiniz &lt;E/H&gt;? E
+</code></pre></div></div></div></sec>
+<p>Bitti! Gerçekten silindiğinden emin olalım:</p>
+<sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check deletion: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_ls2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_ls2"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ ls
+</code></pre></div></div></div></sec>
+<sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Check deletion: Windows<a class="pull-right section atTitle btn btn-default" target="windows_dir2"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_dir2"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>&gt; dir
+</code></pre></div></div></div></sec>
+<h3 id="çıkış">Çıkış</h3>
+<p>Şimdilik bu kadar! Şimdi komut satırını güvenle kapatabilirsiniz. Bunu &quot;hacker&quot; tarzında yapalım, tamam mı? :)</p>
+<sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exit: OS X and Linux<a class="pull-right section atTitle btn btn-default" target="OSX_Linux_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="OSX_Linux_exit"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>$ exit
+</code></pre></div></div></div></sec>
+<sec data-title="Exit: Windows" data-id="windows_exit" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Exit: Windows<a class="pull-right section atTitle btn btn-default" target="windows_exit"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="windows_exit"><div class="panel-body">
+<p></p><p class="code-label">komut satırı</p><p></p>
+<pre><code>&gt; exit
+</code></pre></div></div></div></sec>
+<p>Harika, değil mi? :)</p>
+<h2 id="özet">Özet</h2>
+<p>İşte bazı yararlı komutların özeti:</p>
+<table>
+<thead>
+<tr>
+<th>Komut (Windows)</th>
+<th>Komut (Mac OS - GNU/Linux)</th>
+<th>Açıklama</th>
+<th>Örnek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>exit</td>
+<td>exit</td>
+<td>pencereyi kapatır</td>
+<td><strong>exit</strong></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>cd</td>
+<td>dizin değiştir</td>
+<td><strong>cd test</strong></td>
+</tr>
+<tr>
+<td>cd</td>
+<td>pwd</td>
+<td>geçerli dizini göster</td>
+<td><strong>cd</strong> (Windows) veya <strong>pwd</strong> (Mac OS / Linux)</td>
+</tr>
+<tr>
+<td>dir</td>
+<td>ls</td>
+<td>dizin/dosyaları listele</td>
+<td><strong>dir</strong></td>
+</tr>
+<tr>
+<td>copy</td>
+<td>cp</td>
+<td>dosya kopyala</td>
+<td><strong>copy c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>move</td>
+<td>mv</td>
+<td>dosya taşı</td>
+<td><strong>move c:\test\test.txt c:\windows\test.txt</strong></td>
+</tr>
+<tr>
+<td>mkdir</td>
+<td>mkdir</td>
+<td>yeni bir dizin oluştur</td>
+<td><strong>mkdir testdizini</strong></td>
+</tr>
+<tr>
+<td>rmdir (veya del)</td>
+<td>rm</td>
+<td>dosyayı silin</td>
+<td><strong>del c:\test\test.txt</strong></td>
+</tr>
+<tr>
+<td>rmdir /S</td>
+<td>rm -r</td>
+<td>klasörü siliniz</td>
+<td><strong>rm - r testdizini</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Bu kullanabileceğiniz komutlardan sadece birkaçı, fakat bugün bundan daha fazlasını kullanmayacaksınız.</p>
+<p>Eğer merak ediyorsanız, <a href="http://ss64.com" target="_blank">ss64.com</a> adresinden tüm işletim sistemleri için tüm komutların kullanımına ulaşabilirsiniz.</p>
+<h2 id="hazır-mısınız">Hazır mısınız?</h2>
+<p>Haydi Python&apos;a giriş yapalım!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../how_the_internet_works/" class="navigation navigation-prev " aria-label="Previous page: İnternet nasıl çalışır">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../python_installation/" class="navigation navigation-next " aria-label="Next page: Python kurulumu">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Komut satırına giriş","level":"1.5","depth":1,"next":{"title":"Python kurulumu","level":"1.6","depth":1,"path":"python_installation/README.md","ref":"python_installation/README.md","articles":[]},"previous":{"title":"İnternet nasıl çalışır","level":"1.4","depth":1,"path":"how_the_internet_works/README.md","ref":"how_the_internet_works/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"tr","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"intro_to_command_line/README.md","mtime":"2021-03-25T14:00:00.535Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"tr"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

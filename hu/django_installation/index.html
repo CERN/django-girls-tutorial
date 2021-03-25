@@ -1,0 +1,759 @@
+
+<!DOCTYPE HTML>
+<html lang="hu" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django telepítés · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_start_project/" />
+    
+    
+    <link rel="prev" href="../django/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Bevezetés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installáció
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Hogy működik az Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Bevezetés a parancssor használatába
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    A Python telepítése
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kódszerkesztő (editor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Bevezetés a Pythonba
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Mi a Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.9" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django telepítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Az első Django projekted!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modellek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - itt az ideje alkotni!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Bevezetés a HTML-be
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM és QuerySet-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dinamikus adatok a template-ben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django sablonok (template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Tegyük széppé!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template-kiegészítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Egészítsd ki az applikációdat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django űrlapok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Következő lépések
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django telepítés</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-telepítés">Django telepítés</h1>
+<blockquote>
+<p><strong>Megjegyzés</strong> Ha elvégezted a legelső, Installáció című fejezetet, már túlvagy ezen - ugorj a következő fejezetre!</p>
+<p>Ennek a fejezetnek egy része a Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>) tutorialjain alapul.</p>
+<p>A fejezet részben a <a href="http://django-marcador.keimlink.de/" target="_blank">django-marcador tutorial</a>-on alapszik, ami a Creative Commons Attribution-ShareAlike 4.0 International License jogvédelem alatt áll. A django-marcador tutorial jogvédelem alatt áll, Markus Zapke-Gründemann et al által.</p>
+</blockquote>
+<h2 id="virtuális-környezet">Virtuális környezet</h2>
+<p>Mielőtt feltelepítjük a Django-t, egy rettentő hasznos eszközt fogunk installálni, ami segít, hogy a kódolói környezetedet rendben tartsa a számítógépeden. Át lehet ugrani ezt a lépést, de nem ajánlott. Ha a lehető legjobb kiindulási helyzetből kezded a kódolást, sok bosszúságot megspórolhatsz magadnak a jövőben!</p>
+<p>Tehát először is hozzunk létre egy <strong>virtuális környezetet</strong> (virtual environment), amit <em>virtualenv</em>-nek is hívunk. A virtualenv projektenként különíti el a Python/Django környezetet. Ez azt jelenti, hogy ha megváltoztatsz valamit egy weboldalon, az nem lesz hatással a többi weboldalra, amit párhuzamosan fejlesztesz. Jó, igaz?</p>
+<p>Csak annyit kell tenned, hogy kiválasztasz egy könyvtárat, ahova a <code>virtualenv</code>et szeretnéd telepíteni, például a home könyvtárat. Windowson ez így nézhet ki: <code>C:\Users\Name</code> (ahol a <code>Name</code> a felhasználód neve).</p>
+<blockquote>
+<p><strong>Megjegyzés</strong> Windows-on gondoskodj arról, hogy ez a könyvtár nem tartalmaz ékezetes vagy speciális karaktereket; ha a van ékezetes karakter a felhasználónevedben, használj egy másik könyvtárt, például <code>C:\djangogirls</code>.</p>
+</blockquote>
+<p>Ehhez a tutorialhoz egy új, <code>djangogirls</code> nevű mappát fogunk használni a home könyvtáradon belül:</p>
+<pre><code>mkdir djangogirls
+cd djangogirls
+</code></pre><p>Most pedig létrehozunk egy <code>myvenv</code> nevű virtuális környezetet. A kód általánosan így néz ki:</p>
+<pre><code>python3 -m venv myvenv
+</code></pre><sec data-title="Windows" data-id="virtualenv_installation_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="virtualenv_installation_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_installation_windows"><div class="panel-body">
+<p>Ahhoz, hogy létrehozz egy új <code>virtualenv</code>-et, meg kell nyitni a konzolt (pár fejezettel ezelőtt tanultál róla - emlékszel?) és a ezt a parancsot kell lefuttatnod: <code>C:\Python35\python -m venv myvenv</code>. Ez fog történni:</p>
+<pre><code>C:\Users\Name\djangogirls&gt; C:\Python35\python -m venv myvenv
+</code></pre><p>itt a <code>C:\Python35\python</code> azt a könyvtárat jelenti, ahova korábban a Pythont telepítetted, és a <code>myvenv</code> a <code>virtualenv</code>-ed neve. Bármi más nevet is használhatsz, de maradj a kisbetűs szavaknál, és ne használj szóközt, ékezeteket, vagy más speciális karaktereket. Jó ötlet rövid nevet adni - sokszor be kell majd gépelned!</p>
+</div></div></div></sec>
+<sec data-title="Linux és OS X" data-id="virtualenv_installation_linuxosx" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Linux és OS X<a class="pull-right section atTitle btn btn-default" target="virtualenv_installation_linuxosx"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_installation_linuxosx"><div class="panel-body">
+<p>A <code>virtualenv</code> létrehozása Linux és OS X környezetben is csak annyiból áll, hogy a <code>python3 -m venv myvenv</code> parancsot futtatod. Így fog kinézni:</p>
+<pre><code>~/djangogirls$ python3 -m venv myvenv
+</code></pre><p>A <code>myvenv</code> a<code>virtualenv</code>-ed neve. Más nevet is használhatsz, de maradj a kisbetűs szavaknál, és ne használj szóközt, ékezeteket, vagy más speciális karaktereket. Jó ötlet rövid nevet adni - sokszor be kell majd gépelned!</p>
+<blockquote>
+<p><strong>MEGJEGYZÉS:</strong> Debian/Ubuntu némelyik verziójánál az alábbi hibaüzenetet kaphatod:</p>
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code>The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+   apt install python3-venv
+You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+</code></pre><p>Ebben az esetben a fenti leírást követve telepítsd a <code>python3-venv</code> csomagot:
+</p><p class="code-label">parancssor</p><p></p>
+<pre><code>$ sudo apt install python3-venv
+</code></pre><p><strong>MEGJEGYZÉS:</strong> A virtuális környezetet létrehozó parancs Ubuntu 14.04 alatt ezt a hibát adja:</p>
+<pre><code>Error: Command &apos;[&apos;/home/eddie/Slask/tmp/venv/bin/python3&apos;, &apos;-Im&apos;, &apos;ensurepip&apos;, &apos;--upgrade&apos;, &apos;--default-pip&apos;]&apos; returned non-zero exit status 1
+</code></pre><p>Hogy ezt elkerüld, használd a <code>virtualenv</code> parancsot.</p>
+<pre><code>~/djangogirls$ sudo apt install python-virtualenv
+~/djangogirls$ virtualenv --python=python3.6 myvenv
+</code></pre><p><strong>MEGJEGYZÉS:</strong> Ha az alábbi hibaüzenetet kapod:</p>
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code>E: Unable to locate package python3-venv
+</code></pre><p>Akkor az alábbit futtasd:</p>
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code>sudo apt install python3.6-venv
+</code></pre></blockquote>
+</div></div></div></sec>
+<h2 id="hogyan-dolgozhatsz-virtuális-környezetben">Hogyan dolgozhatsz virtuális környezetben</h2>
+<p>A fenti parancs létrehozott egy <code>myvenv</code> nevű (vagy bármi más név, amit választottál) könyvtárat, ami a virtuális környezetünket tartalmazza (ez tulajdonképpen csak egy csomó könyvtár és fájl).</p>
+<sec data-title="Windows" data-id="virtualenv_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows<a class="pull-right section atTitle btn btn-default" target="virtualenv_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_windows"><div class="panel-body">
+<p>Így indíthatod el a virtuális környezetet:</p>
+<pre><code>C:\Users\Name\djangogirls&gt; myvenv\Scripts\activate
+</code></pre><blockquote>
+<p><strong>MEGJEGYZÉS:</strong> Windows 10-en lehet hogy egy hibaüzenetet kapsz Windows PowerShell-ben, amely szerint <code>execution of scripts is disabled on this system</code> (scriptek futtatása le van tiltva ezen a rendszeren). Ebben az esetben nyiss egy másik Windows PowerShell-t a &quot;Run as Administrator&quot; (adminisztrátorként futtatás) opcióval.  Majd próbáld meg az alábbi parancsot beírni mielőtt elindítod a virtuális környezetedet:</p>
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code>C:\WINDOWS\system32&gt; Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+    Execution Policy Change
+    The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is &quot;N&quot;): A
+</code></pre></blockquote>
+</div></div></div></sec>
+<sec data-title="Linux and OS X" data-id="virtualenv_linuxosx" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Linux and OS X<a class="pull-right section atTitle btn btn-default" target="virtualenv_linuxosx"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_linuxosx"><div class="panel-body">
+<p>Így indíthatod el a virtuális környezetet:</p>
+<pre><code>~/djangogirls$ source myvenv/bin/activate
+</code></pre><p>Fontos, hogy <code>myvenv</code> helyett azt a neved írd be, amit a <code>virtualenv</code>-ednek választottál!</p>
+<blockquote>
+<p><strong>MEGJEGYZÉS:</strong> néha a <code>source</code> nem elérhető. Ebben az esetben próbáld meg ezt:</p>
+<pre><code>~/djangogirls$ . myvenv/bin/activate
+</code></pre></blockquote>
+<p>Onnan tudod, hogy a <code>virtualenv</code> elindult, hogy a konzolodban a prompt így néz ki:</p>
+<pre><code>(myvenv) C:\Users\Name\djangogirls&gt;
+</code></pre><p>vagy:</p>
+<pre><code>(myvenv) ~/djangogirls$
+</code></pre></div></div></div></sec>
+<p>Figyeld meg, hogy megjelent a <code>(myvenv)</code> előtag!</p>
+<p>Ha virtuális környezetben dolgozol, a <code>python</code> parancs mindig a megfelelő Python verzióra fog mutatni, tehát nyugodtan használhatod a <code>python</code>-t <code>python3</code> helyett.</p>
+<p>Oké, most már minden feltétel teljesült. Végre installálhatjuk a Django-t!</p>
+<h2 id="a-django-telepítése">A Django telepítése</h2>
+<p>Most, hogy elindítottad a <code>virtualenv</code>-et, telepiteni tudod a Django-t.</p>
+<p>Mielőtt ezt megtennénk, meg kell győződnünk arról, hogy a <code>pip</code> legfrissebb verzióját használjuk, amelynek segítségével fogjuk tudni telepíteni a Django-t:</p>
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code>(myvenv) ~$ python3 -m pip install --upgrade pip
+</code></pre><p>Ezután futtasd ezt a parancsot a konzolban: <code>pip install django~=1.11</code> (figyelj oda, hogy egy tilde karaktert használunk, amelyet egy egyenlőségjel követ: <code>~=</code>).</p>
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code>(myvenv) ~$ pip install django~=1.11.0
+Collecting django~=1.11.0
+  Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
+Installing collected packages: django
+Successfully installed django-1.11.3
+</code></pre><sec data-title="Windowson" data-id="django_err_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windowson<a class="pull-right section atTitle btn btn-default" target="django_err_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_windows"><div class="panel-body">
+<blockquote>
+<p>Ha hibát kapsz, amikor a pip-et hívod Windowson, nézd meg, hogy tartalmaz-e a projekted elérési útvonala szóközt, ékezetet, vagy speciális karaktereket (pl. <code>C:\Users\User Name\djangogirls</code>). Ha igen, használj helyette egy olyan könyvtárat, ahol nincsenek szóközök, ékezetek vagy speciális karakterek (javaslat: <code>C:\djangogirls</code>). Hozd létre az új könyvtárat, és abban egy új virtualenvet, majd töröld ki a régit és az új helyen próbáld futtatni az előző parancsot. (A virtualenv könyvtár áthelyezése nem fog működni, mert a virtualenv abszolút elérési utakat használ.)</p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Windows 8 és Windows 10" data-id="django_err_windows8and10" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Windows 8 és Windows 10<a class="pull-right section atTitle btn btn-default" target="django_err_windows8and10"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_windows8and10"><div class="panel-body">
+<blockquote>
+<p>A parancssorod &quot;megfagyhat&quot; miután telepíteni próbálod a Django-t. Ha ez történik, az előző parancs helyett próbáld meg ezt:</p>
+<p></p><p class="code-label">parancssor</p><p></p>
+<pre><code>C:\Users\Name\djangogirls&gt; python -m pip install django~=1.11.0
+</code></pre></blockquote>
+</div></div></div></sec>
+<sec data-title="Linux" data-id="django_err_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Linux<a class="pull-right section atTitle btn btn-default" target="django_err_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_linux"><div class="panel-body">
+<blockquote>
+<p>Ha Ubuntu 12.04 alatt hibát kapsz, amikor a pip-et próbálod hívni, futtasd a <code>python -m pip install -U --force-reinstall pip</code> parancsot, hogy megjavítsd a virtualenv-ben a pip feltelepített verzióját.</p>
+</blockquote>
+</div></div></div></sec>
+<p>Ennyi! Most pedig (végre) létrehozhatod a Django alkalmazásodat!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django/" class="navigation navigation-prev " aria-label="Previous page: Mi a Django?">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_start_project/" class="navigation navigation-next " aria-label="Next page: Az első Django projekted!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django telepítés","level":"1.9","depth":1,"next":{"title":"Az első Django projekted!","level":"1.10","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"previous":{"title":"Mi a Django?","level":"1.8","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"hu","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_installation/README.md","mtime":"2021-03-25T14:00:00.283Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"hu"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

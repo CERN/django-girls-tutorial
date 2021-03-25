@@ -1,0 +1,1438 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Python入門 · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django/" />
+    
+    
+    <link rel="prev" href="../code_editor/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    コマンドライン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    仮想環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Chromebookのセットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    インターネットのしくみ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    コマンドラインを使ってみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Pythonのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Djangoってなに？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Djangoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    プロジェクトを作成しよう！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Djangoモデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    ログインページを作ろう（Django admin）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    デプロイ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Djangoビュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM（クエリセット）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    テンプレート内の動的データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Djangoテンプレート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSSでカワイくしよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    テンプレートを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    アプリケーションを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Djangoフォーム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    次のステップは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Python入門</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="python入門">Python入門</h1>
+<blockquote>
+<p>このチャプターの一部はGeek Girls Carrotsのチュートリアルをもとにしています。(<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>)</p>
+</blockquote>
+<p>さあ、コードを書いてみましょう！</p>
+<h2 id="pythonプロンプト">Pythonプロンプト</h2>
+<blockquote>
+<p>家で１人でこのパートに挑戦している方へ：このパートと続くパートは、動画（英語）もあるので参考にしてください。 <a href="https://www.youtube.com/watch?v=MO63L4s-20U" target="_blank">Python Basics: Integers, Strings, Lists, Variables and Errors</a></p>
+</blockquote>
+<p>Pythonであそぶために、<em>コマンドライン</em> を開きましょう。 やり方は、チャプター <a href="../intro_to_command_line/">コマンドラインを使ってみよう</a> で学びましたね。</p>
+<p>準備ができたら、次の指示に従ってやってみましょう。</p>
+<p>Pythonコンソールを開きましょう。Windowsなら <code>python</code> 、Mac OSやLinuxなら <code>python3</code> とタイプして <code>Enter</code> キーを押してください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3
+Python 3.6.1 (...)
+Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.
+&gt;&gt;&gt;
+</code></pre><h2 id="最初のpythonコマンド！">最初のPythonコマンド！</h2>
+<p>Pythonのコマンドが走ると、プロンプト記号が <code>&gt;&gt;&gt;</code> に変わりました。 これは、今Pythonの言語を実行できますという意味です。 <code>&gt;&gt;&gt;</code> はタイプしなくていいですよ – Pythonがあなたの代わりにやってくれます。</p>
+<p>Pythonコンソールを終了したい時は、<code>exit()</code> とタイプするか、ショートカット <code>Ctrl + Z</code>（Windows）、<code>Ctrl + D</code>（Mac/Linux）を使ってください。 そうするともう <code>&gt;&gt;&gt;</code> は出なくなります。</p>
+<p>けど、今はまだコンソールを終了しないで、もっと動かして学びましょう。簡単な計算からはじめましょう。<code>2 + 3</code> とタイプして、<code>Enter</code> キーを押してください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> + <span class="hljs-number">3</span>
+<span class="hljs-number">5</span>
+</code></pre>
+<p>できました！答えがでてきましたね。Pythonは計算ができます。他にも、次のようなコマンドを試してみましょう。</p>
+<ul>
+<li><code>4 * 5</code></li>
+<li><code>5 - 1</code></li>
+<li><code>40 / 2</code></li>
+</ul>
+<p>2の3乗のような指数の計算は、次のようにタイプします。</p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">2</span> ** <span class="hljs-number">3</span>
+<span class="hljs-number">8</span>
+</code></pre>
+<p>ちょっとの間楽しんであそんでみたら、またココに戻ってきてくださいね。:)</p>
+<p>お分かりのとおり、Pythonはステキな計算機ですね。他になにができるんだろう…と思ったら、次にいってみましょう。</p>
+<h2 id="文字列">文字列</h2>
+<p>あなたのお名前を次のようにクォーテーションをつけてタイプしてください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&apos;Ola&apos;</span>
+</code></pre>
+<p>はじめてのString（文字列）が完成です！ Stringとは、文字の集合のことです。 シングルクォーテーション (<code>&apos;</code>) あるいは、ダブルクォーテーション (<code>&quot;</code>) で囲います。 最初と最後は同じ記号にしてください。 クォーテーションの中が文字列であることを意味しています。</p>
+<p>複数の文字列を結合することもできます。次のように試してみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Hi there &quot;</span> + <span class="hljs-string">&quot;Ola&quot;</span>
+<span class="hljs-string">&apos;Hi there Ola&apos;</span>
+</code></pre>
+<p>文字列を繰り返すためには、演算子を使って繰り返し回数を指定することもできます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span> * <span class="hljs-number">3</span>
+<span class="hljs-string">&apos;OlaOlaOla&apos;</span>
+</code></pre>
+<p>アポストロフィーを文字列の中に含めたい場合は、２通りの方法があります。</p>
+<p>まずは、ダブルクォーテーションを使う方法です。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+</code></pre>
+<p>あるいは、バックスラッシュ (``) を使う方法もあります。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&apos;Runnin\&apos; down the hill&apos;</span>
+<span class="hljs-string">&quot;Runnin&apos; down the hill&quot;</span>
+</code></pre>
+<p>できましたか？次に、あなたの名前を大文字に変えてみましょう。次のように記述してください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-string">&quot;Ola&quot;</span>.upper()
+<span class="hljs-string">&apos;OLA&apos;</span>
+</code></pre>
+<p>ここで <code>upper</code> <strong>関数 (function)</strong> を使うことができましたね！ 関数 ( <code>upper()</code> など) は、呼び出したオブジェクト ( <code>&quot;Ola&quot;</code> のことです) に対してどのような手順でどのような処理をするかをひとまとめにしたものです。</p>
+<p>あなたの名前の文字数を知りたいときは、その <strong>関数 (function)</strong> もあります！</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-string">&quot;Ola&quot;</span>)
+<span class="hljs-number">3</span>
+</code></pre>
+<p>どうして、文字列の後に <code>.</code> をつけて関数を呼び出したり ( <code>&quot;Ola&quot;.upper()</code> のように)、あるいは、先に関数を呼び出してかっこの中に文字列をいれているのか、と疑問に思ったかもしれません。 そうですね。時に、オブジェクトに結びついた関数というのがあります。例えば、<code>upper()</code> は、文字列にのみ実行される関数です。 私たちはこれを <strong>メソッド (method)</strong> と呼びます。 それとは別に、特定のオブジェクトに関連せず、異なるタイプのオブジェクトに対して実行できる関数があります。例えば <code>len()</code> ですね。 <code>len</code> 関数の引数として <code>&quot;Ola&quot;</code> をかっこの中にいれているのです。</p>
+<h3 id="まとめ">まとめ</h3>
+<p>文字列はだいじょうぶですね。ここまでに学んだことをまとめましょう。</p>
+<ul>
+<li><strong>プロンプト</strong> – Pythonプロンプトにコマンド（コード）を入力すると、答えがかえってきます。</li>
+<li><strong>数値と文字列</strong> – 数値は計算に、文字列はテキストに使われます。</li>
+<li><strong>演算子</strong> – 例えば <code>+</code> や <code>*</code> のように、値を計算して新しい値を返します。</li>
+<li><strong>関数</strong> – <code>upper()</code> や <code>len()</code> のようにオブジェクトに対して行う機能のことです。</li>
+</ul>
+<p>すべてのプログラミング言語に共通する基礎になります。 もう少し難易度の高いものに挑戦してみましょう。準備はいいですか？</p>
+<h2 id="エラー">エラー</h2>
+<p>さて、新しいことをやってみましょう。あなたの名前の文字数を数えたように、数字の文字数は数えられるでしょうか？ <code>len(304023)</code> と記述して、<code>Enter</code> キーを押してみましょう。</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-number">304023</span>)
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-built_in">object</span> of <span class="hljs-built_in">type</span> <span class="hljs-string">&apos;int&apos;</span> has no <span class="hljs-built_in">len</span>()
+</code></pre>
+<p>はじめてのエラーがでました！ <span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> アイコンのついたコードは思ったように動かないコードです。 （今回はチュートリアルで用意されていましたが）思ったように動かないことは学ぶ上で大事です！</p>
+<p>オブジェクトタイプ&quot;int&quot; (integers, 数値) は文字数がありませんと言っています。では、どうすればよいでしょうか？この数字を文字列として扱えれば、文字数を数えられるはずですよね？</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(<span class="hljs-built_in">str</span>(<span class="hljs-number">304023</span>))
+<span class="hljs-number">6</span>
+</code></pre>
+<p>うまく行きました！ <code>str</code> 関数を <code>len</code> のかっこの中に記述しました。<code>str()</code> はその中身を文字列に変換します。</p>
+<ul>
+<li><code>str</code> 関数は、<strong>文字列</strong> に変換します。</li>
+<li><code>int</code> 関数は、文字列や数値を <strong>整数</strong> に変換します。</li>
+</ul>
+<blockquote>
+<p>重要！: 数字は文字列にすることはできますが、全ての文字が数字に変換できるわけではありません。 例えば <code>int(&apos;hello&apos;)</code> は数字にはなりませんよね？</p>
+</blockquote>
+<h2 id="変数">変数</h2>
+<p>変数（variables）は、プログラミングの重要なコンセプトです。 後で使うためにつける単なる名札ではありません。 プログラマーは変数を使ってデータを保管したり、 コードを読みやすくして、後でそれが何だったか覚えておかなくてもいいようにします。</p>
+<p>変数 <code>name</code> を新しくつくってみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&quot;Ola&quot;</span>
+</code></pre>
+<p>name イコール（=）&quot;Ola&quot; とタイプします。</p>
+<p>見てのとおり、プログラムは、なにも返してくれませんね。では、変数がきちんとあるか、どうやって確かめたらいいのでしょうか？ <code>name</code> とタイプして、<code>Enter</code> キーを押してください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Ola&apos;</span>
+</code></pre>
+<p>やりました！あなたのはじめての変数ができましたね！代入する値を変えることもできます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&quot;Sonja&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Sonja&apos;</span>
+</code></pre>
+<p>変数には関数も使えます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(name)
+<span class="hljs-number">5</span>
+</code></pre>
+<p>素晴らしいですね！変数は、数値にも使えますよ。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">4</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>b = <span class="hljs-number">6</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a * b
+<span class="hljs-number">24</span>
+</code></pre>
+<p>もしも、間違えた変数名を使ってしまったら、どうなるでしょうか？予想できますか？やってみましょう！</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>city = <span class="hljs-string">&quot;Tokyo&quot;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>ctiy
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;ctiy&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>エラーになりました！ 前回とは違うエラータイプです。<strong>NameError</strong> という、初めてみるエラータイプですね。 作成されていない変数を使った時は、Pythonがエラーを教えてくれます。 もし、このエラーに出くわしたら、記述したコードにタイプミスがないか確認してください。</p>
+<p>ちょっと遊んで、何ができるか試してみてくださいね！</p>
+<h2 id="print-関数">print 関数</h2>
+<p>次に挑戦してみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>name = <span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>name
+<span class="hljs-string">&apos;Maria&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(name)
+Maria
+</code></pre>
+<p>単に <code>name</code> とタイプした時は、Pythonインタプリタが、変数&apos;name&apos;の文字列<em>表現（representation）</em>を返します。ここでは、シングルクォーテーション（&apos;&apos;）に囲まれた M-a-r-i-aという文字の集まりです。 しかし、<code>print(name)</code>と記述した時は、Pythonは変数の中身を出力します。クォーテーションはありません。</p>
+<p>これからさらに詳しくみていきますが、<code>print()</code> は、関数から出力をする時や、複数行の出力を行うときにも便利です。</p>
+<h2 id="リスト">リスト</h2>
+<p>数値と文字列の他にも、すべてのオブジェクトタイプを勉強しておきましょう。 今から<strong>list</strong> というものを紹介していきます。 リストは、その名のとおり、オブジェクトの並びをもつものですね。 :)</p>
+<p>まずはリストを作りましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>[]
+[]
+</code></pre>
+<p>はい、このリストは空っぽです。使いにくいですよね。では、くじ引きの番号のリストを作りましょう。 この番号を何度も繰り返し書きたくはないから、同時に変数に代入してしまいましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery = [<span class="hljs-number">3</span>, <span class="hljs-number">42</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>よし、これでリストができました！このリストで何をしましょうか？では、くじ引きの番号がいくつあるか、数えてみましょう。何の関数を使えばいいか、予想できますか？すでに知っていますよね！</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(lottery)
+<span class="hljs-number">6</span>
+</code></pre>
+<p>そうです！<code>len()</code> がリストにあるオブジェクトの数を取得できます。便利ですね。では、くじ引きの番号をソートしてみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.sort()
+</code></pre>
+<p>これは何も返してきません。これはリストに表示される番号を、順番に並べ替えただけです。再度出力して、確かめてみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">3</span>, <span class="hljs-number">12</span>, <span class="hljs-number">19</span>, <span class="hljs-number">30</span>, <span class="hljs-number">42</span>, <span class="hljs-number">59</span>]
+</code></pre>
+<p>ご覧のとおり、小さい順に並び替えられましたね。おめでとう！</p>
+<p>逆順に並び替えてみたくなりましたか？やってみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.reverse()
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>]
+</code></pre>
+<p>リストに何かを追加したいときは、次のようにコマンドを記述してください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>lottery.append(<span class="hljs-number">199</span>)
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>最初の数字だけを出力したいときは、<strong>インデックス(index)</strong> を使って指定することができます。 インデックスは、アイテムがリストのどこにあるかを指す番号です。 リストの先頭の要素から順に「０」、次に「１」と割り当てられています。 次のとおり試してみてください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">1</span>])
+<span class="hljs-number">42</span>
+</code></pre>
+<p>このように、リスト名と要素のインデックスを [] に記述することで、指定した要素を取り出すことができます。</p>
+<p>リストから要素を消すには、これまで学んできたインデックスと <code>pop()</code> メソッドを使います。 例で試してみましょう。リストの最初の要素を削除しています。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">59</span>, <span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery[<span class="hljs-number">0</span>])
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>lottery.pop(<span class="hljs-number">0</span>)
+<span class="hljs-number">59</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(lottery)
+[<span class="hljs-number">42</span>, <span class="hljs-number">30</span>, <span class="hljs-number">19</span>, <span class="hljs-number">12</span>, <span class="hljs-number">3</span>, <span class="hljs-number">199</span>]
+</code></pre>
+<p>お見事！</p>
+<p>他のインデックスも試して遊んでみてください。例えば、 6, 7, 1000, -1, -6, -1000 などをインデックスに指定するとどうなるでしょうか。コマンドを実行する前に予測してみましょう。結果はどうですか？</p>
+<p>ご参考に、こちらのドキュメントにリストメソッドがすべて記されています。 <a href="https://docs.python.org/3/tutorial/datastructures.html" target="_blank">https://docs.python.org/3/tutorial/datastructures.html</a></p>
+<h2 id="辞書（ディクショナリ）">辞書（ディクショナリ）</h2>
+<blockquote>
+<p>家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。 <a href="https://www.youtube.com/watch?v=ZX1CVvZLE6c" target="_blank">Python Basics: Dictionaries</a></p>
+</blockquote>
+<p>辞書(ディクショナリ)について確認しましょう。リストに似ていますが、インデックスのかわりにキーと呼ばれる識別子で値を参照します。キーは文字列も数値も使えます。ディクショナリは次のように <code>{}</code> 括弧で囲んで作成します。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>{}
+{}
+</code></pre>
+<p>これで中身が空っぽのディクショナリができましたね。やったね！</p>
+<p>では、つぎのコマンドを記述してみましょう。 (あなた自身の情報に値をおきかえてみてもいいですよ）</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant = {<span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Poland&apos;</span>, <span class="hljs-string">&apos;favorite_numbers&apos;</span>: [<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]}
+</code></pre>
+<p>このコマンドで、<code>participant</code> という名前の変数をつくって、３つのキーと値をもつ要素を作成しました。</p>
+<ul>
+<li>キー <code>name</code> が指す値は <code>&apos;Ola&apos;</code> (<code>string</code> オブジェクト)</li>
+<li>キー <code>country</code> が指す値は <code>&apos;Poland&apos;</code> (<code>string</code> オブジェクト)</li>
+<li>キー <code>favorite_numbers</code> が指す値はリスト <code>[7, 42, 92]</code> (数字を3つ持つ<code>list</code>)</li>
+</ul>
+<p>次のように書くと各キーの値を確認できます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">print</span>(participant[<span class="hljs-string">&apos;name&apos;</span>])
+Ola
+</code></pre>
+<p>リストに似ていますね。しかし、ディクショナリでは、インデックスを覚えておく必要がなく、キーの名前でいいのです。</p>
+<p>もし存在しないキーを参照しようとすると、どうなるでしょうか？予想できますか？実際にやってみましょう！</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;age&apos;</span>]
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+KeyError: <span class="hljs-string">&apos;age&apos;</span>
+</code></pre>
+<p>またエラーです。今回は <strong>KeyError</strong> というエラーが出ました。Pythonは、このディクショナリにキー <code>&apos;age&apos;</code> は存在しませんよ、と教えてくれています。</p>
+<p>ディクショナリとリストはどう使い分ければよいのでしょうか？そうですね、これはゆっくり考えてみるべきポイントですね！この後の行を読むまえに、答えを考えてみてください。</p>
+<ul>
+<li>必要なのは、順序付けられた一連のアイテムですか？　リストを使いましょう。</li>
+<li>キーに対応する値が必要？キーから値を参照する？　ディクショナリを使いましょう。</li>
+</ul>
+<p>ディクショナリやリストは、作ったあとに変更できるオブジェクトです。これを <em>mutable</em> と呼びます。次のように、ディクショナリを作ったあとで、新しいキーと値を追加することができます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;favorite_language&apos;</span>] = <span class="hljs-string">&apos;Python&apos;</span>
+</code></pre>
+<p>リストと同様に、<code>len()</code> 関数をディクショナリに使ってみましょう。ディクショナリでは、キーと値のペアの数を返します。コマンドを入力してやってみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-built_in">len</span>(participant)
+<span class="hljs-number">4</span>
+</code></pre>
+<p>お分かり頂けたでしょうか。 :) では、ディクショナリを使ってもう少し練習してみましょう。準備ができたら、次の行にいってみましょう。</p>
+<p>ディクショナリの要素を削除する時は、<code>pop()</code> メソッドを使います。 例えば、 キー <code>&apos;favorite_numbers&apos;</code> の要素を削除するには、次のように記述してください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant.pop(<span class="hljs-string">&apos;favorite_numbers&apos;</span>)
+[<span class="hljs-number">7</span>, <span class="hljs-number">42</span>, <span class="hljs-number">92</span>]
+<span class="hljs-meta">&gt;&gt;&gt; </span>participant
+{<span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Poland&apos;</span>, <span class="hljs-string">&apos;favorite_language&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}
+</code></pre>
+<p>このように、<code>&apos;favorite_numbers&apos;</code> のキーと値が削除されます。</p>
+<p>同様に、次のように記述することで、すでにあるキーの値を変更することができます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>participant[<span class="hljs-string">&apos;country&apos;</span>] = <span class="hljs-string">&apos;Germany&apos;</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>participant
+{<span class="hljs-string">&apos;country&apos;</span>: <span class="hljs-string">&apos;Germany&apos;</span>, <span class="hljs-string">&apos;favorite_language&apos;</span>: <span class="hljs-string">&apos;Python&apos;</span>, <span class="hljs-string">&apos;name&apos;</span>: <span class="hljs-string">&apos;Ola&apos;</span>}
+</code></pre>
+<p>これで、キー <code>&apos;country&apos;</code> の値は、<code>&apos;Poland&apos;</code> から <code>&apos;Germany&apos;</code> に変わりました。面白くなってきましたか？その調子です！</p>
+<h3 id="まとめ">まとめ</h3>
+<p>素晴らしいです！これで、あなたはプログラミングについて沢山のことを学びました。ここまでのところをまとめましょう。</p>
+<ul>
+<li><strong>エラー</strong> – あなたのコマンドをPythonが理解できない時にエラーが表示されます。</li>
+<li><strong>変数</strong> – コードを簡単にまた読みやすくするために、文字や数値などのオブジェクトにつける名札。</li>
+<li><strong>リスト</strong> – 複数の値（要素）が順に並んでいるもの。</li>
+<li><strong>ディクショナリ</strong> – キーと値のペアの集合です。</li>
+</ul>
+<p>次に進む準備はいいですか？ :)</p>
+<h2 id="比較">比較</h2>
+<blockquote>
+<p>家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。<a href="https://www.youtube.com/watch?v=7bzxqIKYgf4" target="_blank">Python Basics: Comparisons</a></p>
+</blockquote>
+<p>比較することは、プログラミングの醍醐味の１つです。簡単に比較できるものといえば、何でしょうか？そうです、数字ですね。さっそくやってみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span> * <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> == <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">5</span> != <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>Pythonにいくつか比較する数字をあたえてみました。数字を比較するだけでなく、演算式の答えも比較することができます。便利でしょ？</p>
+<p>２つの数字がイコールであるかどうかを比べる時に、イコールの記号が２つ <code>==</code> 並んでいます。 Pythonを記述する時、イコール１つ <code>=</code>は、変数に値を代入するときに使います。 ですので、値同士が等しいかどうか比較するときは、必ず <strong>必ず</strong> イコール記号２つ <code>==</code> を記述してください。 等しくないことを比較するときは、 上記の例のように <code>!=</code> と記述します。</p>
+<p>次の２つはどうでしょうか。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt;= <span class="hljs-number">12</span> / <span class="hljs-number">2</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &lt;= <span class="hljs-number">2</span>
+<span class="hljs-literal">False</span>
+</code></pre>
+<p><code>&gt;</code> と <code>&lt;</code> は簡単でしたね。<code>&gt;=</code> と <code>&lt;=</code> はどうでしょうか？それぞれの意味は、次のとおりです。</p>
+<ul>
+<li>x <code>&gt;</code> y : x は y より大きい</li>
+<li>x <code>&lt;</code> y : x は y より小さい</li>
+<li>x <code>&lt;=</code> y : x は y 以下</li>
+<li>x <code>&gt;=</code> y : x は y 以上</li>
+</ul>
+<p>すばらしい! もう少しやってみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">6</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">3</span>
+<span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">and</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">False</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span> <span class="hljs-keyword">or</span> <span class="hljs-number">2</span> &lt; <span class="hljs-number">1</span>
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>複数の数値を比較して複雑になっても、その答えを出してくれます。とても賢いですね。</p>
+<ul>
+<li><strong>and</strong> – <code>and</code> の左辺と右辺が共にTrueの場合のみ、True。</li>
+<li><strong>or</strong> – <code>or</code> の左辺あるいは右辺の少なくとも１つがTrueの時、True。</li>
+</ul>
+<p>&quot;comparing apples to oranges&quot;という英語の表現を聞いたことはありますか？文字通り訳すと「リンゴとオレンジを比較する」となり、「比較にならないものを比較する」という意味です。Pythonでも同じようなことをやってみましょう。</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-number">1</span> &gt; <span class="hljs-string">&apos;django&apos;</span>
+Traceback (most recent call last):
+  File <span class="hljs-string">&quot;&lt;stdin&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+TypeError: <span class="hljs-string">&apos;&gt;&apos;</span> <span class="hljs-keyword">not</span> supported between instances of <span class="hljs-string">&apos;int&apos;</span> <span class="hljs-keyword">and</span> <span class="hljs-string">&apos;str&apos;</span>
+</code></pre>
+<p>Pythonは、数値(<code>int</code>)と文字列(<code>str</code>)の比較はできません。 <strong>TypeError</strong> とエラーが表示され、２つのオブジェクトタイプが比較できないことを教えてくれています。</p>
+<h2 id="ブール型（boolean）">ブール型（Boolean）</h2>
+<p>偶然にも、<strong>ブール型 (Boolean)</strong> というあたらしいオブジェクトタイプを学びました。</p>
+<p>ブール型は、たった２つの値を持ちます。</p>
+<ul>
+<li>True</li>
+<li>False</li>
+</ul>
+<p>Pythonを記述するときは、Trueの最初は大文字のT、残りは小文字です。 <strong>true, TRUE, tRUE は間違いです。– True と記述してください</strong> （False についても同様です。）</p>
+<p>ブール型は、次のように変数に代入することもできます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-literal">True</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">True</span>
+</code></pre>
+<p>このようなこともできます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>a = <span class="hljs-number">2</span> &gt; <span class="hljs-number">5</span>
+<span class="hljs-meta">&gt;&gt;&gt; </span>a
+<span class="hljs-literal">False</span>
+</code></pre>
+<p>ブール型を使って、練習して遊んでみましょう。次のコマンドを試してみてください。</p>
+<ul>
+<li><code>True and True</code></li>
+<li><code>False and True</code></li>
+<li><code>True or 1 == 1</code></li>
+<li><code>1 != 2</code></li>
+</ul>
+<p>おめでとうございます！ブール型を理解することは、プログラミングでとても大事です。ここまでできましたね！</p>
+<h1 id="保存しよう！">保存しよう！</h1>
+<blockquote>
+<p>家で１人でこのパートに挑戦している方へ：このパートと続くパートは、動画（英語）もあるので参考にしてください。<a href="https://www.youtube.com/watch?v=dOAg6QVAxyk" target="_blank">Python Basics: Saving files and &quot;If&quot; statement</a></p>
+</blockquote>
+<p>ここまでインタプリタでPythonのコードをかいてきました。つまり、コードを１行ずつしか書くことができませんでした。 普通のプログラムはファイルに保存され、<strong>インタプリタ</strong> あるいは <strong>コンパイラ</strong> でプログラミング言語を処理して実行します。 ここまで、私たちはプログラムを１行ごとにPython <strong>インタプリタ</strong> で実行してきました。 ここからは、１行以上のコードを実行していきましょう。次のような流れになります。</p>
+<ul>
+<li>Pythonインタプリタを終了します。</li>
+<li>お好きなエディタを起動します。</li>
+<li>Pythonファイルとしてコードを保存します。</li>
+<li>実行します！</li>
+</ul>
+<p>これまで使っていたPythonインタプリタを終了しましょう。<code>exit()</code> 関数を入力してください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$
+</code></pre>
+<p>これで、コマンドプロンプトに戻りました。</p>
+<p>前に、<a href="../code_editor/">コードエディタ</a>セクションからエディタを選択しました。 ここでエディタを開いて、新しいファイルにコードを書き込んでみましょう（Chromebookを使用している場合は、Cloud IDEで新しいファイルを作成し、そのファイルを開きます。ファイルをcloud IDEに含まれたコードエディタで開いています）。</p>
+<p></p><p class="code-label">editor</p><p></p>
+<pre><code class="lang-python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hello, Django girls!&apos;</span>)
+</code></pre>
+<p>あなたは、すでにベテランのPython開発者です。今日学んだコードを自由に書いてみてください。</p>
+<p>コードを書いたら、わかりやすい名前をつけて保存しましょう。 <strong>python_intro.py</strong> と名前をつけて、デスクトップに保存してください。 ファイル名は何でもかまいません。ここで重要なことは、拡張子を <strong>.py</strong> とすることです。 コンピュータにこのファイルは <strong>Pythonで実行するファイルです</strong> とおしえます。</p>
+<blockquote>
+<p><strong>メモ</strong> コードエディタでは色に注目しましょう！これはとてもクールです。 Pythonコンソールでは、すべての文字は同じ色です。エディタでは、<code>print</code> 関数は文字列とは違う色がつきます。 これは「シンタックスハイライト」と呼ばれています。エディタは構文（シンタックス）を強調（ハイライト）します。コードを書くとき、これはとても役に立ちます。 色のおかげで、文字列の最後のクォーテーションの書き忘れや、キーワードの名前（この後学ぶ関数の <code>def</code> など）のタイポに気づくことができます。 これが私たちがコードエディタを使う理由の１つです. :)</p>
+</blockquote>
+<p>ファイルを保存したら、実行してみましょう！コマンドラインのセクションで学んだことを思い出して、ターミナルの <strong>ディレクトリを変更</strong> して、デスクトップにしましょう。</p>
+<sec data-title="Change directory: OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+<p>Macでは、コマンドは次のようになります。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+<p>Linuxでは、次のようになります。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd ~/Desktop
+</code></pre><p>（「Desktop」という単語はあなたの地域の言語に翻訳される場合があります。）</p>
+</div></div></div></sec>
+<sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Command Prompt<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+<p>Windowsのコマンドプロンプトでは、次のようになります。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd %HomePath%\Desktop
+</code></pre></div></div></div></sec>
+<sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Change directory: Windows Powershell<a class="pull-right section atTitle btn btn-default" target="python_windowsPSH"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windowsPSH"><div class="panel-body">
+<p>WindowsのPowerShellでは、次のようになります。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>&gt; cd $Home\Desktop
+</code></pre></div></div></div></sec>
+<p>うまくできない時は、質問してください。まさにそのためにコーチがここにいるんです！</p>
+<p>ではPythonを使用して、ファイル内のコードを次のように実行します。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hello, Django girls!
+</code></pre><p>注：Windowsでは「python3」はコマンドとして認識されません。代わりに「python」を使ってファイルを実行します。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">&gt; python python_intro.py
+</code></pre>
+<p>できました！ファイルに保存された初めてのPythonプログラムを実行できたのです。すばらしいですね。</p>
+<p>では、ここからプログラミングに不可欠なツールを学んでいきましょう。</p>
+<h2 id="if--elif--else">If … elif … else</h2>
+<p>ある条件が成立するときにだけコードを実行したいということがよくあります。そのためにPythonでは <strong>if文</strong> を用います。</p>
+<p><strong>python_intro.py</strong> ファイルのコードを次のように書き換えてください。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+</code></pre>
+<p>もしこれを保存して実行すると、次のようなエラーが出ます。</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+File &quot;python_intro.py&quot;, line 2
+         ^
+SyntaxError: unexpected EOF while parsing
+</code></pre><p><code>3 &gt; 2</code> という条件が成立する（ <code>True</code> となりますね）時に実行される処理を、まだ記述していませんね。 では、Python に “It works!” と出力してもらいましょう。 <strong>python_intro.py</strong> ファイルの中身を、次のとおりに書き換えてください。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">3</span> &gt; <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;It works!&apos;</span>)
+</code></pre>
+<p>2行目をスペース4つでインデント（字下げ）していることに気が付きましたか？ 条件が成り立つ時にどのコードを実行するかPythonが分かるように、インデントする必要があります。 スペース1つでもできますが、Pythonプログラマーはほぼ全員スペース4つとしています。 エディタの設定により、タブ1つもスペース4つと同じになります。 タブかスペースか決めたら、変えないようにしましょう。 例えばスペース4つでインデントしたら、この後もスペース4つでインデントするようにしましょう。インデントにスペースとタブを混ぜてしまうと問題が発生してしまうことがあります。</p>
+<p>保存して、もう一度実行してみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-python">$ python3 python_intro.py
+It works!
+</code></pre>
+<p>注：Windowsでは「python3」はコマンドとして認識されないことを思い出してください。これから先、ファイルを実行するときは「python3」の代わりに「python」とタイプしてくださいね。</p>
+<h3 id="条件がtrueじゃないときは？">条件がTrueじゃないときは？</h3>
+<p>前述の例では、if文の条件が True の時だけコードが実行されました。Pythonは、<code>elif</code> や <code>else</code> といった記述もできます。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">if</span> <span class="hljs-number">5</span> &gt; <span class="hljs-number">2</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;5 is indeed greater than 2&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;5 is not greater than 2&apos;</span>)
+</code></pre>
+<p>これを実行した場合、次のように出力されます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+5 is indeed greater than 2
+</code></pre><p>もし2が5より大きかったら、4行目のコマンドが実行されます。では、<code>elif</code> はどうなるのでしょうか？</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">name = <span class="hljs-string">&apos;Sonja&apos;</span>
+<span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hey Ola!&apos;</span>)
+<span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hey Sonja!&apos;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hey anonymous!&apos;</span>)
+</code></pre>
+<p>実行すると...</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hey Sonja!
+</code></pre><p>どうなったかわかりましたか？ <code>elif</code> を使って、前に書いた条件が成立しない場合に実行される条件を追加することができます。</p>
+<p>最初の <code>if</code> の後に、好きなだけ <code>elif</code> を追加することができます。例えば...</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">volume = <span class="hljs-number">57</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;It&apos;s kinda quiet.&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">20</span> &lt;= volume &lt; <span class="hljs-number">40</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;It&apos;s nice for background music&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">40</span> &lt;= volume &lt; <span class="hljs-number">60</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Perfect, I can hear all the details&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">60</span> &lt;= volume &lt; <span class="hljs-number">80</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Nice for parties&quot;</span>)
+<span class="hljs-keyword">elif</span> <span class="hljs-number">80</span> &lt;= volume &lt; <span class="hljs-number">100</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;A bit loud!&quot;</span>)
+<span class="hljs-keyword">else</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;My ears are hurting! :(&quot;</span>)
+</code></pre>
+<p>Pythonは上から順番に各条件をテストして実行し、次のように出力します。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Perfect, I can hear all the details
+</code></pre><h2 id="コメント">コメント</h2>
+<p>コメントは <code>#</code> で始まる行です。<code>#</code> の後にはなんでも書くことができ、Pythonはそれを無視します。コメントを書いたコードは、ほかの人にとってもわかりやすくなります。</p>
+<p>実際にはこのようになります。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-comment"># ボリュームが大きすぎたり小さすぎたりしたら変更する</span>
+<span class="hljs-keyword">if</span> volume &lt; <span class="hljs-number">20</span> <span class="hljs-keyword">or</span> volume &gt; <span class="hljs-number">80</span>:
+    volume = <span class="hljs-number">50</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;That&apos;s better!&quot;</span>)
+</code></pre>
+<p>コードのすべての行にコメントを書く必要はありません。コメントには、コードの中である処理をする理由や、複雑なコードの動きのまとめを書くと役に立ちます。</p>
+<h3 id="まとめ">まとめ</h3>
+<p>これらの練習を通して、学んだことは...</p>
+<ul>
+<li><strong>比較</strong> – 比較に用いる <code>&gt;</code>, <code>&gt;=</code>, <code>==</code>, <code>&lt;=</code>, <code>&lt;</code> そして<code>and</code>, <code>or</code> といった演算子があります。</li>
+<li><strong>ブール型</strong> – <code>True</code> と <code>False</code> 2つの値のみを持ちます。</li>
+<li><strong>ファイルの保存</strong> – コードはファイルに保存することで、大きなプログラムも実行できます。</li>
+<li><strong>if … elif … else</strong> – 条件分岐することで、特定の条件によって処理を分けて実行することができます。</li>
+<li><strong>コメント</strong> – あなたがコードについて記述できる行。Pythonは実行しません。</li>
+</ul>
+<p>では、いよいよこのチャプターの最後のパートです！</p>
+<h2 id="自作の関数！">自作の関数！</h2>
+<blockquote>
+<p>家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。<a href="https://www.youtube.com/watch?v=5owr-6suOl0" target="_blank">Python Basics: Functions</a></p>
+</blockquote>
+<p>Pythonでは <code>len()</code> のように関数が実行できるのを覚えていますか？ ここでは、自分で関数を作る方法を学びます。</p>
+<p>関数は、Pythonが実行する一連の命令をひとまとめにしたものです。 Pythonでは、関数は <code>def</code> というキーワードからはじまり、名前をつけ、引数を含むことができます。 やってみましょう。 <strong>python_intro.py</strong> の中身を下記のコードに置き換えてください。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>():</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi there!&apos;</span>)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;How are you?&apos;</span>)
+
+hi()
+</code></pre>
+<p>よし！あなたの最初の関数を実行する準備ができましたね！</p>
+<p>ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 これは、Pythonがファイルを読み、上から下へ実行していくからです。 なので、関数を使用するには、一番下に再度書く必要があります。</p>
+<p>では実行して、どうなるか見てみましょう。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi there!
+How are you?
+</code></pre><p>注：思ったように動かなくても慌てないで！画面の出力は動かない理由をつかむのに役立ちます。</p>
+<ul>
+<li><code>NameError</code> が出ている場合、おそらく何かミスタイプがあります。同じ名前を使っているかチェックしましょう。関数を定義するときは <code>def hi():</code> としていますか？関数を実行するときは <code>hi()</code> としていますか？</li>
+<li><code>IndentationError</code> が出ている場合、<code>print</code> 関数の2行が同じ数のスペースでインデントされているかチェックしましょう。関数の中のコードは同じ数のスベースでインデントされているとPythonは考えます。</li>
+<li>画面に何も表示されていない場合、最後の <code>hi()</code> がインデントされて <em>いない</em> かチェックしましょう - もしインデントされていたら、関数の一部になってしまっています。関数が呼び出されていません。</li>
+</ul>
+<p>次に引数をつかった関数を作ってみましょう。先ほどの例を変更し、人の名前を呼んで &apos;hi&apos; と挨拶をする関数にしてみます。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+</code></pre>
+<p>ご覧のように、関数に <code>name</code> という引数を与えました。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+    <span class="hljs-keyword">if</span> name == <span class="hljs-string">&apos;Ola&apos;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi Ola!&apos;</span>)
+    <span class="hljs-keyword">elif</span> name == <span class="hljs-string">&apos;Sonja&apos;</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi Sonja!&apos;</span>)
+    <span class="hljs-keyword">else</span>:
+        <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi anonymous!&apos;</span>)
+
+hi()
+</code></pre>
+<p>要確認：<code>print</code> 関数は、<code>if</code>文の中で4つのスペースでインデントします。 これは、条件が満たされたときに関数が実行されるためです。 では、どのように動くか見てみましょう。</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span> command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Traceback (most recent call last):
+File &quot;python_intro.py&quot;, line 10, in &lt;module&gt;
+  hi()
+TypeError: hi() missing 1 required positional argument: &apos;name&apos;
+</code></pre><p>おっと、エラーがでてしまいました。 ラッキーなことに、Pythonがかなり役に立つエラーメッセージを表示してくれています。 定義した関数 <code>hi()</code> は、<code>name</code> という引数が必要ですが、関数を呼び出す時に引数を忘れてしまっているということがわかります。 最後の行を修正しましょう。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">hi(<span class="hljs-string">&quot;Ola&quot;</span>)
+</code></pre>
+<p>実行してください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi Ola!
+</code></pre><p>では、名前を変えてみたらどうなりますか？</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">hi(<span class="hljs-string">&quot;Sonja&quot;</span>)
+</code></pre>
+<p>実行してください。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi Sonja!
+</code></pre><p>では、OlaやSonja以外の名前に変えた時、どうなるかわかりますか？やってみて、予測が正しいか確認して下さい。このように出力されます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>Hi anonymous!
+</code></pre><p>すごいでしょ？ 挨拶をする人の名前を変えるたびに繰り返しコードを書く必要がなくなりました。 これが関数を作る理由です。何度も繰り返してコードを書きたくないですよね！</p>
+<p>もっとスマートにしてみましょう。名前が2つよりも多いと、それぞれの名前に対して条件を書くのは大変じゃないですか？ファイルの内容を下記のように書き換えてください。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+hi(<span class="hljs-string">&quot;Rachel&quot;</span>)
+</code></pre>
+<p>では、実行してみましょう:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi Rachel!
+</code></pre><p>おめでとうございます！関数の書き方を学びましたね！:)</p>
+<h2 id="ループ">ループ</h2>
+<blockquote>
+<p>家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。<a href="https://www.youtube.com/watch?v=aEA6Rc86HF0" target="_blank">Python Basics: For Loop</a></p>
+</blockquote>
+<p>さぁ、もう最後のパートですよ。あっという間ですね。 :)</p>
+<p>先ほどお話ししたとおり、プログラマーはめんどくさがりで、同じことを繰り返すのは好きではありません。プログラミングの目的は、物事を自動化することです。名前を呼んで挨拶をする関数をすべての人に対して手で呼び出したくないですよね？こういう時にループが便利です。</p>
+<p>リストを覚えていますか？女の子の名前をリストにしてみましょう:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python">girls = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;You&apos;</span>]
+</code></pre>
+<p>名前を呼んで、全員にあいさつをしてみましょう。<code>hi</code>関数が使えますね。ループの中で使いましょう:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+</code></pre>
+<p>この <code>for</code> 文は <code>if</code> 文に似ています。これらの下に書くコードは、4つのスペースでインデントする必要があります。</p>
+<p>ファイルに書かれるコードはこのようになります:</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">hi</span>(<span class="hljs-params">name</span>):</span>
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Hi &apos;</span> + name + <span class="hljs-string">&apos;!&apos;</span>)
+
+girls = [<span class="hljs-string">&apos;Rachel&apos;</span>, <span class="hljs-string">&apos;Monica&apos;</span>, <span class="hljs-string">&apos;Phoebe&apos;</span>, <span class="hljs-string">&apos;Ola&apos;</span>, <span class="hljs-string">&apos;You&apos;</span>]
+<span class="hljs-keyword">for</span> name <span class="hljs-keyword">in</span> girls:
+    hi(name)
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&apos;Next girl&apos;</span>)
+</code></pre>
+<p>実行してみましょう:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 python_intro.py
+Hi Rachel!
+Next girl
+Hi Monica!
+Next girl
+Hi Phoebe!
+Next girl
+Hi Ola!
+Next girl
+Hi You!
+Next girl
+</code></pre><p>ご覧のとおり、<code>girls</code> リストのすべての要素に対して、<code>for</code> 文の中にインデントして書いたことが繰り返されています。</p>
+<p><code>range</code> 関数を使うことで、<code>for</code> 文を数値について使うこともできます。</p>
+<p></p><p class="code-label">python_intro.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-number">1</span>, <span class="hljs-number">6</span>):
+    <span class="hljs-built_in">print</span>(i)
+</code></pre>
+<p>これを実行すると、次のように出力されます:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>1
+2
+3
+4
+5
+</code></pre><p><code>range</code> 関数は、連続する数値を要素とするリストを作ります。引数に指定した開始の数値から終了の数値までのリストです。</p>
+<p>2つ目の引数（終了の数値）は、リストに含まれないことに注意してください（<code>range(1, 6)</code>は1から5がカウントされますが、6は含まれません）。 開始に指定した数値は含まれて、終了に指定した値は含まれないのです。</p>
+<h2 id="まとめ">まとめ</h2>
+<p>以上です！<strong>おめでとう！頑張りました！</strong> これは簡単ではなかったと思います。自分を褒めてあげてくださいね。ここまで進めることができたのは、本当にすごいことです！</p>
+<p>公式の完全なPythonチュートリアルは <a href="https://docs.python.org/ja/3/tutorial/" target="_blank">https://docs.python.org/ja/3/tutorial/</a> にあります。これを見れば、Pythonについてより綿密で完全な学習ができるでしょう。ばんざい！:)</p>
+<p>次のチャプターに進む前に、ストレッチしたり、お散歩したり、目を休ませたりして、少しの間リフレッシュしてくださいね。 :)</p>
+<p><img src="images/cupcake.png" alt="カップケーキ"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../code_editor/" class="navigation navigation-prev " aria-label="Previous page: コードエディタ">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django/" class="navigation navigation-next " aria-label="Next page: Djangoってなに？">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Python入門","level":"1.8","depth":1,"next":{"title":"Djangoってなに？","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"previous":{"title":"コードエディタ","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"ja","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_introduction/README.md","mtime":"2021-03-25T14:00:00.363Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

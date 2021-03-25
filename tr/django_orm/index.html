@@ -1,0 +1,785 @@
+
+<!DOCTYPE HTML>
+<html lang="tr" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django ORM ve QuerySets (Sorgu Setleri) · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../dynamic_data_in_templates/" />
+    
+    
+    <link rel="prev" href="../html/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Aramak istediğiniz" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Kurulum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Kurulum (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    İnternet nasıl çalışır
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Komut satırına giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kod editörü
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python'a giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django nedir?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django kurulumu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    İlk Django projen!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modelleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Yayına alın!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url'leri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - yaratma zamanı geldi!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML'ye giriş
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.18" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django ORM ve QuerySets (Sorgu Setleri)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Template içinde dinamik veri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templateleri
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Güzelleştirin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template genişletmek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Uygulamanı genişlet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django Formları
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Sırada ne var?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit ile yayınla
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django ORM ve QuerySets (Sorgu Setleri)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-orm-ve-querysets-sorgusetleri">Django ORM ve QuerySets (SorguSetleri)</h1>
+<p>Bu bölümde Django&apos;nun veritabanına nasıl bağlandığını ve veriyi nasıl sakladığını öğreneceğiz. Hadi başlayalım!</p>
+<h2 id="queryset-sorguseti-nedir">QuerySet (SorguSeti) Nedir?</h2>
+<p>QuerySet (SorguSeti), esas olarak, verilen bir modele ait nesnelerin listesidir. QuerySet veritabanından veri okumamıza, veriyi filtrelememize ve sıralamamıza imkan sağlar.</p>
+<p>En kolayı örnek ile öğrenmektir. Hadi deneyelim, olur mu?</p>
+<h2 id="django-shell-kabuk">Django shell (kabuk)</h2>
+<p>Bilgisayarımızdaki konsolu açalım (PythonAnywhere&apos;dekini değil) ve şu komutu yazalım:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py shell
+</code></pre><p>Etkisi aşağıdaki gibi olmalı:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python">(InteractiveConsole)
+&gt;&gt;&gt;
+</code></pre>
+<p>Şu an Django&apos;nun etkileşimli konsolundayız. Python istemine benziyor, ama biraz Django büyüsü eklenmiş :) Kuşkusuz burada da Python komutlarının tümünü kullanabiliriz.</p>
+<h3 id="tüm-nesneler">Tüm nesneler</h3>
+<p>Önce tüm post&apos;larımızı görüntülemeyi deneyelim. Bunu aşağıdaki komut ile yapabiliriz:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">all</span>()
+Traceback (most recent call last):
+      File <span class="hljs-string">&quot;&lt;console&gt;&quot;</span>, line <span class="hljs-number">1</span>, <span class="hljs-keyword">in</span> &lt;module&gt;
+NameError: name <span class="hljs-string">&apos;Post&apos;</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">not</span> defined
+</code></pre>
+<p>Ahh! Bir hata meydana geldi. Bize Post&apos;un tanımlı olmadığını söylüyor. Bu doğru, öncesinde post&apos;u dahil etmeyi (import) unuttuk!</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> blog.models <span class="hljs-keyword">import</span> Post
+</code></pre>
+<p><code>blog.models</code>&apos;dan <code>Post</code> modelini dahil ettik (import). Tekrar bütün post&apos;ları görüntülemeyi deneyelim:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">all</span>()
+&lt;QuerySet [&lt;Post: Gönderi başlığım&gt;, &lt;Post: Diğer bir gönderi başlığı&gt;]&gt;
+</code></pre>
+<p>Bu daha önce oluşturduğumuz post&apos;ların listesi! Bu post&apos;ları Django admin arayüzü ile oluşturduk. Fakat şimdi Python kullanarak yeni post&apos;lar oluşturmak istiyoruz, peki bunu nasıl yaparız?</p>
+<h3 id="nesne-oluşturma">Nesne oluşturma</h3>
+<p>Veritabanına yeni bir gönderi eklemek için:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.create(author=ben, title=<span class="hljs-string">&apos;Harika bir gönderi&apos;</span>, text=<span class="hljs-string">&apos;Ne desem bilemedim&apos;</span>)
+</code></pre>
+<p>Ancak bir eksiğimiz var: <code>ben</code>. Gönderinin author (yazar) özelliğine <code>User</code> (kullanıcı) modelinden türetilen bir nesneyi parametre olarak vermemiz gerekiyor. Nasıl verebiliriz?</p>
+<p>Öncelikle User (kullanıcı) modelini dahil edelim:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> django.contrib.auth.models <span class="hljs-keyword">import</span> User
+</code></pre>
+<p>Veritabanımızda hangi kullanıcılar var? Şu şekilde görebiliriz:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>User.objects.<span class="hljs-built_in">all</span>()
+&lt;QuerySet [&lt;User: zeynep&gt;]&gt;
+</code></pre>
+<p>Bu daha önce yarattığımız süper kullanıcı (superuser)! Şimdi bu kullanıcının örneğini (instance) alalım (bu satırı kendi kullanıcı adınızı kullanmak için değiştirin):</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python">ben = User.objects.get(username=<span class="hljs-string">&apos;zeynep&apos;</span>)
+</code></pre>
+<p>Görebildiğiniz gibi, şimdi <code>kullanıcı adı</code> &apos;zeynep&apos; olan bir <code>User</code> aldık. Temiz!</p>
+<p>Gönderimizi artık kaydedebiliriz:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.create(author=ben, title=<span class="hljs-string">&apos;Harika bir gönderi&apos;</span>, text=<span class="hljs-string">&apos;Ne desem bilemedim&apos;</span>)
+&lt;Post: Harika bir gönderi&gt;
+</code></pre>
+<p>Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">all</span>()
+&lt;QuerySet [&lt;Post: Gönderi başlığım&gt;, &lt;Post: Diğer bir gönderi başlığı&gt;,&lt;Post: Harika bir gönderi&gt;]&gt;
+</code></pre>
+<p>İşte bu kadar, listede bir gönderi daha!</p>
+<h3 id="daha-fazla-post-ekle">Daha fazla post ekle</h3>
+<p>Şimdi daha fazla post ekleyerek biraz eğlenebilir ve nasıl çalıştığını görebiliriz. İki veya üç tane daha ekleyelim ve sıradaki bölüme geçelim.</p>
+<h3 id="nesneleri-filtrelemek">Nesneleri filtrelemek</h3>
+<p>QuerySet&apos;lerin büyük bir bölümü nesneleri filtreleme yeteneğidir. Diyelim ki, Zeynep tarafından yazılmış tüm post&apos;ları (gönderileri) bulmak istiyoruz. <code>Post.objects.all()</code> içindeki <code>all</code> yerine <code>filter</code> kullanacağız. Parantez içine istediğimiz blog gönderilerinin sağlaması gereken şartları belirteceğiz. Örneğimizde, <code>author</code> <code>ben</code>&apos;e eşitti. Django&apos;da bu filtreyi şöyle yazıyoruz: <code>author=ben</code>. Şu an kod parçacığımız şöyle görünüyor:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(author=ben)
+[&lt;Post: Gönderi <span class="hljs-number">1</span>&gt;, &lt;Post: Gönderi <span class="hljs-number">2</span>&gt;, &lt;Post: Harika bir gönderi&gt;, &lt;Post: Nefis bir gönderi&gt;]
+</code></pre>
+<p>Ya da belki <code>title</code> (başlık) alanında içinde &apos;Nefis&apos; kelimesini içeren tüm gönderileri görmek istiyoruz?</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(title__contains=<span class="hljs-string">&apos;Nefis&apos;</span>)
+[&lt;Post: Nefis bir gönderi&gt;]
+</code></pre>
+<blockquote>
+<p><strong>Not</strong> <code>title</code> ve <code>contains</code> arasında iki tane alt çizgi (<code>_</code>) var. Django&apos;nun ORM&apos;i bu söz dizimini, özelliği (&quot;title&quot;) ve operasyon veya filtreyi (&quot;contains&quot;) ayırmak için kullanır. Eğer sadece tek bir alt çizgi kullanırsanız, &quot;FieldError: Cannot resolve keyword title_contains&quot; şeklinde bir hata alacaksınız.</p>
+</blockquote>
+<p>Ayrıca yayınlanmış tüm post&apos;ların bir listesini alabiliriz. Bunu <code>published_date</code> (yayinlanma_tarihi) alanı geçmiş bir tarih olan tüm gönderileri filtreleyerek yapıyoruz:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span><span class="hljs-keyword">from</span> django.utils <span class="hljs-keyword">import</span> timezone
+<span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(published_date__lte=timezone.now())
+&lt;QuerySet []&gt;
+</code></pre>
+<p>Maalesef python konsolundan eklediğimiz post (gönderi) henüz yayınlanmadı. Fakat bunu değiştirebiliriz! Önce yayınlamak istediğimiz bir gönderi nesnesi bulalım:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>post = Post.objects.get(title=<span class="hljs-string">&quot;Harika bir gönderi&quot;</span>)
+</code></pre>
+<p>Ardından <code>publish</code> (yayinla) methodu ile gönderiyi yayınlayalım:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>post.publish()
+</code></pre>
+<p>Şimdi yayınlanmış gönderileri tekrar almaya çalışalım (3 kez yukarı ok tuşuna ve ardından <code>enter</code> tuşuna basın):</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(published_date__lte=timezone.now())
+[&lt;Post: Harika bir gönderi&gt;]
+</code></pre>
+<h3 id="nesneleri-sıralama">Nesneleri Sıralama</h3>
+<p>QuerySets ayrıca nesne listesini sıralamanızı da sağlar. Nesneleri <code>created_date</code> (yaratilma_tarihi) özelliğine göre sıralamayı deneyelim:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.order_by(<span class="hljs-string">&apos;created_date&apos;</span>)
+[&lt;Post: Gönderi <span class="hljs-number">1</span>&gt;, &lt;Post: Gönderi <span class="hljs-number">2</span>&gt;, &lt;Post: Harika bir gönderi&gt;, &lt;Post: Nefis bir gönderi&gt;]
+</code></pre>
+<p>Başına <code>-</code> ekleyerek sıralamayı tersine de çevirebiliriz:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.order_by(<span class="hljs-string">&apos;-created_date&apos;</span>)
+[&lt;Post: Nefis bir gönderi&gt;, &lt;Post: Harika bir gönderi&gt;, &lt;Post: Gönderi <span class="hljs-number">2</span>&gt;, &lt;Post: Gönderi <span class="hljs-number">1</span>&gt;]&gt;
+</code></pre>
+<h3 id="querysets-sorgusetlerini-zincirlemek-chaining">QuerySets (SorguSetlerini) Zincirlemek (Chaining)</h3>
+<p>Sorgu setlerini <strong>zincirleyerek</strong> beraber kullanabilirsiniz:</p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>Post.objects.<span class="hljs-built_in">filter</span>(published_date__lte=timezone.now()).order_by(<span class="hljs-string">&apos;published_date&apos;</span>)
+&lt;QuerySet [&lt;Post: Gönderi <span class="hljs-number">2</span>&gt;, &lt;Post:Harika bir gönderi!&gt;, &lt;Post: Nefis bir gönderi&gt;, &lt;Post: Gönderi <span class="hljs-number">1</span>&gt;]&gt;
+</code></pre>
+<p>Zincirleme gerçekten çok güçlüdür ve oldukça karmaşık sorgular yazmanıza imkan sağlar.</p>
+<p>Güzel! Şimdi bir sonraki bölüm için hazırız. Komut satırını kapatmak için, şunu yazalım:</p>
+<p></p><p class="code-label">komut-satırı</p><p></p>
+<pre><code class="lang-python"><span class="hljs-meta">&gt;&gt;&gt; </span>exit()
+$
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../html/" class="navigation navigation-prev " aria-label="Previous page: HTML'ye giriş">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../dynamic_data_in_templates/" class="navigation navigation-next " aria-label="Next page: Template içinde dinamik veri">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django ORM ve QuerySets (Sorgu Setleri)","level":"1.18","depth":1,"next":{"title":"Template içinde dinamik veri","level":"1.19","depth":1,"path":"dynamic_data_in_templates/README.md","ref":"dynamic_data_in_templates/README.md","articles":[]},"previous":{"title":"HTML'ye giriş","level":"1.17","depth":1,"path":"html/README.md","ref":"html/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"tr","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_orm/README.md","mtime":"2021-03-25T14:00:00.519Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"tr"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

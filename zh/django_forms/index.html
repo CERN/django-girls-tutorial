@@ -1,0 +1,904 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django表单 · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../whats_next/" />
+    
+    
+    <link rel="prev" href="../extend_your_application/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    互联网是如何工作的？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    命令行介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    代码编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    你的第一个Django 项目 ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    部署！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django视图 - 抓紧时间去创建！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (查询集)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    模板中的动态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 让其更漂亮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    模板扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    扩展您的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    接下来呢？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django表单</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django表单">Django表单</h1>
+<p>我们最后一件关于我们的网站的事情就是创建一个漂亮的方式来增加和编辑博客文章。 Django的<code>管理</code>是很酷，但是它很难去自定义，变得更漂亮。 通过<code>forms</code>，我们可以拥有对我们界面绝对的权利—我们能够做几乎我们能想象到的所有事情！</p>
+<p>Django表单的一个好处就是我们既可以从零开始自定义，也可以创建<code>ModelForm</code>，它将表单的结果保存到模型里。</p>
+<p>这正是我们想做的：我们将为我们自己的<code>Post</code>模型创建一个表单。</p>
+<p>就像所有Django的重要部分一样，表单有他们自己的文件<code>forms.py</code>。.</p>
+<p>我们需要创建一个文件，把它的名字放在<code>blog</code>目录下。</p>
+<pre><code>    blog
+       └── forms.py
+</code></pre><p>好吧，让我们打开它，然后键入以下代码：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django <span class="hljs-keyword">import</span> forms
+
+<span class="hljs-keyword">from</span> .models <span class="hljs-keyword">import</span> Post
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PostForm</span>(<span class="hljs-params">forms.ModelForm</span>):</span>
+
+    <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Meta</span>:</span>
+        model = Post
+        fields = (<span class="hljs-string">&apos;title&apos;</span>, <span class="hljs-string">&apos;text&apos;</span>,)
+</code></pre>
+<p>首先我们需要导入Django表单（<code>from django import forms</code>）然后，显然是我们的<code>Post</code>模型（`from .models import Post&lt;/0）。).&gt;&lt;/p&gt;</p>
+<p></p><p><code>PostForm, 正如你所猜想的，是我们表单的名字。 我们需要告诉Django，这个表单是一个ModelForm（所以Django将会为我们变一些魔法）—forms.ModelForm`对此负责。</code></p>
+<p>下面，我们有<code>class Meta</code>，在这里我们告诉Django哪个模型会被用来创建这个表单（<code>model=Post</code>）。).</p>
+<p>最后，我们可以说哪些字段会在我们的表单里出现。 在这个场景里，我们只想要<code>title</code>和<code>text</code>显示出来—<code>author</code>应该是当前登录的人（你！）然后<code>created_date</code>应该是我们创建文章时自动分配的（比如，在代码里），对吗？</p>
+<p>就是这样！现在我们所有要做的就是在<em>视图</em>里使用表单，然后展现在在模板里。</p>
+<p>所以下次我们将会创建：一个指向页面的链接，一个URL，一个视图和一个模板。</p>
+<h2 id="指向页面表单的链接">指向页面表单的链接</h2>
+<p>是时候打开<code>blog/templates/blog/base.html</code>了。我们将添加一个链接到<code>div</code>，命名为<code>page-header</code>：</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>请注意我们想要调用我们的新视图<code>post_new</code>.</p>
+<p>添加了新的行后，你的html文件现在应该看起来像这样：</p>
+<pre><code class="lang-html">    {% load staticfiles %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&apos;//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext&apos;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&apos;stylesheet&apos;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&apos;text/css&apos;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-header&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content container&quot;</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-8&quot;</span>&gt;</span>
+                        {% block content %}
+                        {% endblock %}
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>然后保存，刷新 <a href="http://127.0.0.1:8000" target="_blank">http://127.0.0.1:8000</a> 页面，你可以明显地看到一个熟悉的<code>NoReverseMatch</code>错误信息，是吧？</p>
+<h2 id="url">URL</h2>
+<p>我们打开<code>blog/urls.py</code>然后添加一个新行：</p>
+<pre><code class="lang-python">        url(<span class="hljs-string">r&apos;^post/new/$&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),
+</code></pre>
+<p>最终代码会看起来像这样：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.conf.urls <span class="hljs-keyword">import</span> url
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    url(<span class="hljs-string">r&apos;^$&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+    url(<span class="hljs-string">r&apos;^post/(?P&lt;pk&gt;[0-9]+)/$&apos;</span>, views.post_detail, name=<span class="hljs-string">&apos;post_detail&apos;</span>),
+    url(<span class="hljs-string">r&apos;^post/new/$&apos;</span>, views.post_new, name=<span class="hljs-string">&apos;post_new&apos;</span>),
+]
+</code></pre>
+<p>刷新网页后，我们看到一个<code>AttributeError</code>，因为我们没有实现<code>post_new</code>视图。让我们现在把它加上吧。</p>
+<h2 id="postnew视图">post_new视图</h2>
+<p>现在打开<code>blog/views.py</code>文件，加入下面的各行到<code>from</code>行下：</p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> .forms <span class="hljs-keyword">import</span> PostForm
+</code></pre>
+<p>还有我们的<em>view</em>：</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>为了创建一个新的<code>Post</code>表单，我们需要调用<code>PostForm()</code>，然后把它传递给模板。 我们会回到这个<em>视图</em>，但是现在，让我们为这个表单快速创建一个模板。</p>
+<h2 id="模板">模板</h2>
+<p>我们需要在<code>blog/templates/blog</code>目录下创建一个文件<code>post_edit.html</code>。为了创建一个表单，我们需要几件事情：</p>
+<ul>
+<li>要展示表单，我们只需要很简单地加上<code>{{ form.as_p }}</code>.</li>
+<li>上面的这行需要被HTML表单标签包裹：<code>&lt;form method=&quot;POST&quot;&gt;...&lt;/form&gt;</code></li>
+<li>我们需要一个<code>Save</code>按钮。我们通过使用一个HTML按钮来完成：<code>&lt;button type=&quot;submit&quot;&gt;Save&lt;/button&gt;</code></li>
+<li>最后在<code>&lt;form ...&gt;</code>标签后，我们需要加上<code>{% csrf_token %}</code>。 这个非常重要，因为他会让你的表单变得更安全！ Django会提醒你，当你试图保存表单而你又恰巧忘了这一点：</li>
+</ul>
+<p><img src="images/csrf2.png" alt="CSFR Forbidden page"></p>
+<p>好，让我们看看HTML 在<code>post_edit.html</code>里应该看起来什么样：</p>
+<pre><code class="lang-html">    {% extends &apos;blog/base.html&apos; %}
+
+    {% block content %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>New post<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;POST&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post-form&quot;</span>&gt;</span>{% csrf_token %}
+            {{ form.as_p }}
+            <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;save btn btn-default&quot;</span>&gt;</span>Save<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+    {% endblock %}
+</code></pre>
+<p>现在刷新！哇！你的表单显示出来了！</p>
+<p><img src="images/new_form2.png" alt="新表单"></p>
+<p>但是，请等一下！当你键入诸如<code>title</code>和<code>text</code>字段，然后视图保存它—下面会发生什么？</p>
+<p>什么都没有！我们再一次回到了同一个页面，然而我们的文本已经消失了...同时没有新的文章被发布。所以错在哪里了呢？</p>
+<p>答案是：没有错误。我们需要在我们的<em>视图</em>里做更多的工作.</p>
+<h2 id="保存表单">保存表单</h2>
+<p>再一次打开<code>blog/views,py</code>。我们在看到<code>post_new</code>中的视图内容是:</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>当我们提交表单，我们都回到相同的视图，但是这个时候我们有一些更多的数据在 <code>request</code>，更具体地说在 <code>request.POST</code> (命名和博客后缀&quot;post&quot;无关，它只是用来帮我们&quot;上传&quot;数据)。 还记得在HTML文件里，我们的<code>&lt;form&gt;</code>定义有一个方法<code>method=&quot;POST&quot;</code>？ 现在所有从表单来的东西都在<code>request.POST</code>. 你不应该重命名<code>POST</code>为其他任何东西（其他唯一有效的<code>method</code>值是<code>GET</code>，但是我们没有时间去解释它们两者的区别是什么）。</p>
+<p>所以在我们的<em>视图</em>里，我们有了两种不同的情况去处理。 首先：当我们首次访问一个页面，我们想要得到一个空白的页面。 第二：当我们回到<em>视图</em>，要有我们所有我们刚刚键入的数据。 所以我们需要添加一个条件判断（我们为此使用<code>if</code>）。</p>
+<pre><code class="lang-python">    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        [...]
+    <span class="hljs-keyword">else</span>:
+        form = PostForm()
+</code></pre>
+<p>现在去填写<code>[...]</code>。如果<code>method</code> 是 <code>POST</code>，那么我们要用表单里的数据构建<code>PostForm</code>，对吗？我们会这样做：</p>
+<pre><code class="lang-python">    form = PostForm(request.POST)
+</code></pre>
+<p>很容易吧！下一件事情就是去检查表单是否正确（所有必填字段都要被设置并且不会保存任何不正确的值）。我们将使用<code>form.is_valid()</code>来实现.</p>
+<p>我们检查表单是否正确，如果是我们就保存它！</p>
+<pre><code class="lang-python">    <span class="hljs-keyword">if</span> form.is_valid():
+        post = form.save(commit=<span class="hljs-literal">False</span>)
+        post.author = request.user
+        post.published_date = timezone.now()
+        post.save()
+</code></pre>
+<p>基本上，我们这里有两件事情：我们使用<code>form.save</code>保存表单，我们添加一个作者（因为 <code>PostForm</code> 中没有<code>author</code>字段，然而这个字段是必须的！）。 <code>commit=False</code>意味着我们还不想保存<code>Post</code>模型—我们想首先添加作者。 大多数情况下，当你使用<code>form.save()</code>时，不会使用<code>commit=False</code>，但是在这种情况下，我们需要这样做。 <code>post.save()</code>会保留更改（添加作者），并创建新的博客文章！</p>
+<p>最后，如果我们能够立即去<code>post_detail</code>页面创建新的博客内容，那将很酷，对吗？为了做到这点，我们需要再导入一个：</p>
+<pre><code class="lang-python">    <span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> redirect
+</code></pre>
+<p>把它添加到你文件的最开始处。现在我们可以说：创建完新帖子我们就转去<code>post_detail</code>页面。</p>
+<pre><code class="lang-python">    <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+</code></pre>
+<p><code>post_detail</code> 是我们想去的视图的名字。 还记得这个<em>视图</em> 需得具有一个 <code>pk</code> 变量吗? 为了把它传递给视图我们使用<code>pk=post.pk</code>, 其中 <code>post</code> 就是我们刚刚创立的博客帖子！</p>
+<p>好吧，我们已经说了很多了，但可能我们想看到整个<em>视图</em>现在看起来什么样，对吗？</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_new</span>(<span class="hljs-params">request</span>):</span>
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm()
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>让我们看看它是否正常工作。 转到页 <a href="http://127.0.0.1:8000//post/new/" target="_blank">http://127.0.0.1:8000//post/new/</a> ，添加 <code>title</code> 和 <code>text</code>，将它保存... 看！ 新博客文章已经加进来了，我们被重定向到<code>post_detail</code>页面！</p>
+<p>你可能已经注意到在保存博客文章之前我们设置发布日期。稍后，我们讲介绍一个在 <strong>Django Girls 教程：扩展</strong>中介绍 <em>publish button</em> 。.</p>
+<p>太棒了！</p>
+<h2 id="表单验证">表单验证</h2>
+<p>现在，我们将给你展现Django表单是多么酷。 一篇博客文章需要有<code>title</code>和<code>title</code>字段。 在我们的<code>Post</code>模型中我们并没有说（和<code>发布日期</code>恰恰相反）这些字段不是必须的，所以Django，默认期望他们是有存储数据的。</p>
+<p>尝试不带<code>title</code>和<code>text</code>内容保存表单。猜猜，会发生什么！</p>
+<p><img src="images/form_validation2.png" alt="表单验证"></p>
+<p>Django会处理验证我们表单里的所有字段都是正确的。这不是很棒？</p>
+<blockquote>
+<p>因为我们最近使用过Django管理界面，系统目前认为我们已经登录了。 有几种情况可能导致我们被登出（关闭浏览器，重新启动数据库等等）。 如果你发现当你创建一个文章时得到了一个指向未登录用户错误的时候，前往管理页面 <code>http://127.0.0.1:8000/admin</code> ，再登录。 这会暂时解决问题。 有一个一劳永逸的方法在等着你，可以看看只要教程后的<strong>Homework: add security to your website!</strong> 章节。</p>
+</blockquote>
+<p><img src="images/post_create_error.png" alt="记录错误"></p>
+<h2 id="编辑表单">编辑表单</h2>
+<p>现在我们知道如何添加一个新的表单。 但是如果我们想编辑一个现有的呢？ 这和我们刚才做的非常相似。 让我们快速创建一些重要的东西（如果你还不清楚他们，你应该问问你的教练或者看看前面的章节，因为我们已经覆盖了所有的这些步骤）。</p>
+<p>打开 <code>blog/templates/blog/post_detail.html</code> 并添加以下行：</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>所以模板看起来像这样：</p>
+<pre><code class="lang-html">    {% extends &apos;blog/base.html&apos; %}
+
+    {% block content %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+            {% if post.published_date %}
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                    {{ post.published_date }}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            {% endif %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;btn btn-default&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_edit&apos; pk=post.pk %}&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-pencil&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    {% endblock %}
+</code></pre>
+<p>在<code>blog/urls.py</code>里我们添加这行：</p>
+<pre><code class="lang-python">    url(<span class="hljs-string">r&apos;^post/(?P&lt;pk&gt;[0-9]+)/edit/$&apos;</span>, views.post_edit, name=<span class="hljs-string">&apos;post_edit&apos;</span>),
+</code></pre>
+<p>我们将复用模板<code>blog/templates/blog/post_edit.html</code>，所以最后缺失的东西就是 <em>view</em>.</p>
+<p>让我们打开<code>blog/views.py</code>，并在文件的最后加入：</p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_edit</span>(<span class="hljs-params">request, pk</span>):</span>
+    post = get_object_or_404(Post, pk=pk)
+    <span class="hljs-keyword">if</span> request.method == <span class="hljs-string">&quot;POST&quot;</span>:
+        form = PostForm(request.POST, instance=post)
+        <span class="hljs-keyword">if</span> form.is_valid():
+            post = form.save(commit=<span class="hljs-literal">False</span>)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            <span class="hljs-keyword">return</span> redirect(<span class="hljs-string">&apos;post_detail&apos;</span>, pk=post.pk)
+    <span class="hljs-keyword">else</span>:
+        form = PostForm(instance=post)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_edit.html&apos;</span>, {<span class="hljs-string">&apos;form&apos;</span>: form})
+</code></pre>
+<p>这看起来几乎完全和我们的<code>post_new</code>视图一样，对吗？ 但是不完全是。 第一件事：我们从urls里传递了一个额外的<code>pk</code>参数。 然后：我们得到了<code>Post</code>模型，我们想编辑<code>get_object_or_404(Post, pk=pk)</code>，然后当我们创建了一个表单我们用一个<code>实例</code>来传递这篇文章，当我们想保存它：</p>
+<pre><code class="lang-python">    form = PostForm(request.POST, instance=post)
+</code></pre>
+<p>当我们只是打开这篇文章的表单来编辑时：</p>
+<pre><code class="lang-python">    form = PostForm(instance=post)
+</code></pre>
+<p>好，让我们来试试它是否可以工作！让我们先去<code>post_detail</code>页面。在右上角应该有一个编辑按钮：</p>
+<p><img src="images/edit_button2.png" alt="编辑按钮"></p>
+<p>当你点击它的时候，你会看到我们博客文章的表单。</p>
+<p><img src="images/edit_form2.png" alt="编辑表单"></p>
+<p>随意修改标题和内容，然后保存更改！</p>
+<p>祝贺你！你的应用程序正在变得越来越完整！</p>
+<p>如果你需要更多关于Django表单的信息，你应该阅读文档： <a href="https://docs.djangoproject.com/en/1.8/topics/forms/" target="_blank">https://docs.djangoproject.com/en/1.8/topics/forms/</a></p>
+<h2 id="安全性">安全性</h2>
+<p>能够通过点击一条连接进行发布确实不错。 但是现在，任何访问你网站的人都能够发布一条新博客日志，这可能不是你想要的。 那让我们来让这个发布按钮只显示给你，对其他人则不显示。</p>
+<p>在 <code>blog/templates/blog/base.html</code>中，找到我们 <code>page-header</code> <code>div</code> 和你早些时候在放那里锚点标记。看起来应该像这样：</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+</code></pre>
+<p>我们要将另一个 <code>{% if %}</code> 标记到这, 这会使链接仅在以管理者身份登录的用户访问时显示。现在来说，管理员就是你！ 像这样修改 <code>&lt;a&gt;</code> 标记：</p>
+<pre><code class="lang-html">    {% if user.is_authenticated %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_new&apos; %}&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;top-menu&quot;</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;glyphicon glyphicon-plus&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+    {% endif %}
+</code></pre>
+<p>这个 <code>{% if %}</code> 会使得链接仅仅发送到哪些已经登陆的用户的浏览器。 这并不能完全保护发布新文章，不过这是很好的第一步。 我们将在扩展课程中包含更多安全部分。</p>
+<p>你应已登录，如果你刷新页面，你不会看到有什么不同。不过，在新的浏览器或隐身窗口中加载页，你会看不到这个链接!</p>
+<h2 id="还有一件事：部署时刻！">还有一件事：部署时刻！</h2>
+<p>我们来看看这一切能否运行在 PythonAnywhere 上。另一次部署的时间到了！</p>
+<ul>
+<li>首先，提交你的新代码，然后将它推送到 GitHub 上</li>
+</ul>
+<pre><code>    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m &quot;Added views to create/edit blog post inside the site.&quot;
+    $ git push
+</code></pre><ul>
+<li>然后，在一个 <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere 的 Bash 终端</a>里运行：</li>
+</ul>
+<pre><code>    $ cd my-first-blog
+    $ source myvenv/bin/activate
+    (myvenv)$ git pull
+    [...]
+    (myvenv)$ python manage.py collectstatic
+    [...]
+</code></pre><ul>
+<li>最后，跳到 <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">Web 标签页</a> 并点击<strong>重新载入</strong>.</li>
+</ul>
+<p>就是这样！祝贺你：）</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../extend_your_application/" class="navigation navigation-prev " aria-label="Previous page: 扩展您的应用">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../whats_next/" class="navigation navigation-next " aria-label="Next page: 接下来呢？">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django表单","level":"1.23","depth":1,"next":{"title":"接下来呢？","level":"1.24","depth":1,"path":"whats_next/README.md","ref":"whats_next/README.md","articles":[]},"previous":{"title":"扩展您的应用","level":"1.22","depth":1,"path":"extend_your_application/README.md","ref":"extend_your_application/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"zh","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_forms/README.md","mtime":"2021-03-25T14:00:00.567Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,814 @@
+
+<!DOCTYPE HTML>
+<html lang="pl" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Wprowadzenie do HTML-a · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_orm/" />
+    
+    
+    <link rel="prev" href="../django_views/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Wpisz szukaną frazę" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Wprowadzenie
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalacja
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Instalacja (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Jak działa internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Wprowadzenie do wiersza polecenia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalowanie Pythona
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Edytor tekstu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Wprowadzenie do Pythona
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Czym jest Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalowanie Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Twój pierwszy projekt w Django!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Modele w Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Administracja Django (admin)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Wdrażanie!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Adresy URL w Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Widoki Django - czas zacząć tworzyć!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Wprowadzenie do HTML-a
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (QuerySet)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dane dynamiczne w szablonach Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Szablony Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - upiększ to
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozbudowa szablonów
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Rozbudowa aplikacji
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Formularze Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Co dalej?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Opublikowano dzięki HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Wprowadzenie do HTML-a</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="wprowadzenie-do-html-a">Wprowadzenie do HTML-a</h1>
+<p>Zastanawiasz się, czym jest szablon?</p>
+<p>Szablon to plik, którego używamy do prezentacji informacji w zwięzłej formie. Używając analogii - do pisania listów również możesz użyć szablonu. Każdy list ma inną treść i adres, ale każdy z nich ma taką samą strukturę.</p>
+<p>Format szablonów Django wykorzystuje język HTML (ten sam, o którym wspominaliśmy w rozdziale <strong>Jak działa internet</strong>).</p>
+<h2 id="co-to-jest-html">Co to jest HTML?</h2>
+<p>HTML to prosty kod interpretowany przez Twoją przeglarkę - taką jak Chrome, Firefox czy Safari - w celu wyświetlenia strony dla użytkownika.</p>
+<p>HTML to skrót od &quot;HyperText Markup Language&quot;. <strong>HyperText</strong> oznacza, że jest to tekst, który wspiera hyperlinki - czyli po prostu linki między stronami. <strong>Markup</strong> oznacza, że używamy tego kodu w dokumencie, żeby przekazać komuś informacje (w naszym przypadku przeglądarce), jak zinterpretować daną stronę. Kod HTML składa się ze <strong>znaczników </strong> (tagów), a każdy z nich zaczyna się od <code>&lt;</code> i kończy na<code>&gt;</code>. Za pomocą znaczników oznaczamy <strong>elementy</strong>.</p>
+<h2 id="twój-pierwszy-szablon">Twój pierwszy szablon!</h2>
+<p>Stworzenie szablonu oznacza stworzenie pliku z szablonem. Bo przecież wszystko jest plikiem, zgadza się? Zapewne zdążyłaś to zauważyć.</p>
+<p>Szablony są zapisywane w katalogu <code>blog/templates/blog</code>. Zacznij więc od stworzenia katalogu <code>templates</code> wewnątrz Twojego katalogu bloga. Następnie stwórz kolejny katalog o nazwie <code>blog</code> wewnątrz katalogu na szablony:</p>
+<pre><code>blog
+└───templates
+    └───blog
+</code></pre><p>(Być może zastanawiasz się, dlaczego tworzymy dwa katalogi o nazwie <code>blog</code> - jak się niebawem dowiesz, to użyteczna konwencja nazewnictwa. Ułatwia życie, gdy sprawy stają się bardziej skomplikowane.)</p>
+<p>A teraz stwórz plik <code>post_list.html</code> (na razie niech będzie pusty) wewnątrz katalogu <code>blog/templates/blog</code>.</p>
+<p>Popatrz, jak Twoja strona wygląda teraz: <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a></p>
+<blockquote>
+<p>Jeżeli nadal otrzymujesz błąd <code>TemplateDoesNotExist</code>, spróbuj uruchomić serwer ponownie. Przejdź do wiersza polecenia, zatrzymaj serwer wciskając Ctrl+C (klawisze Control i C równocześnie), a następnie uruchom go jeszcze raz poleceniem <code>python manage.py runserver</code>.</p>
+</blockquote>
+<p><img src="images/step1.png" alt="Rysunek 11.1"></p>
+<p>Nie ma błędu! Gratulacje! :) Niestety, twoja aplikacja nie wyświetla niczego poza pustą stroną, ponieważ Twój szablon również jest pusty. Naprawmy to.</p>
+<p>Otwórz Twój nowy plik w edytorze kodu i dodaj poniższe:</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi there!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>It works!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>I jak twoja strona wygląda teraz? Odwiedź stronę <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a>, żeby się dowiedzieć.</p>
+<p><img src="images/step3.png" alt="Rysunek 11.2"></p>
+<p>Zadziałało! Dobra robota :)</p>
+<ul>
+<li>Najbardziej podstawowy znacznik, <code>&lt;html&gt;</code>, jest zawsze na początku każdej strony internetowej, zaś <code>&lt;/html&gt;</code> jest zawsze na końcu. Jak widzisz, cała zawartość strony zawiera się pomiędzy znacznikiem otwierającym <code>&lt;html&gt;</code> i zamykającym <code>&lt;/html&gt;</code></li>
+<li><code>&lt;p&gt;</code> jest znacznikiem akapitów; <code>&lt;/p&gt;</code> zamyka każdy akapit</li>
+</ul>
+<h2 id="head-i-body">Head i body</h2>
+<p>Każda strona HTML jest podzielona na dwie części: <strong>head</strong> i <strong>body</strong>.</p>
+<ul>
+<li><p><strong>head</strong> jest elementem zawierającym informacje o dokumencie, które nie są wyświetlane na ekranie.</p>
+</li>
+<li><p><strong>body</strong> zawiera wszystkie pozostałe elementy, które są częścią strony internetowej widoczną na ekranie.</p>
+</li>
+</ul>
+<p>Używamy znacznika <code>&lt;head&gt;</code>, aby poinformować przeglądarkę o konfiguracji strony oraz <code>&lt;body&gt;</code> do przekazania informacji o tym, co właściwie znajduje się na stronie.</p>
+<p>Przykładowo, element tytułu strony możesz umieścić wewnątrz <code>&lt;head&gt;</code>, o tak:</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Ola&apos;s blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Hi there!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>It works!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Zapisz plik i odśwież swoją stronę.</p>
+<p><img src="images/step4.png" alt="Rysunek 11.3"></p>
+<p>Zauważyłaś, że przeglądarka zrozumiała, że &quot;Ola&apos;s blog&quot; jest tytułem Twojej strony? Zinterpretowała ona <code>&lt;title&gt;Ola&apos;s blog&lt;/title&gt;</code> i umieściła tekst w pasku tytułu twojej przeglądarki (będzie on również używany m.in. w zakładkach).</p>
+<p>Zapewne zauważyłaś także, że każdy znacznik otwierający posiada <em>znacznik zamykający</em>, z <code>/</code>, a także to, że elementy są <em>zagnieżdżane </em> (czyli nie możesz zamknąć danego znacznika zanim nie zostaną zamknięte znaczniki znajdujące się wewnątrz niego).</p>
+<p>To trochę jak wkładanie rzeczy do pudełek. Masz jedno wielkie pudło, <code>&lt;html&gt;&lt;/html&gt;</code>; wewnątrz niego znajduje się <code>&lt;body&gt;&lt;/body&gt;</code>, a w środku tegoż są kolejne mniejsze pudełka: <code>&lt;p&gt;&lt;/p&gt;</code>.</p>
+<p>Musisz przestrzegać zasad <em>zamykania</em> znaczników i <em>zagnieżdżania</em> elementów - przeciwnym razie przeglądarka może mieć problem z ich poprawnym zinterpretowaniem i Twoja strona będzie wyświetlać się niepoprawnie.</p>
+<h2 id="dostosowywanie-szablonu">Dostosowywanie szablonu</h2>
+<p>Teraz nieco się pobawmy i spróbujmy dostosować nasz szablon! Oto kilka znaczników, które nam się do tego przydadzą:</p>
+<ul>
+<li><code>&lt;h1&gt;Tytuł&lt;/h1&gt;</code> dla twojego najbardziej znaczącego nagłówka</li>
+<li><code>&lt;h2&gt;Podtytuł&lt;/h2&gt;</code> dla nagłówka niższego poziomu</li>
+<li><code>&lt;h3&gt;pod-podtytuł&lt;/h3&gt;</code> … i tak dalej aż do <code>&lt;h6&gt;</code></li>
+<li><code>&lt;p&gt;akapit tekstu&lt;/p&gt;</code></li>
+<li><code>&lt;em&gt;tekst&lt;/em&gt;</code> dodaje wyróżnienie twojego tekstu</li>
+<li><code>&lt;strong&gt;text&lt;/strong&gt;</code> jeszcze mocniej wyróżnia twój tekst</li>
+<li><code>&lt;br&gt;</code> to przejście do nowej linii (wewnątrz br nie wstawiamy niczego i nie ma też znacznika zamykającego)</li>
+<li><code>&lt;a href=&quot;https://djangogirls.org&quot;&gt;link&lt;/a&gt;</code> tworzy link</li>
+<li><code>&lt;ul&gt;&lt;li&gt;pierwsza pozycja&lt;/li&gt;&lt;li&gt;druga pozycja&lt;/li&gt;&lt;/ul&gt;</code> tworzy listę, taką samą jak ta!</li>
+<li><code>&lt;div&gt;&lt;/div&gt;</code> tworzy sekcję na stronie</li>
+</ul>
+<p>Tutaj możesz zobaczyć przykład pełnego szablonu, skopiuj i wklej go do <code>blog/templates/blog/post_list.html</code>:</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: 14.06.2014, 12:14<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>My first post<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: 14.06.2014, 12:14<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h2</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>My second post<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h2</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>Stworzyliśmy tutaj trzy sekcje <code>div</code>.</p>
+<ul>
+<li>Pierwszy <code>div</code> zawiera w sobie tytuł naszego bloga - jest to nagłówek i link</li>
+<li>Kolejne dwa elementy <code>div</code> zawierają nasze wpisy wraz z opublikowaną datą, <code>h2</code> z klikalnym tytułem wpisu oraz dwa elementy <code>p</code> (akapity) z tekstem, jeden z datą i drugi z treścią naszego wpisu.</li>
+</ul>
+<p>Daje nam to taki efekt:</p>
+<p><img src="images/step6.png" alt="Rysunek 11.4"></p>
+<p>Hura! Ale jak do tej pory, nasz szablon wyświetla dokładnie <strong>tę samą treść</strong>. Tymczasem wspominałyśmy wcześniej, że szablony umożliwiają nam wyświetlenie <strong>różnych</strong> treści w <strong>takim samym formacie</strong>.</p>
+<p>Chcemy wyświetlić prawdziwe wpisy dodane w naszym panelu admina Django - i tym się teraz zajmiemy.</p>
+<h2 id="jeszcze-jedna-rzecz-wdrożenie-na-serwer">Jeszcze jedna rzecz: wdrożenie na serwer!</h2>
+<p>Byłoby fajnie, gdybyśmy mogli to wszystko zobaczyć &quot;na żywo&quot; w Internecie, a nie tylko u siebie w komputerze. Czas na wdrożenie na serwer PythonAnywhere:</p>
+<h3 id="zapisz-zmiany-w-historii-i-wrzuć-swój-kod-na-githuba">Zapisz zmiany w historii i wrzuć swój kod na GitHuba</h3>
+<p>Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji (wpisz następujące polecenie lokalnie w wierszu polecenia, nie na PythonAnywhere):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+</code></pre><p>Upewnij się, że jesteś w folderze <code>djangogirls</code> i powiedz <code>git</code>owi aby dodał wszystkie zmiany z aktualnego folderu:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git add --all .
+</code></pre><blockquote>
+<p><strong>Uwaga:</strong> <code>--all</code> (czyli &quot;wszystko&quot;) oznacza, że <code>git</code> weźmie pod uwagę pliki, które usunęłaś (domyślnie rozpoznaje zmiany tylko w nowych lub już istniejących plikach). Pamiętaj również (vide rozdział 3), że <code>.</code> oznacza aktualny katalog.</p>
+</blockquote>
+<p>Zanim prześlemy wszystkie pliki, sprawdźmy, co faktycznie <code>git</code> zamierza przesłać (wszystkie pliki, które <code>git</code> prześle do repozytorium, powinny być zaznaczone na zielono):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+</code></pre><p>Już blisko do końca. Teraz czas poprosić gita, aby zapisał te zmiany w historii. Dodamy za moment informację o zmianach (ang. &quot;commit message&quot;), gdzie opiszemy, co zostało zmienione. Możesz w tym miejscu wpisać cokolwiek zechcesz, ale warto jednak wpisać kilka słów opisujących, co robiłaś. W ten sposób łatwiej Ci będzie w przyszłości przypomnieć sobie, czego dotyczyły zapisane zmiany.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git commit -m &quot;Zmieniony kod HTML na stronie.&quot;
+</code></pre><blockquote>
+<p><strong>Uwaga:</strong> Nie zapomnij umieścić informacji o zmianach w cudzysłowie (&quot; &quot;).</p>
+</blockquote>
+<p>Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git push
+</code></pre><h3 id="prześlij-nową-wersję-kodu-do-pythonanywhere-i-ponownie-załaduj-swoją-stronę">Prześlij nową wersję kodu do PythonAnywhere i ponownie załaduj swoją stronę</h3>
+<ul>
+<li>Otwórz <a href="https://www.pythonanywhere.com/consoles/" target="_blank">stronę konsoli na PythonAnywhere</a> i przejdź do swojej <strong>Bash console</strong> (czyli po polsku &quot;konsoli Bash&quot;) albo otwórz nową. Wpisz do niej:</li>
+</ul>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>$ cd ~/&lt;your-pythonanywhere-domain&gt;.pythonanywhere.com
+$ git pull
+[...]
+</code></pre><p>Pamiętaj by podmienić <code>&lt;your-pythonanywhere-domain&gt;</code> na Twoją właściwą nazwę użytkownika PythonAnywhere, bez ostrych nawiasów. Twoja nazwa poddomeny jest zwykle Twoją nazwą użytkownika PythonAnywhere, ale w niektórych przypadkach może być nieco inna (np. jeśli Twoja nazwa użytkownika zawiera wielkie litery). Więc jeśli to polecenie nie działa, należy użyć polecenia <code>ls</code> (lista plików), aby znaleźć rzeczywistą subdomenę/nazwę folderu, a następnie <code>cd</code>, aby tam przejść.</p>
+<p>Widzisz, jak ściąga się Twój kod. Jeśli chcesz sprawdzić, czy zmiany zostały ściągnięte, możesz przejść do strony <strong>&quot;Files&quot;</strong> i sprawdzić swój kod na PythonAnywhere (możesz przejść do innych stron na PythonAnywhere korzystając z menu na stronie konsoli).</p>
+<ul>
+<li>Na koniec przejdź do strony <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">&quot;Web&quot;</a> i naciśnij <strong>Reload</strong>.</li>
+</ul>
+<p>I to powinno wystarczyć! Możesz śmiało odświeżyć swoją stronę w przeglądarce! Zmiany powinny być widoczne. :)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_views/" class="navigation navigation-prev " aria-label="Previous page: Widoki Django - czas zacząć tworzyć!">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_orm/" class="navigation navigation-next " aria-label="Next page: Django ORM (QuerySet)">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Wprowadzenie do HTML-a","level":"1.17","depth":1,"next":{"title":"Django ORM (QuerySet)","level":"1.18","depth":1,"path":"django_orm/README.md","ref":"django_orm/README.md","articles":[]},"previous":{"title":"Widoki Django - czas zacząć tworzyć!","level":"1.16","depth":1,"path":"django_views/README.md","ref":"django_views/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"pl","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"html/README.md","mtime":"2021-03-25T14:00:00.427Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"pl"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,850 @@
+
+<!DOCTYPE HTML>
+<html lang="fa" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <title>نصب و راه اندازی پایتون · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../code_editor/" />
+    
+    
+    <link rel="prev" href="../intro_to_command_line/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="چیزی برای جستجو بنویسید" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    معرفی
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    نصب و راه‌اندازی
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    خط فرمان
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    پایتون
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    ویرایشگر کد
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    محیط مجازی
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    گیت
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    نصب و راه اندازی (کروم بوک)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    اینترنت چگونه کار می‌کند
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    آشنایی با خط فرمان
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    نصب و راه اندازی پایتون
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    ویرایشگر کد
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    آشنایی با پایتون
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    جنگو چیست?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    نصب و راه اندازی جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    اولین پروژه جنگو شما!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    مدل در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    پنل مدیریت در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    فاز دیپلوی!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    URL ها در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    ساخت view در جنگو!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    آشنایی با HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    ORM در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    داده های پویا در templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    templates در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - آن را زیبا کنید
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    توسعه template
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    برنامه خود را توسعه دهید
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    فرم در جنگو
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    گام بعدی چیست؟
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            انتشار یافته توسط HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >نصب و راه اندازی پایتون</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="بیایید-پایتون-را-شروع-کنیم">بیایید پایتون را شروع کنیم</h1>
+<p>بالاخره به اینجا رسیدیم!</p>
+<p>اما در ابتدا بگذارید که به شما بگوییم پایتون چیست. پایتون یک زبان برنامه نویسی بسیار رایج است که می‌تواند برای ساخت وبسایت، بازی‌ها، نرم افزارهای علمی، گرافیک و بسیاری امور دیگر استفاده شود.</p>
+<p>پایتون به اواخر دهه 1980 باز می‌گردد و هدف اصلی آن این بود که زبانی طراحی شود که خواندن آن برای افراد هم راحت باشد (و نه اینکه صرفاً ماشین‌ها راحت باشند!). به خاطر همین است که خواندن آن نسبت به بقیه زبان‌ها ساده تر است، اما نگران نباشید، پایتون واقعاً قدرتمند است!</p>
+<h1 id="نصب-و-راه-اندازی-پایتون">نصب و راه اندازی پایتون</h1>
+<blockquote>
+<p><strong>نکته</strong> اگر از Chromebook استفاده می‌کنید، از این بخش رد شوید و دستورالعمل‌های بخش <a href="../chromebook_setup/">نصب Chromebook</a> را پیگیری کنید.</p>
+<p><strong>نکته</strong> اگر قبلاً مراحل نصب را طی کرده‌اید، نیازی به انجام دوباره این کار نیست - شما می‌توانید به طور مستقیم به بخش بعد بروید!</p>
+<p>برای خوانندگان در خانه: این فصل در ویدئو <a href="https://www.youtube.com/watch?v=pVTaqzKZCdA" target="_blank">نصب پایتون و ویرایشگر کد</a> توضیح داده شده است.</p>
+<p>این قسمت بر اساس دوره آموزشی Geek Girls Carrots نوشته شده است.(<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>)</p>
+</blockquote>
+<p>جنگو با پایتون نوشته شده است. برای انجام هر کاری در جنگو، به زبان پایتون احتیاج داریم. بیایید با نصب پایتون شروع کنیم! ما می‌خواهیم شما آخرین نسخه پایتون 3 را نصب کنید، بنابراین اگر هرنسخه قدیمی تری دارید باید آن را به روزرسانی کنید. اگر نسخه پایتون 3.4 یا جدیدتر آن را دارید برای این برنامه کافی است.</p>
+<p>حتی اگر بر روی کامپیوتر شما Anaconda نصب شده است، لطفاً پایتون معمولی را به روش زیر نصب کنید.</p>
+<sec data-title="Install Python: Windows" data-id="python_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: Windows<a class="pull-right section atTitle btn btn-default" target="python_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_windows"><div class="panel-body">
+<p>ابتدا چک کنید که کامپیوتر شما دارای ویندوز 32-bit است یا 64-bit، در ردیف &quot;System type&quot; در صفحه System Info می‌توانید این را متوجه شوید. برای پیدا کردن این صفحه یکی از کارهای زیر را انجام دهید:</p>
+<ul>
+<li>دکمه Windows و دکمه Pause/Break را همزمان روی کیبورد فشار دهید</li>
+<li>Control Panel را از منو ویندوز باز کنید، سپس به System &amp; Security بروید و بعد از آن به System بروید</li>
+<li>دکمه Windows را فشار دهید، سپس مسیر Settings &gt; System &gt; About را دنبال کنید</li>
+</ul>
+<p>می‌توانید پایتون برای ویندوز را از وبسایت <a href="https://www.python.org/downloads/windows/" target="_blank">https://www.python.org/downloads/windows/</a> دانلود کنید. بر روی لینک &quot;Latest Python 3 Release - Python x.x.x&quot; کلیک کنید. اگر کامپیوتر شما نسخه <strong>64-bit</strong> ویندوز را اجرا می‌کند، <strong>Windows x86-64 executable installer</strong> را دانلود کنید. در غیر اینصورت، <strong>Windows x86 executable installer</strong> را دانلود کنید. پس از دانلود کردن اینستالر، باید آن را اجرا کنید (بر روی آن دوبار کلیک کنید) و دستورالعمل‌ها را دنبال کنید.</p>
+<p>نکته قابل توجه: در هنگام نصب پنجره‌ای را خواهید دید به نام &quot;Setup&quot;. مطمئن شوید که تیک &quot;Add Python 3.6 to PATH&quot; یا &quot;Add Python to your environment variables&quot; را زده باشید و بعد دکمه &quot;Install Now&quot; را همانطور که در تصویر می‌بینید، بزنید (اگر از نسخه دیگری استفاده کنید ممکن است کمی متفاوت از این به نظر برسد):</p>
+<p><img src="images/python-installation-options.png" alt="فراموش نکنید که پایتون را به Path اضافه کنید"></p>
+<p>وقتی که نصب کامل شد، یک پنجره خواهید دید که شما را به یک لینک برای آموزش بیشتر در مورد پایتون و نیز در مورد نسخه‌ای که نصب کرده‌اید ارجاع می‌دهد. این پنجره را کنسل کنید و یا ببندید - شما در همین دوره آموزشی بیشتر در مورد پایتون یاد خواهید گرفت!</p>
+<p>نکته: اگر از نسخه‌های قدیمی‌تر ویندوز استفاده می‌کنید (7، ویستا یا نسخه های قدیمی‌تر) و نصب کننده پایتون 3.6.x خطا می‌دهد می‌توانید این را امتحان کنید:</p>
+<ol>
+<li>تمام آپدیت‌های ویندوز را نصب کنید و بعد دوباره نصب کردن پایتون را امتحان کنید، یا</li>
+<li>یک <a href="https://www.python.org/downloads/windows/" target="_blank">نسخه قدیمی‌تر پایتون</a> را مانند <a href="https://www.python.org/downloads/release/python-346/" target="_blank">3.4.6</a> نصب کنید.</li>
+</ol>
+<p>اگر نسخه قدیمی‌تر پایتون را نصب کنید صفحه نصب با آن چیزی که در بالا دیدیم کمی متفاوت خواهد بود. مطمئن باشید که به سمت پایین اسکرول کنید تا عبارت &quot;Add python.exe to Path&quot; را ببینید، سپس بر روی دکمه در سمت چپ کلیک کنید و &quot;Will be installed on local hard drive&quot; را انتخاب کنید:</p>
+<p><img src="images/add_python_to_windows_path.png" alt="اضافه کردن پایتون به Path در نسخه‌های قدیمی"></p>
+</div></div></div></sec>
+<sec data-title="Install Python: OS X" data-id="python_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: OS X<a class="pull-right section atTitle btn btn-default" target="python_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_OSX"><div class="panel-body">
+<blockquote>
+<p><strong>نکته</strong> قبل از نصب پایتون بر روی OS X، باید مطمئن شوید که Mac شما اجازه نصب پکیج‌های خارج از اپ استور را می‌دهد. به System Preferences بروید (در فولدر Applications است)، بر روی &quot;Security &amp; Privacy&quot; کلیک کنید و سپس تب &quot;General&quot; را انتخاب کنید. اگر گزینه &quot;Allow apps downloaded from:&quot; بر روی &quot;Mac App Store,&quot; تنظیم شده بود آن را به &quot;Mac App Store and identified developers.&quot; تغییر دهید</p>
+</blockquote>
+<p>لازم است که به وبسایت <a href="https://www.python.org/downloads/release/python-361/" target="_blank">https://www.python.org/downloads/release/python-361/</a> بروید و اینستالر پایتون را نصب کنید:</p>
+<ul>
+<li>فایل <em>Mac OS X 64-bit/32-bit installer</em> را دانلود کنید،</li>
+<li>بر روی <em>python-3.6.1-macosx10.6.pkg</em> دابل کلیک کنید تا اینستالر اجرا شود.</li>
+</ul>
+</div></div></div></sec>
+<sec data-title="Install Python: Linux" data-id="python_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: Linux<a class="pull-right section atTitle btn btn-default" target="python_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_linux"><div class="panel-body">
+<p>احتمال زیادی دارد که شما بر روی کامپیوترتان پایتون داشته باشید. برای چک کردن آنکه آیا پایتون دارید (یا اینکه ورژن آن چیست)، یک کنسول باز کنید و دستورات زیر را تایپ کنید:</p>
+<p></p><p class="code-label">خط فرمان</p><p></p>
+<pre><code>$ python3 --version
+Python 3.6.1
+</code></pre><p>اگر شما نسخه پایتونی بالاتر از 3.4.0 دارید (مثلاً 3.6.0)، نیازی به آپگرید نیست. اگر پایتون ندارید یا نسخه‌ متفاوت از موارد بالا دارید، ابتدا به کمک دستور زیر چک کنید که چه توزیعی از لینوکس دارید:</p>
+<p></p><p class="code-label">خط فرمان</p><p></p>
+<pre><code>$ grep &apos;^NAME=&apos; /etc/os-release
+</code></pre><p>بعد از آن، بسته به نتیجه، یکی از روش‌های نصب زیر را پیگیری کنید.</p>
+</div></div></div></sec>
+<sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: Debian or Ubuntu<a class="pull-right section atTitle btn btn-default" target="python_debian"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_debian"><div class="panel-body">
+<p>این دستور را در کنسول تایپ کنید:</p>
+<p></p><p class="code-label">خط فرمان</p><p></p>
+<pre><code>$ sudo apt install python3
+</code></pre></div></div></div></sec>
+<sec data-title="Install Python: Fedora" data-id="python_fedora" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: Fedora<a class="pull-right section atTitle btn btn-default" target="python_fedora"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_fedora"><div class="panel-body">
+<p>این دستور را در کنسول تایپ کنید:</p>
+<p></p><p class="code-label">خط فرمان</p><p></p>
+<pre><code>$ sudo dnf install python3
+</code></pre><p>اگر بر روی نسخه‌های قدیمی Fedora کار می‌کنید ممکن است پیغام خطایی بگیرید که <code>dnf</code> پیدا نشد. در این مورد، باید به جای آن از <code>yum</code> استفاده کنید.</p>
+</div></div></div></sec>
+<sec data-title="Install Python: openSUSE" data-id="python_openSUSE" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Install Python: openSUSE<a class="pull-right section atTitle btn btn-default" target="python_openSUSE"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="python_openSUSE"><div class="panel-body">
+<p>این دستور را در کنسول تایپ کنید:</p>
+<p></p><p class="code-label">خط فرمان</p><p></p>
+<pre><code>$ sudo zypper install python3
+</code></pre></div></div></div></sec>
+<p>به وسیله باز کردن یک کنسول و اجرای دستور <code>python3</code> از نصب صحیح پایتون اطمینان حاصل کنید:</p>
+<p></p><p class="code-label">خط فرمان</p><p></p>
+<pre><code>$ python3 --version
+Python 3.6.1
+</code></pre><p>نصحه نمایش داده شده ممکن است با 3.6.1 متفاوت باشد اما باید آن چیزی باشد که در موقع نصب انتخاب کرده اید.</p>
+<p><strong>نکته:</strong> اگر بر روی ویندوز کار می‌کنید و خطایی مبنی بر پیدا نکردن <code>python3</code> دریافت کردید، سعی کنید از <code>python</code> (بدون <code>3</code>) استفاده کنید. علاوه بر این چک کنید که نسخه پایتون 3.4.0 یا بالاتر باشد. اگر این هم کار نکرد، یک پنجره خط فرمان دیگر باز کنید و دوباره امتحان کنید؛ اگر یک پنجره خط فرمان را قبل از نصب پایتون باز گذاشته باشید، ممکن است چنین خطایی بگیرید.</p>
+<hr>
+<p>اگر هر تردیدی داشتید یا چیزی درست کار نمی‌کرد و نمی‌دانستید چطور باید پیش بروید از مربی خود کمک بگیرید! بعضی از مواقع کارها خوب پیش نمی‌رود و بهتر است از کسی که تجربه بیشتری دارد کمک بگیرید.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../intro_to_command_line/" class="navigation navigation-prev " aria-label="Previous page: آشنایی با خط فرمان">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../code_editor/" class="navigation navigation-next " aria-label="Next page: ویرایشگر کد">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"نصب و راه اندازی پایتون","level":"1.6","depth":1,"next":{"title":"ویرایشگر کد","level":"1.7","depth":1,"path":"code_editor/README.md","ref":"code_editor/README.md","articles":[]},"previous":{"title":"آشنایی با خط فرمان","level":"1.5","depth":1,"path":"intro_to_command_line/README.md","ref":"intro_to_command_line/README.md","articles":[]},"dir":"rtl"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"fa","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"python_installation/README.md","mtime":"2021-03-25T14:00:00.251Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"fa"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

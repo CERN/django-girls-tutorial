@@ -1,0 +1,785 @@
+
+<!DOCTYPE HTML>
+<html lang="el" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Εγκατάσταση του Django · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_start_project/" />
+    
+    
+    <link rel="prev" href="../django/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Αναζήτηση για ..." />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Εισαγωγή
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Εγκατάσταση
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Εγκατάσταση (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Πως λειτουργεί το διαδίκτυο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Εισαγωγή στην γραμμή εντολών
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Εγκατάσταση Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Επεξεργαστής Κώδικα
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Εισαγωγή στην Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Τι είναι το Django;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Εγκατάσταση του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Το πρώτο σου Django project!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Μοντέλα (models) του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Διαχείριση μέσω Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Ανεβάστε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - ώρα να δημιουργήσετε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Εισαγωγή στην HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Δυναμικά δεδομένα στα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - κάντε το όμορφο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Επεκτείνοντας τα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Επεκτείνοντας την εφαρμογή σας
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Φόρμες Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Τι υπάρχει μετά;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Δημοσιεύτηκε με το HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Εγκατάσταση του Django</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="εγκατάσταση-του-django">Εγκατάσταση του Django</h1>
+<blockquote>
+<p><strong>Σημείωση</strong> Αν χρησιμοποιείτε ένα Chromebook, παραλείψτε αυτό το κεφάλαιο και σιγουρευτείτε ότι ακουλουθείτε τις <a href="../chromebook_setup/">Chromebook Setup</a> οδηγίες.</p>
+<p><strong>Σημείωση</strong> Αν έχετε ήδη περάσει τα βήματα εγκατάστασης τότε το έχετε ήδη κάνει αυτό - μπορείτε να μεταβείτε απευθείας στο επόμενο κεφάλαιο!</p>
+<p>Μέρος αυτής της ενότητας βασίζεται στους οδηγούς των Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p>
+<p>Μέρος αυτής της ενότητας βασίζεται στον οδηγό <a href="http://django-marcador.keimlink.de/" target="_blank">django-marcador</a> υπό την άδεια χρήσης Creative Commons Attribution-ShareAlike 4.0 International License. Τα πνευματικά δικαιώματα του οδηγού django-marcador ανήκουν στον Markus Zapke-Gründemann.</p>
+</blockquote>
+<h2 id="εικονικό-περιβάλλον">Εικονικό περιβάλλον</h2>
+<p>Πριν την εγκατάσταση του Django, θα εγκαταστήσουμε ενα εξαιρετικά χρήσιμο εργαλείο για να κρατήσουμε το περιβάλλον του υπολογιστή σας τακτοποιημένο και καθαρό. Μπορείτε να παραβλέψετε αυτό το βήμα, αλλά προτείνουμε να το ακολουθήσετε καθώς αν δεν το ακολουθήσετε υπάρχει σοβαρή πιθανότητα να προκύψουν σφάλματα αργότερα. Ξεκινώντας με την καλύτερη δυνατή εγκατάσταση, θα αποφύγετε πολλά προβλήματα στο μέλλον!</p>
+<p>Ας δημιουργήσουμε λοιπόν ενα <strong>εικονικό περιβάλλον</strong> (το αποκαλούμενο <em>virtualenv</em>). Το virtualenv θα απομονώσει την κάθε εγκατάσταση Python/Django ανά έργο (project). Αυτό σημαίνει ότι οι αλλαγές που κάνετε σε μια ιστοσελίδα (έργο - project) δεν θα επηρεάζουν οποιεσδήποτε άλλες ιστοσελίδες που αναπτύσσετε παράλληλα. Κάθε ιστοσελίδα θα έχει τα δικά της πακέτα και κάθε πακέτο την δική του έκδοση (version). Καλό, ε;</p>
+<p>Το μόνο που χρειάζεται να κάνετε είναι να βρείτε έναν φάκελο στον οποίο θέλετε να δημιουργήσετε το <code>virtualenv</code>. Για παράδειγμα, το home directory σας. Στα Windows, θα μοιάζει κάπως έτσι <code>C:\Users\Name</code> ( όπου <code>Name</code> είναι το όνομα της σύνδεσης σας).</p>
+<blockquote>
+<p><strong>ΣΗΜΕΙΩΣΗ:</strong> Στα Windows, σιγουρευτείτε ότι αυτός ο κατάλογος δεν περιέχει χαρακτήρες που τονίζονται ή ειδικούς χαρακτήρες. Αν το όνομα χρήστη σας περιέχει χαρακτήρες που τονίζονται, χρησιμοποιείστε ένα διαφορετικό φάκελο, για παράδειγμα <code>C:\djangogirls</code>.</p>
+</blockquote>
+<p>Για αυτό το tutorial θα χρησιμοποιήσουμε ένα νεο φάκελο <code>djangogirls</code> από το home directory σας:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ mkdir djangogirls
+$ cd djangogirls
+</code></pre><p>Θα δημιουργήσουμε ένα virtualenv με το όνομα <code>myvenv</code>. Η γενική εντολή είναι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 -m venv myvenv
+</code></pre><sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Virtual environment: Windows<a class="pull-right section atTitle btn btn-default" target="virtualenv_installation_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_installation_windows"><div class="panel-body">
+<p>Για την δημιουργία ενός νέου <code>virtualenv</code>, θα χρειαστεί να ανοίξετε την γραμμή εντολών στον υπολογιστή σας (κονσόλα) και να τρέξετε την εντολή <code>python -m venv myvenv</code>. Θα μοιάζει κάπως έτσι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>C:\Users\Name\djangogirls&gt; python -m venv myvenv
+</code></pre><p>Όπου <code>myvenv</code> είναι το όνομα του <code>virtualenv</code> σας. Μπορείτε να χρησιμοποιήσετε οποιοδήποτε άλλο όνομα, αλλά πρέπει να είναι αγγλικοί χαρακτήρες, πεζά, χωρίς κενά, εμφάσεις ή άλλους ειδικούς χαρακτήρες. Είναι επίσης καλή ιδέα να κρατήσετε το όνομα μικρό - θα το αναφέρετε συχνά!</p>
+</div></div></div></sec>
+<sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Virtual environment: Linux and OS X<a class="pull-right section atTitle btn btn-default" target="virtualenv_installation_linuxosx"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_installation_linuxosx"><div class="panel-body">
+<p>Μπορούμε να δημιουργήσουμε ένα <code>virtualenv</code> σε Linux και σε OS X τρέχοντας την εντολή <code>python3 -m venv myvenv</code>. Θα μοιάζει κάπως έτσι:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ python3 -m venv myvenv
+</code></pre><p>Το <code>myvenv</code> είναι το όνομα του <code>virtualenv</code> σας. Μπορείτε να χρησιμοποιήσετε οποιοδήποτε άλλο όνομα, αλλα πρέπει να είναι αγγλικοί χαρακτήρες, πεζά, χωρίς κενά και χωρίς άλλους ειδικούς χαρακτήρες. Είναι επίσης καλή ιδέα να κρατήσετε το όνομα μικρό - θα το αναφέρετε συχνά!</p>
+<blockquote>
+<p><strong>ΣΗΜΕΙΩΣΗ:</strong> Σε μερικές εκδόσεις των Debian/Ubuntu ίσως εμφανιστεί το ακόλουθο σφάλμα:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>The virtual environment was not created successfully because ensurepip is not available.  Στα λειτουργικά συστήματα Debian/Ubuntu, θα χρειαστεί να εγκαταστήσετε το πακέτο python3-venv χρησιμοποιώντας την ακόλουθη εντολή.
+   apt install python3-venv
+Ίσως χρειαστεί να χρηιμοποιήσετε sudo με αυτή την εντολή.  Αφού εγκατασταθεί επιτυχώς το πακέτο python3-venv, επαναδημιουργήστε το εικονικό σας περιβάλλον.
+</code></pre><p>Σε αυτή την περίπτωση, ακολουθήστε τις οδηγίες παραπάνω και εγκαταστήστε το πακέτο <code>python3-venv</code>: </p><p class="code-label">command-line</p><p></p>
+<pre><code>$ sudo apt install python3-venv
+</code></pre><p><strong>ΣΗΜΕΙΩΣΗ:</strong> Σε μερικές εκδόσεις των Debian/Ubuntu η ενεργοποίηση του virtual environment με αυτόν τον τρόπο, παράγει το ακόλουθο σφάλμα:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>Error: Command &apos;[&apos;/home/eddie/Slask/tmp/venv/bin/python3&apos;, &apos;-Im&apos;, &apos;ensurepip&apos;, &apos;--upgrade&apos;, &apos;--default-pip&apos;]&apos; returned non-zero exit status 1
+</code></pre><p>Για την επίλυση του χρησιμοποιήστε την εντολή <code>virtualenv</code>.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ sudo apt install python-virtualenv
+$ virtualenv --python=python3.6 myvenv
+</code></pre><p><strong>ΣΗΜΕΙΩΣΗ:</strong> Αν λάβετε κάποιο σφάλμα όπως</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>E: Unable to locate package python3-venv
+</code></pre><p>τότε τρέξτε:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>sudo apt install python3.6-venv
+</code></pre></blockquote>
+</div></div></div></sec>
+<h2 id="δουλεύοντας-με-το-virtualenv">Δουλεύοντας με το virtualenv</h2>
+<p>Η παραπάνω εντολή θα δημιουργήσει έναν φάκελο που ονομάζεται <code>myvenv</code> (ή όποιο άλλο όνομα διαλέξετε) που περιέχει το εικονικό μας περιβάλλον (βασικά ένα μάτσο φακέλων και αρχείων).</p>
+<sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Working with virtualenv: Windows<a class="pull-right section atTitle btn btn-default" target="virtualenv_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_windows"><div class="panel-body">
+<p>Ξεκινήστε το εικονικό σας περιβάλλον εκτελώντας:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>C:\Users\Name\djangogirls&gt; myvenv\Scripts\activate
+</code></pre><blockquote>
+<p><strong>ΣΗΜΕΙΩΣΗ:</strong> στα Windows 10 μπορεί να λάβετε ένα σφάλμα στο Windows PowerShell που λέει <code>η εκτέλεση των σεναρίων έχει απενεργοποιηθεί σε αυτό το σύστημα</code>. Σε αυτή την περίπτωση, ανοίξτε ένα άλλο Windows PowerShell με την επιλογή &quot;Εκτέλεση ως διαχειριστής&quot;. Έπειτα δοκιμάστε να πληκτρολογήσετε την ακόλουθη εντολή πριν ξεκινήσετε το εικονικό σας περιβάλλον:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>C:\WINDOWS\system32&gt; Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+    Execution Policy Change
+    The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is &quot;N&quot;): A
+</code></pre></blockquote>
+</div></div></div></sec>
+<sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Working with virtualenv: Linux and OS X<a class="pull-right section atTitle btn btn-default" target="virtualenv_linuxosx"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="virtualenv_linuxosx"><div class="panel-body">
+<p>Ξεκινήστε το εικονικό σας περιβάλλον εκτελώντας:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ source myvenv/bin/activate
+</code></pre><p>Θυμηθείτε να αντικαταστήσετε το <code>myvenv</code> με το επιλεγμένο <code>virtualenv</code> όνομα που επιλέξατε!</p>
+<blockquote>
+<p><strong>ΣΗΜΕΙΩΣΗ:</strong> μερικές φορές <code>πηγή</code> μπορεί να μην είναι διαθέσιμη. Σε αυτές τις περιπτώσεις προσπαθήστε να κάνετε αυτό:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ . myvenv/bin/activate
+</code></pre></blockquote>
+</div></div></div></sec>
+<p>Θα ξέρετε ότι είστε μέσα σε ένα <code>virtualenv</code> όταν δείτε την γραμμή εντολών στην κονσόλα σας να είναι συμπληρωμένη με το όνομα του μέσα σε παρένθεση, πχ <code>(myvenv)</code>.</p>
+<p>Όταν δουλεύετε μέσα σε ένα εικονικό περιβάλλον, η εντολή <code>python</code> θα αναφέρετε αυτόματα στην σωστή έκδοση ώστε να μπορείτε να χρησιμοποιήσετε την εντολή <code>python</code> αντί για <code>python3</code>.</p>
+<p>Εντάξει, μέχρι τώρα έχουμε τακτοποιήσει το περιβάλλον εργασίας μας. Μπορούμε επιτέλους να εγκαταστήσουμε το Django!</p>
+<h2 id="εγκατάσταση-django">Εγκατάσταση Django</h2>
+<p>Τώρα που είστε μέσα στο <code>virtualenv</code>, μπορείτε να εγκαταστήσετε το Django.</p>
+<p>Πριν κάνουμε αυτό, πρέπει να σιγουρευτούμε ότι έχουμε την τελευταία έκδοση του <code>pip</code>, το εργαλείο που χρησιμοποιούμε για να εγκαταστήσουμε το Django (και οποιοδήποτε άλλο Python πακέτο όπως θα δούμε αργότερα):</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~$ python3 -m pip install --upgrade pip
+</code></pre><h3 id="εγκατάσταση-πακέτων-με-τα-requirements">Εγκατάσταση πακέτων με τα requirements</h3>
+<p>Το αρχείο requirements είναι μια λίστα από dependencies (δυστυχώς, πάλι, δεν υπάρχει αντίστοιχος ελληνικός όρος αλλά φανταστείτε το ως τις &quot;απαιτήσεις&quot; της εφαρμογής σας - απαιτήσεις όχι σε μνήμη, σκληρό δίσκο κλπ αλλά σε άλλα προγράμματα) προς εγκατάσταση χρησιμοποιώντας την εντολή <code>pip install</code>:</p>
+<p>Δημιουργήστε πρώτα ένα αρχείο <code>requirements.txt</code> μέσα στο φάκελο <code>djangogirls /</code> χρησιμοποιώντας το πρόγραμμα επεξεργασίας κώδικα που εγκαταστήσατε νωρίτερα. Μπορείτε να το κάνετε αυτό, ανοίγοντας ένα νέο αρχείο στο πρόγραμμα επεξεργασίας κώδικα και στη συνέχεια αποθηκεύοντάς το ως <code>requirements.txt</code> στο φάκελο <code>djangogirls /</code>. Ο φάκελός σας θα μοιάζει κάπως έτσι:</p>
+<pre><code>djangogirls
+└───requirements.txt
+</code></pre><p>Στο αρχείο <code>djangogirls/requirements.txt</code> θα πρέπει να προσθέσετε τα ακόλουθα:</p>
+<p></p><p class="code-label">djangogirls/requirements.txt</p><p></p>
+<pre><code>Django~=2.2.4
+</code></pre><p>Τώρα τρέξτε <code>pip install -r requirements.txt</code> για να ξεκινήσει η εγκατάσταση του Django.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~$ pip install -r requirements.txt
+Collecting Django~=2.2.4 (from -r requirements.txt (line 1))
+  Downloading Django-2.2.4-py3-none-any.whl (7.1MB)
+Installing collected packages: Django
+Successfully installed Django-2.2.4
+</code></pre><sec data-title="Installing Django: Windows" data-id="django_err_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Windows<a class="pull-right section atTitle btn btn-default" target="django_err_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_windows"><div class="panel-body">
+<blockquote>
+<p>Εάν λάβετε κάποιο σφάλμα όταν τρέχετε το pip σε Windows, παρακαλούμε ελέγξτε εάν η διαδρομή (pathname) του project σας περιέχει κενά, εμφάσεις ή ειδικούς χαρακτήρες (για παράδειγμα,<code>C:\Users\User Name\djangogirls</code>). Εάν ναι, παρακαλούμε σκεφτείτε να χρησιμοποιήσετε μία άλλη τοποθεσία χωρίς κενά, εμφάσεις ή ειδικούς χαρακτήρες (για παράδειγμα: <code>C:\djangogirls</code>). Δημιουργήστε ένα νέο virtualenv στον νέο αυτό φάκελο, σβήστε τον παλιό και δοκιμάστε την παραπάνω εντολή ξανά. (Το να μετακινήσετε τον virtualenv φάκελο δεν θα δουλέψει μιας και το virtualenv χρησιμοποιεί απόλυτες διαδρομές.)</p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Windows 8 and Windows 10<a class="pull-right section atTitle btn btn-default" target="django_err_windows8and10"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_windows8and10"><div class="panel-body">
+<blockquote>
+<p>Η γραμμή εντολών μπορεί να παγώσει όταν εγκατασταθεί το Django. Εάν γίνει αυτό, αντί για την παραπάνω εντολή χρησιμοποιήστε:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>C:\Users\Name\djangogirls&gt; python -m pip install -r requirements.txt
+</code></pre></blockquote>
+</div></div></div></sec>
+<sec data-title="Installing Django: Linux" data-id="django_err_linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Django: Linux<a class="pull-right section atTitle btn btn-default" target="django_err_linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_err_linux"><div class="panel-body">
+<blockquote>
+<p>Αν λάβετε κάποιο σφάλμα καθώς τρέχετε την εντολή pip σε Ubuntu 12.04, παρακαλούμε τρέξτε <code>python -m pip install -U --force-reinstall pip</code> για να διορθωθεί η εγκατάσταση του pip μέσα στο virtualenv.</p>
+</blockquote>
+</div></div></div></sec>
+<p>Αυτό ήταν! Είστε (επιτέλους) έτοιμοι να δημιουργήσετε μια Django εφαρμογή!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django/" class="navigation navigation-prev " aria-label="Previous page: Τι είναι το Django;">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_start_project/" class="navigation navigation-next " aria-label="Next page: Το πρώτο σου Django project!">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Εγκατάσταση του Django","level":"1.10","depth":1,"next":{"title":"Το πρώτο σου Django project!","level":"1.11","depth":1,"path":"django_start_project/README.md","ref":"django_start_project/README.md","articles":[]},"previous":{"title":"Τι είναι το Django;","level":"1.9","depth":1,"path":"django/README.md","ref":"django/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"el","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_installation/README.md","mtime":"2021-03-25T14:00:00.143Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"el"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

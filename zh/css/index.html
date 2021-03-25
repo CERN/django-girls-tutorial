@@ -1,0 +1,846 @@
+
+<!DOCTYPE HTML>
+<html lang="zh" >
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS - 让其更漂亮 · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../template_extending/" />
+    
+    
+    <link rel="prev" href="../django_templates/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    互联网是如何工作的？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    命令行介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python的安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    代码编辑器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django 是什么？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    你的第一个Django 项目 ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django模型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    部署！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django视图 - 抓紧时间去创建！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (查询集)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    模板中的动态数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django模板
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.20" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    CSS - 让其更漂亮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    模板扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    扩展您的应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    接下来呢？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            本書使用 HonKit 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >CSS - 让其更漂亮</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="css---让它更好看！">CSS - 让它更好看！</h1>
+<p>我们的博客看起来仍然很丑吧？是时候来让它变得更好看了！为此，我们将引入CSS。</p>
+<h2 id="什么是-css？">什么是 CSS？</h2>
+<p>层叠样式表(Cascading Style Sheets)是一种语言，用来描述使用标记语言(如HTML)写成的网站的外观和格式。把它当做我们网站的化妆 ;)。</p>
+<p>但我们不想总是从零开始，对吧？ 我们将会再一次采用程序员们编写并发布到互联网上的免费玩意。 重新发明轮子十分无趣，你懂的。</p>
+<h2 id="让我们用-bootstrap-吧！">让我们用 Bootstrap 吧！</h2>
+<p>Bootstrap是最流行的HTML和CSS框架之一，它可以用来开发炫酷的网站:<a href="https://getbootstrap.com/" target="_blank">https://getbootstrap.com/</a></p>
+<p>起初，它由Twitter的程序员编写，现在由来自世界各地的志愿者写的。</p>
+<h2 id="安装-boostrap">安装 Boostrap</h2>
+<p>若要安装Bootstrap，您需要将它添加到你的 <code>.html</code> 文件的 <code>&lt;head&gt;</code> 中：</p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+</code></pre>
+<p>这不会向你的项目添加任何文件。它只是指向在互联网上存在的文件。只需要继续打开您的网站并刷新页面。你瞧！</p>
+<p><img src="images/bootstrap1.png" alt="图 14.1"></p>
+<p>已经变得更好看了！</p>
+<h2 id="django-中的静态文件">Django 中的静态文件</h2>
+<p>最后我们来看看这些我们叫做<strong>静态文件</strong>的东西。 静态文件是指你所有的CSS文件和图片文件，这些文件不是动态的，对所有用户都是一样，不会因为请求内容而发生变化。</p>
+<h3 id="django的静态文件放在哪儿呢？">Django的静态文件放在哪儿呢？</h3>
+<p>Django已经知道到何处找到内建“admin”应用的静态文件。现在我们只需要给我们的<code>blog</code>应用添加一些静态文件。</p>
+<p>我们在blog应用的目录下创建一个名为<code>static</code>的文件夹，创建后目录结构如下：</p>
+<pre><code>    djangogirls
+    ├── blog
+    │   ├── migrations
+    │   ├── static
+    │   └── templates
+    └── mysite
+</code></pre><p>Django会自动找到你应用文件夹目录下所有名字叫“static”的文件夹，并能够使用其中的静态文件。</p>
+<h2 id="你的第一个-css-文件！">你的第一个 CSS 文件！</h2>
+<p>现在让我们创建一个 CSS 文件，为了在您的 web 页中添加你自己的风格。 在<code>static</code> 的目录下创建一个新的目录称为 <code>css</code> 。 然后，在这个 <code>css</code> 目录里创建一个新的文件，称为 <code>blog.css</code> 。 准备好了吗？</p>
+<pre><code>    djangogirls
+    └─── blog
+         └─── static
+              └─── css
+                   └─── blog.css
+</code></pre><p>是时候来写一些CSS了！首先用你的代码编辑器打开<code>blog/static/css/blog.css</code>。</p>
+<p>在这里我们不会太深入学习自定义和关于 CSS的内容 ，因为这些内容很容易而且您可以在本教程结束后自行学习。这页的最后会推荐一个免费课程来学习更多相关的内容。</p>
+<p>但至少要做一点吧。 也许我们可以改变我们标题的颜色？ 计算机使用特殊的编码来了解颜色。 它们以 <code>#</code>开始，后面跟着 6 个字母 （A 到 F) 或数字 (0-9)。例如，蓝色的的编码是<code>#0000FF</code> 你在这里可以发现许多颜色的编码： <a href="http://www.colorpicker.com/。" target="_blank">http://www.colorpicker.com/。</a> 你也可以使用 <a href="http://www.w3schools.com/cssref/css_colornames.asp" target="_blank">预先定义的颜色</a>，如 <code>red</code> 和 <code>green</code>。</p>
+<p>在你的<code>blog/static/css/blog.css</code>文件中添加下面的代码:</p>
+<pre><code class="lang-css">    <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#FCA205</span>;
+    }
+</code></pre>
+<p><code>h1 a</code>是CSS选择器。 这意味着我们要将我们的样式应用于在 <code>h1</code> 元素的任何 <code>a</code> 元素 。所以，当我们的代码中有类似<code>&lt;h1&gt;&lt;a href=&quot;&quot;&gt;link&lt;/a&gt;&lt;/h1&gt;</code>的代码， 上述的样式就会被应用。在这种情况下，我们会告诉它要改变其颜色为 <code>#FCA205</code>，它是橙色的。 当然，你可以把自己的颜色放在这里！</p>
+<p>在 CSS 文件中，我们决定HTML 文件中元素的样式。我们标识元素的第一种方式是用元素名。你可能把来自于HTML段落的这些元素名当做了标签记忆。 例如<code>a</code>，<code>h1</code>，<code>body</code>，这些都是元素名。我们也用属性去标识元素，如 <code>class</code> 或属性 <code>id</code> 。 类和 id 是你自己给该元素的命名。 类定义元素组，并指向特定元素的 id。 例如，可以使用标记名称 <code>a</code>、 类 <code>external_link</code> 或 id <code>link_to_wiki_page</code> 标识以下标签：</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;https://en.wikipedia.org/wiki/Django&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;external_link&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;link_to_wiki_page&quot;</span>&gt;</span>
+</code></pre>
+<p>可以在 <a href="http://www.w3schools.com/cssref/css_selectors.asp" target="_blank">CSS Selectors in w3schools</a>了解更多.</p>
+<p>我们还需要告诉我们的 HTML 模板，我们添加了一些 CSS。打开 <code>blog/templates/blog/post_list.html</code> 文件并在文件最开始的地方添加以下代码：</p>
+<pre><code class="lang-html">    {% load staticfiles %}
+</code></pre>
+<p>我们刚刚加载了静态文件到这里（译者注：这里实际上是为模板引入staticfiles相关的辅助方法）：）。 然后，在<code>&lt;head&gt;</code> 和 <code>&lt;/head &gt;</code>之间，在Bootstrap的CSS文件的引导之后添加以下行：</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+</code></pre>
+<p>浏览器按照给定文件的顺序读取文件，所以我们需要确保代码在正确的位置，否则我们文件中的代码可能会覆盖Bootstrap文件中的代码。我们只是告诉我们的模板我们的 CSS 文件所在的位置。</p>
+<p>现在，您的文件应该像这样：</p>
+<pre><code class="lang-html">    {% load staticfiles %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Django Girls blog<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% static &apos;css/blog.css&apos; %}&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+            {% for post in posts %}
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            {% endfor %}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p>好的保存该文件并刷新网站 ！</p>
+<p><img src="images/color2.png" alt="图 14.2"></p>
+<p>干得好 ！我想，也许我们也给我们的网站一点空间并增加左边缘。让我们来试试这个 ！</p>
+<pre><code class="lang-css">    <span class="hljs-selector-tag">body</span> {
+        <span class="hljs-attribute">padding-left</span>: <span class="hljs-number">15px</span>;
+    }
+</code></pre>
+<p>将它添加到你的 css 代码，保存该文件并查看它如何工作 ！</p>
+<p><img src="images/margin2.png" alt="图 14.3"></p>
+<p>也许我们可以在我们的头中自定义字体吗？粘贴到你的 <code>&lt; head &gt;</code> 在 <code>blog/templates/blog/post_list.html</code> 文件中：</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext&quot;</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">&quot;stylesheet&quot;</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/css&quot;</span>&gt;</span>
+</code></pre>
+<p>这行将从谷歌的字体 （ <a href="https://www.google.com/fonts" target="_blank">https://www.google.com/fonts</a> ） 中导入称为 <em>龙虾</em>的字体 。</p>
+<p>现在添加一行 <code>font-family: &apos;Lobster&apos;;</code> 到CSS文件 <code>blog/static/css/blog.css</code> 的 <code>h1 a</code> 声明块中(花括弧 <code>{</code> 与 <code>}</code> 之间的代码)，然后刷新页面：</p>
+<pre><code class="lang-css">    <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#FCA205</span>;
+        <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Lobster&apos;</span>;
+    }
+</code></pre>
+<p><img src="images/font.png" alt="图 14.3"></p>
+<p>太棒了！</p>
+<p>如上文所述，CSS 有一个概念叫做类，其中基本上允许您命名的 HTML 代码的一部分并只对这部分应用样式，不会影响其他部分。 它是超级有用的如果你有两个 div，但他们有些很多不一样 （如您的标题和你的帖子）。类可以帮你让它们看起来不同。</p>
+<p>继续命名部分HTML 代码。添加一个称为 <code>page-header</code> 的类到您的 <code>div</code>中，其中包含您的标题，像这样：</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;page-header&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;/&quot;</span>&gt;</span>Django Girls Blog<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>和现在将包含一篇博客文章的类<code>post</code>添加到您的 <code>div</code> 。</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>现在，我们将向不同的选择器添加声明块。 选择器以 <code>.</code> 开始，关联到类。 网络上有很多很棒的CSS教程以及相关解释，帮助您理解下面的代码。 至于现在，就简单地复制粘贴到你的 <code>blog/static/css/blog.css</code> 文件中吧。</p>
+<pre><code class="lang-css">    <span class="hljs-selector-class">.page-header</span> {
+        <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#ff9400</span>;
+        <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+        <span class="hljs-attribute">padding</span>: <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">20px</span> <span class="hljs-number">40px</span>;
+    }
+
+    <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span>, <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span>, <span class="hljs-selector-class">.page-header</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:active</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">36pt</span>;
+        <span class="hljs-attribute">text-decoration</span>: none;
+    }
+
+    <span class="hljs-selector-class">.content</span> {
+        <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">40px</span>;
+    }
+
+    <span class="hljs-selector-tag">h1</span>, <span class="hljs-selector-tag">h2</span>, <span class="hljs-selector-tag">h3</span>, <span class="hljs-selector-tag">h4</span> {
+        <span class="hljs-attribute">font-family</span>: <span class="hljs-string">&apos;Lobster&apos;</span>, cursive;
+    }
+
+    <span class="hljs-selector-class">.date</span> {
+        <span class="hljs-attribute">float</span>: right;
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#828282</span>;
+    }
+
+    <span class="hljs-selector-class">.save</span> {
+        <span class="hljs-attribute">float</span>: right;
+    }
+
+    <span class="hljs-selector-class">.post-form</span> <span class="hljs-selector-tag">textarea</span>, <span class="hljs-selector-class">.post-form</span> <span class="hljs-selector-tag">input</span> {
+        <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+    }
+
+    <span class="hljs-selector-class">.top-menu</span>, <span class="hljs-selector-class">.top-menu</span><span class="hljs-selector-pseudo">:hover</span>, <span class="hljs-selector-class">.top-menu</span><span class="hljs-selector-pseudo">:visited</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#ffffff</span>;
+        <span class="hljs-attribute">float</span>: right;
+        <span class="hljs-attribute">font-size</span>: <span class="hljs-number">26pt</span>;
+        <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">20px</span>;
+    }
+
+    <span class="hljs-selector-class">.post</span> {
+        <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">70px</span>;
+    }
+
+    <span class="hljs-selector-class">.post</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span>, <span class="hljs-selector-class">.post</span> <span class="hljs-selector-tag">h1</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:visited</span> {
+        <span class="hljs-attribute">color</span>: <span class="hljs-number">#000000</span>;
+    }
+</code></pre>
+<p>然后将文章的HTML代码用类声明包裹起来。替换以下内容：</p>
+<pre><code class="lang-html">    {% for post in posts %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>published: {{ post.published_date }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    {% endfor %}
+</code></pre>
+<p>在 <code>blog/templates/blog/post_list.html</code> 是这样的：</p>
+<pre><code class="lang-html">    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;content container&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;row&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;col-md-8&quot;</span>&gt;</span>
+                {% for post in posts %}
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                            {{ post.published_date }}
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                {% endfor %}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+</code></pre>
+<p>保存这些文件并刷新您的网站。</p>
+<p><img src="images/final.png" alt="图 14.4"></p>
+<p>呜呼 ！看起来棒极了，是吧？看看我们刚在HTML粘贴加入的类以及在CSS中使用的代码。如果你想要时间变成绿松石色，你该在哪里做改变呢？</p>
+<p>不要害怕摆弄这个 CSS，并试图去改变一些东西。调整CSS可以帮你搞明白不同的东西怎样工作。如果你做错了什么东西，别担心，您总是可以撤消它 ！</p>
+<p>我们非常建议在线免费学习这个 <a href="https://www.codecademy.com/tracks/web" target="_blank">Codeacademy HTML 和 CSS 课程</a> 。它可以帮你学到一切你需要知道的有关如何通过CSS使你的网站更漂亮。</p>
+<p>准备好下一章了吗？:)</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_templates/" class="navigation navigation-prev " aria-label="Previous page: Django模板">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../template_extending/" class="navigation navigation-next " aria-label="Next page: 模板扩展">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"CSS - 让其更漂亮","level":"1.20","depth":1,"next":{"title":"模板扩展","level":"1.21","depth":1,"path":"template_extending/README.md","ref":"template_extending/README.md","articles":[]},"previous":{"title":"Django模板","level":"1.19","depth":1,"path":"django_templates/README.md","ref":"django_templates/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"zh","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"css/README.md","mtime":"2021-03-25T14:00:00.563Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"zh"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

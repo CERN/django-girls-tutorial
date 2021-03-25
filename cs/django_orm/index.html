@@ -1,0 +1,731 @@
+
+<!DOCTYPE HTML>
+<html lang="cs" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Django ORM (tvorba dotazů) · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../dynamic_data_in_templates/" />
+    
+    
+    <link rel="prev" href="../html/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Vyhledat" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Úvod
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Instalace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Jak funguje internet
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Úvod do příkazové řádky
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Instalace Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Editor zdrojového kódu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Úvod do Pythonu
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Co je Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Instalace Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    Tvůj první Django projekt!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modely
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Nasazení!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views -- je čas začít tvořit!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Úvod do HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.17" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Django ORM (tvorba dotazů)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dynamická data v šablonách
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django šablony
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - udělejte svou aplikaci hezčí
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Rozšíření šablon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Rozšíření vaší aplikace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django formuláře
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Co dál?
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Publikováno pomocí HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Django ORM (tvorba dotazů)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="django-orm-a-querysets">Django ORM a QuerySets</h1>
+<p>V této kapitole se naučíš, jak se Django spojuje s databází a jak do ní ukládá data. Pojďme na to!</p>
+<h2 id="co-je-queryset">Co je QuerySet?</h2>
+<p>QuerySet je v podstatě seznam objektů daného modelu. QuerySet ti umožňuje číst data z databáze, filtrovat je a řadit je.</p>
+<p>Je snazší naučit se to na příkladu. Pojďme to zkusit.</p>
+<h2 id="django-shell">Django shell</h2>
+<p>Otevři svou lokální konzoli (ne na Python Anywhere) a napiš tento příkaz:</p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py shell
+</code></pre><p>Mělo by to mít takovýto efekt:</p>
+<pre><code>(InteractiveConsole)
+&gt;&gt;&gt;
+</code></pre><p>Nyní jsi v Django interaktivní konzoli. Je to stejné jako Python konzole, ale s nějakými přídavnými Django kouzly :). Tady můžeš samozřejmě používat i všechny Python příkazy.</p>
+<h3 id="všechny-objekty">Všechny objekty</h3>
+<p>Pojďme zkusit zobrazit všechny naše příspěvky. To můžeš udělat následujícím příkazem:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.all()
+Traceback (most recent call last):
+      File &quot;&lt;console&gt;&quot;, line 1, in &lt;module&gt;
+NameError: name &apos;Post&apos; is not defined
+</code></pre><p>Ale ne! Ukázala se chybová hláška. Říká nám, že tu není žádný Post objekt (příspěvek). To je správně – zapomněly jsme je importovat!</p>
+<pre><code>&gt;&gt;&gt; from blog.models import Post
+</code></pre><p>Tohle je jednoduché: importujeme model <code>Post</code> z <code>blog.models</code>. Pojďme znovu zkusit zobrazit všechny příspěvky:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.all()
+&lt;QuerySet [&lt;Post: titulek mého prvního příspěvku&gt;, &lt;Post: titulky dalších příspěvků&gt;]&gt;
+</code></pre><p>To je seznam příspěvků, které jsme dříve vytvořily pomocí Django administrátorského rozhraní. Teď nicméně chceme vytvořit příspěvky použitím Pythonu, tak jak na to?</p>
+<h3 id="vytvoř-objekt">Vytvoř objekt</h3>
+<p>Takhle vytvoříš nový Post objekt v databázi:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.create(author=me, title=&apos;titulek&apos;, text=&apos;Test&apos;)
+</code></pre><p>Ale chybí nám tu jedna ingredience: proměnná <code>me</code>. Jako autorku potřebujeme vložit instanci <code>User</code> (tj. &quot;uživatelka&quot;) modelu. Jak to uděláme?</p>
+<p>Nejdříve pojďme importovat User model:</p>
+<pre><code>&gt;&gt;&gt; from django.contrib.auth.models import User
+</code></pre><p>Jaké uživatele máme v naší databázi? Zkus tohle:</p>
+<pre><code>&gt;&gt;&gt; User.objects.all()
+&lt;QuerySet [&lt;User: ola&gt;]&gt;
+</code></pre><p>Tohle je superuser, kterého jsme vytvořily dříve! Pojďme si teď vzít instanci tohoto uživatele:</p>
+<pre><code class="lang-python">me = User.objects.get(username=<span class="hljs-string">&apos;ola&apos;</span>)
+</code></pre>
+<p>Jak vidíš, dostaly (tj. <code>get</code>) jsme uživatele (tj. <code>user</code>) s uživatelským jménem (tj. <code>username</code>) &apos;ola&apos;. Pěkný! Samozřejmě ty si to musíš upravit na své jméno.</p>
+<p>Teď můžeme konečně vytvořit příspěvek:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.create(author=me, title=&apos;titulek&apos;, text=&apos;Test&apos;)
+</code></pre><p>Hurá! Chceš se podívat, jestli to fungovalo?</p>
+<pre><code>&gt;&gt;&gt; Post.objects.all()
+&lt;QuerySet [&lt;Post: my post title&gt;, &lt;Post: another post title&gt;, &lt;Post: Sample title&gt;]&gt;
+</code></pre><p>A je to tu, další příspěvek v seznamu!</p>
+<h3 id="přidej-více-příspěvků">Přidej více příspěvků</h3>
+<p>Teď si můžeš trochu pohrát a přidat více příspěvků, abys viděla, jak to funguje. Přidej 2 až 3 nové příspěvky a pusť se do další části.</p>
+<h3 id="filtrování-objektů">Filtrování objektů</h3>
+<p>Důležitá součást QuerySetů je možnost je filtrovat. Řekněme, že chceme najít všechny příspěvky, jejichž autorem je uživatel (user) ola. V <code>Post.objects.all()</code> použijeme <code>filter</code> místo <code>all</code>. V závorkách stanovíme podmínky, které musí příspěvek splňovat, aby skončil v našem querysetu. V našem případě je to tak, že <code>author</code> se rovná <code>ja</code>. Způsob, jakým se to v Django zapisuje, je: <code>author=ja</code>. Teď náš kus kódu vypadá takhle:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(author=ja)
+[&lt;Post: titulek&gt;, &lt;Post: Příspěvek číslo 2&gt;, &lt;Post: Můj 3. příspěvek!&gt;, &lt;Post: 4. titulek příspěvku&gt;]
+</code></pre><p>Nebo možná chceme vidět všechny příspěvky, jež mají slovo &apos;titulek&apos; v poli <code>title</code>?</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(title__contains=&apos;titulek&apos;)
+[&lt;Post: titulek&gt;, &lt;Post: 4. titulek příspěvku&gt;]
+</code></pre><blockquote>
+<p><strong>Poznámka</strong> Mezi <code>title</code> a <code>contains</code> jsou dvě podtržítka (<code>_</code>). Django ORM používá tuto syntaxi k rozlišení názvů (&quot;title&quot;) a operací nebo filterů (&quot;contains&quot;). Pokud použiješ pouze jedno podtržítko, dostaneš chybovou hlášku &quot;FieldError: Cannot resolve keyword title_contains&quot;.</p>
+</blockquote>
+<p>Také můžeš získat seznam všech publikovaných příspěvků. Uděláme to vyfiltrováním všech příspěvků, které mají nastavené <code>published_date</code> na nějaké uplynulé datum:</p>
+<pre><code>&gt;&gt;&gt; from django.utils import timezone
+&gt;&gt;&gt; Post.objects.filter(published_date__lte=timezone.now())
+[]
+</code></pre><p>Bohužel příspěvek, který jsme přidali pomocí Python konzole, ještě není publikován. To můžeme změnit! Nejdřív vezmeme instanci příspěvku, který chceme publikovat:</p>
+<pre><code>&gt;&gt;&gt; post = Post.objects.get(title=&quot;Sample title&quot;)
+</code></pre><p>A ten publikujeme pomocí naší metody <code>publish</code>!</p>
+<pre><code>&gt;&gt;&gt; post.publish()
+</code></pre><p>Teď se znovu pokus získat seznam publikovaných příspěvků (3krát zmáčkni šipku nahoru a zmáčkni <code>enter</code>):</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(published_date__lte=timezone.now())
+[&lt;Post: Sample title&gt;]
+</code></pre><h3 id="řazení-objektů">Řazení objektů</h3>
+<p>QuerySety ti také umožňují seřadit seznam objektů. Pojďme je zkusit seřadit podle data vytvoření (<code>created_date</code>):</p>
+<pre><code>&gt;&gt;&gt; Post.objects.order_by(&apos;created_date&apos;)
+[&lt;Post: titulek&gt;, &lt;Post: Příspěvek číslo 2&gt;, &lt;Post: Můj 3. příspěvek!&gt;, &lt;Post: 4. titulek příspěvku&gt;]
+</code></pre><p>Můžeme je také seřadit obráceně přidáním <code>-</code> na začátek:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.order_by(&apos;-created_date&apos;)
+[&lt;Post: 4. titulek příspěvku&gt;,  &lt;Post: Můj 3. příspěvek!&gt;, &lt;Post: Příspěvek číslo 2&gt;, &lt;Post: titulek&gt;]
+</code></pre><h3 id="řetězení-querysetů">Řetězení QuerySetů</h3>
+<p>QuerySety můžeš také kombinovat dohromady pomocí <strong>řetězení</strong>:</p>
+<pre><code>&gt;&gt;&gt; Post.objects.filter(published_date__lte=timezone.now()).order_by(&apos;published_date&apos;)
+</code></pre><p>Je to mocný nástroj, který ti umožňuje psát docela komplexní query.</p>
+<p>Cool! Teď jsi připravená na další část! Pro zavření shell konzole zadej toto:</p>
+<pre><code>&gt;&gt;&gt; exit()
+$
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../html/" class="navigation navigation-prev " aria-label="Previous page: Úvod do HTML">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../dynamic_data_in_templates/" class="navigation navigation-next " aria-label="Next page: Dynamická data v šablonách">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Django ORM (tvorba dotazů)","level":"1.17","depth":1,"next":{"title":"Dynamická data v šablonách","level":"1.18","depth":1,"path":"dynamic_data_in_templates/README.md","ref":"dynamic_data_in_templates/README.md","articles":[]},"previous":{"title":"Úvod do HTML","level":"1.16","depth":1,"path":"html/README.md","ref":"html/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"cs","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_orm/README.md","mtime":"2021-03-25T14:00:00.091Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"cs"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

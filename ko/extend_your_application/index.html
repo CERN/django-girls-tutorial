@@ -1,0 +1,787 @@
+
+<!DOCTYPE HTML>
+<html lang="ko" >
+    <head>
+        <meta charset="UTF-8">
+        <title>애플리케이션 확장하기 · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_forms/" />
+    
+    
+    <link rel="prev" href="../template_extending/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="검색어 입력" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    들어가며
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    설치하기 (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    인터넷은 어떻게 작동할까요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Command Line 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Python 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    코드 에디터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Django란 무엇인가요
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django 설치하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    나의 첫 번째 Django 프로젝트!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django 모델
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django 관리자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    배포하기!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django 뷰 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM(Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    템플릿 동적 데이터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django 템플릿
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - 예쁘게 만들기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    템플릿 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.23" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    애플리케이션 확장하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django 폼
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    더 나아가기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKit에 게시
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >애플리케이션 확장하기</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="프로그램-애플리케이션-확장하기">프로그램 애플리케이션 확장하기</h1>
+<p>지금까지 웹 사이트 제작 단계를 모두 마쳤어요. 모델, url, 뷰와 템플릿을 만드는 방법을 알게 되었고요. 웹 사이트를 예쁘게 꾸미는 방법도 알게 되었어요.</p>
+<p>이제 또 실습해봅시다!</p>
+<p>블로그 게시글이 각 페이지마다 보이게 만들어 봅시다.</p>
+<p>이미 앞에서 <code>Post</code>모델을 만들었으니 <code>models.py</code>에 새로 추가할 내용은 없어요.</p>
+<h2 id="post에-템플릿-링크-만들기">Post에 템플릿 링크 만들기</h2>
+<p><code>blog/templates/blog/post_list.html</code>파일에 링크를 추가하는 것부터 시작합시다. 아래와 같이 보일 거에요. : </p>
+<p></p><p class="code-label">blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    {% for post in posts %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    {% endfor %}
+{% endblock %}
+</code></pre>
+<p> <code>post</code>제목 목록이 보이고 해당 링크를 클릭하면, <code>post</code>상세 페이지로 이동하게 만들어 볼 거에요. <code>&lt;h1&gt;&lt;a href=&quot;&quot;&gt;{{ post.title }}&lt;/a&gt;&lt;/h1&gt;</code>부분을 수정해 봅시다. </p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span>blog/templates/blog/post_list.html</p><p></p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">&quot;{% url &apos;post_detail&apos; pk=post.pk %}&quot;</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+</code></pre>
+<p><code>{% url &apos;post_detail&apos; pk=post.pk %}</code>을 설명할 때가 왔군요! <code>{% %}</code>는 장고 템플릿 태그을 말합니다. URL를 생성해 사용해봅시다.</p>
+<p><code>blog.views.post_detail</code>는 <code>post_detail</code> <em>뷰</em> 경로입니다. <code>blog</code>는 응용프로그램(디렉터리 <code>blog</code>)의 이름인 것을 꼭 기억하세요. <code>views</code>는 <code>views.py</code>파일명이에요. 마지막 부분 <code>post_detail</code>는 <em>view</em> 이름입니다.</p>
+<p><code>pk = post.pk</code>이란 무엇일까요? <code>pk</code>는 데이터베이스의 각 레코드를 식별하는 기본키(Prmiary Key)의 줄임말 입니다. Post 모델에서 기본키를 지정하지 않았기 때문에 장고는 <code>pk</code>라는 필드를 추가해 새로운 블로그 게시물이 추가될 때마다 그 값이 1,2,3 등으로 증가하게 됩니다.  Post 객체의 다른 필드 (제목, 작성자 등)에 액세스하는 것과 같은 방식으로 post.pk를 작성하여 기본 키에 액세스합니다 <code>post.pk</code>를 써서 기본키에 접근할 수 있고 같은 방법으로 <code>Post</code>객체내 다른 필드(<code>title</code>, <code>author</code>)에도 접근할 수 있습니다!</p>
+<p>이제 <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a> 를 열어보세요. 아마 오류 메세지가 나올 거에요. (아직 <code>post_detail</code> <em>뷰</em>를 만들지 않아 오류가 나는 거에요) 이런 화면이 보일 거에요. :</p>
+<p><img src="images/no_reverse_match2.png" alt="NoReverseMatch error"></p>
+<h2 id="post-상세-페이지-url-만들기">Post 상세 페이지 URL 만들기</h2>
+<p><code>post_detail</code><em>뷰</em>가 보이게 <code>urls.py</code>에 URL를 만들어 봅시다!</p>
+<p>첫 게시물의 상세 페이지 <strong>URL</strong>이 <a href="http://127.0.0.1:8000/post/1/가" target="_blank">http://127.0.0.1:8000/post/1/가</a> 되게 만들 거에요.</p>
+<p><code>blog/urls.py</code>파일에 URL을 만들어, 장고가 <code>post_detail</code> <em>뷰</em>로 보내, 게시글이 보일 수 있게 해봅시다. <code>path(&apos;post/&lt;int:pk&gt;/&apos;, views.post_detail, name=&apos;post_detail&apos;)</code>코드를 <code>blog/urls.py</code>파일에 추가하면 아래와 같이 보일 거에요.</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span>blog/urls.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.urls <span class="hljs-keyword">import</span> path
+<span class="hljs-keyword">from</span> . <span class="hljs-keyword">import</span> views
+
+urlpatterns = [
+    path(<span class="hljs-string">&apos;&apos;</span>, views.post_list, name=<span class="hljs-string">&apos;post_list&apos;</span>),
+    path(<span class="hljs-string">&apos;post/&lt;int:pk&gt;/&apos;</span>, views.post_detail, name=<span class="hljs-string">&apos;post_detail&apos;</span>),
+]
+</code></pre>
+<p>여기서 <code>post/&lt;int:pk/&gt;/</code>는 URL 패턴을 나타내요. 하나씩 차근차근 알아볼 거에요.</p>
+<ul>
+<li><code>post/</code>란 URL이 <strong>post</strong> 문자를 포함해야 한다는 것을 말합니다. 아직 할 만하죠?</li>
+<li><code>&lt;int:pk&gt;</code>는 조금 까다롭습니다. 장고는 정수 값을 기대하고 이를 <code>pk</code>라는 변수로 뷰로 전송하는 것을 말합니다.</li>
+<li><code>/</code>은 다음에 <strong>/</strong> 가 한 번 더 와야 한다는 의미입니다.</li>
+</ul>
+<p>브라우저에 <code>http://127.0.0.1:8000/post/5/</code>라고 입력하면, 장고는 <code>post_detail</code> <em>뷰</em>를 찾아 매개변수 <code>pk</code>가 <code>5</code>인 값을 찾아 <em>뷰</em>로 전달합니다.</p>
+<p>좋아요, 새로운 URL 패턴을 <code>blog/urls.py</code>에 추가했어요! 페이지를 새로고침 하세요. <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a> 쾅! 또 에러가 났어요! 예상했던 대로에요!</p>
+<p><img src="images/attribute_error2.png" alt="AttributeError"></p>
+<p>다음 단계는 무엇일까요? 그렇죠. 뷰를 추가해야죠!</p>
+<h2 id="post-상세-페이지-내-뷰-추가하기">Post 상세 페이지 내 뷰 추가하기</h2>
+<p><em>뷰</em>에 매개변수 <code>pk</code>를 추가해봅시다. <em>뷰</em>가 <code>pk</code>를 식별해야겠죠? 그래서 함수를 <code>def post_detail(request, pk):</code>라고 정의합니다. urls(<code>pk</code>)과 동일하게 이름을 사용해야 합니다. 변수가 생략되면 오류가 날 거예요!</p>
+<p>블로그 게시글 한 개만 보려면, 아래와 같이 쿼리셋(queryset)을 작성해야해요.</p>
+<p></p><p class="code-label"><span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!"></span>blog/views.py</p><p></p>
+<pre><code class="lang-python">Post.objects.get(pk=pk)
+</code></pre>
+<p>하지만 이 코드에는 문제가 있어요. 만약 해당 <code>primary key(pk)</code>의 <code>Post</code>를 찾지 못하면 오류가 나올 거에요!</p>
+<p><img src="images/does_not_exist2.png" alt="DoesNotExist error"></p>
+<p>우리가 원하는게 아니죠! 장고에는 이를 해결하기 위해 <code>get_object_or_404</code>라는 특별한 기능을 제공해요. <code>pk</code>에 해당하는 <code>Post</code>가 없을 경우, 멋진 페이지(<code>페이지 찾을 수 없음 404 : Page Not Found 404)</code>를 보여줄 거에요.</p>
+<p><img src="images/404_2.png" alt="Page not found"></p>
+<p>나중에 <code>페이지 찾을 수 없음(Page not found)</code>페이지를 예쁘게 만들 수 있어요. 지금 당장 중요한 것이 아니니 이 부분은 생략할게요.</p>
+<p>좋아요. 이제 <code>views.py</code>파일에 새로운 <em>뷰</em>를 추가합시다!</p>
+<p><code>blog/urls.py</code>파일에서 <code>views.post_detail</code>라는 뷰를 <code>post_detail</code>이라 이름을 붙이도록 URL 법칙을 만들었어요. 이는 장고가 <code>post_detail</code>이라는 이름을 해석할 때, <code>blog/views.py</code>파일 내부의 <code>post_detail</code>이라는 뷰 함수로 이해하도록 해줍니다.</p>
+<p><code>blog/views.py</code>파일을 열고, <code>from</code>으로 시작하는 행에서 다음과 같이 코드를 추가해주세요. :</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-keyword">from</span> django.shortcuts <span class="hljs-keyword">import</span> render, get_object_or_404
+</code></pre>
+<p>그리고, 파일 마지막 부분에 <em>뷰</em>를 추가하세요.</p>
+<p></p><p class="code-label">blog/views.py</p><p></p>
+<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">post_detail</span>(<span class="hljs-params">request, pk</span>):</span>
+    post = get_object_or_404(Post, pk=pk)
+    <span class="hljs-keyword">return</span> render(request, <span class="hljs-string">&apos;blog/post_detail.html&apos;</span>, {<span class="hljs-string">&apos;post&apos;</span>: post})
+</code></pre>
+<p>그리고 브라우저를 새로고침 하세요. <a href="http://127.0.0.1:8000/" target="_blank">http://127.0.0.1:8000/</a></p>
+<p><img src="images/post_list2.png" alt="Post list view"></p>
+<p>잘 작동하네요! 그런데 블로그 제목 링크를 클릭하면 어떻게 되나요?</p>
+<p><img src="images/template_does_not_exist2.png" alt="TemplateDoesNotExist error"></p>
+<p>이런! 또 에러가 나왔네요! 하지만 이제 어떻게 해야하는지 알고 있죠? 드디어 템플릿을 추가할 차례에요!</p>
+<h2 id="post-상세-페이지-템플릿-만들기">Post 상세 페이지 템플릿 만들기</h2>
+<p><code>blog/templates/blog</code> 디렉터리 안에 <code>post_detail.html</code>라는 새 파일을 생성하고 아래와 같이 코드를 작성하세요.</p>
+<p></p><p class="code-label">blog/templates/blog/post_detail.html</p><p></p>
+<pre><code class="lang-html">{% extends &apos;blog/base.html&apos; %}
+
+{% block content %}
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>
+        {% if post.published_date %}
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;date&quot;</span>&gt;</span>
+                {{ post.published_date }}
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        {% endif %}
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{ post.title }}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>{{ post.text|linebreaksbr }}<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+{% endblock %}
+</code></pre>
+<p>다시 한 번 <code>base.html</code>을 확장한 거에요. <code>content</code>블록에서 블로그 글의 게시일, 제목과 내용을 보이게 만들었어요.</p>
+<p> 가장 중요한 부분은 <code>{% if ... %} ... {% endif %}</code>라는 템플릿 태그인데, 내용이 있는지 확인할 때 사용합니다. (<code>if ... else ..</code>구문은 <strong>Python 시작하기</strong> 장에서 배웠어요) <code>post</code>의 <code>게시일(published_date)</code>이 있는지, 없는지를 확인하는 거에요. </p>
+<p>페이지를 새로고침하면 <code>페이지 찾을 수 없음(Page not found)</code> 페이지가 없어졌어요.</p>
+<p><img src="images/post_detail2.png" alt="Post detail page"></p>
+<p>야호! 잘 되네요!</p>
+<h2 id="한-가지만-더-합시다-배포하세요">한 가지만 더 합시다. 배포하세요!</h2>
+<p>PythonAnywhere에도 웹사이트가 잘 작동하는지 봐야겠죠? 다시 한 번 배포합시다.</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+$ git add --all .
+$ git status
+$ git commit -m &quot;Added view and template for detailed blog post as well as CSS for the site.&quot;
+$ git push
+</code></pre><ul>
+<li>그 다음 <a href="https://www.pythonanywhere.com/consoles/" target="_blank">PythonAnywhere Bash console</a>을 여세요.</li>
+</ul>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ cd my-first-blog
+$ git pull
+[...]
+</code></pre><ul>
+<li>마지막으로 <a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank">Web tab</a>에서 <strong>Reload(다시 불러오기)</strong> 를 누르세요.</li>
+</ul>
+<p>배포를 마쳤습니다. 잘 작동되는지 확인해 보세요! 축하합니다.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../template_extending/" class="navigation navigation-prev " aria-label="Previous page: 템플릿 확장하기">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_forms/" class="navigation navigation-next " aria-label="Next page: Django 폼">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"애플리케이션 확장하기","level":"1.23","depth":1,"next":{"title":"Django 폼","level":"1.24","depth":1,"path":"django_forms/README.md","ref":"django_forms/README.md","articles":[]},"previous":{"title":"템플릿 확장하기","level":"1.22","depth":1,"path":"template_extending/README.md","ref":"template_extending/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"ko","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"extend_your_application/README.md","mtime":"2021-03-25T14:00:00.379Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"ko"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

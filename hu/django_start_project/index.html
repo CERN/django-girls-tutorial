@@ -1,0 +1,746 @@
+
+<!DOCTYPE HTML>
+<html lang="hu" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Az első Django projekted! · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_models/" />
+    
+    
+    <link rel="prev" href="../django_installation/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Bevezetés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Installáció
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Hogy működik az Internet?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Bevezetés a parancssor használatába
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    A Python telepítése
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Kódszerkesztő (editor)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Bevezetés a Pythonba
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Mi a Django?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Django telepítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.10" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Az első Django projekted!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Django modellek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Deploy!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django url-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - itt az ideje alkotni!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Bevezetés a HTML-be
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM és QuerySet-ek
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Dinamikus adatok a template-ben
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django sablonok (template)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - Tegyük széppé!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Template-kiegészítés
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Egészítsd ki az applikációdat
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Django űrlapok
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Következő lépések
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Published with HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Az első Django projekted!</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="az-első-django-projekted">Az első Django projekted!</h1>
+<blockquote>
+<p>Ez a fejezet részben a Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>) tutorial-jain alapszik.</p>
+<p>A fejezet néhány része a <a href="http://django-marcador.keimlink.de/" target="_blank">django-marcador tutorial</a> alapján készült, ami a Creative Commons Attribution-ShareAlike 4.0 International License alatt áll. A django-marcador tutorial jogait, Markus Zapke-Gründemann és társai birtokolják.</p>
+</blockquote>
+<p>Most egy egyszerű blogot fogunk készíteni!</p>
+<p>Az első lépés, hogy indítsunk egy új Django projektet. Ez annyit jelent, hogy lefuttatunk néhány scriptet, amit a Django tartalmaz, ezzel létrehozzuk a projekt vázát. Ez tulajdonképpen néhány mappa és fájl, amit majd később fogunk használni.</p>
+<p>Néhány fájl és könyvtár neve nagyon fontos a Django-ban. A fájlokat, amiket most hozunk létre, ne nevezd át! Az áthelyezésük sem egy jó ötlet. Fontos, hogy megtartsunk egy bizonyos szerkezetet, ami segít a Django-nak, hogy megtalálja a fontos dolgokat.</p>
+<blockquote>
+<p>Figyelem: mindent a virtualenv-ben futtass. Ha nem látod a <code>(myvenv)</code> előtagot a konzolodban, aktiválnod kell a virtuális környezetedet. Ezt a <strong>Django telepítés</strong> fejezetben írtuk le, a <strong>Virtuális környezetben való fejlesztés</strong> résznél. Windows környezetben a <code>myvenv\Scripts\activate</code> parancssal, Mac OS / Linux alatt a <code>source myvenv/bin/activate</code> paranccsal tudod megtenni.</p>
+</blockquote>
+<p>Ha Mac OS-t vagy Linuxot használsz, a következő parancsot kell futtatnod; <strong>ne felejtsd el kitenni a pontot <code>.</code> a végén</strong>:</p>
+<pre><code>(myvenv) ~/djangogirls$ django-admin startproject mysite .
+</code></pre><p>Ha Windowst használsz: <strong>ne felejtsd el kitenni a pontot <code>.</code> a végén</strong>:</p>
+<pre><code>(myvenv) C:\Users\Name\djangogirls&gt; django-admin startproject mysite .
+</code></pre><blockquote>
+<p>A pont <code>.</code> nagyon fontos, mert ez mondja meg a scriptnek, hogy abba a könyvtárba telepítse a Django-t, ahol éppen vagy (a pont <code>.</code> egy rövidítése ennek).</p>
+<p><strong>Megjegyzés</strong> Amikor begépeled a fenti parancsokat, csak azokat a részeket írd be, amik úgy kezdődnek, hogy <code>django-admin</code> vagy <code>django-admin.py</code>. A <code>(myvenv) ~/djangogirls$</code> és <code>(myvenv) C:\Users\Name\djangogirls&gt;</code> csak példák a parancssorodra, amely azt várja, hogy parancsokat gépelj be neki.</p>
+</blockquote>
+<p>A <code>django-admin.py</code> egy script, ami könyvtárakat és fájlokat hoz létre neked. Most ilyen könyvtárszerkezetednek kell lennie:</p>
+<pre><code>djangogirls
+├───manage.py
+└───mysite
+        settings.py
+        urls.py
+        wsgi.py
+        __init__.py
+</code></pre><blockquote>
+<p><strong>Megjegyzés</strong>: A könyvtárszerkezetedben a <code>venv</code> könyvtár is meg fog jelenni, amelyet nemrég hoztunk létre.</p>
+</blockquote>
+<p>A <code>manage.py</code> egy script, ami az oldal menedzselésében segít. Segítségével elindíthatsz egy webszervert a saját gépeden, anélkül, hogy bármit kellene installálnod, és más dolgokra is jó.</p>
+<p>A <code>settings.py</code> tartalmazza a weboldalat konfigurációját (beállításait),.</p>
+<p>Emlékszel, mit olvastál a postásról, aki azt próbálja kitalálni, hova vigye a levelet? Az <code>urls.py</code> fájl tartalmazza a mintákat, amiket az <code>urlresolver</code> használ.</p>
+<p>Most ne foglalkozzunk a többi fájllal, mert azokat nem fogjuk módosítani. Az egyetlen dolog, amit ne felejts el, hogy ne töröld ki őket véletlenül!</p>
+<h2 id="a-beállítások-megváltoztatása">A beállítások megváltoztatása</h2>
+<p>Változtassunk meg néhány dolgot a <code>mysite/settings.py</code> fájlban. Nyisd meg a fájlt a kódszerkesztővel, amit korábban telepítettél!</p>
+<p>Jó lenne, ha a weboldalunk a mi időzónánk szerinti időt mutatná. Nézd meg a <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">wikipedia időzóna listát</a>, és másold ki az időzónádat (TZ, time zone). (például <code>Europe/Budapest</code> )</p>
+<p>Keresd meg a settings.py azt a sort, ami így keződik: <code>TIME_ZONE</code>, és írd át, hogy a saját időzónádat használja:</p>
+<pre><code class="lang-python">    TIME_ZONE = <span class="hljs-string">&apos;Europe/Budapest&apos;</span>
+</code></pre>
+<p>Az &quot;Europe/Budapest&quot;-et változtasd meg kedved szerint.</p>
+<p>Szükségünk lesz még arra, hogy megadjuk a statikus fájlokhoz vezető elérési útvonalat (később mindent megtudhatsz a statikus fájlokról és a CSS-ről). Menj a fájl <em>végére</em>, és a <code>STATIC_URL</code> bejegyzés alatt adj hozzá egy következő bejegyzést <code>STATIC_ROOT</code> névvel:</p>
+<pre><code class="lang-python">    STATIC_URL = <span class="hljs-string">&apos;/static/&apos;</span>
+    STATIC_ROOT = os.path.join(BASE_DIR, <span class="hljs-string">&apos;static&apos;</span>)
+</code></pre>
+<p>Amikor a DEBUG értéke True és az ALLOWED_HOSTS üres, a hosztnév alapértelmezetten [&apos;localhost&apos;, &apos;127.0.0.1&apos;, &apos;[::1]&apos;]. Ez deploy után nem fog működni a PythonAnywhere-en, ezért változtassuk meg ezt a beállítást így:</p>
+<pre><code class="lang-python">    ALLOWED_HOSTS = [<span class="hljs-string">&apos;127.0.0.1&apos;</span>, <span class="hljs-string">&apos;.pythonanywhere.com&apos;</span>]
+</code></pre>
+<h2 id="adatbázis-létrehozása">Adatbázis létrehozása</h2>
+<p>Sok különféle adatbázis-szoftver létezik, ami adatokat tud tárolni a weboldalakhoz. Mi az alapértelmezettet fogjuk használni, az <code>sqlite3</code>-ot.</p>
+<p>Ez már be van állítva a <code>mysite/settings.py</code> fájlodban:</p>
+<pre><code class="lang-python">    DATABASES = {
+        <span class="hljs-string">&apos;default&apos;</span>: {
+            <span class="hljs-string">&apos;ENGINE&apos;</span>: <span class="hljs-string">&apos;django.db.backends.sqlite3&apos;</span>,
+            <span class="hljs-string">&apos;NAME&apos;</span>: os.path.join(BASE_DIR, <span class="hljs-string">&apos;db.sqlite3&apos;</span>),
+        }
+    }
+</code></pre>
+<p>Hogy létrehozz egy adatbázist a blogodhoz, futtasd le a következő parancsot a konzolban: <code>python manage.py migrate</code> (fontos, hogy a <code>djangogirls</code> könyvtárban legyél, ami tartalmazza a <code>manage.py</code> fájlt). Ha minden jól megy, valami ilyesmit kell látnod:</p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py migrate
+Operations to perform:
+  Synchronize unmigrated apps: messages, staticfiles
+  Apply all migrations: contenttypes, sessions, admin, auth
+Synchronizing apps without migrations:
+   Creating tables...
+      Running deferred SQL...
+   Installing custom SQL...
+Running migrations:
+  Rendering model states... DONE
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying sessions.0001_initial... OK
+</code></pre><p>Készen is vagyunk! Itt az ideje, hogy elindítsd a webszervert, és meglásd, hogy működik-e.</p>
+<h2 id="webszerver-elindítása">Webszerver elindítása</h2>
+<p>Ehhez abban a könyvtárban kell lenned, ahol a <code>manage.py</code> fájl van (a <code>djangogirls</code> könyvtárban). A konzolban a következő paranccsal tudod elindítani a szervert: <code>python manage.py runserver</code>.</p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver
+</code></pre><p>Ha Windowst használsz, és <code>UnicodeDecodeError</code> hibaüzenetet kapsz, ezt a parancsot használd:</p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+</code></pre><p>Most nincs más dolgod, mint ellenőrizni, hogy fut-e a weboldalad. Nyisd meg a böngésződet (Firefox, Chrome, Safari, Internet Explorer, vagy bármi más, amit használsz), és írd be a következő címet:</p>
+<pre><code>http://127.0.0.1:8000/
+</code></pre><p>Gratulálunk! Létrehoztad az első weboldaladat, és futtatad is egy webszerver segítségével! Hát nem fantasztikus?</p>
+<p><img src="images/it_worked2.png" alt="It worked!"></p>
+<p>A webszerver átvette az irányítást a parancssorod fölött, egészen addig, amíg le nem állítod. A terminálba tudsz gépelni, de nem fog lefuttatni új parancsokat. Ez azért van, mert a webszervernek folyamatosan kell futnia, hogy a beérkező lekérdezéseket (request-eket) fogadja.</p>
+<blockquote>
+<p>Webszerverek működését a  <b>Hogy működik az Internet?</b> fejezetben tekintettük át.</p>
+</blockquote>
+<p>Hogy újabb parancsokat írhass be, amíg fut a szerver, új terminálablakot kell nyitnod, és újraaktiválni a virtuális környezetedet. Hogy leállítsd a szervert, lépj vissza az ablakba, ahol fut, és nyomd meg a CTRL + C (Control és C billentyű egyszerre) billentyűkombinációt. (Windowson lehet, hogy a Ctrl+Break fog működni).</p>
+<p>Készen állsz a következő lépésre? Itt az ideje, hogy létrehozzunk némi tartalmat!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_installation/" class="navigation navigation-prev " aria-label="Previous page: Django telepítés">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_models/" class="navigation navigation-next " aria-label="Next page: Django modellek">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Az első Django projekted!","level":"1.10","depth":1,"next":{"title":"Django modellek","level":"1.11","depth":1,"path":"django_models/README.md","ref":"django_models/README.md","articles":[]},"previous":{"title":"Django telepítés","level":"1.9","depth":1,"path":"django_installation/README.md","ref":"django_installation/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"hu","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_start_project/README.md","mtime":"2021-03-25T14:00:00.287Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"hu"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

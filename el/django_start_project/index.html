@@ -1,0 +1,792 @@
+
+<!DOCTYPE HTML>
+<html lang="el" >
+    <head>
+        <meta charset="UTF-8">
+        <title>Το πρώτο σου Django project! · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_models/" />
+    
+    
+    <link rel="prev" href="../django_installation/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Αναζήτηση για ..." />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Εισαγωγή
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    Εγκατάσταση
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Εγκατάσταση (chromebook)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    Πως λειτουργεί το διαδίκτυο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    Εισαγωγή στην γραμμή εντολών
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Εγκατάσταση Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    Επεξεργαστής Κώδικα
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Εισαγωγή στην Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Τι είναι το Django;
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Εγκατάσταση του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Το πρώτο σου Django project!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Μοντέλα (models) του Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    Διαχείριση μέσω Django admin
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="../deploy/">
+            
+                <a href="../deploy/">
+            
+                    
+                    Ανεβάστε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django urls
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Django views - ώρα να δημιουργήσετε!
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    Εισαγωγή στην HTML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM (Querysets)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    Δυναμικά δεδομένα στα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Django templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSS - κάντε το όμορφο
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    Επεκτείνοντας τα templates
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    Επεκτείνοντας την εφαρμογή σας
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Φόρμες Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    Τι υπάρχει μετά;
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            Δημοσιεύτηκε με το HonKit
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Το πρώτο σου Django project!</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="το-πρώτο-σας-django-project">Το πρώτο σας Django project!</h1>
+<blockquote>
+<p>Μέρος αυτού του κεφαλαίου είναι βασισμένο στους οδηγούς από την κοινότητα Geek Girls Carrots (<a href="https://github.com/ggcarrots/django-carrots" target="_blank">https://github.com/ggcarrots/django-carrots</a>).</p>
+<p>Μέρος αυτού του κεφαλαίου είναι βασισμένο στους οδηγούς από την κοινότητα <a href="http://django-marcador.keimlink.de/" target="_blank">django-marcador tutorial</a> υπό την άδεια χρήσης Creative Commons Attribution-ShareAlike 4.0 International License. Τα πνευματικά δικαιώματα του οδηγού django-marcador ανήκουν στον Markus Zapke-Gründemann.</p>
+</blockquote>
+<p>Πρόκειται να δημιουργήσουμε ένα μικρό blog!</p>
+<p>Το πρώτο βήμα είναι να ξεκινήσουμε ένα νέο Django project. Βασικά αυτό σημαίνει ότι θα εκτελέσουμε μερικά scripts (εντολές) που παρέχονται από το Django τα οποία θα δημιουργήσουν τον σκελετό ενός Django project για εμάς. Αυτά είναι ένα σύμπλεγμα φακέλων και αρχείων που θα χρησιμοποιήσουμε αργότερα.</p>
+<p>Τα ονόματα μερικών αρχείων και φακέλων είναι πολύ σημαντικά για το Django. Δεν πρέπει να μετονομάσετε τα αρχεία που πρόκειται να δημιουργήσουμε. Μετακινώντας τα σε ένα διαφορετικό μέρος δεν είναι επίσης καλή ιδέα. Το Django χρειάζεται να διατηρήσει μία συγκεκριμένη δομή για να μπορεί να βρει σημαντικά πράγματα.</p>
+<blockquote>
+<p>Θυμηθείτε να εκτελείτε τα πάντα μέσα σε κάποιο εικονικό περιβάλλον. Εάν δεν δείτε ένα πρόθεμα <code>(myenv)</code> στην κονσόλα σας, θα πρέπει να ενεργοποιήσετε το εικονικό περιβάλλον σας. Εξηγήσαμε πως να το κάνετε αυτό στο κεφάλαιο <strong>Εγκατάσταση Django</strong> στην ενότητα <strong>Δουλεύοντας με το εικονικό περιβάλλον</strong>. Σε Windows δοκιμάστε να γράψετε <code>myvenv\Scripts\activate</code> ή αν έχετε Lixux/OS X γράψτε <code>source myvenv/bin/activate</code>.</p>
+</blockquote>
+<sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create project: OS X or Linux<a class="pull-right section atTitle btn btn-default" target="django_start_project_OSX_Linux"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_start_project_OSX_Linux"><div class="panel-body">
+<p>Στην κονσόλα σας Mac OS X ή Linux, πρέπει να εκτελέσετε την ακόλουθη εντολή. <strong> Μην ξεχάσετε να προσθέσετε την τελεία <code>.</code> στο τέλος!</strong></p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ django-admin startproject mysite .
+</code></pre><blockquote>
+<p>Η τελεία <code>.</code> είναι ζωτικής σημασίας επειδή λέει στην εντολή να εγκαταστήσει το Django στο τρέχον φάκελο σας ( για το οποίο η τελεία <code>.</code> είναι μία συντόμευση).</p>
+<p><strong>Σημείωση</strong> Όταν πληκτρολογείτε την παραπάνω εντολή, θυμηθείτε ότι πληκτρολογείτε το κομμάτι που ξεκινά με <code>django-admin</code>. Το κομμάτι κονσόλας που εμφανίζεται εδώ <code>(myvenv) ~/djangogirls$</code> είναι απλώς ένα παράδειγμα.</p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Create project: Windows<a class="pull-right section atTitle btn btn-default" target="django_start_project_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="django_start_project_windows"><div class="panel-body">
+<p>Στα Windows πρέπει να εκτελέσετε την ακόλουθη εντολή. <strong>(Μην ξεχάσετε να προσθέσετε την τελεία <code>.</code> στο τέλος)</strong>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) C:\Users\Name\djangogirls&gt; django-admin.exe startproject mysite .
+</code></pre><blockquote>
+<p>Η τελεία <code>.</code> είναι ζωτικής σημασίας επειδή λέει στην εντολή να εγκαταστήσει το Django στο τρέχον φάκελο σας ( για το οποίο η τελεία <code>.</code> είναι μία συντόμευση).</p>
+<p><strong>Σημείωση</strong> Όταν πληκτρολογείτε την παραπάνω εντολή, θυμηθείτε ότι πληκτρολογείτε το κομμάτι που ξεκινά με <code>django-admin.exe</code>. Το κομμάτι κονσόλας που εμφανίζεται εδώ <code>(myvenv) ~/djangogirls$</code> είναι απλώς ένα παράδειγμα.</p>
+</blockquote>
+</div></div></div></sec>
+<p>Η εντολή <code>django-admin.py</code> μπορεί να δημιουργήσει τους φακέλους και τα αρχεία για εσάς. Θα πρέπει τώρα να έχετε μια δομή φακέλων που μοιάζει κάπως έτσι:</p>
+<pre><code>djangogirls
+├───manage.py
+├───mysite
+│        settings.py
+│        urls.py
+│        wsgi.py
+│        __init__.py
+└───requirements.txt
+</code></pre><blockquote>
+<p><strong>Σημείωση</strong>: Στην δομή φακέλων σας, θα δείτε επίσης τον <code>venv</code> φάκελο σας που δημιουργήσαμε προηγουμένως.</p>
+</blockquote>
+<p>Το <code>manage.py</code> είναι ένα script που βοηθά με την διαχείριση του project σας. Με αυτό θα μπορούμε να (μεταξύ άλλων πραγμάτων) ξεκινήσουμε έναν server στον υπολογιστή μας χωρίς να εγκαταστήσουμε οτιδήποτε άλλο.</p>
+<p>Το αρχείο <code>settings.py</code> περιέχει τις διάφορες παραμέτρους του project σας.</p>
+<p>Θυμάστε όταν μιλήσαμε σχετικά με ένα μεταφορέα αλληλογραφίας που ελέγχει που να παραδώσει ένα γράμμα; Το αρχείο <code>urls.py</code> περιέχει μία λίστα από σχέδια που χρησιμοποιούνται από τον <code>urlresolver</code>.</p>
+<p>Ας αφνοήσουμε τα υπόλοιπα αρχεία προς το παρόν καθώς δεν θα τα αλλάξουμε καθόλου. Το μόνο πράγμα που πρέπει να θυμάστε είναι να μην τα διαγράψετε κατά λάθος!</p>
+<h2 id="αλλάζοντας-τις-ρυθμίσεις">Αλλάζοντας τις ρυθμίσεις</h2>
+<p>Ας κάνουμε μερικές αλλαγές στο αρχείο <code>mysite/settings.py</code>. Ανοίξτε το.</p>
+<p><strong>Σημείωση</strong>: Κρατήστε στο μυαλό σας ότι το αρχείο <code>settings.py</code> είναι ένα κοινό Python αρχείο όπως όλα τα άλλα Python αρχεία (έχουν, δηλαδή, την κατάληξη .py). Μπορείτε να το ανοίξετε μέσα από τον επεξεργαστή κώδικα που χρησιμοποιείτε, κλικάροντας στο &quot;File -&gt; Open&quot;. Αυτό θα εμφανίσει ένα παράθυρο εξερεύνησης αρχείων μέσα από το οποίο επιλέγετε το αρχείο <code>settings.py</code> και το ανοίγετε. Εναλλακτικά, μπορείτε να μεταβείτε μέσα από τον φάκελο djangogirls και με δεξί κλικ να το ανοίξετε. Έπειτα, επιλέξτε τον επεξεργαστή κώδικα από την προτινώμενη λίστα προγραμμάτων. Η επιλογή του επεξεργαστή κώδικα είναι σημαντική καθώς μπορεί να έχετε άλλα προγράμματα εγκατεστημένα.</p>
+<p>Θα ήτνα καλό να έχουμε τη σωστή ώρα στην ιστοσελίδα μας. Πηγαίνετε στο <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones" target="_blank">Wikipedia&apos;s list of time zones</a> και αντιγράψτε την ζώνη ώρας σας (TZ) (πχ <code>Europe/Athens</code>).</p>
+<p>Στο αρχείο <code>settings.py</code>, βρείτε τη γραμμή που λέει <code>TIME_ZONE</code> και αλλάξτε την τιμή της σε αυτή που αντιγράψατε. Για παράδειγμα:</p>
+<p></p><p class="code-label">mysite/settings.py</p><p></p>
+<pre><code class="lang-python">TIME_ZONE = <span class="hljs-string">&apos;Europe/Berlin&apos;</span>
+</code></pre>
+<p>Ο κωδικό γλώσσας (language code) αποτελείται από την γλώσσα, πχ <code>en</code> για Αγγλικά ή <code>el</code> για Ελληνικά και τον κωδικό χώρας πχ <code>gr</code> για Ελλάδα ή <code>ch</code> για την Ελβετία. Αν τα Ελληνικά είναι η μητρική σας γλώσσα, μπορείτε να προσθέσετε το παρακάτω για να αλλάξετε την γλώσσα σε Ελληνικά: Μπορείτε, δηλαδή, να έχετε ένα κουμπί &quot;Άκυρο&quot; μεταφρασμένο στην γλώσσα σας. <a href="https://docs.djangoproject.com/en/2.0/ref/settings/#language-code" target="_blank">Το Django έρχεται με προεγκατεστημένες κάποιες μεταφράσεις</a>.</p>
+<p>Αν θέλετε κάποια διαφορετική γλώσσα, αλλάξτε το string LANGUAGE_CODE όπως παρακάτω με την τική που εσείς επιθυμείτε:</p>
+<p></p><p class="code-label">mysite/settings.py</p><p></p>
+<pre><code class="lang-python">LANGUAGE_CODE = <span class="hljs-string">&apos;el-GR&apos;</span>
+</code></pre>
+<p>Χρειάζεται επίσης να ρυθμίσουμε τα στατικά αρχεία μας. (Θα βρείτε τα πάντα για τα στατικά αρχεία και το CSS αργότερα στον οδηγό.) Πηγαίνετε προς τα κάτω μέχρι το <em>τέλος</em> του αρχείου και ακριβώς κάτω από την καταχώρηση <code>STATIC_URL</code>, προσθέστε μια νέα που ονομάζεται <code>STATIC_ROOT</code>:</p>
+<p></p><p class="code-label">mysite/settings.py</p><p></p>
+<pre><code class="lang-python">STATIC_URL = <span class="hljs-string">&apos;/static/&apos;</span>
+STATIC_ROOT = os.path.join(BASE_DIR, <span class="hljs-string">&apos;static&apos;</span>)
+</code></pre>
+<p>Όταν το flag <code>DEBUG</code> είναι <code>True</code> και η λίστα <code>ALLOWED_HOSTS</code> είναι κενή, ο host επικυρώνεται μέσα από την ακόλουθη λίστα <code>[«localhost&apos;, &apos;127.0.0.1&apos;, &apos; [:: 1]&apos;]</code>. Αυτό δεν θα ταιριάξει το hostname μας στο PythonAnywhere μόλις κάνουμε deploy την εφαρμογή μας. Οπότε θα χρειαστεί να κάνουμε την ακόλουθη αλλαγή:</p>
+<p></p><p class="code-label">mysite/settings.py</p><p></p>
+<pre><code class="lang-python">ALLOWED_HOSTS = [<span class="hljs-string">&apos;127.0.0.1&apos;</span>, <span class="hljs-string">&apos;.pythonanywhere.com&apos;</span>]
+</code></pre>
+<blockquote>
+<p><strong>Σημείωση</strong>: Αν χρησιμοποιείτε ένα Chromebook, προσθέστε αυτή τη γραμμή στο τέλος του αρχείου settings.py: <code>MESSAGE_STORAGE = &apos;django.contrib.messages.storage.session.SessionStorage&apos;</code></p>
+<p>Επίσης προσθέστε <code>&quot;.amazonaws.com&quot;</code> στη λίστα <code>ALLOWED_HOSTS</code> αν χρησιμοποιείτε το cloud9</p>
+</blockquote>
+<h2 id="δημιουργία-μιας-βάσης-δεδομένων">Δημιουργία μιας βάσης δεδομένων</h2>
+<p>Υπάρχουν πολλές διαφορετικές βάσεις δεδομένων που μπορούν να αποθηκεύσουν δεδομένα για την σελίδα σας. Θα χρησιμοποιήσουμε την προεπιλεγμένη, <code>sqlite3</code>.</p>
+<p>Αυτό έχει ήδη δηλωθεί στο αρχείο <code>mysite/settings.py</code>:</p>
+<p></p><p class="code-label">mysite/settings.py</p><p></p>
+<pre><code class="lang-python">DATABASES = {
+    <span class="hljs-string">&apos;default&apos;</span>: {
+        <span class="hljs-string">&apos;ENGINE&apos;</span>: <span class="hljs-string">&apos;django.db.backends.sqlite3&apos;</span>,
+        <span class="hljs-string">&apos;NAME&apos;</span>: os.path.join(BASE_DIR, <span class="hljs-string">&apos;db.sqlite3&apos;</span>),
+    }
+}
+</code></pre>
+<p>Για να δημιουργήσετε μία βάση δεδομένων για το blog σας, ας εκτελέσουμε το ακόλουθο στην κονσόλα: <code>python manage.py migrate</code> ( χρειάζεται να είμαστε στον φάκελο <code>djangogirls</code> που περιέχει το αρχείο <code>manage.py</code>). Αν αυτό πάει καλά, θα πρέπει να δείτε κάτι σαν αυτό:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: auth, admin, contenttypes, sessions
+Running migrations:
+  Rendering model states... DONE
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying sessions.0001_initial... ΟΚ
+</code></pre><p>Και τελειώσαμε! Ώρα να ξεκινήσουμε τον server και να δούμε εάν η ιστοσελίδα μας λειτουργεί!</p>
+<h2 id="εκκίνηση-του-development-server">Εκκίνηση του development server</h2>
+<p>Θα πρέπει να είστε στον φάκελο που περιέχει το αρχείο <code>manage.py</code> (στον φάκελο <code>djangogirls</code>). Στην κονσόλα, μπορούμε να ξεκινήσουμε τον server εκτελώντας <code>python manage.py runserver</code>:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver
+</code></pre><p>Εάν είστε σε ένα Chromebook, χρησιμοποιείστε αυτή την εντολή:</p>
+<p></p><p class="code-label">Cloud 9</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+</code></pre><p>Αν είστε σε Windows και αυτή η ενέργεια αποτύχει με σφάλμα <code>UnicodeDecodeError</code>, χρησιμοποιείστε αντί για αυτό, αυτή την εντολή:</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+</code></pre><p>Τώρα θα χρειαστεί να ελέγξετε αν το site σας δουλεύει. Ανοίξτε έναν browser (Firefox, Chrome, Safari ή Internet Explorer ή οτιδήποτε άλλο χρησιμοποιείτε) και πληκτρολογήστε την παρακάτω διεύθυνση:</p>
+<p></p><p class="code-label">browser</p><p></p>
+<pre><code>http://127.0.0.1:8000/
+</code></pre><p>Αν χρησιμοποιείτε Chromebook και Cloud9, αντί κλικάρετε στο παράθυρο που εμφανίστηκε στην πάνω δεξιά γωνία όπου ο server τρέχει. Το url θα δείχνει κάπως έτσι:</p>
+<p></p><p class="code-label">browser</p><p></p>
+<pre><code>https://&lt;a bunch of letters and numbers&gt;.vfs.cloud9.us-west-2.amazonaws.com
+</code></pre><p>Συγχαρητήρια! Μόλις δημιουργήσατε το πρώτο σας website το οποίο τρέχει χρησιμοποιώντας έναν web server! Δεν είναι φοβερό;</p>
+<p><img src="images/install_worked.png" alt="Η εγκατάσταση πέτυχε!"></p>
+<p>Σημειώστε ότι ένα παράθυρό εντολών μπορεί να εκτελεί μόνο μια εντολή κάθε φορά και η εντολή που τρέχει αυτή τη στιγμή είναι ένας web server. Όσο ο server τρέχει και αναμένει εισερχόμενα requests το τερματικό θα εμφανίζει κάποια μηνύματα αλλά δεν θα εκτελεί νέες εντολές.</p>
+<blockquote>
+<p>Είδαμε πως λειτουργούν οι web servers στο κεφάλαιο <strong>Πως λειτουργεί το internet</strong>.</p>
+</blockquote>
+<p>Για να γράψετε άλλες εντολές όσο ο server τρέχει, ανοίξτε ένα νέο παράθυρο και ενεργοποιήστε το virtualenv σας. Για να σταματήσετε τον server, μεταβείτε στο παράθυρο που τρέχει και πιέστε Ctrl + C (σε Windows θα πρέπει να πιέσετε Ctrl + Break).</p>
+<p>Έτοιμοι για το επόμενο βήμα; Ώρα να δημιουργήσουμε περιεχόμενο για το blog μας!</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_installation/" class="navigation navigation-prev " aria-label="Previous page: Εγκατάσταση του Django">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_models/" class="navigation navigation-next " aria-label="Next page: Μοντέλα (models) του Django">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Το πρώτο σου Django project!","level":"1.11","depth":1,"next":{"title":"Μοντέλα (models) του Django","level":"1.12","depth":1,"path":"django_models/README.md","ref":"django_models/README.md","articles":[]},"previous":{"title":"Εγκατάσταση του Django","level":"1.10","depth":1,"path":"django_installation/README.md","ref":"django_installation/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"el","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"django_start_project/README.md","mtime":"2021-03-25T14:00:00.143Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"el"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

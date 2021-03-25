@@ -1,0 +1,963 @@
+
+<!DOCTYPE HTML>
+<html lang="ja" >
+    <head>
+        <meta charset="UTF-8">
+        <title>デプロイ！ · HonKit</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="HonKit 3.6.17">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-richquotes/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-language-picker/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sidebar-ad/sidebar-ad.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-codeblock-label/block.css">
+                
+            
+                
+                <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../django_urls/" />
+    
+    
+    <link rel="prev" href="../django_admin/" />
+    
+
+    </head>
+    <body>
+        
+<div class="book honkit-cloak">
+    <div class="book-summary">
+        
+  
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="検索ワードを入力" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+    
+        
+        <li>
+            <a href="https://gitter.im/DjangoGirls/tutorial" target="_blank" class="custom-link">Need help? Talk to us!</a>
+        </li>
+    
+    
+
+    
+    <li class="divider"></li>
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    はじめに
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../installation/">
+            
+                <a href="../installation/">
+            
+                    
+                    インストール
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../installation/">
+            
+                <a href="../installation/#command-line">
+            
+                    
+                    コマンドライン
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../installation/">
+            
+                <a href="../installation/#python">
+            
+                    
+                    Python
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../installation/">
+            
+                <a href="../installation/#code-editor">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../installation/">
+            
+                <a href="../installation/#virtualenv">
+            
+                    
+                    仮想環境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../installation/">
+            
+                <a href="../installation/#django">
+            
+                    
+                    Django
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../installation/">
+            
+                <a href="../installation/#git">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../installation/">
+            
+                <a href="../installation/#github">
+            
+                    
+                    GitHub
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../installation/">
+            
+                <a href="../installation/#pythonanywhere">
+            
+                    
+                    PythonAnywhere
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chromebook_setup/">
+            
+                <a href="../chromebook_setup/">
+            
+                    
+                    Chromebookのセットアップ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../how_the_internet_works/">
+            
+                <a href="../how_the_internet_works/">
+            
+                    
+                    インターネットのしくみ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../intro_to_command_line/">
+            
+                <a href="../intro_to_command_line/">
+            
+                    
+                    コマンドラインを使ってみよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../python_installation/">
+            
+                <a href="../python_installation/">
+            
+                    
+                    Pythonのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../code_editor/">
+            
+                <a href="../code_editor/">
+            
+                    
+                    コードエディタ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../python_introduction/">
+            
+                <a href="../python_introduction/">
+            
+                    
+                    Python入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../django/">
+            
+                <a href="../django/">
+            
+                    
+                    Djangoってなに？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../django_installation/">
+            
+                <a href="../django_installation/">
+            
+                    
+                    Djangoのインストール
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="../django_start_project/">
+            
+                <a href="../django_start_project/">
+            
+                    
+                    プロジェクトを作成しよう！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="../django_models/">
+            
+                <a href="../django_models/">
+            
+                    
+                    Djangoモデル
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="../django_admin/">
+            
+                <a href="../django_admin/">
+            
+                    
+                    ログインページを作ろう（Django admin）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.14" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    デプロイ！
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="../django_urls/">
+            
+                <a href="../django_urls/">
+            
+                    
+                    Django URL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="../django_views/">
+            
+                <a href="../django_views/">
+            
+                    
+                    Djangoビュー
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="../html/">
+            
+                <a href="../html/">
+            
+                    
+                    HTML 入門
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="../django_orm/">
+            
+                <a href="../django_orm/">
+            
+                    
+                    Django ORM（クエリセット）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="../dynamic_data_in_templates/">
+            
+                <a href="../dynamic_data_in_templates/">
+            
+                    
+                    テンプレート内の動的データ
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="../django_templates/">
+            
+                <a href="../django_templates/">
+            
+                    
+                    Djangoテンプレート
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.21" data-path="../css/">
+            
+                <a href="../css/">
+            
+                    
+                    CSSでカワイくしよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="../template_extending/">
+            
+                <a href="../template_extending/">
+            
+                    
+                    テンプレートを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="../extend_your_application/">
+            
+                <a href="../extend_your_application/">
+            
+                    
+                    アプリケーションを拡張しよう
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="../django_forms/">
+            
+                <a href="../django_forms/">
+            
+                    
+                    Djangoフォーム
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="../whats_next/">
+            
+                <a href="../whats_next/">
+            
+                    
+                    次のステップは？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://github.com/honkit/honkit" target="blank" class="gitbook-link">
+            HonKitで公開 
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+  <div class="sidebar-addition">
+      
+        <a href="https://www.patreon.com/djangogirls" target="_blank">
+      
+        <img src="https://djangogirls.org/static/img/global/donate/lagos.jpg" />
+      
+        </a>
+      
+      
+        <p>💖 Support our work and donate to our project! ✨</p>
+      
+      
+      <a href="https://www.patreon.com/djangogirls" class="btn" target="_blank">
+        Donate now!
+      </a>
+      
+  </div>
+
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >デプロイ！</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="デプロイ！">デプロイ！</h1>
+<blockquote>
+<p><strong>補足</strong> このチャプターはちょっと難しいことが沢山書かれています。 頑張って最後までやりきってください。デプロイはウェブサイトを開発するプロセスの上で、とても重要な部分ですが、つまずきやすいポイントも多く含まれています。 チュートリアルの途中にこのチャプターを入れています。そういったつまずきやすい箇所はメンターに質問して、あなたが作っているウェブサイトをオンラインでみれるようにしてください。 言い換えれば、もし時間切れでワークショップ内でチュートリアルを終わらせることができなかったとしても、この後のチュートリアルはきっと自分で終わらせることができるでしょう。</p>
+</blockquote>
+<p>今のところ、あなたが作ったサイトは、あなたのコンピューターでしかみることができません。 ここでは、デプロイの方法を学びましょう！ デプロイとは、あなたが作っているアプリケーションをインターネットで公開することです。あなた以外の人もウェブサイトを見ることができるようになりますよ. :)</p>
+<p>これまでに学んだとおり、ウェブサイトはサーバーに置かれています。 インターネットで利用できる多くのサーバー プロバイダーがありますが、私達は <a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere</a> を使用します。 PythonAnywhere は、多くの人がアクセスするものではない小さいアプリケーションを無料で公開できますので今のあなたには最適でしょう。</p>
+<p>使用するその他の外部サービスは <a href="https://www.github.com" target="_blank">GitHub</a>、コードのホスティング サービスです。 他にも色々ありますが、ほとんどのプログラマはGitHubのアカウントを持っています。そしてあなたも今そうなります。</p>
+<p>これら3つの場所が重要になります。 ローカルコンピューターは、開発およびテストを行う場所になります。 変更に満足したら、GitHub上にプログラムのコピーを配置します。 あなたのウェブサイトはPythonAnywhereで公開され、GitHub からコードの新しいコピーを取得することによって更新されます。</p>
+<h1 id="git">Git</h1>
+<blockquote>
+<p><strong>注：</strong>もし、すでにインストールしていた場合は再度行う必要はありません。次のセクションに進んであなたのGitリポジトリを作り始められます。</p>
+</blockquote>
+<p>Gitはたくさんのプログラマが利用する「バージョン管理システム」です。 このソフトウェアは、特定のバージョンを後で呼び出すことができるように、時間の経過とともにファイルへの変更を追跡することができます。 ワードプロセッサープログラム (例えば、Microsoft WordやLibreOffice Writer）の「変更履歴」機能をより強力にしたようなものです。</p>
+<h2 id="gitのインストール">Gitのインストール</h2>
+<sec data-title="Installing Git: Windows" data-id="git_install_windows" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: Windows<a class="pull-right section atTitle btn btn-default" target="git_install_windows"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_windows"><div class="panel-body">
+<p><a href="https://git-scm.com/" target="_blank">git-scm.com</a> からGitをダウンロードすることができます。 2つのステップを除いて「次へ」を押して進んで大丈夫です。エディタを選ぶステップでは、Nanoを選んでください。「PATH環境を調整する(Adjusting your PATH environment)」というステップでは、「Use Git and optional Unix tools from the Windows Command Prompt（WindowsコマンドプロンプトからGitとオプションのUnixツールを使用する）」（一番下の選択肢）を選択します。 それ以外はデフォルトの設定値で構いません。 改行コードの変換(Configuring the line ending conversions)については、「Checkout Windows-style, commit Unix-style line endings」の選択で大丈夫です。</p>
+<p>インストールが正常に終了した後、コマンドプロンプトまたはPowerShellを再起動することを忘れないでください。</p></div></div></div></sec><p></p>
+<sec data-title="Installing Git: OS X" data-id="git_install_OSX" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: OS X<a class="pull-right section atTitle btn btn-default" target="git_install_OSX"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_OSX"><div class="panel-body">
+<p><a href="https://git-scm.com/" target="_blank">git-scm.com</a> からGitをダウンロードし、指示に従ってください。</p>
+<blockquote>
+<p><strong>注</strong> OS X 10.6,10.7、または10.8を実行している場合は、ここからgitのバージョンをインストールする必要があります: <a href="https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download" target="_blank">Git installer for OS X Snow Leopard</a></p>
+</blockquote>
+</div></div></div></sec>
+<sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: Debian or Ubuntu<a class="pull-right section atTitle btn btn-default" target="git_install_debian_ubuntu"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_debian_ubuntu"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-bash">$ sudo apt install git
+</code></pre>
+</div></div></div></sec>
+<sec data-title="Installing Git: Fedora" data-id="git_install_fedora" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: Fedora<a class="pull-right section atTitle btn btn-default" target="git_install_fedora"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_fedora"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-bash">$ sudo dnf install git
+</code></pre>
+</div></div></div></sec>
+<sec data-title="Installing Git: openSUSE" data-id="git_install_openSUSE" data-collapse="true"><div class="panel panel-default"><div class="panel-heading"><b>Installing Git: openSUSE<a class="pull-right section atTitle btn btn-default" target="git_install_openSUSE"><span class="fa fa-angle-up"></span></a></b></div><div class="panel-collapse in" id="git_install_openSUSE"><div class="panel-body">
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code class="lang-bash">$ sudo zypper install git
+</code></pre>
+</div></div></div></sec>
+<h2 id="gitリポジトリを始める">Gitリポジトリを始める</h2>
+<p>Gitはコードリポジトリ（または略して「リポジトリ」）というものの中に置かれる特定のファイルへの変更を追跡します。 私たちのプロジェクトを開始しましょう。 あなたのコンソールを開き、<code>djangogirls</code> ディレクトリでこれらのコマンドを実行します。</p>
+<blockquote>
+<p><strong>備考：</strong>リポジトリを初期化する前に <code>pwd</code> (OSX/Linux) または <code>cd</code> (Windows) コマンドで現在の作業ディレクトリを確認してください。 <code>djangogirls</code> フォルダー内にいる必要があります。</p>
+</blockquote>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git init
+Initialized empty Git repository in ~/djangogirls/.git/
+$ git config --global user.name &quot;Your Name&quot;
+$ git config --global user.email you@example.com
+</code></pre><p>gitリポジトリを初期化することは、プロジェクトごとに1回だけ行う必要があります（ユーザー名と電子メールをもう一度入力する必要はありません）。</p>
+<p>Git はこのディレクトリ内のすべてのファイルとフォルダの変更を追跡しますが、無視してほしいいくつかのファイルがあります。 ベースディレクトリ内で <code>.gitignore</code> という名前のファイルを作成することによってこれを行います。 あなたのエディターを開き、次の内容で新しいファイルを作成します。</p>
+<p></p><p class="code-label">.gitignore</p><p></p>
+<pre><code>*.pyc
+*~
+/.vscode
+__pycache__
+myvenv
+db.sqlite3
+/static
+.DS_Store
+</code></pre><p>これを &quot;djangogirls&quot; フォルダ内に <code>.gitignore</code> という名前で保存します。</p>
+<blockquote>
+<p><strong>備考：</strong>ファイル名の先頭のドットは重要です! もしそのファイルを作るのが難しいなら、（Macをお使いの方はFinderからドット（ . ）で始まるファイルを作れません。）そういう時はエディタでSave Asから作成すれば問題ありません。 <code>.txt</code>や <code>.py</code>などの拡張子をファイル名に入れないように気をつけてください。 ファイル名が<code>.gitignore</code>でないとGitに認識されません。</p>
+<p><strong>備考：</strong> <code>.gitignore</code>ファイルで指定したファイルの1つが<code>db.sqlite3</code>です。 そのファイルはローカルデータベースで、すべてのユーザーと投稿が保存されます。 私達は標準的なウェブプログラミングの慣習に従います。つまり、ローカルのテストサイトとPythonAnywhere上の本番のウェブサイトでデータベースを分けるということです。 PythonAnywhereのデータベースは開発用のマシンと同じようにSQLiteにすることができますが、通常はMySQLというSQLiteよりもたくさんのサイト訪問者に対処できるデータベースを使用します。 どちらの方法でも、GitHubのコードのコピーではSQLiteデータベースを無視することで、これまでに作成したすべての投稿と管理者はそのままローカルで利用できますが、本番環境（ブログを公開するPythonAnywhereのことです）ではそれらを再び作成する必要があります。 ローカルデータベースは本当のブログ投稿をブログから削除してしまうことを心配せずに、さまざまなことをテストできるよい遊び場として考えるといいでしょう。</p>
+</blockquote>
+<p><code>git add</code> コマンドを実行する前や、どのような変更を加えたか定かでない時は、 <code>git status</code> コマンドを使用する事をおすすめします。 これは間違ったファイルを追加またはコミットなど思いもかけない事を止めるために役立ちます。 <code>git status</code> コマンドは、あらゆる追跡されていない/変更されている/ステージされている（untracked/modifed/staged）ファイルや、ブランチの状態などさまざまな情報を返します。 出力は次のようになります。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use &quot;git add &lt;file&gt;...&quot; to include in what will be committed)
+
+        .gitignore
+        blog/
+        manage.py
+        mysite/
+        requirements.txt
+
+nothing added to commit but untracked files present (use &quot;git add&quot; to track)
+</code></pre><p>最後に、変更内容を保存します。コンソールに移動し、これらのコマンドを実行します。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git add --all .
+$ git commit -m &quot;My Django Girls app, first commit&quot;
+ [...]
+ 13 files changed, 200 insertions(+)
+ create mode 100644 .gitignore
+ [...]
+ create mode 100644 mysite/wsgi.py
+</code></pre><h2 id="githubにコードをプッシュする">GitHubにコードをプッシュする</h2>
+<p><a href="https://www.github.com" target="_blank">GitHub.com</a>にアクセスし、Sign upをクリックして無料の新規アカウントを作成してください。 （ワークショップの前にすでに作成していたら、それは素晴らしいです!） あなたのパスワードを忘れないようにしてください（使っていたら、パスワードマネージャーに入れておいてください）</p>
+<p>そして、新しいリポジトリに &quot;my-first-blog&quot;の名前で新しいリポジトリを作成します。 &quot;READMEで初期化する&quot;チェックボックスをオフのままにし、.gitignoreオプションを空白にして（手動で行っています）、ライセンスをNoneのままにしておきます。</p>
+<p><img src="images/new_github_repo.png" alt></p>
+<blockquote>
+<p><strong>注</strong> <code>my-first-blog</code>という名前は重要です。何か他のものを選択することもできますが、以下の手順では何度も繰り返す必要があります。他の名前を選択した場合は、 毎回それを置き換えてください。 できれば、<code>my-first-blog</code> の名前にしておきましょう。</p>
+</blockquote>
+<p>次の画面では、リポジトリをクローンするためのURLが表示されます。これはこの後のコマンドで利用します。</p>
+<p><img src="images/github_get_repo_url_screenshot.png" alt></p>
+<p>そして自分のコンピューター上のGitリポジトリをGitHub上のGitリポジトリに結びつけてあげる必要があります。</p>
+<p>コンソールに次のように入力します（<code>&lt;your-github-username&gt;</code>をGitHubアカウントの作成時に入力したユーザー名に置き換えます。山カッコ&lt;&gt;を残さないでください。このURLはさっき見たクローンURLと一致する必要があります）。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>$ git remote add origin https://github.com/&lt;your-github-username&gt;/my-first-blog.git
+$ git push -u origin master
+</code></pre><p>GitHubにプッシュするとき、GitHubのユーザー名とパスワードを聞かれます（コマンドライン上かポップアップウィンドウにて）。認証情報を入力したらこんな風に表示されます。</p>
+<p></p><p class="code-label">command-line</p><p></p>
+<pre><code>Counting objects: 6, done.
+Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+
+To https://github.com/ola/my-first-blog.git
+ * [new branch]      master -&gt; master
+Branch master set up to track remote branch master from origin.
+</code></pre><!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
+<p>あなたのコードは今GitHub上にあります。 見に行きましょう！ <a href="https://github.com/django/django" target="_blank"> Django </a>や<a href="https://github.com/DjangoGirls/tutorial" target="_blank"> Django Girls Tutorial </a>、その他たくさんの素晴らしいオープンソースソフトウェアプロジェクトもGitHubでコードをホストしています。 :)</p>
+<h1 id="pythonanywhereでブログを設定する">PythonAnywhereでブログを設定する</h1>
+<h2 id="pythonanywhere-アカウントにサインアップする">PythonAnywhere アカウントにサインアップする</h2>
+<blockquote>
+<p><strong>備考：</strong>あなたがすでにPythonAnywhereのアカウントを以前に作成しインストールの手順をふんでいたら、再びそれを行う必要はありません。</p>
+</blockquote>
+<p>PythonAnywhereはクラウド上のサーバーでPythonのコードを走らせるためのサービスです。私たちのサイトをホスティングして、インターネット上で動かし続けるために使います。</p>
+<p>今までの章で作ったブログをPythonAnywhere上にホスティングします。PythonAnywhereの「Beginner」アカウントを作成しましょう(アカウントは無料枠で大丈夫です。クレジットカードは必要ありません)。</p>
+<ul>
+<li><a href="https://www.pythonanywhere.com/" target="_blank">www.pythonanywhere.com</a></li>
+</ul>
+<p><img src="images/pythonanywhere_beginner_account_button.png" alt="PythonAnywhereの登録ページ。無料の「Beginner」アカウントを作るためのボタンがあります。"></p>
+<blockquote>
+<p><strong>注意</strong> ユーザー名をつけるとき、ユーザー名が <code>yourusername.pythonanywhere.com</code> というようにブログのURLに反映されることに注意しましょう。なので、あなたのニックネームかブログの名前をユーザー名とするようにしてください。 パスワードは忘れないようにしてください。(パスワードマネージャーを使っているなら覚えさせておくのも良いでしょう。)</p>
+</blockquote>
+<h2 id="pythonanywhere-apiトークンの作成">PythonAnywhere APIトークンの作成</h2>
+<p>トークンは一度だけ作ればよいです。PythonAnywhereの登録が終わるとダッシュボード画面に移動します。「Account」ページへのリンクはページ右上のバーの中にあります。</p>
+<p><img src="images/pythonanywhere_account.png" alt="ページ右上にあるAccountページへのリンク"></p>
+<p>「Account」ページに移動したら、「API Token」というタブを選んで、「Create new API token」のボタンを押してください。</p>
+<p><img src="images/pythonanywhere_create_api_token.png" alt="Accountページの「API Token」のタブ"></p>
+<h2 id="pythonanywhere-でサイトを設定する">PythonAnywhere でサイトを設定する</h2>
+<p>ロゴをクリックしてメインの<a href="https://www.pythonanywhere.com/" target="_blank">PythonAnywhere Dashboard</a>に戻り、「Bash」コンソールを起動するボタンをクリックします。これはPythonAnywhereバージョンのコマンドラインで、ちょうどあなたのコンピューターのコマンドラインと同じようなものです。</p>
+<p><img src="images/pythonanywhere_bash_console.png" alt="PythonAnywhereのウェブインターフェースの「New Console」、「bash」ボタン"></p>
+<blockquote>
+<p><strong>備考：</strong>PythonAnywhere は Linuxベースなので、Windowsを使っている場合は、コンソールがあなたのものと少し違って見えるでしょう。</p>
+</blockquote>
+<p>PythonAnywhereにWebアプリケーションをデプロイするには、コードをGitHubからプルし、PythonAnywhereがそれを認識してWebアプリケーションのサーバを動かし始めるように設定する必要があります。 それを手動で行う方法もありますが、PythonAnywhereはそれをすべて行うヘルパーツールを提供しています。 まず、インストールしてみましょう。</p>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>$ pip3.6 install --user pythonanywhere
+</code></pre><p><code>Collecting pythonanywhere</code> のようなメッセージがいくつか出力され、最終的に<code>Successfully installed (...) pythonanywhere- (...)</code>という行で終わると思います。</p>
+<p>GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（GitHubからクローンするときのURLと一致するように、<code>&lt;your-github-username&gt;</code>の代わりにご自身のGitHubユーザー名を使用することを忘れないでください）：</p>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>$ pa_autoconfigure_django.py --python=3.6 https://github.com/&lt;your-github-username&gt;/my-first-blog.git
+</code></pre><p>実行しているところを見れば、何をしているのかわかるでしょう。</p>
+<ul>
+<li>GitHubからコードをダウンロードする</li>
+<li>ちょうどあなたのPC上でやったように、PythonAnywhere上に仮想環境 を作成する</li>
+<li>一部のデプロイメント設定で設定ファイルを更新する</li>
+<li><code>manage.py migrate</code>コマンドを使ってPythonAnywhere上のデータベースをセットアップする</li>
+<li>静的ファイルの設定（これについては後で学習します）</li>
+<li>APIを通じてPythonAnywhereがあなたのWebアプリケーションを提供するように設定する</li>
+</ul>
+<p>PythonAnywhereではこれらすべてのステップは自動化されていますが、他のサーバープロバイダーでは同じ手順を自分で実行しなければなりません。</p>
+<p>今注目すべき重要な点は、PythonAnywhere上のデータベースが、自分のPC上のデータベースとはまったく別物であることです。つまり、異なる投稿と管理者アカウントを持つことができます。 その結果、自分のコンピュータで行ったように、<code>createsuperuser</code>で管理者アカウントを初期化する必要があります。 PythonAnywhereがあなたの代わりに仮想環境を自動的に起動したので、あなたがする必要があるのは以下の通りです：</p>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>(ola.pythonanywhere.com) $ python manage.py createsuperuser
+</code></pre><p>管理者の詳細を入力します。 PythonAnywhere上のパスワードをより安全にしたい場合を除き、混乱を避けるために自分のコンピュータで使用しているのと同じものを使用することをお勧めします。</p>
+<p>PythonAnywhereのコードを<code>ls</code>を使って見てみることもできます：</p>
+<p></p><p class="code-label">PythonAnywhere command-line</p><p></p>
+<pre><code>(ola.pythonanywhere.com) $ ls
+blog  db.sqlite3  manage.py  mysite requirements.txt static
+(ola.pythonanywhere.com) $ ls blog/
+__init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+tests.py  views.py
+</code></pre><p>また、Filesページに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。 (ConsoleページからPythonAnywhereの他のページには、右上のメニューボタンからいけます。 一度いずれかのページに移動したら、他ページへのリンクは上部にあります。)</p>
+<h2 id="動いています！">動いています！</h2>
+<p>あなたのサイトは現在、インターネット上で動作しているはずです！ PythonAnywhereのWebページをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)</p>
+<blockquote>
+<p><strong>注</strong> これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 もしこのプロジェクトを利用すると決めたり、新しいプロジェクトを開始する場合は、あなたのサイトを安全にするいくつかのヒントについて、<a href="https://docs.djangoproject.com/ja/2.2/howto/deployment/checklist/" target="_blank">Djangoデプロイチェックリスト</a>を注意深く読んでください。</p>
+</blockquote>
+<h2 id="デバッギングのヒント">デバッギングのヒント</h2>
+<p><code>pa_autoconfigure_django.py</code>スクリプトの実行中にエラーが表示された場合は、次のような原因が考えられます。</p>
+<ul>
+<li>PythonAnywhere APIトークンの作成を忘れている</li>
+<li>あなたのGitHubのURLを間違えている</li>
+<li><em>Could not find your settings.py</em>というエラーが表示された場合は、おそらくGitにすべてのファイルを追加できていなかったか、 GitHubにうまくプッシュできていなかった。 この場合はGitセクションをもう一度見てください</li>
+<li>PythonAnywhereのアカウントを以前に作成していてcollectstaticでエラーが起きたとしたら、あなたのアカウントで古いバージョンのSQLite（例えば、3.8.2）を使っている可能性があります。 その場合、新しいアカウントを作成して、上記のPythonAnywhereのセクションに記載しているコマンドを実行してください。</li>
+</ul>
+<p>サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は<strong>エラーログ</strong>です。 PythonAnywhereの<a href="https://www.pythonanywhere.com/web_app_setup/" target="_blank"> Webページ</a>には、エラーログへのリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。</p>
+<p><a href="http://help.pythonanywhere.com/pages/DebuggingImportError" target="_blank"> PythonAnywhereヘルプサイトの一般的なデバッグのヒント</a>もあります。</p>
+<p>つまづいた時は、コーチに助けを求めましょう。</p>
+<h1 id="あなたのサイトをチェック！">あなたのサイトをチェック！</h1>
+<p>サイトのデフォルトページでは、ローカルコンピュータと同じように「It worked！」と表示されます。 URLの最後に<code>/admin/</code>を追加すると、管理サイトに移動します。 ユーザー名とパスワードでログインしたら、Postsへのリンクからサーバーに新規投稿を追加できることがわかるでしょう。ローカルのテスト用データベースの投稿は本番環境のブログに送られていないことも忘れないてくださいね。</p>
+<p>いくつかの投稿を作成したら、ローカル環境（PythonAnywhereではなく）に戻ることができます。 ここから、変更を加えるためにはあなたのローカル環境で作業する必要があります。 これがWeb開発の一般的なワークフローです。ローカルで変更し、それらの変更をGitHubにプッシュし、それからその変更を公開しているWebサーバーにプルしてきます。 これにより、公開しているWebサイトを壊すことなく作業したり試したりできます。 とってもクールでしょ？</p>
+<p>自分を<em>すっごく</em>褒めてあげてください！ サーバーのデプロイはWeb開発の最も難しい部分の1つで、ちゃんと動くようになるまで数日かかることもよくあります。 しかし、あなたは実際のインターネット上で、あなたのサイトを動かす事ができました！</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../django_admin/" class="navigation navigation-prev " aria-label="Previous page: ログインページを作ろう（Django admin）">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../django_urls/" class="navigation navigation-next " aria-label="Next page: Django URL">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"デプロイ！","level":"1.14","depth":1,"next":{"title":"Django URL","level":"1.15","depth":1,"path":"django_urls/README.md","ref":"django_urls/README.md","articles":[]},"previous":{"title":"ログインページを作ろう（Django admin）","level":"1.13","depth":1,"path":"django_admin/README.md","ref":"django_admin/README.md","articles":[]},"dir":"ltr"},"config":{"plugins":["heading-anchors@1.0.3","ga@1.0.1","richquotes@0.0.9","github@2.0.0","language-picker","sidebar-ad","codeblock-label","sectionx-ex","collapsible-menu"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"collapsible-menu":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/DjangoGirls/tutorial"},"codeblock-label":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sectionx-ex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"richquotes":{"default":false},"sectionx":{"tag":"b"},"heading-anchors":{},"sidebar-ad":{"imageUrl":"https://djangogirls.org/static/img/global/donate/lagos.jpg","url":"https://www.patreon.com/djangogirls","description":"💖 Support our work and donate to our project! ✨","btnText":"Donate now!"},"highlight":{},"ga":{"configuration":"auto","token":"UA-51680040-3"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56},"embedFonts":false},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"py_version":"3.8","py_release":"3.8.6","py_min_version":"3.6","py_min_release":"3.6.8","pa_py_version":"3.8","django_version":"2.2.4"},"language":"ja","links":{"sidebar":{"Need help? Talk to us!":"https://gitter.im/DjangoGirls/tutorial"}},"gitbook":"*"},"file":{"path":"deploy/README.md","mtime":"2021-03-25T14:00:00.335Z","type":"markdown"},"gitbook":{"version":"3.6.17","time":"2021-03-25T14:00:13.355Z"},"basePath":"..","book":{"language":"ja"}});
+        });
+    </script>
+</div>
+
+        
+    <noscript>
+        <style>
+            .honkit-cloak {
+                display: block !important;
+            }
+        </style>
+    </noscript>
+    <script>
+        // Restore sidebar state as critical path for prevent layout shift
+        function __init__getSidebarState(defaultValue){
+            var baseKey = "";
+            var key = baseKey + ":sidebar";
+            try {
+                var value = localStorage[key];
+                if (value === undefined) {
+                    return defaultValue;
+                }
+                var parsed = JSON.parse(value);
+                return parsed == null ? defaultValue : parsed;
+            } catch (e) {
+                return defaultValue;
+            }
+        }
+        function __init__restoreLastSidebarState() {
+            var isMobile = window.matchMedia("(max-width: 600px)").matches;
+            if (isMobile) {
+                // Init last state if not mobile
+                return;
+            }
+            var sidebarState = __init__getSidebarState(true);
+            var book = document.querySelector(".book");
+            // Show sidebar if it enabled
+            if (sidebarState && book) {
+                book.classList.add("without-animation", "with-summary");
+            }
+        }
+
+        try {
+            __init__restoreLastSidebarState();
+        } finally {
+            var book = document.querySelector(".book");
+            book.classList.remove("honkit-cloak");
+        }
+    </script>
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/1.2.1/anchor.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-heading-anchors/anchor-style.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
+        
+    
+        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sectionx-ex/sectionx.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-collapsible-menu/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
