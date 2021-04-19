@@ -116,7 +116,8 @@ django-admin.py startproject mysite .
 refresh
 ```
 
-In order to see detailed error messages, you can activate Django debug logs for your Glitch application.
+In order to see detailed error messages and ensure Django knows to find static files,
+you can activate Django debug logs for your Glitch application.
 Simply add the following at the end of the `mysite/settings.py` file.
 
 {% filename %}mysite/settings.py{% endfilename %}
@@ -139,6 +140,10 @@ LOGGING = {
         },
     },
 }
+
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 ```
 This will create a `debug.log` file detailing Django operations and any error messages that might come up, making it much easier to fix if your website does not work.
 
